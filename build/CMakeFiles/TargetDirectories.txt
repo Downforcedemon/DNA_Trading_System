@@ -1,0 +1,3 @@
+/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/dna_system.dir
+/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/edit_cache.dir
+/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/rebuild_cache.dir

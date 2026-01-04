@@ -1,0 +1,61 @@
+#include "core/SymbolManager.hpp"
+#include <iostream>
+#include <algorithm>
+
+void SymbolManager::addSymbol(const std::string& symbol, double price, int score) {
+    if (symbols_.count(symbol) > 0) {
+        std::cout << "⚠️  " << symbol << " already in watchlist" << std::endl;
+        return;
+    }
+    
+    SymbolState state;
+    state.symbol = symbol;
+    state.currentPrice = price;
+    state.signalScore = score;
+
+    // signal type based on score (temporary logic)
+    if (score >= 5) {
+        state.signalType = SignalType::BUY;
+    } else if (score <= 2){
+        state.signalType = SignalType::SELL;
+    } else {
+        state.signalType = SignalType::WAIT;
+    }
+
+    symbols_[symbol] = state;
+    std::cout << "✅ Added " << symbol << std::endl;
+}
+
+void SymbolManager::removeSymbol(const std::string& symbol) {
+    if (symbols_.erase(symbol) > 0) {
+        std::cout << "➖ Removed " << symbol << std::endl;
+    } else {
+        std::cout << "⚠️  " << symbol << " not found" << std::endl;
+    }
+}
+
+std::vector<SymbolState> SymbolManager::getAllSymbols() const {
+    std::vector<SymbolState> result;
+    for (const auto& pair : symbols_) {
+        result.push_back(pair.second);
+    }
+    return result;
+}
+
+bool SymbolManager::hasSymbol(const std::string& symbol) const {
+    return symbols_.count(symbol) > 0;
+}
+
+int SymbolManager::getSymbolCount() const {
+    return symbols_.size();
+}
+
+void SymbolManager::updatePrice(const std::string& symbol, double price){
+    std::lock_guard<std::mutex> lock(mutex_);
+
+    auto it = symbols_.find(symbol);
+    if (it != symbols_.end()){
+        it->second.currentPrice = price;
+    }
+}
+
