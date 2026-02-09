@@ -14,36 +14,43 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class TickOptionComputationDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TickOptionComputation> _instance;
-} _TickOptionComputation_default_instance_;
+constexpr TickOptionComputation::TickOptionComputation(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : reqid_(0)
+  , ticktype_(0)
+  , impliedvol_(0)
+  , delta_(0)
+  , optprice_(0)
+  , pvdividend_(0)
+  , gamma_(0)
+  , vega_(0)
+  , theta_(0)
+  , undprice_(0)
+  , tickattrib_(0){}
+struct TickOptionComputationDefaultTypeInternal {
+  constexpr TickOptionComputationDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~TickOptionComputationDefaultTypeInternal() {}
+  union {
+    TickOptionComputation _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TickOptionComputationDefaultTypeInternal _TickOptionComputation_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_TickOptionComputation_TickOptionComputation_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_TickOptionComputation_default_instance_;
-    new (ptr) ::protobuf::TickOptionComputation();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::TickOptionComputation::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TickOptionComputation_TickOptionComputation_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TickOptionComputation_TickOptionComputation_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TickOptionComputation_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_TickOptionComputation_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TickOptionComputation_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TickOptionComputation_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_TickOptionComputation_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::TickOptionComputation, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::TickOptionComputation, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::TickOptionComputation, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::TickOptionComputation, ticktype_),
   PROTOBUF_FIELD_OFFSET(::protobuf::TickOptionComputation, tickattrib_),
@@ -68,7 +75,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TickOptionComputation_2eproto:
   9,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 16, sizeof(::protobuf::TickOptionComputation)},
+  { 0, 17, -1, sizeof(::protobuf::TickOptionComputation)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -90,27 +97,23 @@ const char descriptor_table_protodef_TickOptionComputation_2eproto[] PROTOBUF_SE
   "eBE\n\026com.ib.client.protobufB\032TickOptionC"
   "omputationProto\252\002\016IBApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TickOptionComputation_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_TickOptionComputation_2eproto_sccs[1] = {
-  &scc_info_TickOptionComputation_TickOptionComputation_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TickOptionComputation_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TickOptionComputation_2eproto = {
-  false, false, descriptor_table_protodef_TickOptionComputation_2eproto, "TickOptionComputation.proto", 520,
-  &descriptor_table_TickOptionComputation_2eproto_once, descriptor_table_TickOptionComputation_2eproto_sccs, descriptor_table_TickOptionComputation_2eproto_deps, 1, 0,
+  false, false, 520, descriptor_table_protodef_TickOptionComputation_2eproto, "TickOptionComputation.proto", 
+  &descriptor_table_TickOptionComputation_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_TickOptionComputation_2eproto::offsets,
-  file_level_metadata_TickOptionComputation_2eproto, 1, file_level_enum_descriptors_TickOptionComputation_2eproto, file_level_service_descriptors_TickOptionComputation_2eproto,
+  file_level_metadata_TickOptionComputation_2eproto, file_level_enum_descriptors_TickOptionComputation_2eproto, file_level_service_descriptors_TickOptionComputation_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TickOptionComputation_2eproto_getter() {
+  return &descriptor_table_TickOptionComputation_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_TickOptionComputation_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_TickOptionComputation_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TickOptionComputation_2eproto(&descriptor_table_TickOptionComputation_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void TickOptionComputation::InitAsDefaultInstance() {
-}
 class TickOptionComputation::_Internal {
  public:
   using HasBits = decltype(std::declval<TickOptionComputation>()._has_bits_);
@@ -149,10 +152,13 @@ class TickOptionComputation::_Internal {
   }
 };
 
-TickOptionComputation::TickOptionComputation(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+TickOptionComputation::TickOptionComputation(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.TickOptionComputation)
 }
 TickOptionComputation::TickOptionComputation(const TickOptionComputation& from)
@@ -165,20 +171,22 @@ TickOptionComputation::TickOptionComputation(const TickOptionComputation& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.TickOptionComputation)
 }
 
-void TickOptionComputation::SharedCtor() {
-  ::memset(&reqid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&tickattrib_) -
-      reinterpret_cast<char*>(&reqid_)) + sizeof(tickattrib_));
+inline void TickOptionComputation::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&reqid_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&tickattrib_) -
+    reinterpret_cast<char*>(&reqid_)) + sizeof(tickattrib_));
 }
 
 TickOptionComputation::~TickOptionComputation() {
   // @@protoc_insertion_point(destructor:protobuf.TickOptionComputation)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void TickOptionComputation::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void TickOptionComputation::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void TickOptionComputation::ArenaDtor(void* object) {
@@ -190,15 +198,10 @@ void TickOptionComputation::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void TickOptionComputation::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const TickOptionComputation& TickOptionComputation::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TickOptionComputation_TickOptionComputation_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void TickOptionComputation::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.TickOptionComputation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -220,190 +223,200 @@ void TickOptionComputation::Clear() {
 const char* TickOptionComputation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 tickType = 2;
+      // optional int32 tickType = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_ticktype(&has_bits);
-          ticktype_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ticktype_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 tickAttrib = 3;
+      // optional int32 tickAttrib = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_tickattrib(&has_bits);
-          tickattrib_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          tickattrib_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double impliedVol = 4;
+      // optional double impliedVol = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
           _Internal::set_has_impliedvol(&has_bits);
           impliedvol_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double delta = 5;
+      // optional double delta = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
           _Internal::set_has_delta(&has_bits);
           delta_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double optPrice = 6;
+      // optional double optPrice = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
           _Internal::set_has_optprice(&has_bits);
           optprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double pvDividend = 7;
+      // optional double pvDividend = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
           _Internal::set_has_pvdividend(&has_bits);
           pvdividend_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double gamma = 8;
+      // optional double gamma = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
           _Internal::set_has_gamma(&has_bits);
           gamma_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double vega = 9;
+      // optional double vega = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 73)) {
           _Internal::set_has_vega(&has_bits);
           vega_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double theta = 10;
+      // optional double theta = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 81)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 81)) {
           _Internal::set_has_theta(&has_bits);
           theta_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double undPrice = 11;
+      // optional double undPrice = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 89)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 89)) {
           _Internal::set_has_undprice(&has_bits);
           undprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TickOptionComputation::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TickOptionComputation::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.TickOptionComputation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // int32 tickType = 2;
+  // optional int32 tickType = 2;
   if (_internal_has_ticktype()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_ticktype(), target);
   }
 
-  // int32 tickAttrib = 3;
+  // optional int32 tickAttrib = 3;
   if (_internal_has_tickattrib()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_tickattrib(), target);
   }
 
-  // double impliedVol = 4;
+  // optional double impliedVol = 4;
   if (_internal_has_impliedvol()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_impliedvol(), target);
   }
 
-  // double delta = 5;
+  // optional double delta = 5;
   if (_internal_has_delta()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_delta(), target);
   }
 
-  // double optPrice = 6;
+  // optional double optPrice = 6;
   if (_internal_has_optprice()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_optprice(), target);
   }
 
-  // double pvDividend = 7;
+  // optional double pvDividend = 7;
   if (_internal_has_pvdividend()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_pvdividend(), target);
   }
 
-  // double gamma = 8;
+  // optional double gamma = 8;
   if (_internal_has_gamma()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_gamma(), target);
   }
 
-  // double vega = 9;
+  // optional double vega = 9;
   if (_internal_has_vega()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_vega(), target);
   }
 
-  // double theta = 10;
+  // optional double theta = 10;
   if (_internal_has_theta()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->_internal_theta(), target);
   }
 
-  // double undPrice = 11;
+  // optional double undPrice = 11;
   if (_internal_has_undprice()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(11, this->_internal_undprice(), target);
@@ -421,105 +434,90 @@ size_t TickOptionComputation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.TickOptionComputation)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
-    // int32 tickType = 2;
+    // optional int32 tickType = 2;
     if (cached_has_bits & 0x00000002u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_ticktype());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_ticktype());
     }
 
-    // double impliedVol = 4;
+    // optional double impliedVol = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 8;
     }
 
-    // double delta = 5;
+    // optional double delta = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 8;
     }
 
-    // double optPrice = 6;
+    // optional double optPrice = 6;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 8;
     }
 
-    // double pvDividend = 7;
+    // optional double pvDividend = 7;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 8;
     }
 
-    // double gamma = 8;
+    // optional double gamma = 8;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 + 8;
     }
 
-    // double vega = 9;
+    // optional double vega = 9;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 + 8;
     }
 
   }
   if (cached_has_bits & 0x00000700u) {
-    // double theta = 10;
+    // optional double theta = 10;
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 + 8;
     }
 
-    // double undPrice = 11;
+    // optional double undPrice = 11;
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 + 8;
     }
 
-    // int32 tickAttrib = 3;
+    // optional int32 tickAttrib = 3;
     if (cached_has_bits & 0x00000400u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_tickattrib());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_tickattrib());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void TickOptionComputation::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.TickOptionComputation)
-  GOOGLE_DCHECK_NE(&from, this);
-  const TickOptionComputation* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TickOptionComputation>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.TickOptionComputation)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.TickOptionComputation)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TickOptionComputation::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    TickOptionComputation::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TickOptionComputation::GetClassData() const { return &_class_data_; }
+
+void TickOptionComputation::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<TickOptionComputation *>(to)->MergeFrom(
+      static_cast<const TickOptionComputation &>(from));
 }
+
 
 void TickOptionComputation::MergeFrom(const TickOptionComputation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.TickOptionComputation)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -562,13 +560,7 @@ void TickOptionComputation::MergeFrom(const TickOptionComputation& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void TickOptionComputation::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.TickOptionComputation)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TickOptionComputation::CopyFrom(const TickOptionComputation& from) {
@@ -584,7 +576,7 @@ bool TickOptionComputation::IsInitialized() const {
 
 void TickOptionComputation::InternalSwap(TickOptionComputation* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(TickOptionComputation, tickattrib_)
@@ -595,9 +587,10 @@ void TickOptionComputation::InternalSwap(TickOptionComputation* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TickOptionComputation::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_TickOptionComputation_2eproto_getter, &descriptor_table_TickOptionComputation_2eproto_once,
+      file_level_metadata_TickOptionComputation_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

@@ -1,0 +1,35 @@
+\doxysection{IBKRAdapter.\+hpp}
+\hypertarget{IBKRAdapter_8hpp_source}{}\label{IBKRAdapter_8hpp_source}\index{include/adapters/IBKRAdapter.hpp@{include/adapters/IBKRAdapter.hpp}}
+\mbox{\hyperlink{IBKRAdapter_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IMarketDataProvider_8hpp}{core/IMarketDataProvider.hpp}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}core/IMarketDataListener.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IBKRConnection_8hpp}{core/IBKRConnection.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIBKRAdapter_a25492dd919eaf8f7a0a04e29f79c9a88}{IBKRAdapter}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classIMarketDataProvider}{IMarketDataProvider}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classIMarketDataListener}{IMarketDataListener}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classIBKRAdapter_a25492dd919eaf8f7a0a04e29f79c9a88}{IBKRAdapter}}(\mbox{\hyperlink{classIMarketDataListener}{IMarketDataListener}}*\ listener);}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classIBKRAdapter_a84c24c14fefe587768f36570d2757cd9}{\string~IBKRAdapter}}()\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ IMarketDataProvider\ implemenation}}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIBKRAdapter_affe328016c68f4c93b6dc360ae169de7}{connected}}()\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_a50f00642de895e3661b493c170f4b880}{disconnect}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_a1cbe8f070cb5c02fc41d58f1cc363492}{isConnected}}()\ \textcolor{keyword}{const\ override};\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_ac45066aed458251154694b2667098e19}{subscribe}}(\textcolor{keyword}{const}\ std::string\&\ symbol)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_a1725efca6f0e918a19046b03c9650ba9}{unsubscribe}}(\textcolor{keyword}{const}\ std::string\&\ symbol)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classIBKRAdapter_a71258a3f7c1e702cfde009f17a626b70}{getProviderName}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_a5884a7a8bcc2b07706eb87e0a4f678eb}{processMessages}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ IMarketDataListener\ implementation\ (receive\ from\ IBKRConnection,\ forward\ to\ listener\_)}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_a150d4ee43cd34cb0c9908341294370d2}{onPriceUpdate}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{double}\ price,\ time\_t\ timestamp)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_a28d1b31ad0e583b056cffa231e103b81}{onSizeUpdate}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{int}\ size,\ time\_t\ timestamp)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIBKRAdapter_a57cdb3a415ee4a139f64c80a7374f2c7}{onError}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{int}\ errorCode,\ \textcolor{keyword}{const}\ std::string\&\ errorMsg)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::unique\_ptr<IBKRConnection>\ ibkrConnection;\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classIMarketDataListener}{IMarketDataListener}}*\ listener\_;\ }
+\DoxyCodeLine{00029\ \};\ }
+
+\end{DoxyCode}

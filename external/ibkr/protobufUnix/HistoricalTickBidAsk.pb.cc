@@ -14,38 +14,38 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_TickAttribBidAsk_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TickAttribBidAsk_TickAttribBidAsk_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class HistoricalTickBidAskDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HistoricalTickBidAsk> _instance;
-} _HistoricalTickBidAsk_default_instance_;
+constexpr HistoricalTickBidAsk::HistoricalTickBidAsk(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : sizebid_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , sizeask_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , tickattribbidask_(nullptr)
+  , time_(int64_t{0})
+  , pricebid_(0)
+  , priceask_(0){}
+struct HistoricalTickBidAskDefaultTypeInternal {
+  constexpr HistoricalTickBidAskDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HistoricalTickBidAskDefaultTypeInternal() {}
+  union {
+    HistoricalTickBidAsk _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HistoricalTickBidAskDefaultTypeInternal _HistoricalTickBidAsk_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_HistoricalTickBidAsk_default_instance_;
-    new (ptr) ::protobuf::HistoricalTickBidAsk();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::HistoricalTickBidAsk::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto}, {
-      &scc_info_TickAttribBidAsk_TickAttribBidAsk_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_HistoricalTickBidAsk_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_HistoricalTickBidAsk_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_HistoricalTickBidAsk_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalTickBidAsk_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_HistoricalTickBidAsk_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTickBidAsk, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTickBidAsk, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTickBidAsk, time_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTickBidAsk, tickattribbidask_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTickBidAsk, pricebid_),
@@ -60,7 +60,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalTickBidAsk_2eproto::
   1,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 11, sizeof(::protobuf::HistoricalTickBidAsk)},
+  { 0, 12, -1, sizeof(::protobuf::HistoricalTickBidAsk)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -83,27 +83,23 @@ const char descriptor_table_protodef_HistoricalTickBidAsk_2eproto[] PROTOBUF_SEC
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_HistoricalTickBidAsk_2eproto_deps[1] = {
   &::descriptor_table_TickAttribBidAsk_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_HistoricalTickBidAsk_2eproto_sccs[1] = {
-  &scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_HistoricalTickBidAsk_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_HistoricalTickBidAsk_2eproto = {
-  false, false, descriptor_table_protodef_HistoricalTickBidAsk_2eproto, "HistoricalTickBidAsk.proto", 413,
-  &descriptor_table_HistoricalTickBidAsk_2eproto_once, descriptor_table_HistoricalTickBidAsk_2eproto_sccs, descriptor_table_HistoricalTickBidAsk_2eproto_deps, 1, 1,
+  false, false, 413, descriptor_table_protodef_HistoricalTickBidAsk_2eproto, "HistoricalTickBidAsk.proto", 
+  &descriptor_table_HistoricalTickBidAsk_2eproto_once, descriptor_table_HistoricalTickBidAsk_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_HistoricalTickBidAsk_2eproto::offsets,
-  file_level_metadata_HistoricalTickBidAsk_2eproto, 1, file_level_enum_descriptors_HistoricalTickBidAsk_2eproto, file_level_service_descriptors_HistoricalTickBidAsk_2eproto,
+  file_level_metadata_HistoricalTickBidAsk_2eproto, file_level_enum_descriptors_HistoricalTickBidAsk_2eproto, file_level_service_descriptors_HistoricalTickBidAsk_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_HistoricalTickBidAsk_2eproto_getter() {
+  return &descriptor_table_HistoricalTickBidAsk_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_HistoricalTickBidAsk_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_HistoricalTickBidAsk_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_HistoricalTickBidAsk_2eproto(&descriptor_table_HistoricalTickBidAsk_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void HistoricalTickBidAsk::InitAsDefaultInstance() {
-  ::protobuf::_HistoricalTickBidAsk_default_instance_._instance.get_mutable()->tickattribbidask_ = const_cast< ::protobuf::TickAttribBidAsk*>(
-      ::protobuf::TickAttribBidAsk::internal_default_instance());
-}
 class HistoricalTickBidAsk::_Internal {
  public:
   using HasBits = decltype(std::declval<HistoricalTickBidAsk>()._has_bits_);
@@ -133,16 +129,16 @@ HistoricalTickBidAsk::_Internal::tickattribbidask(const HistoricalTickBidAsk* ms
   return *msg->tickattribbidask_;
 }
 void HistoricalTickBidAsk::clear_tickattribbidask() {
-  if (GetArena() == nullptr && tickattribbidask_ != nullptr) {
-    delete tickattribbidask_;
-  }
-  tickattribbidask_ = nullptr;
+  if (tickattribbidask_ != nullptr) tickattribbidask_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-HistoricalTickBidAsk::HistoricalTickBidAsk(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+HistoricalTickBidAsk::HistoricalTickBidAsk(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.HistoricalTickBidAsk)
 }
 HistoricalTickBidAsk::HistoricalTickBidAsk(const HistoricalTickBidAsk& from)
@@ -150,14 +146,20 @@ HistoricalTickBidAsk::HistoricalTickBidAsk(const HistoricalTickBidAsk& from)
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   sizebid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    sizebid_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_sizebid()) {
-    sizebid_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_sizebid(),
-      GetArena());
+    sizebid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_sizebid(), 
+      GetArenaForAllocation());
   }
   sizeask_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    sizeask_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_sizeask()) {
-    sizeask_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_sizeask(),
-      GetArena());
+    sizeask_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_sizeask(), 
+      GetArenaForAllocation());
   }
   if (from._internal_has_tickattribbidask()) {
     tickattribbidask_ = new ::protobuf::TickAttribBidAsk(*from.tickattribbidask_);
@@ -170,23 +172,30 @@ HistoricalTickBidAsk::HistoricalTickBidAsk(const HistoricalTickBidAsk& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.HistoricalTickBidAsk)
 }
 
-void HistoricalTickBidAsk::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto.base);
-  sizebid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  sizeask_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&tickattribbidask_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&priceask_) -
-      reinterpret_cast<char*>(&tickattribbidask_)) + sizeof(priceask_));
+inline void HistoricalTickBidAsk::SharedCtor() {
+sizebid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  sizebid_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+sizeask_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  sizeask_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&tickattribbidask_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&priceask_) -
+    reinterpret_cast<char*>(&tickattribbidask_)) + sizeof(priceask_));
 }
 
 HistoricalTickBidAsk::~HistoricalTickBidAsk() {
   // @@protoc_insertion_point(destructor:protobuf.HistoricalTickBidAsk)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void HistoricalTickBidAsk::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void HistoricalTickBidAsk::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   sizebid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   sizeask_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete tickattribbidask_;
@@ -201,15 +210,10 @@ void HistoricalTickBidAsk::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void HistoricalTickBidAsk::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const HistoricalTickBidAsk& HistoricalTickBidAsk::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void HistoricalTickBidAsk::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.HistoricalTickBidAsk)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -222,10 +226,8 @@ void HistoricalTickBidAsk::Clear() {
       sizeask_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      if (GetArena() == nullptr && tickattribbidask_ != nullptr) {
-        delete tickattribbidask_;
-      }
-      tickattribbidask_ = nullptr;
+      GOOGLE_DCHECK(tickattribbidask_ != nullptr);
+      tickattribbidask_->Clear();
     }
   }
   if (cached_has_bits & 0x00000038u) {
@@ -240,97 +242,102 @@ void HistoricalTickBidAsk::Clear() {
 const char* HistoricalTickBidAsk::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int64 time = 1;
+      // optional int64 time = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_time(&has_bits);
           time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.TickAttribBidAsk tickAttribBidAsk = 2;
+      // optional .protobuf.TickAttribBidAsk tickAttribBidAsk = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_tickattribbidask(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double priceBid = 3;
+      // optional double priceBid = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_pricebid(&has_bits);
           pricebid_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double priceAsk = 4;
+      // optional double priceAsk = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
           _Internal::set_has_priceask(&has_bits);
           priceask_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string sizeBid = 5;
+      // optional string sizeBid = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_sizebid();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalTickBidAsk.sizeBid"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string sizeAsk = 6;
+      // optional string sizeAsk = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           auto str = _internal_mutable_sizeask();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalTickBidAsk.sizeAsk"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* HistoricalTickBidAsk::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* HistoricalTickBidAsk::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.HistoricalTickBidAsk)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 time = 1;
+  // optional int64 time = 1;
   if (_internal_has_time()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_time(), target);
   }
 
-  // .protobuf.TickAttribBidAsk tickAttribBidAsk = 2;
+  // optional .protobuf.TickAttribBidAsk tickAttribBidAsk = 2;
   if (_internal_has_tickattribbidask()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -338,19 +345,19 @@ failure:
         2, _Internal::tickattribbidask(this), target, stream);
   }
 
-  // double priceBid = 3;
+  // optional double priceBid = 3;
   if (_internal_has_pricebid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_pricebid(), target);
   }
 
-  // double priceAsk = 4;
+  // optional double priceAsk = 4;
   if (_internal_has_priceask()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_priceask(), target);
   }
 
-  // string sizeBid = 5;
+  // optional string sizeBid = 5;
   if (_internal_has_sizebid()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_sizebid().data(), static_cast<int>(this->_internal_sizebid().length()),
@@ -360,7 +367,7 @@ failure:
         5, this->_internal_sizebid(), target);
   }
 
-  // string sizeAsk = 6;
+  // optional string sizeAsk = 6;
   if (_internal_has_sizeask()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_sizeask().data(), static_cast<int>(this->_internal_sizeask().length()),
@@ -382,80 +389,69 @@ size_t HistoricalTickBidAsk::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.HistoricalTickBidAsk)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
-    // string sizeBid = 5;
+    // optional string sizeBid = 5;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_sizebid());
     }
 
-    // string sizeAsk = 6;
+    // optional string sizeAsk = 6;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_sizeask());
     }
 
-    // .protobuf.TickAttribBidAsk tickAttribBidAsk = 2;
+    // optional .protobuf.TickAttribBidAsk tickAttribBidAsk = 2;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *tickattribbidask_);
     }
 
-    // int64 time = 1;
+    // optional int64 time = 1;
     if (cached_has_bits & 0x00000008u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->_internal_time());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_time());
     }
 
-    // double priceBid = 3;
+    // optional double priceBid = 3;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 8;
     }
 
-    // double priceAsk = 4;
+    // optional double priceAsk = 4;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 8;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void HistoricalTickBidAsk::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.HistoricalTickBidAsk)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HistoricalTickBidAsk* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HistoricalTickBidAsk>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.HistoricalTickBidAsk)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.HistoricalTickBidAsk)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HistoricalTickBidAsk::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    HistoricalTickBidAsk::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HistoricalTickBidAsk::GetClassData() const { return &_class_data_; }
+
+void HistoricalTickBidAsk::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<HistoricalTickBidAsk *>(to)->MergeFrom(
+      static_cast<const HistoricalTickBidAsk &>(from));
 }
+
 
 void HistoricalTickBidAsk::MergeFrom(const HistoricalTickBidAsk& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.HistoricalTickBidAsk)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -480,13 +476,7 @@ void HistoricalTickBidAsk::MergeFrom(const HistoricalTickBidAsk& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void HistoricalTickBidAsk::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.HistoricalTickBidAsk)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void HistoricalTickBidAsk::CopyFrom(const HistoricalTickBidAsk& from) {
@@ -502,10 +492,20 @@ bool HistoricalTickBidAsk::IsInitialized() const {
 
 void HistoricalTickBidAsk::InternalSwap(HistoricalTickBidAsk* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  sizebid_.Swap(&other->sizebid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  sizeask_.Swap(&other->sizeask_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &sizebid_, lhs_arena,
+      &other->sizebid_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &sizeask_, lhs_arena,
+      &other->sizeask_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(HistoricalTickBidAsk, priceask_)
       + sizeof(HistoricalTickBidAsk::priceask_)
@@ -515,9 +515,10 @@ void HistoricalTickBidAsk::InternalSwap(HistoricalTickBidAsk* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HistoricalTickBidAsk::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_HistoricalTickBidAsk_2eproto_getter, &descriptor_table_HistoricalTickBidAsk_2eproto_once,
+      file_level_metadata_HistoricalTickBidAsk_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

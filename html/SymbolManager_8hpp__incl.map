@@ -1,0 +1,18 @@
+<map id="include/core/SymbolManager.hpp" name="include/core/SymbolManager.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="156,5,370,32"/>
+<area shape="rect" id="Node000002" href="$SymbolState_8hpp.html" title=" " alt="" coords="62,80,183,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,35,162,75,160,70,237,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,59,181"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="156,30,100,49,75,63,53,82,44,95,38,109,34,140,28,139,33,108,39,92,49,78,71,59,98,44,154,25"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="208,80,318,107"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="265,33,265,64,260,64,260,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="342,80,399,107"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="283,30,341,69,338,73,280,35"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="423,80,481,107"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="297,30,410,73,408,78,295,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,109,61,147,58,143,105,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="87,155,148,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="124,107,122,139,117,139,119,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="172,155,225,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="138,105,177,142,173,146,134,109"/>
+</map>

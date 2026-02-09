@@ -14,42 +14,36 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_Contract_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Contract_Contract_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_Order_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_Order_Order_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_OrderState_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OrderState_OrderState_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class OpenOrderDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<OpenOrder> _instance;
-} _OpenOrder_default_instance_;
+constexpr OpenOrder::OpenOrder(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : contract_(nullptr)
+  , order_(nullptr)
+  , orderstate_(nullptr)
+  , orderid_(0){}
+struct OpenOrderDefaultTypeInternal {
+  constexpr OpenOrderDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~OpenOrderDefaultTypeInternal() {}
+  union {
+    OpenOrder _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT OpenOrderDefaultTypeInternal _OpenOrder_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_OpenOrder_OpenOrder_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_OpenOrder_default_instance_;
-    new (ptr) ::protobuf::OpenOrder();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::OpenOrder::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_OpenOrder_OpenOrder_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_OpenOrder_OpenOrder_2eproto}, {
-      &scc_info_Contract_Contract_2eproto.base,
-      &scc_info_Order_Order_2eproto.base,
-      &scc_info_OrderState_OrderState_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_OpenOrder_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_OpenOrder_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_OpenOrder_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_OpenOrder_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_OpenOrder_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::OpenOrder, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OpenOrder, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::OpenOrder, orderid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OpenOrder, contract_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OpenOrder, order_),
@@ -60,7 +54,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_OpenOrder_2eproto::offsets[] P
   2,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 9, sizeof(::protobuf::OpenOrder)},
+  { 0, 10, -1, sizeof(::protobuf::OpenOrder)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -83,31 +77,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_Order_2eproto,
   &::descriptor_table_OrderState_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_OpenOrder_2eproto_sccs[1] = {
-  &scc_info_OpenOrder_OpenOrder_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_OpenOrder_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_OpenOrder_2eproto = {
-  false, false, descriptor_table_protodef_OpenOrder_2eproto, "OpenOrder.proto", 354,
-  &descriptor_table_OpenOrder_2eproto_once, descriptor_table_OpenOrder_2eproto_sccs, descriptor_table_OpenOrder_2eproto_deps, 1, 3,
+  false, false, 354, descriptor_table_protodef_OpenOrder_2eproto, "OpenOrder.proto", 
+  &descriptor_table_OpenOrder_2eproto_once, descriptor_table_OpenOrder_2eproto_deps, 3, 1,
   schemas, file_default_instances, TableStruct_OpenOrder_2eproto::offsets,
-  file_level_metadata_OpenOrder_2eproto, 1, file_level_enum_descriptors_OpenOrder_2eproto, file_level_service_descriptors_OpenOrder_2eproto,
+  file_level_metadata_OpenOrder_2eproto, file_level_enum_descriptors_OpenOrder_2eproto, file_level_service_descriptors_OpenOrder_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_OpenOrder_2eproto_getter() {
+  return &descriptor_table_OpenOrder_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_OpenOrder_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_OpenOrder_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_OpenOrder_2eproto(&descriptor_table_OpenOrder_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void OpenOrder::InitAsDefaultInstance() {
-  ::protobuf::_OpenOrder_default_instance_._instance.get_mutable()->contract_ = const_cast< ::protobuf::Contract*>(
-      ::protobuf::Contract::internal_default_instance());
-  ::protobuf::_OpenOrder_default_instance_._instance.get_mutable()->order_ = const_cast< ::protobuf::Order*>(
-      ::protobuf::Order::internal_default_instance());
-  ::protobuf::_OpenOrder_default_instance_._instance.get_mutable()->orderstate_ = const_cast< ::protobuf::OrderState*>(
-      ::protobuf::OrderState::internal_default_instance());
-}
 class OpenOrder::_Internal {
  public:
   using HasBits = decltype(std::declval<OpenOrder>()._has_bits_);
@@ -141,30 +127,24 @@ OpenOrder::_Internal::orderstate(const OpenOrder* msg) {
   return *msg->orderstate_;
 }
 void OpenOrder::clear_contract() {
-  if (GetArena() == nullptr && contract_ != nullptr) {
-    delete contract_;
-  }
-  contract_ = nullptr;
+  if (contract_ != nullptr) contract_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
 void OpenOrder::clear_order() {
-  if (GetArena() == nullptr && order_ != nullptr) {
-    delete order_;
-  }
-  order_ = nullptr;
+  if (order_ != nullptr) order_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
 void OpenOrder::clear_orderstate() {
-  if (GetArena() == nullptr && orderstate_ != nullptr) {
-    delete orderstate_;
-  }
-  orderstate_ = nullptr;
+  if (orderstate_ != nullptr) orderstate_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-OpenOrder::OpenOrder(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+OpenOrder::OpenOrder(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.OpenOrder)
 }
 OpenOrder::OpenOrder(const OpenOrder& from)
@@ -190,21 +170,22 @@ OpenOrder::OpenOrder(const OpenOrder& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.OpenOrder)
 }
 
-void OpenOrder::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_OpenOrder_OpenOrder_2eproto.base);
-  ::memset(&contract_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&orderid_) -
-      reinterpret_cast<char*>(&contract_)) + sizeof(orderid_));
+inline void OpenOrder::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&contract_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&orderid_) -
+    reinterpret_cast<char*>(&contract_)) + sizeof(orderid_));
 }
 
 OpenOrder::~OpenOrder() {
   // @@protoc_insertion_point(destructor:protobuf.OpenOrder)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void OpenOrder::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void OpenOrder::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete contract_;
   if (this != internal_default_instance()) delete order_;
   if (this != internal_default_instance()) delete orderstate_;
@@ -219,37 +200,26 @@ void OpenOrder::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void OpenOrder::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const OpenOrder& OpenOrder::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_OpenOrder_OpenOrder_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void OpenOrder::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.OpenOrder)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      if (GetArena() == nullptr && contract_ != nullptr) {
-        delete contract_;
-      }
-      contract_ = nullptr;
+      GOOGLE_DCHECK(contract_ != nullptr);
+      contract_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      if (GetArena() == nullptr && order_ != nullptr) {
-        delete order_;
-      }
-      order_ = nullptr;
+      GOOGLE_DCHECK(order_ != nullptr);
+      order_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      if (GetArena() == nullptr && orderstate_ != nullptr) {
-        delete orderstate_;
-      }
-      orderstate_ = nullptr;
+      GOOGLE_DCHECK(orderstate_ != nullptr);
+      orderstate_->Clear();
     }
   }
   orderid_ = 0;
@@ -260,77 +230,80 @@ void OpenOrder::Clear() {
 const char* OpenOrder::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 orderId = 1;
+      // optional int32 orderId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_orderid(&has_bits);
-          orderid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          orderid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.Contract contract = 2;
+      // optional .protobuf.Contract contract = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_contract(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.Order order = 3;
+      // optional .protobuf.Order order = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_order(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.OrderState orderState = 4;
+      // optional .protobuf.OrderState orderState = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_orderstate(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* OpenOrder::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* OpenOrder::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.OpenOrder)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 orderId = 1;
+  // optional int32 orderId = 1;
   if (_internal_has_orderid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_orderid(), target);
   }
 
-  // .protobuf.Contract contract = 2;
+  // optional .protobuf.Contract contract = 2;
   if (_internal_has_contract()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -338,7 +311,7 @@ failure:
         2, _Internal::contract(this), target, stream);
   }
 
-  // .protobuf.Order order = 3;
+  // optional .protobuf.Order order = 3;
   if (_internal_has_order()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -346,7 +319,7 @@ failure:
         3, _Internal::order(this), target, stream);
   }
 
-  // .protobuf.OrderState orderState = 4;
+  // optional .protobuf.OrderState orderState = 4;
   if (_internal_has_orderstate()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -366,70 +339,59 @@ size_t OpenOrder::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.OpenOrder)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
-    // .protobuf.Contract contract = 2;
+    // optional .protobuf.Contract contract = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *contract_);
     }
 
-    // .protobuf.Order order = 3;
+    // optional .protobuf.Order order = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *order_);
     }
 
-    // .protobuf.OrderState orderState = 4;
+    // optional .protobuf.OrderState orderState = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *orderstate_);
     }
 
-    // int32 orderId = 1;
+    // optional int32 orderId = 1;
     if (cached_has_bits & 0x00000008u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_orderid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_orderid());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void OpenOrder::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.OpenOrder)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OpenOrder* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OpenOrder>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.OpenOrder)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.OpenOrder)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData OpenOrder::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    OpenOrder::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*OpenOrder::GetClassData() const { return &_class_data_; }
+
+void OpenOrder::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<OpenOrder *>(to)->MergeFrom(
+      static_cast<const OpenOrder &>(from));
 }
+
 
 void OpenOrder::MergeFrom(const OpenOrder& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.OpenOrder)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -448,13 +410,7 @@ void OpenOrder::MergeFrom(const OpenOrder& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void OpenOrder::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.OpenOrder)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void OpenOrder::CopyFrom(const OpenOrder& from) {
@@ -470,7 +426,7 @@ bool OpenOrder::IsInitialized() const {
 
 void OpenOrder::InternalSwap(OpenOrder* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(OpenOrder, orderid_)
@@ -481,9 +437,10 @@ void OpenOrder::InternalSwap(OpenOrder* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata OpenOrder::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_OpenOrder_2eproto_getter, &descriptor_table_OpenOrder_2eproto_once,
+      file_level_metadata_OpenOrder_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

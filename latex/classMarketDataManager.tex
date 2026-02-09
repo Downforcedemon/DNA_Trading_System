@@ -1,0 +1,150 @@
+\doxysection{Market\+Data\+Manager Class Reference}
+\hypertarget{classMarketDataManager}{}\label{classMarketDataManager}\index{MarketDataManager@{MarketDataManager}}
+
+
+{\ttfamily \#include $<$Market\+Data\+Manager.\+hpp$>$}
+
+
+
+Inheritance diagram for Market\+Data\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classMarketDataManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Market\+Data\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classMarketDataManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMarketDataManager_acfaef52ac58690f0ca6223c491af621b}{Market\+Data\+Manager}} ()
+\item 
+\mbox{\hyperlink{classMarketDataManager_af37b3e7a468d912a6528098b770651db}{\texorpdfstring{$\sim$}{\string~}\+Market\+Data\+Manager}} ()
+\item 
+void \mbox{\hyperlink{classMarketDataManager_ae9761321931cbe842781bb322af3f9b6}{set\+Provider}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIMarketDataProvider}{IMarket\+Data\+Provider}} $>$ provider)
+\item 
+\mbox{\hyperlink{classIMarketDataProvider}{IMarket\+Data\+Provider}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMarketDataManager_affb395b813b3834b544cabf75f8e473b}{get\+Provider}} () const
+\item 
+void \mbox{\hyperlink{classMarketDataManager_a4f86a4a1a912f95b61520741899e2afa}{add\+Listener}} (\mbox{\hyperlink{classIMarketDataListener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}listener)
+\item 
+void \mbox{\hyperlink{classMarketDataManager_ac1c00060f8e0bfb049b42d4e046011f0}{remove\+Listener}} (\mbox{\hyperlink{classIMarketDataListener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}listener)
+\item 
+void \mbox{\hyperlink{classMarketDataManager_a6d28ad0d5863f622b5e34bdd1fe443de}{on\+Price\+Update}} (const std\+::string \&symbol, double price, time\+\_\+t timestamp) override
+\item 
+void \mbox{\hyperlink{classMarketDataManager_a429eeebc669b331b0d9361b62ef00671}{on\+Size\+Update}} (const std\+::string \&symbol, int size, time\+\_\+t timestamp) override
+\item 
+void \mbox{\hyperlink{classMarketDataManager_acf350bbf3f83443ddacf6981fb1e1aef}{on\+Error}} (const std\+::string \&symbol, int error\+Code, const std\+::string \&error\+Msg) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classIMarketDataListener}{IMarket\+Data\+Listener}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIMarketDataListener_ac1d50d1890ada40e44af7b57104cea41}{\texorpdfstring{$\sim$}{\string~}\+IMarket\+Data\+Listener}} ()=default
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classMarketDataManager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMarketDataManager_acfaef52ac58690f0ca6223c491af621b}\index{MarketDataManager@{MarketDataManager}!MarketDataManager@{MarketDataManager}}
+\index{MarketDataManager@{MarketDataManager}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{MarketDataManager()}{MarketDataManager()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_acfaef52ac58690f0ca6223c491af621b} 
+Market\+Data\+Manager\+::\+Market\+Data\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classMarketDataManager_af37b3e7a468d912a6528098b770651db}\index{MarketDataManager@{MarketDataManager}!````~MarketDataManager@{\texorpdfstring{$\sim$}{\string~}MarketDataManager}}
+\index{````~MarketDataManager@{\texorpdfstring{$\sim$}{\string~}MarketDataManager}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MarketDataManager()}{\string~MarketDataManager()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_af37b3e7a468d912a6528098b770651db} 
+Market\+Data\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Market\+Data\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classMarketDataManager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMarketDataManager_a4f86a4a1a912f95b61520741899e2afa}\index{MarketDataManager@{MarketDataManager}!addListener@{addListener}}
+\index{addListener@{addListener}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{addListener()}{addListener()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_a4f86a4a1a912f95b61520741899e2afa} 
+void Market\+Data\+Manager\+::add\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIMarketDataListener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}}]{listener}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classMarketDataManager_affb395b813b3834b544cabf75f8e473b}\index{MarketDataManager@{MarketDataManager}!getProvider@{getProvider}}
+\index{getProvider@{getProvider}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{getProvider()}{getProvider()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_affb395b813b3834b544cabf75f8e473b} 
+\mbox{\hyperlink{classIMarketDataProvider}{IMarket\+Data\+Provider}} \texorpdfstring{$\ast$}{*} Market\+Data\+Manager\+::get\+Provider (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classMarketDataManager_acf350bbf3f83443ddacf6981fb1e1aef}\index{MarketDataManager@{MarketDataManager}!onError@{onError}}
+\index{onError@{onError}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_acf350bbf3f83443ddacf6981fb1e1aef} 
+void Market\+Data\+Manager\+::on\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{int}]{error\+Code}{, }\item[{const std\+::string \&}]{error\+Msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIMarketDataListener_a0ec61644ee4482da59b7d52ef6d95c20}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{classMarketDataManager_a6d28ad0d5863f622b5e34bdd1fe443de}\index{MarketDataManager@{MarketDataManager}!onPriceUpdate@{onPriceUpdate}}
+\index{onPriceUpdate@{onPriceUpdate}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{onPriceUpdate()}{onPriceUpdate()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_a6d28ad0d5863f622b5e34bdd1fe443de} 
+void Market\+Data\+Manager\+::on\+Price\+Update (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{double}]{price}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIMarketDataListener_a39f82975fc20ac8423b20da2a30ee97e}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{classMarketDataManager_a429eeebc669b331b0d9361b62ef00671}\index{MarketDataManager@{MarketDataManager}!onSizeUpdate@{onSizeUpdate}}
+\index{onSizeUpdate@{onSizeUpdate}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{onSizeUpdate()}{onSizeUpdate()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_a429eeebc669b331b0d9361b62ef00671} 
+void Market\+Data\+Manager\+::on\+Size\+Update (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{int}]{size}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIMarketDataListener_af8cc01c462e500778b7a396cd4f2bc01}{IMarket\+Data\+Listener}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classMarketDataManager_a429eeebc669b331b0d9361b62ef00671_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classMarketDataManager_a429eeebc669b331b0d9361b62ef00671_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMarketDataManager_ac1c00060f8e0bfb049b42d4e046011f0}\index{MarketDataManager@{MarketDataManager}!removeListener@{removeListener}}
+\index{removeListener@{removeListener}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{removeListener()}{removeListener()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_ac1c00060f8e0bfb049b42d4e046011f0} 
+void Market\+Data\+Manager\+::remove\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIMarketDataListener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}}]{listener}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classMarketDataManager_ae9761321931cbe842781bb322af3f9b6}\index{MarketDataManager@{MarketDataManager}!setProvider@{setProvider}}
+\index{setProvider@{setProvider}!MarketDataManager@{MarketDataManager}}
+\doxysubsubsection{\texorpdfstring{setProvider()}{setProvider()}}
+{\footnotesize\ttfamily \label{classMarketDataManager_ae9761321931cbe842781bb322af3f9b6} 
+void Market\+Data\+Manager\+::set\+Provider (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIMarketDataProvider}{IMarket\+Data\+Provider}} $>$}]{provider}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/\mbox{\hyperlink{MarketDataManager_8hpp}{Market\+Data\+Manager.\+hpp}}\item 
+src/core/\mbox{\hyperlink{MarketDataManager_8cpp}{Market\+Data\+Manager.\+cpp}}\end{DoxyCompactItemize}

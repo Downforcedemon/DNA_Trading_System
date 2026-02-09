@@ -14,41 +14,38 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class MarketDataTypeRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MarketDataTypeRequest> _instance;
-} _MarketDataTypeRequest_default_instance_;
+constexpr MarketDataTypeRequest::MarketDataTypeRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : marketdatatype_(0){}
+struct MarketDataTypeRequestDefaultTypeInternal {
+  constexpr MarketDataTypeRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~MarketDataTypeRequestDefaultTypeInternal() {}
+  union {
+    MarketDataTypeRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT MarketDataTypeRequestDefaultTypeInternal _MarketDataTypeRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_MarketDataTypeRequest_MarketDataTypeRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_MarketDataTypeRequest_default_instance_;
-    new (ptr) ::protobuf::MarketDataTypeRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::MarketDataTypeRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MarketDataTypeRequest_MarketDataTypeRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MarketDataTypeRequest_MarketDataTypeRequest_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_MarketDataTypeRequest_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_MarketDataTypeRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_MarketDataTypeRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_MarketDataTypeRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_MarketDataTypeRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::MarketDataTypeRequest, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::MarketDataTypeRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::MarketDataTypeRequest, marketdatatype_),
   0,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 6, sizeof(::protobuf::MarketDataTypeRequest)},
+  { 0, 7, -1, sizeof(::protobuf::MarketDataTypeRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -62,27 +59,23 @@ const char descriptor_table_protodef_MarketDataTypeRequest_2eproto[] PROTOBUF_SE
   "ib.client.protobufB\032MarketDataTypeReques"
   "tProto\252\002\016IBApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_MarketDataTypeRequest_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_MarketDataTypeRequest_2eproto_sccs[1] = {
-  &scc_info_MarketDataTypeRequest_MarketDataTypeRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_MarketDataTypeRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_MarketDataTypeRequest_2eproto = {
-  false, false, descriptor_table_protodef_MarketDataTypeRequest_2eproto, "MarketDataTypeRequest.proto", 191,
-  &descriptor_table_MarketDataTypeRequest_2eproto_once, descriptor_table_MarketDataTypeRequest_2eproto_sccs, descriptor_table_MarketDataTypeRequest_2eproto_deps, 1, 0,
+  false, false, 191, descriptor_table_protodef_MarketDataTypeRequest_2eproto, "MarketDataTypeRequest.proto", 
+  &descriptor_table_MarketDataTypeRequest_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_MarketDataTypeRequest_2eproto::offsets,
-  file_level_metadata_MarketDataTypeRequest_2eproto, 1, file_level_enum_descriptors_MarketDataTypeRequest_2eproto, file_level_service_descriptors_MarketDataTypeRequest_2eproto,
+  file_level_metadata_MarketDataTypeRequest_2eproto, file_level_enum_descriptors_MarketDataTypeRequest_2eproto, file_level_service_descriptors_MarketDataTypeRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_MarketDataTypeRequest_2eproto_getter() {
+  return &descriptor_table_MarketDataTypeRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_MarketDataTypeRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_MarketDataTypeRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_MarketDataTypeRequest_2eproto(&descriptor_table_MarketDataTypeRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void MarketDataTypeRequest::InitAsDefaultInstance() {
-}
 class MarketDataTypeRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<MarketDataTypeRequest>()._has_bits_);
@@ -91,10 +84,13 @@ class MarketDataTypeRequest::_Internal {
   }
 };
 
-MarketDataTypeRequest::MarketDataTypeRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+MarketDataTypeRequest::MarketDataTypeRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.MarketDataTypeRequest)
 }
 MarketDataTypeRequest::MarketDataTypeRequest(const MarketDataTypeRequest& from)
@@ -105,18 +101,19 @@ MarketDataTypeRequest::MarketDataTypeRequest(const MarketDataTypeRequest& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.MarketDataTypeRequest)
 }
 
-void MarketDataTypeRequest::SharedCtor() {
-  marketdatatype_ = 0;
+inline void MarketDataTypeRequest::SharedCtor() {
+marketdatatype_ = 0;
 }
 
 MarketDataTypeRequest::~MarketDataTypeRequest() {
   // @@protoc_insertion_point(destructor:protobuf.MarketDataTypeRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MarketDataTypeRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void MarketDataTypeRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void MarketDataTypeRequest::ArenaDtor(void* object) {
@@ -128,15 +125,10 @@ void MarketDataTypeRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void MarketDataTypeRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MarketDataTypeRequest& MarketDataTypeRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MarketDataTypeRequest_MarketDataTypeRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void MarketDataTypeRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.MarketDataTypeRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -148,50 +140,50 @@ void MarketDataTypeRequest::Clear() {
 const char* MarketDataTypeRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 marketDataType = 1;
+      // optional int32 marketDataType = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_marketdatatype(&has_bits);
-          marketdatatype_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          marketdatatype_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MarketDataTypeRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* MarketDataTypeRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.MarketDataTypeRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 marketDataType = 1;
+  // optional int32 marketDataType = 1;
   if (_internal_has_marketdatatype()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_marketdatatype(), target);
@@ -209,59 +201,42 @@ size_t MarketDataTypeRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.MarketDataTypeRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 marketDataType = 1;
+  // optional int32 marketDataType = 1;
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_marketdatatype());
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_marketdatatype());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void MarketDataTypeRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.MarketDataTypeRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MarketDataTypeRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MarketDataTypeRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.MarketDataTypeRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.MarketDataTypeRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData MarketDataTypeRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    MarketDataTypeRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*MarketDataTypeRequest::GetClassData() const { return &_class_data_; }
+
+void MarketDataTypeRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<MarketDataTypeRequest *>(to)->MergeFrom(
+      static_cast<const MarketDataTypeRequest &>(from));
 }
+
 
 void MarketDataTypeRequest::MergeFrom(const MarketDataTypeRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.MarketDataTypeRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_marketdatatype()) {
     _internal_set_marketdatatype(from._internal_marketdatatype());
   }
-}
-
-void MarketDataTypeRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.MarketDataTypeRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void MarketDataTypeRequest::CopyFrom(const MarketDataTypeRequest& from) {
@@ -277,15 +252,16 @@ bool MarketDataTypeRequest::IsInitialized() const {
 
 void MarketDataTypeRequest::InternalSwap(MarketDataTypeRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(marketdatatype_, other->marketdatatype_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MarketDataTypeRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_MarketDataTypeRequest_2eproto_getter, &descriptor_table_MarketDataTypeRequest_2eproto_once,
+      file_level_metadata_MarketDataTypeRequest_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

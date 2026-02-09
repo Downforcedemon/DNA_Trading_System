@@ -14,42 +14,35 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_Contract_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Contract_Contract_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_Order_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_Order_Order_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_OrderState_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OrderState_OrderState_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class CompletedOrderDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CompletedOrder> _instance;
-} _CompletedOrder_default_instance_;
+constexpr CompletedOrder::CompletedOrder(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : contract_(nullptr)
+  , order_(nullptr)
+  , orderstate_(nullptr){}
+struct CompletedOrderDefaultTypeInternal {
+  constexpr CompletedOrderDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~CompletedOrderDefaultTypeInternal() {}
+  union {
+    CompletedOrder _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CompletedOrderDefaultTypeInternal _CompletedOrder_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_CompletedOrder_CompletedOrder_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_CompletedOrder_default_instance_;
-    new (ptr) ::protobuf::CompletedOrder();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::CompletedOrder::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_CompletedOrder_CompletedOrder_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_CompletedOrder_CompletedOrder_2eproto}, {
-      &scc_info_Contract_Contract_2eproto.base,
-      &scc_info_Order_Order_2eproto.base,
-      &scc_info_OrderState_OrderState_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_CompletedOrder_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_CompletedOrder_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_CompletedOrder_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_CompletedOrder_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_CompletedOrder_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::CompletedOrder, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::CompletedOrder, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::CompletedOrder, contract_),
   PROTOBUF_FIELD_OFFSET(::protobuf::CompletedOrder, order_),
   PROTOBUF_FIELD_OFFSET(::protobuf::CompletedOrder, orderstate_),
@@ -58,7 +51,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_CompletedOrder_2eproto::offset
   2,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::protobuf::CompletedOrder)},
+  { 0, 9, -1, sizeof(::protobuf::CompletedOrder)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -81,31 +74,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_Order_2eproto,
   &::descriptor_table_OrderState_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_CompletedOrder_2eproto_sccs[1] = {
-  &scc_info_CompletedOrder_CompletedOrder_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CompletedOrder_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CompletedOrder_2eproto = {
-  false, false, descriptor_table_protodef_CompletedOrder_2eproto, "CompletedOrder.proto", 335,
-  &descriptor_table_CompletedOrder_2eproto_once, descriptor_table_CompletedOrder_2eproto_sccs, descriptor_table_CompletedOrder_2eproto_deps, 1, 3,
+  false, false, 335, descriptor_table_protodef_CompletedOrder_2eproto, "CompletedOrder.proto", 
+  &descriptor_table_CompletedOrder_2eproto_once, descriptor_table_CompletedOrder_2eproto_deps, 3, 1,
   schemas, file_default_instances, TableStruct_CompletedOrder_2eproto::offsets,
-  file_level_metadata_CompletedOrder_2eproto, 1, file_level_enum_descriptors_CompletedOrder_2eproto, file_level_service_descriptors_CompletedOrder_2eproto,
+  file_level_metadata_CompletedOrder_2eproto, file_level_enum_descriptors_CompletedOrder_2eproto, file_level_service_descriptors_CompletedOrder_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_CompletedOrder_2eproto_getter() {
+  return &descriptor_table_CompletedOrder_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_CompletedOrder_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_CompletedOrder_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_CompletedOrder_2eproto(&descriptor_table_CompletedOrder_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void CompletedOrder::InitAsDefaultInstance() {
-  ::protobuf::_CompletedOrder_default_instance_._instance.get_mutable()->contract_ = const_cast< ::protobuf::Contract*>(
-      ::protobuf::Contract::internal_default_instance());
-  ::protobuf::_CompletedOrder_default_instance_._instance.get_mutable()->order_ = const_cast< ::protobuf::Order*>(
-      ::protobuf::Order::internal_default_instance());
-  ::protobuf::_CompletedOrder_default_instance_._instance.get_mutable()->orderstate_ = const_cast< ::protobuf::OrderState*>(
-      ::protobuf::OrderState::internal_default_instance());
-}
 class CompletedOrder::_Internal {
  public:
   using HasBits = decltype(std::declval<CompletedOrder>()._has_bits_);
@@ -136,30 +121,24 @@ CompletedOrder::_Internal::orderstate(const CompletedOrder* msg) {
   return *msg->orderstate_;
 }
 void CompletedOrder::clear_contract() {
-  if (GetArena() == nullptr && contract_ != nullptr) {
-    delete contract_;
-  }
-  contract_ = nullptr;
+  if (contract_ != nullptr) contract_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
 void CompletedOrder::clear_order() {
-  if (GetArena() == nullptr && order_ != nullptr) {
-    delete order_;
-  }
-  order_ = nullptr;
+  if (order_ != nullptr) order_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
 void CompletedOrder::clear_orderstate() {
-  if (GetArena() == nullptr && orderstate_ != nullptr) {
-    delete orderstate_;
-  }
-  orderstate_ = nullptr;
+  if (orderstate_ != nullptr) orderstate_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CompletedOrder::CompletedOrder(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CompletedOrder::CompletedOrder(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.CompletedOrder)
 }
 CompletedOrder::CompletedOrder(const CompletedOrder& from)
@@ -184,21 +163,22 @@ CompletedOrder::CompletedOrder(const CompletedOrder& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.CompletedOrder)
 }
 
-void CompletedOrder::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CompletedOrder_CompletedOrder_2eproto.base);
-  ::memset(&contract_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&orderstate_) -
-      reinterpret_cast<char*>(&contract_)) + sizeof(orderstate_));
+inline void CompletedOrder::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&contract_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&orderstate_) -
+    reinterpret_cast<char*>(&contract_)) + sizeof(orderstate_));
 }
 
 CompletedOrder::~CompletedOrder() {
   // @@protoc_insertion_point(destructor:protobuf.CompletedOrder)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CompletedOrder::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CompletedOrder::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete contract_;
   if (this != internal_default_instance()) delete order_;
   if (this != internal_default_instance()) delete orderstate_;
@@ -213,37 +193,26 @@ void CompletedOrder::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void CompletedOrder::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const CompletedOrder& CompletedOrder::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CompletedOrder_CompletedOrder_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void CompletedOrder::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.CompletedOrder)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      if (GetArena() == nullptr && contract_ != nullptr) {
-        delete contract_;
-      }
-      contract_ = nullptr;
+      GOOGLE_DCHECK(contract_ != nullptr);
+      contract_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      if (GetArena() == nullptr && order_ != nullptr) {
-        delete order_;
-      }
-      order_ = nullptr;
+      GOOGLE_DCHECK(order_ != nullptr);
+      order_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      if (GetArena() == nullptr && orderstate_ != nullptr) {
-        delete orderstate_;
-      }
-      orderstate_ = nullptr;
+      GOOGLE_DCHECK(orderstate_ != nullptr);
+      orderstate_->Clear();
     }
   }
   _has_bits_.Clear();
@@ -253,63 +222,65 @@ void CompletedOrder::Clear() {
 const char* CompletedOrder::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // .protobuf.Contract contract = 1;
+      // optional .protobuf.Contract contract = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_contract(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.Order order = 2;
+      // optional .protobuf.Order order = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_order(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.OrderState orderState = 3;
+      // optional .protobuf.OrderState orderState = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_orderstate(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CompletedOrder::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* CompletedOrder::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.CompletedOrder)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .protobuf.Contract contract = 1;
+  // optional .protobuf.Contract contract = 1;
   if (_internal_has_contract()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -317,7 +288,7 @@ failure:
         1, _Internal::contract(this), target, stream);
   }
 
-  // .protobuf.Order order = 2;
+  // optional .protobuf.Order order = 2;
   if (_internal_has_order()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -325,7 +296,7 @@ failure:
         2, _Internal::order(this), target, stream);
   }
 
-  // .protobuf.OrderState orderState = 3;
+  // optional .protobuf.OrderState orderState = 3;
   if (_internal_has_orderstate()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -345,27 +316,27 @@ size_t CompletedOrder::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.CompletedOrder)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    // .protobuf.Contract contract = 1;
+    // optional .protobuf.Contract contract = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *contract_);
     }
 
-    // .protobuf.Order order = 2;
+    // optional .protobuf.Order order = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *order_);
     }
 
-    // .protobuf.OrderState orderState = 3;
+    // optional .protobuf.OrderState orderState = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -373,35 +344,26 @@ size_t CompletedOrder::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void CompletedOrder::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.CompletedOrder)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CompletedOrder* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CompletedOrder>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.CompletedOrder)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.CompletedOrder)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CompletedOrder::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CompletedOrder::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CompletedOrder::GetClassData() const { return &_class_data_; }
+
+void CompletedOrder::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<CompletedOrder *>(to)->MergeFrom(
+      static_cast<const CompletedOrder &>(from));
 }
+
 
 void CompletedOrder::MergeFrom(const CompletedOrder& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.CompletedOrder)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -416,13 +378,7 @@ void CompletedOrder::MergeFrom(const CompletedOrder& from) {
       _internal_mutable_orderstate()->::protobuf::OrderState::MergeFrom(from._internal_orderstate());
     }
   }
-}
-
-void CompletedOrder::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.CompletedOrder)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CompletedOrder::CopyFrom(const CompletedOrder& from) {
@@ -438,7 +394,7 @@ bool CompletedOrder::IsInitialized() const {
 
 void CompletedOrder::InternalSwap(CompletedOrder* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CompletedOrder, orderstate_)
@@ -449,9 +405,10 @@ void CompletedOrder::InternalSwap(CompletedOrder* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CompletedOrder::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_CompletedOrder_2eproto_getter, &descriptor_table_CompletedOrder_2eproto_once,
+      file_level_metadata_CompletedOrder_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

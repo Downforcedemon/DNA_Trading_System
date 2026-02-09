@@ -6,8 +6,8 @@
 #include <thread>
 #include <chrono>
 
-IBKRConnection::IBKRConnection(SymbolManager& manager)
-    : symbolManager_(manager)
+IBKRConnection::IBKRConnection(IMarketDataListener* listener)
+    : listener_(listener)
     , client_(nullptr)
     , nextOrderId_(0)
     , nextTickerId_(1) {
@@ -25,6 +25,10 @@ bool IBKRConnection::connect(const std::string& host, int port, int clientId) {
     bool connected = client_->eConnect(host.c_str(), port, clientId, false);
     
     if (connected) {
+        // Start Ereader thread for message processing
+        signal_ = std::make_unique<EReaderOSSignal>();
+        reader_ = std::make_unique<EReader>(client_.get(), signal_.get());
+        reader_-> start(); 
         std::cout << "✅ Connected to IB Gateway at " << host << ":" << port << std::endl;
     } else {
         std::cout << "❌ Failed to connect to IB Gateway" << std::endl;
@@ -71,7 +75,9 @@ void IBKRConnection::subscribeMarketData(const std::string& symbol) {
 
 void IBKRConnection::processMessages() {
     // Message processing is handled by EReader in background
-    // This is a no-op for now - messages come via callbacks
+    if (reader_) {
+        reader_->processMsgs();
+    }
 }
 
 // ========== IBKR Callbacks ==========
@@ -86,7 +92,7 @@ void IBKRConnection::tickPrice(TickerId tickerId, TickType field, double price, 
         auto it = tickerIdToSymbol_.find(tickerId);
         if (it != tickerIdToSymbol_.end()) {
             const std::string& symbol = it->second;
-            symbolManager_.updatePrice(symbol, price);
+            listener_->onPriceUpdate(symbol, price, std::time(nullptr));
             std::cout << "💰 " << symbol << ": $" << price << std::endl;
         }
     }
@@ -96,10 +102,24 @@ void IBKRConnection::tickSize(TickerId tickerId, TickType field, Decimal size) {
     // field == 5 is LAST size (volume of last trade)
     // field == 0 is BID size
     // field == 3 is ASK size
+    if (field == 5){
+        auto it = tickerIdToSymbol_.find(tickerId);
+        if (it != tickerIdToSymbol_.end()) {
+            const std::string& symbol = it->second; 
+            listener_->onSizeUpdate(symbol,static_cast<int>(size), std::time(nullptr));
+        }
+    }
 }
 
 void IBKRConnection::error(int id, time_t errorTime, int errorCode, const std::string& errorString, const std::string& advancedOrderRejectJson) {
     std::cout << "⚠️  Error [" << errorCode << "]: " << errorString << std::endl;
+
+    // If this error is associated with a ticker ID, find the symbol and notify listener
+    auto it = tickerIdToSymbol_.find(id);
+    if (it != tickerIdToSymbol_.end()) {
+        const std::string& symbol = it->second;
+        listener_->onError(symbol, errorCode, errorString);
+    }
 }
 
 void IBKRConnection::nextValidId(OrderId orderId) {

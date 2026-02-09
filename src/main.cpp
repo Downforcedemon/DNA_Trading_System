@@ -4,7 +4,8 @@
 #include "core/SymbolManager.hpp"
 #include <fstream>
 #include "simdjson.h"
-#include "core/IBKRConnection.hpp"
+#include "core/MarketDataManager.hpp"
+#include "adapters/IBKRAdapter.hpp"
 
 // make all symbols uppercase
 std::string toUpper(std::string str){
@@ -57,6 +58,31 @@ void printHelp() {
     std::cout << "================\n" << std::endl;
 }
 
+// Load IBKR configuration from file
+IBKRConfig loadIBKRConfig() {
+    simdjson::ondemand::parser parser;
+
+    std::ifstream file("config/ibkr.json");
+    if (!file.is_open()) {
+        std::cout << "⚠️  No IBKR config file found, using defaults" << std::endl;
+        return {"127.0.0.1", 4001, 0};  // Default config
+    }
+
+    std::string json_str((std::istreambuf_iterator<char>(file)),
+                         std::istreambuf_iterator<char>());
+    file.close();
+
+    simdjson::padded_string json(json_str);
+    simdjson::ondemand::document doc = parser.iterate(json);
+
+    IBKRConfig config;
+    config.host = std::string(doc["host"].get_string().value());
+    config.port = int64_t(doc["port"].get_int64().value());
+    config.clientId = int64_t(doc["clientId"].get_int64().value());
+
+    return config;
+}
+
 // Import symbols
 void loadDefaultSymbols(SymbolManager& manager) {
     simdjson::ondemand::parser parser;
@@ -91,13 +117,28 @@ int main() {
     SymbolManager manager;
     loadDefaultSymbols(manager);
 
+    // Create market data manager and register symbol manager as listener
+    MarketDataManager marketDataManager;
+    marketDataManager.addListener(&manager);
+
+    // Load IBKR configuration
+    IBKRConfig ibkrConfig = loadIBKRConfig();
+    std::cout << "📡 IBKR Config: " << ibkrConfig.host << ":" << ibkrConfig.port
+              << " (Client ID: " << ibkrConfig.clientId << ")" << std::endl;
+
+    // Create IBKR adapter and set as provider
+    auto ibkrAdapter = std::make_unique<IBKRAdapter>(&marketDataManager, ibkrConfig);
+    auto* provider = ibkrAdapter.get();  // Keep raw pointer for later use
+    marketDataManager.setProvider(std::move(ibkrAdapter));
+
     // Connect to IB Gateway
-    IBKRConnection ibkr(manager);
-    if (ibkr.connect("127.0.0.1", 4002, 1)) {
+    if (provider->connect()) {
+        std::cout << "✅ Connected to " << provider->getProviderName() << std::endl;
+
         // Subscribe to market data for all symbols
         auto symbols = manager.getAllSymbols();
         for (const auto& sym : symbols) {
-            ibkr.subscribeMarketData(sym.symbol);
+            provider->subscribe(sym.symbol);
         }
     } else {
         std::cout << "⚠️  Failed to connect to IB Gateway - running in offline mode" << std::endl;
@@ -107,7 +148,9 @@ int main() {
 
     std::string input;
     while (true) {
-        ibkr.processMessages();
+        if (provider->isConnected()) {
+            provider->processMessages();
+        }
 
         std::cout << "> ";
         std::getline(std::cin, input);

@@ -14,57 +14,53 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_Contract_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Contract_Contract_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_HistoricalDataRequest_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HistoricalDataRequest_ChartOptionsEntry_DoNotUse_HistoricalDataRequest_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class HistoricalDataRequest_ChartOptionsEntry_DoNotUseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HistoricalDataRequest_ChartOptionsEntry_DoNotUse> _instance;
-} _HistoricalDataRequest_ChartOptionsEntry_DoNotUse_default_instance_;
-class HistoricalDataRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HistoricalDataRequest> _instance;
-} _HistoricalDataRequest_default_instance_;
+constexpr HistoricalDataRequest_ChartOptionsEntry_DoNotUse::HistoricalDataRequest_ChartOptionsEntry_DoNotUse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct HistoricalDataRequest_ChartOptionsEntry_DoNotUseDefaultTypeInternal {
+  constexpr HistoricalDataRequest_ChartOptionsEntry_DoNotUseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HistoricalDataRequest_ChartOptionsEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    HistoricalDataRequest_ChartOptionsEntry_DoNotUse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HistoricalDataRequest_ChartOptionsEntry_DoNotUseDefaultTypeInternal _HistoricalDataRequest_ChartOptionsEntry_DoNotUse_default_instance_;
+constexpr HistoricalDataRequest::HistoricalDataRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : chartoptions_(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{})
+  , enddatetime_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , barsizesetting_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , duration_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , whattoshow_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , contract_(nullptr)
+  , reqid_(0)
+  , userth_(false)
+  , keepuptodate_(false)
+  , formatdate_(0){}
+struct HistoricalDataRequestDefaultTypeInternal {
+  constexpr HistoricalDataRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HistoricalDataRequestDefaultTypeInternal() {}
+  union {
+    HistoricalDataRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HistoricalDataRequestDefaultTypeInternal _HistoricalDataRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_HistoricalDataRequest_HistoricalDataRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_HistoricalDataRequest_default_instance_;
-    new (ptr) ::protobuf::HistoricalDataRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::HistoricalDataRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_HistoricalDataRequest_HistoricalDataRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_HistoricalDataRequest_HistoricalDataRequest_2eproto}, {
-      &scc_info_Contract_Contract_2eproto.base,
-      &scc_info_HistoricalDataRequest_ChartOptionsEntry_DoNotUse_HistoricalDataRequest_2eproto.base,}};
-
-static void InitDefaultsscc_info_HistoricalDataRequest_ChartOptionsEntry_DoNotUse_HistoricalDataRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_HistoricalDataRequest_ChartOptionsEntry_DoNotUse_default_instance_;
-    new (ptr) ::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse();
-  }
-  ::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HistoricalDataRequest_ChartOptionsEntry_DoNotUse_HistoricalDataRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_HistoricalDataRequest_ChartOptionsEntry_DoNotUse_HistoricalDataRequest_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_HistoricalDataRequest_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_HistoricalDataRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_HistoricalDataRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalDataRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_HistoricalDataRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse, key_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse, value_),
   0,
@@ -74,6 +70,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalDataRequest_2eproto:
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalDataRequest, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalDataRequest, contract_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalDataRequest, enddatetime_),
@@ -96,8 +93,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalDataRequest_2eproto:
   ~0u,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse)},
-  { 9, 24, sizeof(::protobuf::HistoricalDataRequest)},
+  { 0, 8, -1, sizeof(::protobuf::HistoricalDataRequest_ChartOptionsEntry_DoNotUse)},
+  { 10, 26, -1, sizeof(::protobuf::HistoricalDataRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -127,20 +124,19 @@ const char descriptor_table_protodef_HistoricalDataRequest_2eproto[] PROTOBUF_SE
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_HistoricalDataRequest_2eproto_deps[1] = {
   &::descriptor_table_Contract_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_HistoricalDataRequest_2eproto_sccs[2] = {
-  &scc_info_HistoricalDataRequest_HistoricalDataRequest_2eproto.base,
-  &scc_info_HistoricalDataRequest_ChartOptionsEntry_DoNotUse_HistoricalDataRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_HistoricalDataRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_HistoricalDataRequest_2eproto = {
-  false, false, descriptor_table_protodef_HistoricalDataRequest_2eproto, "HistoricalDataRequest.proto", 654,
-  &descriptor_table_HistoricalDataRequest_2eproto_once, descriptor_table_HistoricalDataRequest_2eproto_sccs, descriptor_table_HistoricalDataRequest_2eproto_deps, 2, 1,
+  false, false, 654, descriptor_table_protodef_HistoricalDataRequest_2eproto, "HistoricalDataRequest.proto", 
+  &descriptor_table_HistoricalDataRequest_2eproto_once, descriptor_table_HistoricalDataRequest_2eproto_deps, 1, 2,
   schemas, file_default_instances, TableStruct_HistoricalDataRequest_2eproto::offsets,
-  file_level_metadata_HistoricalDataRequest_2eproto, 2, file_level_enum_descriptors_HistoricalDataRequest_2eproto, file_level_service_descriptors_HistoricalDataRequest_2eproto,
+  file_level_metadata_HistoricalDataRequest_2eproto, file_level_enum_descriptors_HistoricalDataRequest_2eproto, file_level_service_descriptors_HistoricalDataRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_HistoricalDataRequest_2eproto_getter() {
+  return &descriptor_table_HistoricalDataRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_HistoricalDataRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_HistoricalDataRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_HistoricalDataRequest_2eproto(&descriptor_table_HistoricalDataRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
@@ -152,20 +148,13 @@ void HistoricalDataRequest_ChartOptionsEntry_DoNotUse::MergeFrom(const Historica
   MergeFromInternal(other);
 }
 ::PROTOBUF_NAMESPACE_ID::Metadata HistoricalDataRequest_ChartOptionsEntry_DoNotUse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_HistoricalDataRequest_2eproto_getter, &descriptor_table_HistoricalDataRequest_2eproto_once,
+      file_level_metadata_HistoricalDataRequest_2eproto[0]);
 }
-void HistoricalDataRequest_ChartOptionsEntry_DoNotUse::MergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
-  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
-}
-
 
 // ===================================================================
 
-void HistoricalDataRequest::InitAsDefaultInstance() {
-  ::protobuf::_HistoricalDataRequest_default_instance_._instance.get_mutable()->contract_ = const_cast< ::protobuf::Contract*>(
-      ::protobuf::Contract::internal_default_instance());
-}
 class HistoricalDataRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<HistoricalDataRequest>()._has_bits_);
@@ -204,17 +193,17 @@ HistoricalDataRequest::_Internal::contract(const HistoricalDataRequest* msg) {
   return *msg->contract_;
 }
 void HistoricalDataRequest::clear_contract() {
-  if (GetArena() == nullptr && contract_ != nullptr) {
-    delete contract_;
-  }
-  contract_ = nullptr;
+  if (contract_ != nullptr) contract_->Clear();
   _has_bits_[0] &= ~0x00000010u;
 }
-HistoricalDataRequest::HistoricalDataRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+HistoricalDataRequest::HistoricalDataRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   chartoptions_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.HistoricalDataRequest)
 }
 HistoricalDataRequest::HistoricalDataRequest(const HistoricalDataRequest& from)
@@ -223,24 +212,36 @@ HistoricalDataRequest::HistoricalDataRequest(const HistoricalDataRequest& from)
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   chartoptions_.MergeFrom(from.chartoptions_);
   enddatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    enddatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_enddatetime()) {
-    enddatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_enddatetime(),
-      GetArena());
+    enddatetime_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_enddatetime(), 
+      GetArenaForAllocation());
   }
   barsizesetting_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    barsizesetting_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_barsizesetting()) {
-    barsizesetting_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_barsizesetting(),
-      GetArena());
+    barsizesetting_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_barsizesetting(), 
+      GetArenaForAllocation());
   }
   duration_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    duration_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_duration()) {
-    duration_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_duration(),
-      GetArena());
+    duration_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_duration(), 
+      GetArenaForAllocation());
   }
   whattoshow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    whattoshow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_whattoshow()) {
-    whattoshow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_whattoshow(),
-      GetArena());
+    whattoshow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_whattoshow(), 
+      GetArenaForAllocation());
   }
   if (from._internal_has_contract()) {
     contract_ = new ::protobuf::Contract(*from.contract_);
@@ -253,25 +254,38 @@ HistoricalDataRequest::HistoricalDataRequest(const HistoricalDataRequest& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.HistoricalDataRequest)
 }
 
-void HistoricalDataRequest::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_HistoricalDataRequest_HistoricalDataRequest_2eproto.base);
-  enddatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  barsizesetting_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  duration_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  whattoshow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&contract_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&formatdate_) -
-      reinterpret_cast<char*>(&contract_)) + sizeof(formatdate_));
+inline void HistoricalDataRequest::SharedCtor() {
+enddatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  enddatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+barsizesetting_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  barsizesetting_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+duration_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  duration_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+whattoshow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  whattoshow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&contract_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&formatdate_) -
+    reinterpret_cast<char*>(&contract_)) + sizeof(formatdate_));
 }
 
 HistoricalDataRequest::~HistoricalDataRequest() {
   // @@protoc_insertion_point(destructor:protobuf.HistoricalDataRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void HistoricalDataRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void HistoricalDataRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   enddatetime_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   barsizesetting_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   duration_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -282,21 +296,20 @@ void HistoricalDataRequest::SharedDtor() {
 void HistoricalDataRequest::ArenaDtor(void* object) {
   HistoricalDataRequest* _this = reinterpret_cast< HistoricalDataRequest* >(object);
   (void)_this;
+  _this->chartoptions_. ~MapField();
 }
-void HistoricalDataRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+inline void HistoricalDataRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena) {
+  if (arena != nullptr) {
+    arena->OwnCustomDestructor(this, &HistoricalDataRequest::ArenaDtor);
+  }
 }
 void HistoricalDataRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const HistoricalDataRequest& HistoricalDataRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_HistoricalDataRequest_HistoricalDataRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void HistoricalDataRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.HistoricalDataRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -316,10 +329,8 @@ void HistoricalDataRequest::Clear() {
       whattoshow_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000010u) {
-      if (GetArena() == nullptr && contract_ != nullptr) {
-        delete contract_;
-      }
-      contract_ = nullptr;
+      GOOGLE_DCHECK(contract_ != nullptr);
+      contract_->Clear();
     }
   }
   if (cached_has_bits & 0x000000e0u) {
@@ -335,90 +346,97 @@ void HistoricalDataRequest::Clear() {
 const char* HistoricalDataRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.Contract contract = 2;
+      // optional .protobuf.Contract contract = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_contract(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string endDateTime = 3;
+      // optional string endDateTime = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_enddatetime();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalDataRequest.endDateTime"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string barSizeSetting = 4;
+      // optional string barSizeSetting = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_barsizesetting();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalDataRequest.barSizeSetting"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string duration = 5;
+      // optional string duration = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_duration();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalDataRequest.duration"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // bool useRTH = 6;
+      // optional bool useRTH = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_userth(&has_bits);
           userth_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string whatToShow = 7;
+      // optional string whatToShow = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           auto str = _internal_mutable_whattoshow();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalDataRequest.whatToShow"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 formatDate = 8;
+      // optional int32 formatDate = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
           _Internal::set_has_formatdate(&has_bits);
-          formatdate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          formatdate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // bool keepUpToDate = 9;
+      // optional bool keepUpToDate = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
           _Internal::set_has_keepuptodate(&has_bits);
           keepuptodate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // map<string, string> chartOptions = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -426,44 +444,46 @@ const char* HistoricalDataRequest::_InternalParse(const char* ptr, ::PROTOBUF_NA
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<82>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* HistoricalDataRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* HistoricalDataRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.HistoricalDataRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // .protobuf.Contract contract = 2;
+  // optional .protobuf.Contract contract = 2;
   if (_internal_has_contract()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -471,7 +491,7 @@ failure:
         2, _Internal::contract(this), target, stream);
   }
 
-  // string endDateTime = 3;
+  // optional string endDateTime = 3;
   if (_internal_has_enddatetime()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_enddatetime().data(), static_cast<int>(this->_internal_enddatetime().length()),
@@ -481,7 +501,7 @@ failure:
         3, this->_internal_enddatetime(), target);
   }
 
-  // string barSizeSetting = 4;
+  // optional string barSizeSetting = 4;
   if (_internal_has_barsizesetting()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_barsizesetting().data(), static_cast<int>(this->_internal_barsizesetting().length()),
@@ -491,7 +511,7 @@ failure:
         4, this->_internal_barsizesetting(), target);
   }
 
-  // string duration = 5;
+  // optional string duration = 5;
   if (_internal_has_duration()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_duration().data(), static_cast<int>(this->_internal_duration().length()),
@@ -501,13 +521,13 @@ failure:
         5, this->_internal_duration(), target);
   }
 
-  // bool useRTH = 6;
+  // optional bool useRTH = 6;
   if (_internal_has_userth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_userth(), target);
   }
 
-  // string whatToShow = 7;
+  // optional string whatToShow = 7;
   if (_internal_has_whattoshow()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_whattoshow().data(), static_cast<int>(this->_internal_whattoshow().length()),
@@ -517,13 +537,13 @@ failure:
         7, this->_internal_whattoshow(), target);
   }
 
-  // int32 formatDate = 8;
+  // optional int32 formatDate = 8;
   if (_internal_has_formatdate()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_formatdate(), target);
   }
 
-  // bool keepUpToDate = 9;
+  // optional bool keepUpToDate = 9;
   if (_internal_has_keepuptodate()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_keepuptodate(), target);
@@ -537,6 +557,7 @@ failure:
     typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
+        (void)p;
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
           ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -586,7 +607,7 @@ size_t HistoricalDataRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.HistoricalDataRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -601,95 +622,82 @@ size_t HistoricalDataRequest::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    // string endDateTime = 3;
+    // optional string endDateTime = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_enddatetime());
     }
 
-    // string barSizeSetting = 4;
+    // optional string barSizeSetting = 4;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_barsizesetting());
     }
 
-    // string duration = 5;
+    // optional string duration = 5;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_duration());
     }
 
-    // string whatToShow = 7;
+    // optional string whatToShow = 7;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_whattoshow());
     }
 
-    // .protobuf.Contract contract = 2;
+    // optional .protobuf.Contract contract = 2;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *contract_);
     }
 
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000020u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
-    // bool useRTH = 6;
+    // optional bool useRTH = 6;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 + 1;
     }
 
-    // bool keepUpToDate = 9;
+    // optional bool keepUpToDate = 9;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 + 1;
     }
 
   }
-  // int32 formatDate = 8;
+  // optional int32 formatDate = 8;
   if (cached_has_bits & 0x00000100u) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_formatdate());
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_formatdate());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void HistoricalDataRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.HistoricalDataRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HistoricalDataRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HistoricalDataRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.HistoricalDataRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.HistoricalDataRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HistoricalDataRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    HistoricalDataRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HistoricalDataRequest::GetClassData() const { return &_class_data_; }
+
+void HistoricalDataRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<HistoricalDataRequest *>(to)->MergeFrom(
+      static_cast<const HistoricalDataRequest &>(from));
 }
+
 
 void HistoricalDataRequest::MergeFrom(const HistoricalDataRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.HistoricalDataRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   chartoptions_.MergeFrom(from.chartoptions_);
@@ -724,13 +732,7 @@ void HistoricalDataRequest::MergeFrom(const HistoricalDataRequest& from) {
   if (cached_has_bits & 0x00000100u) {
     _internal_set_formatdate(from._internal_formatdate());
   }
-}
-
-void HistoricalDataRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.HistoricalDataRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void HistoricalDataRequest::CopyFrom(const HistoricalDataRequest& from) {
@@ -746,13 +748,31 @@ bool HistoricalDataRequest::IsInitialized() const {
 
 void HistoricalDataRequest::InternalSwap(HistoricalDataRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  chartoptions_.Swap(&other->chartoptions_);
-  enddatetime_.Swap(&other->enddatetime_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  barsizesetting_.Swap(&other->barsizesetting_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  duration_.Swap(&other->duration_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  whattoshow_.Swap(&other->whattoshow_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  chartoptions_.InternalSwap(&other->chartoptions_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &enddatetime_, lhs_arena,
+      &other->enddatetime_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &barsizesetting_, lhs_arena,
+      &other->barsizesetting_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &duration_, lhs_arena,
+      &other->duration_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &whattoshow_, lhs_arena,
+      &other->whattoshow_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(HistoricalDataRequest, formatdate_)
       + sizeof(HistoricalDataRequest::formatdate_)
@@ -762,9 +782,10 @@ void HistoricalDataRequest::InternalSwap(HistoricalDataRequest* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HistoricalDataRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_HistoricalDataRequest_2eproto_getter, &descriptor_table_HistoricalDataRequest_2eproto_once,
+      file_level_metadata_HistoricalDataRequest_2eproto[1]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

@@ -1,0 +1,88 @@
+\doxysection{IMarket\+Data\+Listener Class Reference}
+\hypertarget{classIMarketDataListener}{}\label{classIMarketDataListener}\index{IMarketDataListener@{IMarketDataListener}}
+
+
+{\ttfamily \#include $<$IMarket\+Data\+Listner.\+hpp$>$}
+
+
+
+Inheritance diagram for IMarket\+Data\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classIMarketDataListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IMarket\+Data\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classIMarketDataListener__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIMarketDataListener_ac1d50d1890ada40e44af7b57104cea41}{\texorpdfstring{$\sim$}{\string~}\+IMarket\+Data\+Listener}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classIMarketDataListener_a39f82975fc20ac8423b20da2a30ee97e}{on\+Price\+Update}} (const std\+::string \&symbol, double price, time\+\_\+t timestamp)=0
+\item 
+virtual void \mbox{\hyperlink{classIMarketDataListener_af8cc01c462e500778b7a396cd4f2bc01}{on\+Size\+Update}} (const std\+::string \&symbol, int size, time\+\_\+t timestamp)=0
+\item 
+virtual void \mbox{\hyperlink{classIMarketDataListener_a0ec61644ee4482da59b7d52ef6d95c20}{on\+Error}} (const std\+::string \&symbol, int error\+Code, const std\+::string \&error\+Msg)=0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classIMarketDataListener_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classIMarketDataListener_ac1d50d1890ada40e44af7b57104cea41}\index{IMarketDataListener@{IMarketDataListener}!````~IMarketDataListener@{\texorpdfstring{$\sim$}{\string~}IMarketDataListener}}
+\index{````~IMarketDataListener@{\texorpdfstring{$\sim$}{\string~}IMarketDataListener}!IMarketDataListener@{IMarketDataListener}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IMarketDataListener()}{\string~IMarketDataListener()}}
+{\footnotesize\ttfamily \label{classIMarketDataListener_ac1d50d1890ada40e44af7b57104cea41} 
+virtual IMarket\+Data\+Listener\+::\texorpdfstring{$\sim$}{\string~}\+IMarket\+Data\+Listener (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classIMarketDataListener_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIMarketDataListener_a0ec61644ee4482da59b7d52ef6d95c20}\index{IMarketDataListener@{IMarketDataListener}!onError@{onError}}
+\index{onError@{onError}!IMarketDataListener@{IMarketDataListener}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}}
+{\footnotesize\ttfamily \label{classIMarketDataListener_a0ec61644ee4482da59b7d52ef6d95c20} 
+virtual void IMarket\+Data\+Listener\+::on\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{int}]{error\+Code}{, }\item[{const std\+::string \&}]{error\+Msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classIBKRAdapter_a57cdb3a415ee4a139f64c80a7374f2c7}{IBKRAdapter}}, and \mbox{\hyperlink{classMarketDataManager_acf350bbf3f83443ddacf6981fb1e1aef}{Market\+Data\+Manager}}.
+
+\Hypertarget{classIMarketDataListener_a39f82975fc20ac8423b20da2a30ee97e}\index{IMarketDataListener@{IMarketDataListener}!onPriceUpdate@{onPriceUpdate}}
+\index{onPriceUpdate@{onPriceUpdate}!IMarketDataListener@{IMarketDataListener}}
+\doxysubsubsection{\texorpdfstring{onPriceUpdate()}{onPriceUpdate()}}
+{\footnotesize\ttfamily \label{classIMarketDataListener_a39f82975fc20ac8423b20da2a30ee97e} 
+virtual void IMarket\+Data\+Listener\+::on\+Price\+Update (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{double}]{price}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classIBKRAdapter_a150d4ee43cd34cb0c9908341294370d2}{IBKRAdapter}}, and \mbox{\hyperlink{classMarketDataManager_a6d28ad0d5863f622b5e34bdd1fe443de}{Market\+Data\+Manager}}.
+
+\Hypertarget{classIMarketDataListener_af8cc01c462e500778b7a396cd4f2bc01}\index{IMarketDataListener@{IMarketDataListener}!onSizeUpdate@{onSizeUpdate}}
+\index{onSizeUpdate@{onSizeUpdate}!IMarketDataListener@{IMarketDataListener}}
+\doxysubsubsection{\texorpdfstring{onSizeUpdate()}{onSizeUpdate()}}
+{\footnotesize\ttfamily \label{classIMarketDataListener_af8cc01c462e500778b7a396cd4f2bc01} 
+virtual void IMarket\+Data\+Listener\+::on\+Size\+Update (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{int}]{size}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classIBKRAdapter_a28d1b31ad0e583b056cffa231e103b81}{IBKRAdapter}}, and \mbox{\hyperlink{classMarketDataManager_a429eeebc669b331b0d9361b62ef00671}{Market\+Data\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/core/\mbox{\hyperlink{IMarketDataListner_8hpp}{IMarket\+Data\+Listner.\+hpp}}\end{DoxyCompactItemize}

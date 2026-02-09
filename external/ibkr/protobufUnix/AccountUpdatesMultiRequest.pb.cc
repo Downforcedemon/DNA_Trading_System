@@ -14,36 +14,36 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class AccountUpdatesMultiRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AccountUpdatesMultiRequest> _instance;
-} _AccountUpdatesMultiRequest_default_instance_;
+constexpr AccountUpdatesMultiRequest::AccountUpdatesMultiRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : account_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , modelcode_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , reqid_(0)
+  , ledgerandnlv_(false){}
+struct AccountUpdatesMultiRequestDefaultTypeInternal {
+  constexpr AccountUpdatesMultiRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AccountUpdatesMultiRequestDefaultTypeInternal() {}
+  union {
+    AccountUpdatesMultiRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AccountUpdatesMultiRequestDefaultTypeInternal _AccountUpdatesMultiRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_AccountUpdatesMultiRequest_AccountUpdatesMultiRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_AccountUpdatesMultiRequest_default_instance_;
-    new (ptr) ::protobuf::AccountUpdatesMultiRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::AccountUpdatesMultiRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountUpdatesMultiRequest_AccountUpdatesMultiRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AccountUpdatesMultiRequest_AccountUpdatesMultiRequest_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_AccountUpdatesMultiRequest_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_AccountUpdatesMultiRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_AccountUpdatesMultiRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AccountUpdatesMultiRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_AccountUpdatesMultiRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::AccountUpdatesMultiRequest, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::AccountUpdatesMultiRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::AccountUpdatesMultiRequest, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::AccountUpdatesMultiRequest, account_),
   PROTOBUF_FIELD_OFFSET(::protobuf::AccountUpdatesMultiRequest, modelcode_),
@@ -54,7 +54,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AccountUpdatesMultiRequest_2ep
   3,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 9, sizeof(::protobuf::AccountUpdatesMultiRequest)},
+  { 0, 10, -1, sizeof(::protobuf::AccountUpdatesMultiRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -71,27 +71,23 @@ const char descriptor_table_protodef_AccountUpdatesMultiRequest_2eproto[] PROTOB
   "rotobufB\037AccountUpdatesMultiRequestProto"
   "\252\002\016IBApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_AccountUpdatesMultiRequest_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_AccountUpdatesMultiRequest_2eproto_sccs[1] = {
-  &scc_info_AccountUpdatesMultiRequest_AccountUpdatesMultiRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_AccountUpdatesMultiRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AccountUpdatesMultiRequest_2eproto = {
-  false, false, descriptor_table_protodef_AccountUpdatesMultiRequest_2eproto, "AccountUpdatesMultiRequest.proto", 305,
-  &descriptor_table_AccountUpdatesMultiRequest_2eproto_once, descriptor_table_AccountUpdatesMultiRequest_2eproto_sccs, descriptor_table_AccountUpdatesMultiRequest_2eproto_deps, 1, 0,
+  false, false, 305, descriptor_table_protodef_AccountUpdatesMultiRequest_2eproto, "AccountUpdatesMultiRequest.proto", 
+  &descriptor_table_AccountUpdatesMultiRequest_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_AccountUpdatesMultiRequest_2eproto::offsets,
-  file_level_metadata_AccountUpdatesMultiRequest_2eproto, 1, file_level_enum_descriptors_AccountUpdatesMultiRequest_2eproto, file_level_service_descriptors_AccountUpdatesMultiRequest_2eproto,
+  file_level_metadata_AccountUpdatesMultiRequest_2eproto, file_level_enum_descriptors_AccountUpdatesMultiRequest_2eproto, file_level_service_descriptors_AccountUpdatesMultiRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_AccountUpdatesMultiRequest_2eproto_getter() {
+  return &descriptor_table_AccountUpdatesMultiRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_AccountUpdatesMultiRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_AccountUpdatesMultiRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_AccountUpdatesMultiRequest_2eproto(&descriptor_table_AccountUpdatesMultiRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void AccountUpdatesMultiRequest::InitAsDefaultInstance() {
-}
 class AccountUpdatesMultiRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<AccountUpdatesMultiRequest>()._has_bits_);
@@ -109,10 +105,13 @@ class AccountUpdatesMultiRequest::_Internal {
   }
 };
 
-AccountUpdatesMultiRequest::AccountUpdatesMultiRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+AccountUpdatesMultiRequest::AccountUpdatesMultiRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.AccountUpdatesMultiRequest)
 }
 AccountUpdatesMultiRequest::AccountUpdatesMultiRequest(const AccountUpdatesMultiRequest& from)
@@ -120,14 +119,20 @@ AccountUpdatesMultiRequest::AccountUpdatesMultiRequest(const AccountUpdatesMulti
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    account_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_account()) {
-    account_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_account(),
-      GetArena());
+    account_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_account(), 
+      GetArenaForAllocation());
   }
   modelcode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    modelcode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_modelcode()) {
-    modelcode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_modelcode(),
-      GetArena());
+    modelcode_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_modelcode(), 
+      GetArenaForAllocation());
   }
   ::memcpy(&reqid_, &from.reqid_,
     static_cast<size_t>(reinterpret_cast<char*>(&ledgerandnlv_) -
@@ -135,23 +140,30 @@ AccountUpdatesMultiRequest::AccountUpdatesMultiRequest(const AccountUpdatesMulti
   // @@protoc_insertion_point(copy_constructor:protobuf.AccountUpdatesMultiRequest)
 }
 
-void AccountUpdatesMultiRequest::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AccountUpdatesMultiRequest_AccountUpdatesMultiRequest_2eproto.base);
-  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  modelcode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&reqid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&ledgerandnlv_) -
-      reinterpret_cast<char*>(&reqid_)) + sizeof(ledgerandnlv_));
+inline void AccountUpdatesMultiRequest::SharedCtor() {
+account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  account_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+modelcode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  modelcode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&reqid_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&ledgerandnlv_) -
+    reinterpret_cast<char*>(&reqid_)) + sizeof(ledgerandnlv_));
 }
 
 AccountUpdatesMultiRequest::~AccountUpdatesMultiRequest() {
   // @@protoc_insertion_point(destructor:protobuf.AccountUpdatesMultiRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AccountUpdatesMultiRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void AccountUpdatesMultiRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   modelcode_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -165,15 +177,10 @@ void AccountUpdatesMultiRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Aren
 void AccountUpdatesMultiRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const AccountUpdatesMultiRequest& AccountUpdatesMultiRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AccountUpdatesMultiRequest_AccountUpdatesMultiRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void AccountUpdatesMultiRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.AccountUpdatesMultiRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -198,82 +205,85 @@ void AccountUpdatesMultiRequest::Clear() {
 const char* AccountUpdatesMultiRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string account = 2;
+      // optional string account = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_account();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.AccountUpdatesMultiRequest.account"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string modelCode = 3;
+      // optional string modelCode = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_modelcode();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.AccountUpdatesMultiRequest.modelCode"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // bool ledgerAndNLV = 4;
+      // optional bool ledgerAndNLV = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_ledgerandnlv(&has_bits);
           ledgerandnlv_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AccountUpdatesMultiRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AccountUpdatesMultiRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.AccountUpdatesMultiRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // string account = 2;
+  // optional string account = 2;
   if (_internal_has_account()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_account().data(), static_cast<int>(this->_internal_account().length()),
@@ -283,7 +293,7 @@ failure:
         2, this->_internal_account(), target);
   }
 
-  // string modelCode = 3;
+  // optional string modelCode = 3;
   if (_internal_has_modelcode()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_modelcode().data(), static_cast<int>(this->_internal_modelcode().length()),
@@ -293,7 +303,7 @@ failure:
         3, this->_internal_modelcode(), target);
   }
 
-  // bool ledgerAndNLV = 4;
+  // optional bool ledgerAndNLV = 4;
   if (_internal_has_ledgerandnlv()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_ledgerandnlv(), target);
@@ -311,68 +321,57 @@ size_t AccountUpdatesMultiRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.AccountUpdatesMultiRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
-    // string account = 2;
+    // optional string account = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_account());
     }
 
-    // string modelCode = 3;
+    // optional string modelCode = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_modelcode());
     }
 
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
-    // bool ledgerAndNLV = 4;
+    // optional bool ledgerAndNLV = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 1;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void AccountUpdatesMultiRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.AccountUpdatesMultiRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AccountUpdatesMultiRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AccountUpdatesMultiRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.AccountUpdatesMultiRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.AccountUpdatesMultiRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AccountUpdatesMultiRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    AccountUpdatesMultiRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AccountUpdatesMultiRequest::GetClassData() const { return &_class_data_; }
+
+void AccountUpdatesMultiRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<AccountUpdatesMultiRequest *>(to)->MergeFrom(
+      static_cast<const AccountUpdatesMultiRequest &>(from));
 }
+
 
 void AccountUpdatesMultiRequest::MergeFrom(const AccountUpdatesMultiRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.AccountUpdatesMultiRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -391,13 +390,7 @@ void AccountUpdatesMultiRequest::MergeFrom(const AccountUpdatesMultiRequest& fro
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void AccountUpdatesMultiRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.AccountUpdatesMultiRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AccountUpdatesMultiRequest::CopyFrom(const AccountUpdatesMultiRequest& from) {
@@ -413,10 +406,20 @@ bool AccountUpdatesMultiRequest::IsInitialized() const {
 
 void AccountUpdatesMultiRequest::InternalSwap(AccountUpdatesMultiRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  modelcode_.Swap(&other->modelcode_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &account_, lhs_arena,
+      &other->account_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &modelcode_, lhs_arena,
+      &other->modelcode_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AccountUpdatesMultiRequest, ledgerandnlv_)
       + sizeof(AccountUpdatesMultiRequest::ledgerandnlv_)
@@ -426,9 +429,10 @@ void AccountUpdatesMultiRequest::InternalSwap(AccountUpdatesMultiRequest* other)
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AccountUpdatesMultiRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_AccountUpdatesMultiRequest_2eproto_getter, &descriptor_table_AccountUpdatesMultiRequest_2eproto_once,
+      file_level_metadata_AccountUpdatesMultiRequest_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

@@ -1,0 +1,105 @@
+\doxysection{Symbol\+Manager Class Reference}
+\hypertarget{classSymbolManager}{}\label{classSymbolManager}\index{SymbolManager@{SymbolManager}}
+
+
+{\ttfamily \#include $<$Symbol\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Symbol\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classSymbolManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSymbolManager_aad18e9a0592251d319c8eb575cb7e6fa}{add\+Symbol}} (const std\+::string \&symbol, double price=0.\+0, int score=0)
+\item 
+void \mbox{\hyperlink{classSymbolManager_ac8b8e79a6ce0364244930e8cac2567bd}{remove\+Symbol}} (const std\+::string \&symbol)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structSymbolState}{Symbol\+State}} $>$ \mbox{\hyperlink{classSymbolManager_a637ee323d013273cac0d41f5b30196b7}{get\+All\+Symbols}} () const
+\item 
+bool \mbox{\hyperlink{classSymbolManager_a2bd5c0b9e49732003851dd79dd168ef5}{has\+Symbol}} (const std\+::string \&symbol) const
+\item 
+int \mbox{\hyperlink{classSymbolManager_a8d694a4c9d23738af26d077c8c55981f}{get\+Symbol\+Count}} () const
+\item 
+void \mbox{\hyperlink{classSymbolManager_a4a5713fff502f7d5e55f6aceb884aea6}{update\+Price}} (const std\+::string \&symbol, double price)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classSymbolManager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSymbolManager_aad18e9a0592251d319c8eb575cb7e6fa}\index{SymbolManager@{SymbolManager}!addSymbol@{addSymbol}}
+\index{addSymbol@{addSymbol}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{addSymbol()}{addSymbol()}}
+{\footnotesize\ttfamily \label{classSymbolManager_aad18e9a0592251d319c8eb575cb7e6fa} 
+void Symbol\+Manager\+::add\+Symbol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{double}]{price}{ = {\ttfamily 0.0}, }\item[{int}]{score}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSymbolManager_aad18e9a0592251d319c8eb575cb7e6fa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSymbolManager_a637ee323d013273cac0d41f5b30196b7}\index{SymbolManager@{SymbolManager}!getAllSymbols@{getAllSymbols}}
+\index{getAllSymbols@{getAllSymbols}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{getAllSymbols()}{getAllSymbols()}}
+{\footnotesize\ttfamily \label{classSymbolManager_a637ee323d013273cac0d41f5b30196b7} 
+std\+::vector$<$ \mbox{\hyperlink{structSymbolState}{Symbol\+State}} $>$ Symbol\+Manager\+::get\+All\+Symbols (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSymbolManager_a637ee323d013273cac0d41f5b30196b7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSymbolManager_a8d694a4c9d23738af26d077c8c55981f}\index{SymbolManager@{SymbolManager}!getSymbolCount@{getSymbolCount}}
+\index{getSymbolCount@{getSymbolCount}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{getSymbolCount()}{getSymbolCount()}}
+{\footnotesize\ttfamily \label{classSymbolManager_a8d694a4c9d23738af26d077c8c55981f} 
+int Symbol\+Manager\+::get\+Symbol\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSymbolManager_a8d694a4c9d23738af26d077c8c55981f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSymbolManager_a2bd5c0b9e49732003851dd79dd168ef5}\index{SymbolManager@{SymbolManager}!hasSymbol@{hasSymbol}}
+\index{hasSymbol@{hasSymbol}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{hasSymbol()}{hasSymbol()}}
+{\footnotesize\ttfamily \label{classSymbolManager_a2bd5c0b9e49732003851dd79dd168ef5} 
+bool Symbol\+Manager\+::has\+Symbol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classSymbolManager_ac8b8e79a6ce0364244930e8cac2567bd}\index{SymbolManager@{SymbolManager}!removeSymbol@{removeSymbol}}
+\index{removeSymbol@{removeSymbol}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{removeSymbol()}{removeSymbol()}}
+{\footnotesize\ttfamily \label{classSymbolManager_ac8b8e79a6ce0364244930e8cac2567bd} 
+void Symbol\+Manager\+::remove\+Symbol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classSymbolManager_ac8b8e79a6ce0364244930e8cac2567bd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSymbolManager_a4a5713fff502f7d5e55f6aceb884aea6}\index{SymbolManager@{SymbolManager}!updatePrice@{updatePrice}}
+\index{updatePrice@{updatePrice}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{updatePrice()}{updatePrice()}}
+{\footnotesize\ttfamily \label{classSymbolManager_a4a5713fff502f7d5e55f6aceb884aea6} 
+void Symbol\+Manager\+::update\+Price (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{, }\item[{double}]{price}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/core/\mbox{\hyperlink{SymbolManager_8hpp}{Symbol\+Manager.\+hpp}}\item 
+src/core/\mbox{\hyperlink{SymbolManager_8cpp}{Symbol\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="include/core/SymbolState.hpp" name="include/core/SymbolState.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="16,5,211,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,59,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,35,59,72,55,68,97,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="83,80,144,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,33,116,64,111,64,111,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="168,80,221,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,31,171,68,168,72,126,35"/>
+</map>

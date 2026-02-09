@@ -14,36 +14,35 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class OrderCancelDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<OrderCancel> _instance;
-} _OrderCancel_default_instance_;
+constexpr OrderCancel::OrderCancel(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : manualordercanceltime_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , extoperator_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , manualorderindicator_(0){}
+struct OrderCancelDefaultTypeInternal {
+  constexpr OrderCancelDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~OrderCancelDefaultTypeInternal() {}
+  union {
+    OrderCancel _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT OrderCancelDefaultTypeInternal _OrderCancel_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_OrderCancel_OrderCancel_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_OrderCancel_default_instance_;
-    new (ptr) ::protobuf::OrderCancel();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::OrderCancel::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OrderCancel_OrderCancel_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_OrderCancel_OrderCancel_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_OrderCancel_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_OrderCancel_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_OrderCancel_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_OrderCancel_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_OrderCancel_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderCancel, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderCancel, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderCancel, manualordercanceltime_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderCancel, extoperator_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderCancel, manualorderindicator_),
@@ -52,7 +51,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_OrderCancel_2eproto::offsets[]
   2,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::protobuf::OrderCancel)},
+  { 0, 9, -1, sizeof(::protobuf::OrderCancel)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -68,27 +67,23 @@ const char descriptor_table_protodef_OrderCancel_2eproto[] PROTOBUF_SECTION_VARI
   "IndicatorB;\n\026com.ib.client.protobufB\020Ord"
   "erCancelProto\252\002\016IBApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_OrderCancel_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_OrderCancel_2eproto_sccs[1] = {
-  &scc_info_OrderCancel_OrderCancel_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_OrderCancel_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_OrderCancel_2eproto = {
-  false, false, descriptor_table_protodef_OrderCancel_2eproto, "OrderCancel.proto", 278,
-  &descriptor_table_OrderCancel_2eproto_once, descriptor_table_OrderCancel_2eproto_sccs, descriptor_table_OrderCancel_2eproto_deps, 1, 0,
+  false, false, 278, descriptor_table_protodef_OrderCancel_2eproto, "OrderCancel.proto", 
+  &descriptor_table_OrderCancel_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_OrderCancel_2eproto::offsets,
-  file_level_metadata_OrderCancel_2eproto, 1, file_level_enum_descriptors_OrderCancel_2eproto, file_level_service_descriptors_OrderCancel_2eproto,
+  file_level_metadata_OrderCancel_2eproto, file_level_enum_descriptors_OrderCancel_2eproto, file_level_service_descriptors_OrderCancel_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_OrderCancel_2eproto_getter() {
+  return &descriptor_table_OrderCancel_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_OrderCancel_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_OrderCancel_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_OrderCancel_2eproto(&descriptor_table_OrderCancel_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void OrderCancel::InitAsDefaultInstance() {
-}
 class OrderCancel::_Internal {
  public:
   using HasBits = decltype(std::declval<OrderCancel>()._has_bits_);
@@ -103,10 +98,13 @@ class OrderCancel::_Internal {
   }
 };
 
-OrderCancel::OrderCancel(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+OrderCancel::OrderCancel(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.OrderCancel)
 }
 OrderCancel::OrderCancel(const OrderCancel& from)
@@ -114,34 +112,46 @@ OrderCancel::OrderCancel(const OrderCancel& from)
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   manualordercanceltime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    manualordercanceltime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_manualordercanceltime()) {
-    manualordercanceltime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_manualordercanceltime(),
-      GetArena());
+    manualordercanceltime_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_manualordercanceltime(), 
+      GetArenaForAllocation());
   }
   extoperator_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    extoperator_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_extoperator()) {
-    extoperator_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_extoperator(),
-      GetArena());
+    extoperator_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_extoperator(), 
+      GetArenaForAllocation());
   }
   manualorderindicator_ = from.manualorderindicator_;
   // @@protoc_insertion_point(copy_constructor:protobuf.OrderCancel)
 }
 
-void OrderCancel::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_OrderCancel_OrderCancel_2eproto.base);
-  manualordercanceltime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  extoperator_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  manualorderindicator_ = 0;
+inline void OrderCancel::SharedCtor() {
+manualordercanceltime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  manualordercanceltime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+extoperator_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  extoperator_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+manualorderindicator_ = 0;
 }
 
 OrderCancel::~OrderCancel() {
   // @@protoc_insertion_point(destructor:protobuf.OrderCancel)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void OrderCancel::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void OrderCancel::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   manualordercanceltime_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   extoperator_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -155,15 +165,10 @@ void OrderCancel::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void OrderCancel::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const OrderCancel& OrderCancel::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_OrderCancel_OrderCancel_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void OrderCancel::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.OrderCancel)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -184,68 +189,70 @@ void OrderCancel::Clear() {
 const char* OrderCancel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // string manualOrderCancelTime = 1;
+      // optional string manualOrderCancelTime = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_manualordercanceltime();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderCancel.manualOrderCancelTime"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string extOperator = 2;
+      // optional string extOperator = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_extoperator();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderCancel.extOperator"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 manualOrderIndicator = 3;
+      // optional int32 manualOrderIndicator = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_manualorderindicator(&has_bits);
-          manualorderindicator_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          manualorderindicator_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* OrderCancel::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* OrderCancel::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.OrderCancel)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string manualOrderCancelTime = 1;
+  // optional string manualOrderCancelTime = 1;
   if (_internal_has_manualordercanceltime()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_manualordercanceltime().data(), static_cast<int>(this->_internal_manualordercanceltime().length()),
@@ -255,7 +262,7 @@ failure:
         1, this->_internal_manualordercanceltime(), target);
   }
 
-  // string extOperator = 2;
+  // optional string extOperator = 2;
   if (_internal_has_extoperator()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_extoperator().data(), static_cast<int>(this->_internal_extoperator().length()),
@@ -265,7 +272,7 @@ failure:
         2, this->_internal_extoperator(), target);
   }
 
-  // int32 manualOrderIndicator = 3;
+  // optional int32 manualOrderIndicator = 3;
   if (_internal_has_manualorderindicator()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_manualorderindicator(), target);
@@ -283,63 +290,52 @@ size_t OrderCancel::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.OrderCancel)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    // string manualOrderCancelTime = 1;
+    // optional string manualOrderCancelTime = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_manualordercanceltime());
     }
 
-    // string extOperator = 2;
+    // optional string extOperator = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_extoperator());
     }
 
-    // int32 manualOrderIndicator = 3;
+    // optional int32 manualOrderIndicator = 3;
     if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_manualorderindicator());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_manualorderindicator());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void OrderCancel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.OrderCancel)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OrderCancel* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OrderCancel>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.OrderCancel)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.OrderCancel)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData OrderCancel::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    OrderCancel::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*OrderCancel::GetClassData() const { return &_class_data_; }
+
+void OrderCancel::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<OrderCancel *>(to)->MergeFrom(
+      static_cast<const OrderCancel &>(from));
 }
+
 
 void OrderCancel::MergeFrom(const OrderCancel& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.OrderCancel)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -355,13 +351,7 @@ void OrderCancel::MergeFrom(const OrderCancel& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void OrderCancel::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.OrderCancel)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void OrderCancel::CopyFrom(const OrderCancel& from) {
@@ -377,17 +367,28 @@ bool OrderCancel::IsInitialized() const {
 
 void OrderCancel::InternalSwap(OrderCancel* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  manualordercanceltime_.Swap(&other->manualordercanceltime_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  extoperator_.Swap(&other->extoperator_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &manualordercanceltime_, lhs_arena,
+      &other->manualordercanceltime_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &extoperator_, lhs_arena,
+      &other->extoperator_, rhs_arena
+  );
   swap(manualorderindicator_, other->manualorderindicator_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata OrderCancel::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_OrderCancel_2eproto_getter, &descriptor_table_OrderCancel_2eproto_once,
+      file_level_metadata_OrderCancel_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

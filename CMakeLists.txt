@@ -30,5 +30,5 @@ add_executable(dna_system ${SOURCES})
 # Find and link protobuf
 find_package(Protobuf REQUIRED)
 
-# Link pthread and protobuf (required by IBKR API)
-target_link_libraries(dna_system pthread ${Protobuf_LIBRARIES})
+# Link pthread, protobuf, and Intel DFP library (required by IBKR API)
+target_link_libraries(dna_system pthread ${Protobuf_LIBRARIES} ${PROJECT_SOURCE_DIR}/external/libbid.a)

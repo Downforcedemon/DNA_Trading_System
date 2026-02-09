@@ -14,36 +14,35 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class DeltaNeutralContractDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<DeltaNeutralContract> _instance;
-} _DeltaNeutralContract_default_instance_;
+constexpr DeltaNeutralContract::DeltaNeutralContract(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : delta_(0)
+  , price_(0)
+  , conid_(0){}
+struct DeltaNeutralContractDefaultTypeInternal {
+  constexpr DeltaNeutralContractDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~DeltaNeutralContractDefaultTypeInternal() {}
+  union {
+    DeltaNeutralContract _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT DeltaNeutralContractDefaultTypeInternal _DeltaNeutralContract_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_DeltaNeutralContract_DeltaNeutralContract_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_DeltaNeutralContract_default_instance_;
-    new (ptr) ::protobuf::DeltaNeutralContract();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::DeltaNeutralContract::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DeltaNeutralContract_DeltaNeutralContract_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DeltaNeutralContract_DeltaNeutralContract_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_DeltaNeutralContract_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_DeltaNeutralContract_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_DeltaNeutralContract_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_DeltaNeutralContract_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_DeltaNeutralContract_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::DeltaNeutralContract, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::DeltaNeutralContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::DeltaNeutralContract, conid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::DeltaNeutralContract, delta_),
   PROTOBUF_FIELD_OFFSET(::protobuf::DeltaNeutralContract, price_),
@@ -52,7 +51,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_DeltaNeutralContract_2eproto::
   1,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::protobuf::DeltaNeutralContract)},
+  { 0, 9, -1, sizeof(::protobuf::DeltaNeutralContract)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -67,27 +66,23 @@ const char descriptor_table_protodef_DeltaNeutralContract_2eproto[] PROTOBUF_SEC
   "ib.client.protobufB\031DeltaNeutralContract"
   "Proto\252\002\016IBApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_DeltaNeutralContract_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_DeltaNeutralContract_2eproto_sccs[1] = {
-  &scc_info_DeltaNeutralContract_DeltaNeutralContract_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_DeltaNeutralContract_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_DeltaNeutralContract_2eproto = {
-  false, false, descriptor_table_protodef_DeltaNeutralContract_2eproto, "DeltaNeutralContract.proto", 230,
-  &descriptor_table_DeltaNeutralContract_2eproto_once, descriptor_table_DeltaNeutralContract_2eproto_sccs, descriptor_table_DeltaNeutralContract_2eproto_deps, 1, 0,
+  false, false, 230, descriptor_table_protodef_DeltaNeutralContract_2eproto, "DeltaNeutralContract.proto", 
+  &descriptor_table_DeltaNeutralContract_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_DeltaNeutralContract_2eproto::offsets,
-  file_level_metadata_DeltaNeutralContract_2eproto, 1, file_level_enum_descriptors_DeltaNeutralContract_2eproto, file_level_service_descriptors_DeltaNeutralContract_2eproto,
+  file_level_metadata_DeltaNeutralContract_2eproto, file_level_enum_descriptors_DeltaNeutralContract_2eproto, file_level_service_descriptors_DeltaNeutralContract_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_DeltaNeutralContract_2eproto_getter() {
+  return &descriptor_table_DeltaNeutralContract_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_DeltaNeutralContract_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_DeltaNeutralContract_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_DeltaNeutralContract_2eproto(&descriptor_table_DeltaNeutralContract_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void DeltaNeutralContract::InitAsDefaultInstance() {
-}
 class DeltaNeutralContract::_Internal {
  public:
   using HasBits = decltype(std::declval<DeltaNeutralContract>()._has_bits_);
@@ -102,10 +97,13 @@ class DeltaNeutralContract::_Internal {
   }
 };
 
-DeltaNeutralContract::DeltaNeutralContract(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+DeltaNeutralContract::DeltaNeutralContract(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.DeltaNeutralContract)
 }
 DeltaNeutralContract::DeltaNeutralContract(const DeltaNeutralContract& from)
@@ -118,20 +116,22 @@ DeltaNeutralContract::DeltaNeutralContract(const DeltaNeutralContract& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.DeltaNeutralContract)
 }
 
-void DeltaNeutralContract::SharedCtor() {
-  ::memset(&delta_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&conid_) -
-      reinterpret_cast<char*>(&delta_)) + sizeof(conid_));
+inline void DeltaNeutralContract::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&delta_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&conid_) -
+    reinterpret_cast<char*>(&delta_)) + sizeof(conid_));
 }
 
 DeltaNeutralContract::~DeltaNeutralContract() {
   // @@protoc_insertion_point(destructor:protobuf.DeltaNeutralContract)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void DeltaNeutralContract::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void DeltaNeutralContract::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void DeltaNeutralContract::ArenaDtor(void* object) {
@@ -143,15 +143,10 @@ void DeltaNeutralContract::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void DeltaNeutralContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const DeltaNeutralContract& DeltaNeutralContract::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_DeltaNeutralContract_DeltaNeutralContract_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void DeltaNeutralContract::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.DeltaNeutralContract)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -168,78 +163,80 @@ void DeltaNeutralContract::Clear() {
 const char* DeltaNeutralContract::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 conId = 1;
+      // optional int32 conId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_conid(&has_bits);
-          conid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          conid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double delta = 2;
+      // optional double delta = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
           _Internal::set_has_delta(&has_bits);
           delta_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double price = 3;
+      // optional double price = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_price(&has_bits);
           price_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DeltaNeutralContract::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* DeltaNeutralContract::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.DeltaNeutralContract)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 conId = 1;
+  // optional int32 conId = 1;
   if (_internal_has_conid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_conid(), target);
   }
 
-  // double delta = 2;
+  // optional double delta = 2;
   if (_internal_has_delta()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_delta(), target);
   }
 
-  // double price = 3;
+  // optional double price = 3;
   if (_internal_has_price()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_price(), target);
@@ -257,59 +254,48 @@ size_t DeltaNeutralContract::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.DeltaNeutralContract)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    // double delta = 2;
+    // optional double delta = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 8;
     }
 
-    // double price = 3;
+    // optional double price = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 8;
     }
 
-    // int32 conId = 1;
+    // optional int32 conId = 1;
     if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_conid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_conid());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void DeltaNeutralContract::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.DeltaNeutralContract)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DeltaNeutralContract* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DeltaNeutralContract>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.DeltaNeutralContract)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.DeltaNeutralContract)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DeltaNeutralContract::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    DeltaNeutralContract::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DeltaNeutralContract::GetClassData() const { return &_class_data_; }
+
+void DeltaNeutralContract::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<DeltaNeutralContract *>(to)->MergeFrom(
+      static_cast<const DeltaNeutralContract &>(from));
 }
+
 
 void DeltaNeutralContract::MergeFrom(const DeltaNeutralContract& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.DeltaNeutralContract)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -325,13 +311,7 @@ void DeltaNeutralContract::MergeFrom(const DeltaNeutralContract& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void DeltaNeutralContract::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.DeltaNeutralContract)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DeltaNeutralContract::CopyFrom(const DeltaNeutralContract& from) {
@@ -347,7 +327,7 @@ bool DeltaNeutralContract::IsInitialized() const {
 
 void DeltaNeutralContract::InternalSwap(DeltaNeutralContract* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(DeltaNeutralContract, conid_)
@@ -358,9 +338,10 @@ void DeltaNeutralContract::InternalSwap(DeltaNeutralContract* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata DeltaNeutralContract::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_DeltaNeutralContract_2eproto_getter, &descriptor_table_DeltaNeutralContract_2eproto_once,
+      file_level_metadata_DeltaNeutralContract_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

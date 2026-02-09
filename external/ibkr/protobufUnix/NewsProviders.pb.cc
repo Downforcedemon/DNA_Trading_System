@@ -14,42 +14,37 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_NewsProvider_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NewsProvider_NewsProvider_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class NewsProvidersDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NewsProviders> _instance;
-} _NewsProviders_default_instance_;
+constexpr NewsProviders::NewsProviders(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : newsproviders_(){}
+struct NewsProvidersDefaultTypeInternal {
+  constexpr NewsProvidersDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~NewsProvidersDefaultTypeInternal() {}
+  union {
+    NewsProviders _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT NewsProvidersDefaultTypeInternal _NewsProviders_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_NewsProviders_NewsProviders_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_NewsProviders_default_instance_;
-    new (ptr) ::protobuf::NewsProviders();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::NewsProviders::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_NewsProviders_NewsProviders_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_NewsProviders_NewsProviders_2eproto}, {
-      &scc_info_NewsProvider_NewsProvider_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_NewsProviders_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_NewsProviders_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_NewsProviders_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_NewsProviders_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_NewsProviders_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsProviders, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsProviders, newsproviders_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::protobuf::NewsProviders)},
+  { 0, -1, -1, sizeof(::protobuf::NewsProviders)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -66,25 +61,23 @@ const char descriptor_table_protodef_NewsProviders_2eproto[] PROTOBUF_SECTION_VA
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_NewsProviders_2eproto_deps[1] = {
   &::descriptor_table_NewsProvider_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_NewsProviders_2eproto_sccs[1] = {
-  &scc_info_NewsProviders_NewsProviders_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_NewsProviders_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_NewsProviders_2eproto = {
-  false, false, descriptor_table_protodef_NewsProviders_2eproto, "NewsProviders.proto", 186,
-  &descriptor_table_NewsProviders_2eproto_once, descriptor_table_NewsProviders_2eproto_sccs, descriptor_table_NewsProviders_2eproto_deps, 1, 1,
+  false, false, 186, descriptor_table_protodef_NewsProviders_2eproto, "NewsProviders.proto", 
+  &descriptor_table_NewsProviders_2eproto_once, descriptor_table_NewsProviders_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_NewsProviders_2eproto::offsets,
-  file_level_metadata_NewsProviders_2eproto, 1, file_level_enum_descriptors_NewsProviders_2eproto, file_level_service_descriptors_NewsProviders_2eproto,
+  file_level_metadata_NewsProviders_2eproto, file_level_enum_descriptors_NewsProviders_2eproto, file_level_service_descriptors_NewsProviders_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_NewsProviders_2eproto_getter() {
+  return &descriptor_table_NewsProviders_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_NewsProviders_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_NewsProviders_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_NewsProviders_2eproto(&descriptor_table_NewsProviders_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void NewsProviders::InitAsDefaultInstance() {
-}
 class NewsProviders::_Internal {
  public:
 };
@@ -92,11 +85,14 @@ class NewsProviders::_Internal {
 void NewsProviders::clear_newsproviders() {
   newsproviders_.Clear();
 }
-NewsProviders::NewsProviders(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+NewsProviders::NewsProviders(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   newsproviders_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.NewsProviders)
 }
 NewsProviders::NewsProviders(const NewsProviders& from)
@@ -106,18 +102,18 @@ NewsProviders::NewsProviders(const NewsProviders& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.NewsProviders)
 }
 
-void NewsProviders::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_NewsProviders_NewsProviders_2eproto.base);
+inline void NewsProviders::SharedCtor() {
 }
 
 NewsProviders::~NewsProviders() {
   // @@protoc_insertion_point(destructor:protobuf.NewsProviders)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void NewsProviders::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void NewsProviders::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void NewsProviders::ArenaDtor(void* object) {
@@ -129,15 +125,10 @@ void NewsProviders::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void NewsProviders::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const NewsProviders& NewsProviders::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NewsProviders_NewsProviders_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void NewsProviders::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.NewsProviders)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -147,15 +138,13 @@ void NewsProviders::Clear() {
 
 const char* NewsProviders::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .protobuf.NewsProvider newsProviders = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -163,34 +152,36 @@ const char* NewsProviders::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* NewsProviders::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* NewsProviders::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.NewsProviders)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .protobuf.NewsProvider newsProviders = 1;
@@ -213,7 +204,7 @@ size_t NewsProviders::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.NewsProviders)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -224,45 +215,30 @@ size_t NewsProviders::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void NewsProviders::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.NewsProviders)
-  GOOGLE_DCHECK_NE(&from, this);
-  const NewsProviders* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NewsProviders>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.NewsProviders)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.NewsProviders)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData NewsProviders::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    NewsProviders::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*NewsProviders::GetClassData() const { return &_class_data_; }
+
+void NewsProviders::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<NewsProviders *>(to)->MergeFrom(
+      static_cast<const NewsProviders &>(from));
 }
+
 
 void NewsProviders::MergeFrom(const NewsProviders& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.NewsProviders)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   newsproviders_.MergeFrom(from.newsproviders_);
-}
-
-void NewsProviders::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.NewsProviders)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void NewsProviders::CopyFrom(const NewsProviders& from) {
@@ -278,14 +254,15 @@ bool NewsProviders::IsInitialized() const {
 
 void NewsProviders::InternalSwap(NewsProviders* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   newsproviders_.InternalSwap(&other->newsproviders_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata NewsProviders::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_NewsProviders_2eproto_getter, &descriptor_table_NewsProviders_2eproto_once,
+      file_level_metadata_NewsProviders_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

@@ -5344,6 +5344,30 @@ external/simdjson.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/external/simdjson.cpp.s
 .PHONY : external/simdjson.cpp.s
 
+src/adapters/IBKRAdapter.o: src/adapters/IBKRAdapter.cpp.o
+.PHONY : src/adapters/IBKRAdapter.o
+
+# target to build an object file
+src/adapters/IBKRAdapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o
+.PHONY : src/adapters/IBKRAdapter.cpp.o
+
+src/adapters/IBKRAdapter.i: src/adapters/IBKRAdapter.cpp.i
+.PHONY : src/adapters/IBKRAdapter.i
+
+# target to preprocess a source file
+src/adapters/IBKRAdapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.i
+.PHONY : src/adapters/IBKRAdapter.cpp.i
+
+src/adapters/IBKRAdapter.s: src/adapters/IBKRAdapter.cpp.s
+.PHONY : src/adapters/IBKRAdapter.s
+
+# target to generate assembly for a file
+src/adapters/IBKRAdapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.s
+.PHONY : src/adapters/IBKRAdapter.cpp.s
+
 src/core/IBKRConnection.o: src/core/IBKRConnection.cpp.o
 .PHONY : src/core/IBKRConnection.o
 
@@ -5367,6 +5391,30 @@ src/core/IBKRConnection.s: src/core/IBKRConnection.cpp.s
 src/core/IBKRConnection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.s
 .PHONY : src/core/IBKRConnection.cpp.s
+
+src/core/MarketDataManager.o: src/core/MarketDataManager.cpp.o
+.PHONY : src/core/MarketDataManager.o
+
+# target to build an object file
+src/core/MarketDataManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o
+.PHONY : src/core/MarketDataManager.cpp.o
+
+src/core/MarketDataManager.i: src/core/MarketDataManager.cpp.i
+.PHONY : src/core/MarketDataManager.i
+
+# target to preprocess a source file
+src/core/MarketDataManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.i
+.PHONY : src/core/MarketDataManager.cpp.i
+
+src/core/MarketDataManager.s: src/core/MarketDataManager.cpp.s
+.PHONY : src/core/MarketDataManager.s
+
+# target to generate assembly for a file
+src/core/MarketDataManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dna_system.dir/build.make CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.s
+.PHONY : src/core/MarketDataManager.cpp.s
 
 src/core/SymbolManager.o: src/core/SymbolManager.cpp.o
 .PHONY : src/core/SymbolManager.o
@@ -6077,9 +6125,15 @@ help:
 	@echo "... external/simdjson.o"
 	@echo "... external/simdjson.i"
 	@echo "... external/simdjson.s"
+	@echo "... src/adapters/IBKRAdapter.o"
+	@echo "... src/adapters/IBKRAdapter.i"
+	@echo "... src/adapters/IBKRAdapter.s"
 	@echo "... src/core/IBKRConnection.o"
 	@echo "... src/core/IBKRConnection.i"
 	@echo "... src/core/IBKRConnection.s"
+	@echo "... src/core/MarketDataManager.o"
+	@echo "... src/core/MarketDataManager.i"
+	@echo "... src/core/MarketDataManager.s"
 	@echo "... src/core/SymbolManager.o"
 	@echo "... src/core/SymbolManager.i"
 	@echo "... src/core/SymbolManager.s"

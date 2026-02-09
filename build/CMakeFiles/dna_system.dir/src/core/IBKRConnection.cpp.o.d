@@ -317,6 +317,8 @@ CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o: \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderState.pb.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderAllocation.pb.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OpenOrdersEnd.pb.h \
+ /usr/include/google/protobuf/generated_message_bases.h \
+ /usr/include/google/protobuf/io/zero_copy_stream_impl.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderStatus.pb.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrder.pb.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.h \
@@ -506,12 +508,7 @@ CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o: \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EClientMsgSink.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ESocket.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ETransport.h \
- /home/navneetsimran/Downloads/DNA_Trading_System/include/core/SymbolManager.hpp \
- /home/navneetsimran/Downloads/DNA_Trading_System/include/core/SymbolState.hpp \
- /usr/include/c++/15/chrono /usr/include/c++/15/sstream \
- /usr/include/c++/15/bits/sstream.tcc \
- /usr/include/c++/15/bits/chrono_io.h /usr/include/c++/15/iomanip \
- /usr/include/c++/15/bits/quoted_string.h \
+ /home/navneetsimran/Downloads/DNA_Trading_System/include/core/IMarketDataListener.hpp \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EReaderOSSignal.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EReaderSignal.h \
  /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EReader.h \
@@ -523,4 +520,7 @@ CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o: \
  /usr/include/c++/15/bits/semaphore_base.h \
  /usr/include/c++/15/bits/atomic_timed_wait.h \
  /usr/include/c++/15/bits/this_thread_sleep.h /usr/include/semaphore.h \
- /usr/include/bits/semaphore.h
+ /usr/include/bits/semaphore.h /usr/include/c++/15/chrono \
+ /usr/include/c++/15/sstream /usr/include/c++/15/bits/sstream.tcc \
+ /usr/include/c++/15/bits/chrono_io.h /usr/include/c++/15/iomanip \
+ /usr/include/c++/15/bits/quoted_string.h

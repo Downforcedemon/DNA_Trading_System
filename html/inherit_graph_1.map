@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classIMarketDataListener.html" title=" " alt="" coords="6,56,146,83"/>
+<area shape="rect" id="Node000001" href="$classIBKRAdapter.html" title=" " alt="" coords="215,5,314,32"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="143,49,214,29,216,34,144,54"/>
+<area shape="rect" id="Node000003" href="$classMarketDataManager.html" title=" " alt="" coords="195,56,334,83"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="161,67,194,67,194,72,161,72"/>
+<area shape="rect" id="Node000002" href="$classIMarketDataProvider.html" title=" " alt="" coords="5,5,147,32"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="162,16,215,16,215,21,162,21"/>
+</map>

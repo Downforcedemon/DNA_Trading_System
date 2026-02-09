@@ -14,38 +14,62 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_OrderAllocation_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OrderAllocation_OrderAllocation_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class OrderStateDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<OrderState> _instance;
-} _OrderState_default_instance_;
+constexpr OrderState::OrderState(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : orderallocations_()
+  , status_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , commissionandfeescurrency_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , margincurrency_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , suggestedsize_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , rejectreason_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , warningtext_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , completedtime_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , completedstatus_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , initmarginbefore_(0)
+  , maintmarginbefore_(0)
+  , equitywithloanbefore_(0)
+  , initmarginchange_(0)
+  , maintmarginchange_(0)
+  , equitywithloanchange_(0)
+  , initmarginafter_(0)
+  , maintmarginafter_(0)
+  , equitywithloanafter_(0)
+  , commissionandfees_(0)
+  , mincommissionandfees_(0)
+  , maxcommissionandfees_(0)
+  , initmarginbeforeoutsiderth_(0)
+  , maintmarginbeforeoutsiderth_(0)
+  , equitywithloanbeforeoutsiderth_(0)
+  , initmarginchangeoutsiderth_(0)
+  , maintmarginchangeoutsiderth_(0)
+  , equitywithloanchangeoutsiderth_(0)
+  , initmarginafteroutsiderth_(0)
+  , maintmarginafteroutsiderth_(0)
+  , equitywithloanafteroutsiderth_(0){}
+struct OrderStateDefaultTypeInternal {
+  constexpr OrderStateDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~OrderStateDefaultTypeInternal() {}
+  union {
+    OrderState _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT OrderStateDefaultTypeInternal _OrderState_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_OrderState_OrderState_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_OrderState_default_instance_;
-    new (ptr) ::protobuf::OrderState();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::OrderState::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OrderState_OrderState_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_OrderState_OrderState_2eproto}, {
-      &scc_info_OrderAllocation_OrderAllocation_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_OrderState_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_OrderState_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_OrderState_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_OrderState_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_OrderState_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderState, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderState, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderState, status_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderState, initmarginbefore_),
   PROTOBUF_FIELD_OFFSET(::protobuf::OrderState, maintmarginbefore_),
@@ -108,7 +132,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_OrderState_2eproto::offsets[] 
   7,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 35, sizeof(::protobuf::OrderState)},
+  { 0, 36, -1, sizeof(::protobuf::OrderState)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -168,25 +192,23 @@ const char descriptor_table_protodef_OrderState_2eproto[] PROTOBUF_SECTION_VARIA
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_OrderState_2eproto_deps[1] = {
   &::descriptor_table_OrderAllocation_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_OrderState_2eproto_sccs[1] = {
-  &scc_info_OrderState_OrderState_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_OrderState_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_OrderState_2eproto = {
-  false, false, descriptor_table_protodef_OrderState_2eproto, "OrderState.proto", 1903,
-  &descriptor_table_OrderState_2eproto_once, descriptor_table_OrderState_2eproto_sccs, descriptor_table_OrderState_2eproto_deps, 1, 1,
+  false, false, 1903, descriptor_table_protodef_OrderState_2eproto, "OrderState.proto", 
+  &descriptor_table_OrderState_2eproto_once, descriptor_table_OrderState_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_OrderState_2eproto::offsets,
-  file_level_metadata_OrderState_2eproto, 1, file_level_enum_descriptors_OrderState_2eproto, file_level_service_descriptors_OrderState_2eproto,
+  file_level_metadata_OrderState_2eproto, file_level_enum_descriptors_OrderState_2eproto, file_level_service_descriptors_OrderState_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_OrderState_2eproto_getter() {
+  return &descriptor_table_OrderState_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_OrderState_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_OrderState_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_OrderState_2eproto(&descriptor_table_OrderState_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void OrderState::InitAsDefaultInstance() {
-}
 class OrderState::_Internal {
  public:
   using HasBits = decltype(std::declval<OrderState>()._has_bits_);
@@ -282,11 +304,14 @@ class OrderState::_Internal {
 void OrderState::clear_orderallocations() {
   orderallocations_.Clear();
 }
-OrderState::OrderState(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+OrderState::OrderState(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   orderallocations_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.OrderState)
 }
 OrderState::OrderState(const OrderState& from)
@@ -295,44 +320,68 @@ OrderState::OrderState(const OrderState& from)
       orderallocations_(from.orderallocations_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    status_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_status()) {
-    status_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_status(),
-      GetArena());
+    status_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_status(), 
+      GetArenaForAllocation());
   }
   commissionandfeescurrency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    commissionandfeescurrency_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_commissionandfeescurrency()) {
-    commissionandfeescurrency_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_commissionandfeescurrency(),
-      GetArena());
+    commissionandfeescurrency_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_commissionandfeescurrency(), 
+      GetArenaForAllocation());
   }
   margincurrency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    margincurrency_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_margincurrency()) {
-    margincurrency_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_margincurrency(),
-      GetArena());
+    margincurrency_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_margincurrency(), 
+      GetArenaForAllocation());
   }
   suggestedsize_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    suggestedsize_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_suggestedsize()) {
-    suggestedsize_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_suggestedsize(),
-      GetArena());
+    suggestedsize_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_suggestedsize(), 
+      GetArenaForAllocation());
   }
   rejectreason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    rejectreason_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_rejectreason()) {
-    rejectreason_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_rejectreason(),
-      GetArena());
+    rejectreason_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_rejectreason(), 
+      GetArenaForAllocation());
   }
   warningtext_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    warningtext_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_warningtext()) {
-    warningtext_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_warningtext(),
-      GetArena());
+    warningtext_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_warningtext(), 
+      GetArenaForAllocation());
   }
   completedtime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    completedtime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_completedtime()) {
-    completedtime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_completedtime(),
-      GetArena());
+    completedtime_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_completedtime(), 
+      GetArenaForAllocation());
   }
   completedstatus_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    completedstatus_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_completedstatus()) {
-    completedstatus_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_completedstatus(),
-      GetArena());
+    completedstatus_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_completedstatus(), 
+      GetArenaForAllocation());
   }
   ::memcpy(&initmarginbefore_, &from.initmarginbefore_,
     static_cast<size_t>(reinterpret_cast<char*>(&equitywithloanafteroutsiderth_) -
@@ -340,29 +389,54 @@ OrderState::OrderState(const OrderState& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.OrderState)
 }
 
-void OrderState::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_OrderState_OrderState_2eproto.base);
-  status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  commissionandfeescurrency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  margincurrency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  suggestedsize_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  rejectreason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  warningtext_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  completedtime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  completedstatus_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&initmarginbefore_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&equitywithloanafteroutsiderth_) -
-      reinterpret_cast<char*>(&initmarginbefore_)) + sizeof(equitywithloanafteroutsiderth_));
+inline void OrderState::SharedCtor() {
+status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  status_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+commissionandfeescurrency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  commissionandfeescurrency_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+margincurrency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  margincurrency_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+suggestedsize_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  suggestedsize_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+rejectreason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  rejectreason_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+warningtext_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  warningtext_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+completedtime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  completedtime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+completedstatus_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  completedstatus_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&initmarginbefore_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&equitywithloanafteroutsiderth_) -
+    reinterpret_cast<char*>(&initmarginbefore_)) + sizeof(equitywithloanafteroutsiderth_));
 }
 
 OrderState::~OrderState() {
   // @@protoc_insertion_point(destructor:protobuf.OrderState)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void OrderState::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void OrderState::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   status_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   commissionandfeescurrency_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   margincurrency_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -382,15 +456,10 @@ void OrderState::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void OrderState::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const OrderState& OrderState::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_OrderState_OrderState_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void OrderState::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.OrderState)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -444,228 +513,252 @@ void OrderState::Clear() {
 const char* OrderState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // string status = 1;
+      // optional string status = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_status();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.status"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double initMarginBefore = 2;
+      // optional double initMarginBefore = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
           _Internal::set_has_initmarginbefore(&has_bits);
           initmarginbefore_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double maintMarginBefore = 3;
+      // optional double maintMarginBefore = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_maintmarginbefore(&has_bits);
           maintmarginbefore_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double equityWithLoanBefore = 4;
+      // optional double equityWithLoanBefore = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
           _Internal::set_has_equitywithloanbefore(&has_bits);
           equitywithloanbefore_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double initMarginChange = 5;
+      // optional double initMarginChange = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
           _Internal::set_has_initmarginchange(&has_bits);
           initmarginchange_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double maintMarginChange = 6;
+      // optional double maintMarginChange = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
           _Internal::set_has_maintmarginchange(&has_bits);
           maintmarginchange_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double equityWithLoanChange = 7;
+      // optional double equityWithLoanChange = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
           _Internal::set_has_equitywithloanchange(&has_bits);
           equitywithloanchange_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double initMarginAfter = 8;
+      // optional double initMarginAfter = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
           _Internal::set_has_initmarginafter(&has_bits);
           initmarginafter_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double maintMarginAfter = 9;
+      // optional double maintMarginAfter = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 73)) {
           _Internal::set_has_maintmarginafter(&has_bits);
           maintmarginafter_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double equityWithLoanAfter = 10;
+      // optional double equityWithLoanAfter = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 81)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 81)) {
           _Internal::set_has_equitywithloanafter(&has_bits);
           equitywithloanafter_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double commissionAndFees = 11;
+      // optional double commissionAndFees = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 89)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 89)) {
           _Internal::set_has_commissionandfees(&has_bits);
           commissionandfees_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double minCommissionAndFees = 12;
+      // optional double minCommissionAndFees = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 97)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 97)) {
           _Internal::set_has_mincommissionandfees(&has_bits);
           mincommissionandfees_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double maxCommissionAndFees = 13;
+      // optional double maxCommissionAndFees = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 105)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 105)) {
           _Internal::set_has_maxcommissionandfees(&has_bits);
           maxcommissionandfees_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string commissionAndFeesCurrency = 14;
+      // optional string commissionAndFeesCurrency = 14;
       case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
           auto str = _internal_mutable_commissionandfeescurrency();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.commissionAndFeesCurrency"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string marginCurrency = 15;
+      // optional string marginCurrency = 15;
       case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
           auto str = _internal_mutable_margincurrency();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.marginCurrency"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double initMarginBeforeOutsideRTH = 16;
+      // optional double initMarginBeforeOutsideRTH = 16;
       case 16:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 129)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 129)) {
           _Internal::set_has_initmarginbeforeoutsiderth(&has_bits);
           initmarginbeforeoutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double maintMarginBeforeOutsideRTH = 17;
+      // optional double maintMarginBeforeOutsideRTH = 17;
       case 17:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 137)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 137)) {
           _Internal::set_has_maintmarginbeforeoutsiderth(&has_bits);
           maintmarginbeforeoutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double equityWithLoanBeforeOutsideRTH = 18;
+      // optional double equityWithLoanBeforeOutsideRTH = 18;
       case 18:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 145)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 145)) {
           _Internal::set_has_equitywithloanbeforeoutsiderth(&has_bits);
           equitywithloanbeforeoutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double initMarginChangeOutsideRTH = 19;
+      // optional double initMarginChangeOutsideRTH = 19;
       case 19:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 153)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 153)) {
           _Internal::set_has_initmarginchangeoutsiderth(&has_bits);
           initmarginchangeoutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double maintMarginChangeOutsideRTH = 20;
+      // optional double maintMarginChangeOutsideRTH = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 161)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 161)) {
           _Internal::set_has_maintmarginchangeoutsiderth(&has_bits);
           maintmarginchangeoutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double equityWithLoanChangeOutsideRTH = 21;
+      // optional double equityWithLoanChangeOutsideRTH = 21;
       case 21:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 169)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 169)) {
           _Internal::set_has_equitywithloanchangeoutsiderth(&has_bits);
           equitywithloanchangeoutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double initMarginAfterOutsideRTH = 22;
+      // optional double initMarginAfterOutsideRTH = 22;
       case 22:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 177)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 177)) {
           _Internal::set_has_initmarginafteroutsiderth(&has_bits);
           initmarginafteroutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double maintMarginAfterOutsideRTH = 23;
+      // optional double maintMarginAfterOutsideRTH = 23;
       case 23:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 185)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 185)) {
           _Internal::set_has_maintmarginafteroutsiderth(&has_bits);
           maintmarginafteroutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double equityWithLoanAfterOutsideRTH = 24;
+      // optional double equityWithLoanAfterOutsideRTH = 24;
       case 24:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 193)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 193)) {
           _Internal::set_has_equitywithloanafteroutsiderth(&has_bits);
           equitywithloanafteroutsiderth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string suggestedSize = 25;
+      // optional string suggestedSize = 25;
       case 25:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
           auto str = _internal_mutable_suggestedsize();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.suggestedSize"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string rejectReason = 26;
+      // optional string rejectReason = 26;
       case 26:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 210)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 210)) {
           auto str = _internal_mutable_rejectreason();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.rejectReason"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .protobuf.OrderAllocation orderAllocations = 27;
       case 27:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
           ptr -= 2;
           do {
             ptr += 2;
@@ -673,65 +766,70 @@ const char* OrderState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<218>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string warningText = 28;
+      // optional string warningText = 28;
       case 28:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 226)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 226)) {
           auto str = _internal_mutable_warningtext();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.warningText"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string completedTime = 29;
+      // optional string completedTime = 29;
       case 29:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
           auto str = _internal_mutable_completedtime();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.completedTime"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string completedStatus = 30;
+      // optional string completedStatus = 30;
       case 30:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 242)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 242)) {
           auto str = _internal_mutable_completedstatus();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.OrderState.completedStatus"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* OrderState::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* OrderState::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.OrderState)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string status = 1;
+  // optional string status = 1;
   if (_internal_has_status()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_status().data(), static_cast<int>(this->_internal_status().length()),
@@ -741,79 +839,79 @@ failure:
         1, this->_internal_status(), target);
   }
 
-  // double initMarginBefore = 2;
+  // optional double initMarginBefore = 2;
   if (_internal_has_initmarginbefore()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_initmarginbefore(), target);
   }
 
-  // double maintMarginBefore = 3;
+  // optional double maintMarginBefore = 3;
   if (_internal_has_maintmarginbefore()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_maintmarginbefore(), target);
   }
 
-  // double equityWithLoanBefore = 4;
+  // optional double equityWithLoanBefore = 4;
   if (_internal_has_equitywithloanbefore()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_equitywithloanbefore(), target);
   }
 
-  // double initMarginChange = 5;
+  // optional double initMarginChange = 5;
   if (_internal_has_initmarginchange()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_initmarginchange(), target);
   }
 
-  // double maintMarginChange = 6;
+  // optional double maintMarginChange = 6;
   if (_internal_has_maintmarginchange()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_maintmarginchange(), target);
   }
 
-  // double equityWithLoanChange = 7;
+  // optional double equityWithLoanChange = 7;
   if (_internal_has_equitywithloanchange()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_equitywithloanchange(), target);
   }
 
-  // double initMarginAfter = 8;
+  // optional double initMarginAfter = 8;
   if (_internal_has_initmarginafter()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_initmarginafter(), target);
   }
 
-  // double maintMarginAfter = 9;
+  // optional double maintMarginAfter = 9;
   if (_internal_has_maintmarginafter()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_maintmarginafter(), target);
   }
 
-  // double equityWithLoanAfter = 10;
+  // optional double equityWithLoanAfter = 10;
   if (_internal_has_equitywithloanafter()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->_internal_equitywithloanafter(), target);
   }
 
-  // double commissionAndFees = 11;
+  // optional double commissionAndFees = 11;
   if (_internal_has_commissionandfees()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(11, this->_internal_commissionandfees(), target);
   }
 
-  // double minCommissionAndFees = 12;
+  // optional double minCommissionAndFees = 12;
   if (_internal_has_mincommissionandfees()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(12, this->_internal_mincommissionandfees(), target);
   }
 
-  // double maxCommissionAndFees = 13;
+  // optional double maxCommissionAndFees = 13;
   if (_internal_has_maxcommissionandfees()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(13, this->_internal_maxcommissionandfees(), target);
   }
 
-  // string commissionAndFeesCurrency = 14;
+  // optional string commissionAndFeesCurrency = 14;
   if (_internal_has_commissionandfeescurrency()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_commissionandfeescurrency().data(), static_cast<int>(this->_internal_commissionandfeescurrency().length()),
@@ -823,7 +921,7 @@ failure:
         14, this->_internal_commissionandfeescurrency(), target);
   }
 
-  // string marginCurrency = 15;
+  // optional string marginCurrency = 15;
   if (_internal_has_margincurrency()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_margincurrency().data(), static_cast<int>(this->_internal_margincurrency().length()),
@@ -833,61 +931,61 @@ failure:
         15, this->_internal_margincurrency(), target);
   }
 
-  // double initMarginBeforeOutsideRTH = 16;
+  // optional double initMarginBeforeOutsideRTH = 16;
   if (_internal_has_initmarginbeforeoutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(16, this->_internal_initmarginbeforeoutsiderth(), target);
   }
 
-  // double maintMarginBeforeOutsideRTH = 17;
+  // optional double maintMarginBeforeOutsideRTH = 17;
   if (_internal_has_maintmarginbeforeoutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(17, this->_internal_maintmarginbeforeoutsiderth(), target);
   }
 
-  // double equityWithLoanBeforeOutsideRTH = 18;
+  // optional double equityWithLoanBeforeOutsideRTH = 18;
   if (_internal_has_equitywithloanbeforeoutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(18, this->_internal_equitywithloanbeforeoutsiderth(), target);
   }
 
-  // double initMarginChangeOutsideRTH = 19;
+  // optional double initMarginChangeOutsideRTH = 19;
   if (_internal_has_initmarginchangeoutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(19, this->_internal_initmarginchangeoutsiderth(), target);
   }
 
-  // double maintMarginChangeOutsideRTH = 20;
+  // optional double maintMarginChangeOutsideRTH = 20;
   if (_internal_has_maintmarginchangeoutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(20, this->_internal_maintmarginchangeoutsiderth(), target);
   }
 
-  // double equityWithLoanChangeOutsideRTH = 21;
+  // optional double equityWithLoanChangeOutsideRTH = 21;
   if (_internal_has_equitywithloanchangeoutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(21, this->_internal_equitywithloanchangeoutsiderth(), target);
   }
 
-  // double initMarginAfterOutsideRTH = 22;
+  // optional double initMarginAfterOutsideRTH = 22;
   if (_internal_has_initmarginafteroutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(22, this->_internal_initmarginafteroutsiderth(), target);
   }
 
-  // double maintMarginAfterOutsideRTH = 23;
+  // optional double maintMarginAfterOutsideRTH = 23;
   if (_internal_has_maintmarginafteroutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(23, this->_internal_maintmarginafteroutsiderth(), target);
   }
 
-  // double equityWithLoanAfterOutsideRTH = 24;
+  // optional double equityWithLoanAfterOutsideRTH = 24;
   if (_internal_has_equitywithloanafteroutsiderth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(24, this->_internal_equitywithloanafteroutsiderth(), target);
   }
 
-  // string suggestedSize = 25;
+  // optional string suggestedSize = 25;
   if (_internal_has_suggestedsize()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_suggestedsize().data(), static_cast<int>(this->_internal_suggestedsize().length()),
@@ -897,7 +995,7 @@ failure:
         25, this->_internal_suggestedsize(), target);
   }
 
-  // string rejectReason = 26;
+  // optional string rejectReason = 26;
   if (_internal_has_rejectreason()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_rejectreason().data(), static_cast<int>(this->_internal_rejectreason().length()),
@@ -915,7 +1013,7 @@ failure:
       InternalWriteMessage(27, this->_internal_orderallocations(i), target, stream);
   }
 
-  // string warningText = 28;
+  // optional string warningText = 28;
   if (_internal_has_warningtext()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_warningtext().data(), static_cast<int>(this->_internal_warningtext().length()),
@@ -925,7 +1023,7 @@ failure:
         28, this->_internal_warningtext(), target);
   }
 
-  // string completedTime = 29;
+  // optional string completedTime = 29;
   if (_internal_has_completedtime()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_completedtime().data(), static_cast<int>(this->_internal_completedtime().length()),
@@ -935,7 +1033,7 @@ failure:
         29, this->_internal_completedtime(), target);
   }
 
-  // string completedStatus = 30;
+  // optional string completedStatus = 30;
   if (_internal_has_completedstatus()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_completedstatus().data(), static_cast<int>(this->_internal_completedstatus().length()),
@@ -957,7 +1055,7 @@ size_t OrderState::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.OrderState)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -970,56 +1068,56 @@ size_t OrderState::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    // string status = 1;
+    // optional string status = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_status());
     }
 
-    // string commissionAndFeesCurrency = 14;
+    // optional string commissionAndFeesCurrency = 14;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_commissionandfeescurrency());
     }
 
-    // string marginCurrency = 15;
+    // optional string marginCurrency = 15;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_margincurrency());
     }
 
-    // string suggestedSize = 25;
+    // optional string suggestedSize = 25;
     if (cached_has_bits & 0x00000008u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_suggestedsize());
     }
 
-    // string rejectReason = 26;
+    // optional string rejectReason = 26;
     if (cached_has_bits & 0x00000010u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_rejectreason());
     }
 
-    // string warningText = 28;
+    // optional string warningText = 28;
     if (cached_has_bits & 0x00000020u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_warningtext());
     }
 
-    // string completedTime = 29;
+    // optional string completedTime = 29;
     if (cached_has_bits & 0x00000040u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_completedtime());
     }
 
-    // string completedStatus = 30;
+    // optional string completedStatus = 30;
     if (cached_has_bits & 0x00000080u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -1028,145 +1126,136 @@ size_t OrderState::ByteSizeLong() const {
 
   }
   if (cached_has_bits & 0x0000ff00u) {
-    // double initMarginBefore = 2;
+    // optional double initMarginBefore = 2;
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 + 8;
     }
 
-    // double maintMarginBefore = 3;
+    // optional double maintMarginBefore = 3;
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 + 8;
     }
 
-    // double equityWithLoanBefore = 4;
+    // optional double equityWithLoanBefore = 4;
     if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 8;
     }
 
-    // double initMarginChange = 5;
+    // optional double initMarginChange = 5;
     if (cached_has_bits & 0x00000800u) {
       total_size += 1 + 8;
     }
 
-    // double maintMarginChange = 6;
+    // optional double maintMarginChange = 6;
     if (cached_has_bits & 0x00001000u) {
       total_size += 1 + 8;
     }
 
-    // double equityWithLoanChange = 7;
+    // optional double equityWithLoanChange = 7;
     if (cached_has_bits & 0x00002000u) {
       total_size += 1 + 8;
     }
 
-    // double initMarginAfter = 8;
+    // optional double initMarginAfter = 8;
     if (cached_has_bits & 0x00004000u) {
       total_size += 1 + 8;
     }
 
-    // double maintMarginAfter = 9;
+    // optional double maintMarginAfter = 9;
     if (cached_has_bits & 0x00008000u) {
       total_size += 1 + 8;
     }
 
   }
   if (cached_has_bits & 0x00ff0000u) {
-    // double equityWithLoanAfter = 10;
+    // optional double equityWithLoanAfter = 10;
     if (cached_has_bits & 0x00010000u) {
       total_size += 1 + 8;
     }
 
-    // double commissionAndFees = 11;
+    // optional double commissionAndFees = 11;
     if (cached_has_bits & 0x00020000u) {
       total_size += 1 + 8;
     }
 
-    // double minCommissionAndFees = 12;
+    // optional double minCommissionAndFees = 12;
     if (cached_has_bits & 0x00040000u) {
       total_size += 1 + 8;
     }
 
-    // double maxCommissionAndFees = 13;
+    // optional double maxCommissionAndFees = 13;
     if (cached_has_bits & 0x00080000u) {
       total_size += 1 + 8;
     }
 
-    // double initMarginBeforeOutsideRTH = 16;
+    // optional double initMarginBeforeOutsideRTH = 16;
     if (cached_has_bits & 0x00100000u) {
       total_size += 2 + 8;
     }
 
-    // double maintMarginBeforeOutsideRTH = 17;
+    // optional double maintMarginBeforeOutsideRTH = 17;
     if (cached_has_bits & 0x00200000u) {
       total_size += 2 + 8;
     }
 
-    // double equityWithLoanBeforeOutsideRTH = 18;
+    // optional double equityWithLoanBeforeOutsideRTH = 18;
     if (cached_has_bits & 0x00400000u) {
       total_size += 2 + 8;
     }
 
-    // double initMarginChangeOutsideRTH = 19;
+    // optional double initMarginChangeOutsideRTH = 19;
     if (cached_has_bits & 0x00800000u) {
       total_size += 2 + 8;
     }
 
   }
   if (cached_has_bits & 0x1f000000u) {
-    // double maintMarginChangeOutsideRTH = 20;
+    // optional double maintMarginChangeOutsideRTH = 20;
     if (cached_has_bits & 0x01000000u) {
       total_size += 2 + 8;
     }
 
-    // double equityWithLoanChangeOutsideRTH = 21;
+    // optional double equityWithLoanChangeOutsideRTH = 21;
     if (cached_has_bits & 0x02000000u) {
       total_size += 2 + 8;
     }
 
-    // double initMarginAfterOutsideRTH = 22;
+    // optional double initMarginAfterOutsideRTH = 22;
     if (cached_has_bits & 0x04000000u) {
       total_size += 2 + 8;
     }
 
-    // double maintMarginAfterOutsideRTH = 23;
+    // optional double maintMarginAfterOutsideRTH = 23;
     if (cached_has_bits & 0x08000000u) {
       total_size += 2 + 8;
     }
 
-    // double equityWithLoanAfterOutsideRTH = 24;
+    // optional double equityWithLoanAfterOutsideRTH = 24;
     if (cached_has_bits & 0x10000000u) {
       total_size += 2 + 8;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void OrderState::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.OrderState)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OrderState* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OrderState>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.OrderState)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.OrderState)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData OrderState::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    OrderState::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*OrderState::GetClassData() const { return &_class_data_; }
+
+void OrderState::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<OrderState *>(to)->MergeFrom(
+      static_cast<const OrderState &>(from));
 }
+
 
 void OrderState::MergeFrom(const OrderState& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.OrderState)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   orderallocations_.MergeFrom(from.orderallocations_);
@@ -1269,13 +1358,7 @@ void OrderState::MergeFrom(const OrderState& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void OrderState::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.OrderState)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void OrderState::CopyFrom(const OrderState& from) {
@@ -1291,17 +1374,51 @@ bool OrderState::IsInitialized() const {
 
 void OrderState::InternalSwap(OrderState* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   orderallocations_.InternalSwap(&other->orderallocations_);
-  status_.Swap(&other->status_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  commissionandfeescurrency_.Swap(&other->commissionandfeescurrency_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  margincurrency_.Swap(&other->margincurrency_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  suggestedsize_.Swap(&other->suggestedsize_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  rejectreason_.Swap(&other->rejectreason_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  warningtext_.Swap(&other->warningtext_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  completedtime_.Swap(&other->completedtime_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  completedstatus_.Swap(&other->completedstatus_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &status_, lhs_arena,
+      &other->status_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &commissionandfeescurrency_, lhs_arena,
+      &other->commissionandfeescurrency_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &margincurrency_, lhs_arena,
+      &other->margincurrency_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &suggestedsize_, lhs_arena,
+      &other->suggestedsize_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &rejectreason_, lhs_arena,
+      &other->rejectreason_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &warningtext_, lhs_arena,
+      &other->warningtext_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &completedtime_, lhs_arena,
+      &other->completedtime_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &completedstatus_, lhs_arena,
+      &other->completedstatus_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(OrderState, equitywithloanafteroutsiderth_)
       + sizeof(OrderState::equitywithloanafteroutsiderth_)
@@ -1311,9 +1428,10 @@ void OrderState::InternalSwap(OrderState* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata OrderState::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_OrderState_2eproto_getter, &descriptor_table_OrderState_2eproto_once,
+      file_level_metadata_OrderState_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

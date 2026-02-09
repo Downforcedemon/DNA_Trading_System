@@ -14,40 +14,35 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_Contract_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Contract_Contract_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_Execution_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Execution_Execution_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class ExecutionDetailsDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ExecutionDetails> _instance;
-} _ExecutionDetails_default_instance_;
+constexpr ExecutionDetails::ExecutionDetails(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : contract_(nullptr)
+  , execution_(nullptr)
+  , reqid_(0){}
+struct ExecutionDetailsDefaultTypeInternal {
+  constexpr ExecutionDetailsDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ExecutionDetailsDefaultTypeInternal() {}
+  union {
+    ExecutionDetails _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ExecutionDetailsDefaultTypeInternal _ExecutionDetails_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_ExecutionDetails_ExecutionDetails_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_ExecutionDetails_default_instance_;
-    new (ptr) ::protobuf::ExecutionDetails();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::ExecutionDetails::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ExecutionDetails_ExecutionDetails_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ExecutionDetails_ExecutionDetails_2eproto}, {
-      &scc_info_Contract_Contract_2eproto.base,
-      &scc_info_Execution_Execution_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ExecutionDetails_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_ExecutionDetails_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ExecutionDetails_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ExecutionDetails_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_ExecutionDetails_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::ExecutionDetails, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ExecutionDetails, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::ExecutionDetails, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ExecutionDetails, contract_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ExecutionDetails, execution_),
@@ -56,7 +51,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ExecutionDetails_2eproto::offs
   1,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::protobuf::ExecutionDetails)},
+  { 0, 9, -1, sizeof(::protobuf::ExecutionDetails)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -77,29 +72,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_Contract_2eproto,
   &::descriptor_table_Execution_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ExecutionDetails_2eproto_sccs[1] = {
-  &scc_info_ExecutionDetails_ExecutionDetails_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ExecutionDetails_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ExecutionDetails_2eproto = {
-  false, false, descriptor_table_protodef_ExecutionDetails_2eproto, "ExecutionDetails.proto", 307,
-  &descriptor_table_ExecutionDetails_2eproto_once, descriptor_table_ExecutionDetails_2eproto_sccs, descriptor_table_ExecutionDetails_2eproto_deps, 1, 2,
+  false, false, 307, descriptor_table_protodef_ExecutionDetails_2eproto, "ExecutionDetails.proto", 
+  &descriptor_table_ExecutionDetails_2eproto_once, descriptor_table_ExecutionDetails_2eproto_deps, 2, 1,
   schemas, file_default_instances, TableStruct_ExecutionDetails_2eproto::offsets,
-  file_level_metadata_ExecutionDetails_2eproto, 1, file_level_enum_descriptors_ExecutionDetails_2eproto, file_level_service_descriptors_ExecutionDetails_2eproto,
+  file_level_metadata_ExecutionDetails_2eproto, file_level_enum_descriptors_ExecutionDetails_2eproto, file_level_service_descriptors_ExecutionDetails_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_ExecutionDetails_2eproto_getter() {
+  return &descriptor_table_ExecutionDetails_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_ExecutionDetails_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ExecutionDetails_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ExecutionDetails_2eproto(&descriptor_table_ExecutionDetails_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void ExecutionDetails::InitAsDefaultInstance() {
-  ::protobuf::_ExecutionDetails_default_instance_._instance.get_mutable()->contract_ = const_cast< ::protobuf::Contract*>(
-      ::protobuf::Contract::internal_default_instance());
-  ::protobuf::_ExecutionDetails_default_instance_._instance.get_mutable()->execution_ = const_cast< ::protobuf::Execution*>(
-      ::protobuf::Execution::internal_default_instance());
-}
 class ExecutionDetails::_Internal {
  public:
   using HasBits = decltype(std::declval<ExecutionDetails>()._has_bits_);
@@ -125,23 +114,20 @@ ExecutionDetails::_Internal::execution(const ExecutionDetails* msg) {
   return *msg->execution_;
 }
 void ExecutionDetails::clear_contract() {
-  if (GetArena() == nullptr && contract_ != nullptr) {
-    delete contract_;
-  }
-  contract_ = nullptr;
+  if (contract_ != nullptr) contract_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
 void ExecutionDetails::clear_execution() {
-  if (GetArena() == nullptr && execution_ != nullptr) {
-    delete execution_;
-  }
-  execution_ = nullptr;
+  if (execution_ != nullptr) execution_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-ExecutionDetails::ExecutionDetails(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ExecutionDetails::ExecutionDetails(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.ExecutionDetails)
 }
 ExecutionDetails::ExecutionDetails(const ExecutionDetails& from)
@@ -162,21 +148,22 @@ ExecutionDetails::ExecutionDetails(const ExecutionDetails& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.ExecutionDetails)
 }
 
-void ExecutionDetails::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ExecutionDetails_ExecutionDetails_2eproto.base);
-  ::memset(&contract_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&reqid_) -
-      reinterpret_cast<char*>(&contract_)) + sizeof(reqid_));
+inline void ExecutionDetails::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&contract_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&reqid_) -
+    reinterpret_cast<char*>(&contract_)) + sizeof(reqid_));
 }
 
 ExecutionDetails::~ExecutionDetails() {
   // @@protoc_insertion_point(destructor:protobuf.ExecutionDetails)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void ExecutionDetails::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void ExecutionDetails::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete contract_;
   if (this != internal_default_instance()) delete execution_;
 }
@@ -190,31 +177,22 @@ void ExecutionDetails::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void ExecutionDetails::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ExecutionDetails& ExecutionDetails::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ExecutionDetails_ExecutionDetails_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void ExecutionDetails::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.ExecutionDetails)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      if (GetArena() == nullptr && contract_ != nullptr) {
-        delete contract_;
-      }
-      contract_ = nullptr;
+      GOOGLE_DCHECK(contract_ != nullptr);
+      contract_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      if (GetArena() == nullptr && execution_ != nullptr) {
-        delete execution_;
-      }
-      execution_ = nullptr;
+      GOOGLE_DCHECK(execution_ != nullptr);
+      execution_->Clear();
     }
   }
   reqid_ = 0;
@@ -225,70 +203,72 @@ void ExecutionDetails::Clear() {
 const char* ExecutionDetails::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.Contract contract = 2;
+      // optional .protobuf.Contract contract = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_contract(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.Execution execution = 3;
+      // optional .protobuf.Execution execution = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_execution(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ExecutionDetails::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ExecutionDetails::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.ExecutionDetails)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // .protobuf.Contract contract = 2;
+  // optional .protobuf.Contract contract = 2;
   if (_internal_has_contract()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -296,7 +276,7 @@ failure:
         2, _Internal::contract(this), target, stream);
   }
 
-  // .protobuf.Execution execution = 3;
+  // optional .protobuf.Execution execution = 3;
   if (_internal_has_execution()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -316,63 +296,52 @@ size_t ExecutionDetails::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.ExecutionDetails)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    // .protobuf.Contract contract = 2;
+    // optional .protobuf.Contract contract = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *contract_);
     }
 
-    // .protobuf.Execution execution = 3;
+    // optional .protobuf.Execution execution = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *execution_);
     }
 
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void ExecutionDetails::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.ExecutionDetails)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ExecutionDetails* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ExecutionDetails>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.ExecutionDetails)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.ExecutionDetails)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ExecutionDetails::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ExecutionDetails::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ExecutionDetails::GetClassData() const { return &_class_data_; }
+
+void ExecutionDetails::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<ExecutionDetails *>(to)->MergeFrom(
+      static_cast<const ExecutionDetails &>(from));
 }
+
 
 void ExecutionDetails::MergeFrom(const ExecutionDetails& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.ExecutionDetails)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -388,13 +357,7 @@ void ExecutionDetails::MergeFrom(const ExecutionDetails& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void ExecutionDetails::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.ExecutionDetails)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ExecutionDetails::CopyFrom(const ExecutionDetails& from) {
@@ -410,7 +373,7 @@ bool ExecutionDetails::IsInitialized() const {
 
 void ExecutionDetails::InternalSwap(ExecutionDetails* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(ExecutionDetails, reqid_)
@@ -421,9 +384,10 @@ void ExecutionDetails::InternalSwap(ExecutionDetails* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ExecutionDetails::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_ExecutionDetails_2eproto_getter, &descriptor_table_ExecutionDetails_2eproto_once,
+      file_level_metadata_ExecutionDetails_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

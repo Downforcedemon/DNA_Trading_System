@@ -14,42 +14,37 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_FamilyCode_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FamilyCode_FamilyCode_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class FamilyCodesDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FamilyCodes> _instance;
-} _FamilyCodes_default_instance_;
+constexpr FamilyCodes::FamilyCodes(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : familycodes_(){}
+struct FamilyCodesDefaultTypeInternal {
+  constexpr FamilyCodesDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~FamilyCodesDefaultTypeInternal() {}
+  union {
+    FamilyCodes _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT FamilyCodesDefaultTypeInternal _FamilyCodes_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_FamilyCodes_FamilyCodes_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_FamilyCodes_default_instance_;
-    new (ptr) ::protobuf::FamilyCodes();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::FamilyCodes::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FamilyCodes_FamilyCodes_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_FamilyCodes_FamilyCodes_2eproto}, {
-      &scc_info_FamilyCode_FamilyCode_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_FamilyCodes_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_FamilyCodes_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_FamilyCodes_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FamilyCodes_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_FamilyCodes_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::protobuf::FamilyCodes, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::FamilyCodes, familycodes_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::protobuf::FamilyCodes)},
+  { 0, -1, -1, sizeof(::protobuf::FamilyCodes)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -66,25 +61,23 @@ const char descriptor_table_protodef_FamilyCodes_2eproto[] PROTOBUF_SECTION_VARI
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FamilyCodes_2eproto_deps[1] = {
   &::descriptor_table_FamilyCode_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_FamilyCodes_2eproto_sccs[1] = {
-  &scc_info_FamilyCodes_FamilyCodes_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FamilyCodes_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FamilyCodes_2eproto = {
-  false, false, descriptor_table_protodef_FamilyCodes_2eproto, "FamilyCodes.proto", 174,
-  &descriptor_table_FamilyCodes_2eproto_once, descriptor_table_FamilyCodes_2eproto_sccs, descriptor_table_FamilyCodes_2eproto_deps, 1, 1,
+  false, false, 174, descriptor_table_protodef_FamilyCodes_2eproto, "FamilyCodes.proto", 
+  &descriptor_table_FamilyCodes_2eproto_once, descriptor_table_FamilyCodes_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_FamilyCodes_2eproto::offsets,
-  file_level_metadata_FamilyCodes_2eproto, 1, file_level_enum_descriptors_FamilyCodes_2eproto, file_level_service_descriptors_FamilyCodes_2eproto,
+  file_level_metadata_FamilyCodes_2eproto, file_level_enum_descriptors_FamilyCodes_2eproto, file_level_service_descriptors_FamilyCodes_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_FamilyCodes_2eproto_getter() {
+  return &descriptor_table_FamilyCodes_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_FamilyCodes_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_FamilyCodes_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_FamilyCodes_2eproto(&descriptor_table_FamilyCodes_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void FamilyCodes::InitAsDefaultInstance() {
-}
 class FamilyCodes::_Internal {
  public:
 };
@@ -92,11 +85,14 @@ class FamilyCodes::_Internal {
 void FamilyCodes::clear_familycodes() {
   familycodes_.Clear();
 }
-FamilyCodes::FamilyCodes(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+FamilyCodes::FamilyCodes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   familycodes_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.FamilyCodes)
 }
 FamilyCodes::FamilyCodes(const FamilyCodes& from)
@@ -106,18 +102,18 @@ FamilyCodes::FamilyCodes(const FamilyCodes& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.FamilyCodes)
 }
 
-void FamilyCodes::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_FamilyCodes_FamilyCodes_2eproto.base);
+inline void FamilyCodes::SharedCtor() {
 }
 
 FamilyCodes::~FamilyCodes() {
   // @@protoc_insertion_point(destructor:protobuf.FamilyCodes)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void FamilyCodes::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void FamilyCodes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void FamilyCodes::ArenaDtor(void* object) {
@@ -129,15 +125,10 @@ void FamilyCodes::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void FamilyCodes::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const FamilyCodes& FamilyCodes::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_FamilyCodes_FamilyCodes_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void FamilyCodes::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.FamilyCodes)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -147,15 +138,13 @@ void FamilyCodes::Clear() {
 
 const char* FamilyCodes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .protobuf.FamilyCode familyCodes = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -163,34 +152,36 @@ const char* FamilyCodes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* FamilyCodes::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* FamilyCodes::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.FamilyCodes)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .protobuf.FamilyCode familyCodes = 1;
@@ -213,7 +204,7 @@ size_t FamilyCodes::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.FamilyCodes)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -224,45 +215,30 @@ size_t FamilyCodes::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void FamilyCodes::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.FamilyCodes)
-  GOOGLE_DCHECK_NE(&from, this);
-  const FamilyCodes* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FamilyCodes>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.FamilyCodes)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.FamilyCodes)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FamilyCodes::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    FamilyCodes::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FamilyCodes::GetClassData() const { return &_class_data_; }
+
+void FamilyCodes::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<FamilyCodes *>(to)->MergeFrom(
+      static_cast<const FamilyCodes &>(from));
 }
+
 
 void FamilyCodes::MergeFrom(const FamilyCodes& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.FamilyCodes)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   familycodes_.MergeFrom(from.familycodes_);
-}
-
-void FamilyCodes::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.FamilyCodes)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void FamilyCodes::CopyFrom(const FamilyCodes& from) {
@@ -278,14 +254,15 @@ bool FamilyCodes::IsInitialized() const {
 
 void FamilyCodes::InternalSwap(FamilyCodes* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   familycodes_.InternalSwap(&other->familycodes_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FamilyCodes::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_FamilyCodes_2eproto_getter, &descriptor_table_FamilyCodes_2eproto_once,
+      file_level_metadata_FamilyCodes_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

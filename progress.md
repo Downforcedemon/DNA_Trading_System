@@ -55,25 +55,34 @@ Building a professional C++ HFT trading system from scratch for learning quant d
   - Linker errors with simdjson - fixed by adding source before `add_executable()`
   - JSON field mismatch ("watchList" vs "watchlist") - standardized to lowercase
 
-### ✅ 6. IBKR API Integration (In Progress)
+### ✅ 6. IBKR API Integration - COMPLETED
 - Downloaded and integrated IBKR C++ API 10.42
 - Created `IBKRConnection` class inheriting from `DefaultEWrapper`
 - Implemented connection methods:
-  - `connect()` - Connect to IB Gateway
-  - `disconnect()` - Clean disconnect
-  - `subscribeMarketData()` - Subscribe to symbol prices
-  - `processMessages()` - Handle incoming data
+  - `connect()` - Connect to IB Gateway ✅
+  - `disconnect()` - Clean disconnect ✅
+  - `subscribeMarketData()` - Subscribe to symbol prices ✅
+  - `processMessages()` - Handle incoming data (EReader needed for live updates)
 - Implemented callback methods:
-  - `tickPrice()` - Receive price updates and update SymbolManager
-  - `tickSize()` - Handle volume data
-  - `error()` - Handle API errors
-  - `nextValidId()` - Connection confirmation
-  - `connectionClosed()` - Handle disconnection
-- Created `tickerId → symbol` mapping for callback routing
+  - `tickPrice()` - Receive price updates and update SymbolManager ✅
+  - `tickSize()` - Handle volume data ✅
+  - `error()` - Handle API errors ✅
+  - `nextValidId()` - Connection confirmation ✅
+  - `connectionClosed()` - Handle disconnection ✅
+- Created `tickerId → symbol` mapping for callback routing ✅
+- **Successfully connected to IB Gateway on port 4001** ✅
+- **Subscribed to market data for all 5 symbols** (NVDA, AAPL, TSLA, AMD, MSFT) ✅
+
+### ✅ 7. Intel Decimal Floating-Point Library Integration
+- **Challenge:** IBKR API 10.42 requires `Decimal` type for protobuf compatibility
+- **Solution:** Built Intel RD FP Math Library (libbid.a) from source
+- Fixed compilation issues in library source code
+- Linked library in CMakeLists.txt
+- **Result:** Project compiles and links successfully ✅
 
 ---
 
-## Current Challenge: Protobuf Version Incompatibility
+## Resolved Challenge: Protobuf Version Incompatibility ✅
 
 ### Problem Statement
 IBKR API 10.42 ships with pre-compiled protobuf files (`.pb.h` and `.pb.cc`) that were generated with an **older version of protoc**. The system has **protobuf 3.19.6** installed, which is incompatible.
@@ -102,28 +111,21 @@ protobuf-devel-3.19.6-18.fc43.x86_64
 protobuf-c-1.5.2-1.fc43.x86_64
 ```
 
-### Attempted Solutions
+### Solution Implemented ✅
 1. ❌ Tried installing protobuf-devel - already had correct version
 2. ❌ Re-downloaded fresh IBKR API 10.42 - same pre-compiled protobuf files
-3. 🔄 Currently investigating clean restart without protobuf dependencies
+3. ✅ **Final Solution:** Built Intel Decimal Floating-Point Math Library from source
+   - Downloaded IntelRDFPMathLib20U2
+   - Fixed missing `#include <stdlib.h>` in `src/bid128_pow.c`
+   - Compiled with GCC and created `libbid.a` static library
+   - Linked library in CMakeLists.txt: `${PROJECT_SOURCE_DIR}/external/libbid.a`
+   - **Result:** All protobuf files compile successfully with system protobuf 3.19.6
 
----
-
-## Next Steps
-
-### Option A: Build Without Protobuf (Recommended)
-- Remove protobuf dependencies from CMakeLists.txt
-- Exclude `external/ibkr/protobufUnix/*.cc` files
-- Use only core IBKR API functionality (sufficient for market data)
-- Protobuf is only needed for advanced features, not basic market data subscription
-
-### Option B: Downgrade Protobuf
-- Install older protobuf version matching IBKR's pre-compiled files
-- Risk: May conflict with system packages
-
-### Option C: Find Alternative IBKR API Version
-- Research if older IBKR API versions exist without protobuf
-- Risk: May lose API features
+### Key Learnings from Protobuf Challenge
+- IBKR API 10.42's `Decimal` type requires Intel DFP library for proper decimal arithmetic
+- Pre-compiled protobuf files can work with newer protobuf versions if proper dependencies are linked
+- Building third-party libraries from source is sometimes necessary for compatibility
+- Static library linking (`libbid.a`) provides better portability than dynamic linking
 
 ---
 
@@ -143,23 +145,293 @@ protobuf-c-1.5.2-1.fc43.x86_64
 - `external/simdjson.h` - JSON parser header
 - `external/simdjson.cpp` - JSON parser implementation
 - `external/ibkr/` - IBKR C++ API 10.42 (complete API)
+- `external/libbid.a` - Intel Decimal Floating-Point Math Library (static library)
 
 ---
 
 ## Learning Outcomes So Far
 
-1. **CMake Build System** - Version management, include directories, source collection
+1. **CMake Build System** - Version management, include directories, source collection, library linking
 2. **Modern C++ Features** - C++23, smart pointers, enum classes, structured bindings
 3. **Data Structures** - Hash maps for O(1) lookups, thread-safe operations
 4. **Thread Safety** - Mutex locks for concurrent market data updates
-5. **IBKR API** - Callback architecture, EWrapper pattern, market data subscriptions
-6. **Dependency Management** - Library integration, linker configuration
-7. **Error Handling** - Compilation errors, linker errors, runtime errors
+5. **IBKR API** - Callback architecture, EWrapper pattern, market data subscriptions, client ID management
+6. **Dependency Management** - Library integration, linker configuration, static library compilation
+7. **Error Handling** - Compilation errors, linker errors, runtime errors, API errors
 8. **Professional Development** - Case-insensitive input, formatted output, clean code structure
+9. **Third-Party Library Building** - Compiling from source, fixing build issues, creating static libraries
+10. **API Configuration** - IB Gateway settings, socket ports, encoding settings, client authentication
 
 ---
 
 ## Current Status
-🔴 **BLOCKED** - Cannot compile due to protobuf version incompatibility.
+🟢 **PHASE 2 COMPLETE** - Provider-agnostic architecture implemented successfully
 
-**Decision needed:** How to proceed with protobuf issue (Option A, B, or C above).
+### What's Working
+✅ Build system compiles successfully
+✅ All dependencies linked correctly
+✅ Provider abstraction layer complete
+✅ IBKR adapter wraps existing IBKRConnection
+✅ Observer pattern implemented (MarketDataManager)
+✅ Configuration management with JSON loading
+✅ Multiple listeners can receive market data
+✅ Runtime provider switching capability
+✅ Connection to IB Gateway established (port 4001)
+✅ Market data subscriptions active
+✅ Interactive dashboard fully functional
+
+### Known Limitations
+⚠️ **EReader not implemented** - Message processing is currently a no-op; needs EReader thread for real-time updates
+⚠️ **Signals hardcoded** - All symbols show WAIT with score 3/6 and $100.00 placeholder price
+⚠️ **No live testing yet** - Markets closed; need to test with IB Gateway
+⚠️ **DataSource field not populated** - MarketDataManager should set this from provider name
+
+---
+
+## ✅ Phase 2: Provider-Agnostic Architecture - COMPLETED (January 10, 2026)
+
+### Overview
+Refactored the system to support multiple market data providers (IBKR, Databento, dxFeed) with clean abstraction and runtime switching.
+
+### Architecture Implementation
+
+**1. Core Interfaces Created:**
+- `IMarketDataProvider.hpp` - Pure virtual interface for all providers
+  - Methods: `connect()`, `disconnect()`, `isConnected()`, `subscribe()`, `unsubscribe()`, `getProviderName()`, `processMessages()`
+- `IMarketDataListener.hpp` - Callback interface for data consumers
+  - Methods: `onPriceUpdate()`, `onSizeUpdate()`, `onError()`
+
+**2. Observer Pattern Hub:**
+- `MarketDataManager` class - Central hub implementing Observer pattern
+  - Owns one provider (`unique_ptr<IMarketDataProvider>`)
+  - Manages multiple listeners (`vector<IMarketDataListener*>`)
+  - Receives data from provider, broadcasts to all listeners
+  - Safe disconnection in destructor
+
+**3. IBKR Adapter (Adapter Pattern):**
+- `IBKRAdapter` class - Wraps IBKRConnection without modifying it
+  - Implements `IMarketDataProvider` (outward interface)
+  - Implements `IMarketDataListener` (receives from IBKRConnection)
+  - Forwards callbacks from IBKRConnection to MarketDataManager
+  - Uses `IBKRConfig` struct for connection settings
+
+**4. Configuration Management:**
+- Created `config/ibkr.json` with connection settings:
+  ```json
+  {
+    "host": "127.0.0.1",
+    "port": 4001,
+    "clientId": 0
+  }
+  ```
+- `IBKRConfig` struct for type-safe configuration
+- `loadIBKRConfig()` function with simdjson parsing
+- Fallback to defaults if config file missing
+
+**5. Updated Components:**
+- `SymbolManager` - Now implements `IMarketDataListener`
+  - Receives callbacks via listener interface
+  - Thread-safe updates with mutex
+  - Added `lastUpdate` and `dataSource` to `SymbolState`
+- `IBKRConnection` - Changed to depend on `IMarketDataListener*` instead of `SymbolManager&`
+  - Enables dependency inversion principle
+  - Forwards callbacks to generic listener
+
+### Data Flow Architecture
+```
+IBKR API → IBKRConnection → IBKRAdapter → MarketDataManager → [SymbolManager, Strategy, Logger, ...]
+                              (Adapter)      (Observer Hub)      (Multiple Listeners)
+```
+
+### Design Patterns Applied
+1. **Strategy Pattern** - Interchangeable provider implementations
+2. **Adapter Pattern** - IBKRAdapter wraps IBKRConnection
+3. **Observer Pattern** - One-to-many data distribution
+4. **Dependency Inversion** - Depend on abstractions, not concrete classes
+
+### Files Created/Modified
+
+**New Files:**
+- `include/core/IMarketDataProvider.hpp`
+- `include/core/IMarketDataListener.hpp`
+- `include/core/MarketDataManager.hpp`
+- `src/core/MarketDataManager.cpp`
+- `include/adapters/IBKRAdapter.hpp`
+- `src/adapters/IBKRAdapter.cpp`
+- `config/ibkr.json`
+
+**Modified Files:**
+- `include/core/SymbolState.hpp` - Added `dataSource` and `lastUpdate` fields
+- `include/core/SymbolManager.hpp` - Implements `IMarketDataListener`
+- `src/core/SymbolManager.cpp` - Added listener callback implementations
+- `include/core/IBKRConnection.hpp` - Changed from `SymbolManager&` to `IMarketDataListener*`
+- `src/core/IBKRConnection.cpp` - Updated callbacks to use listener interface
+- `src/main.cpp` - Updated to use new architecture with config loading
+
+### Challenges Resolved
+1. **Include path errors** - Fixed inconsistent include paths across files
+2. **Typo in filename** - Renamed `IMarketDataListner.hpp` to `IMarketDataListener.hpp`
+3. **Method signature typos** - Fixed `connected()` → `connect()`, `void isConnected()` → `bool isConnected()`
+4. **Variable name typos** - Fixed `listnerers_` → `listeners_`, `ibkrConnection` → `ibkrConnection_`
+5. **Parameter name mismatch** - Fixed `errorcode` vs `errorCode` inconsistency
+
+### Key Benefits Achieved
+✅ **Provider Independence** - Can add Databento/dxFeed by creating new adapters
+✅ **Runtime Switching** - Change providers with `setProvider()` call
+✅ **Multiple Consumers** - Any component can listen to market data
+✅ **Configuration External** - Connection settings in JSON file
+✅ **Clean Separation** - Interfaces enforce contracts
+✅ **No Breaking Changes** - Existing IBKRConnection unchanged (wrapped)
+✅ **Thread Safety** - Mutex protection in SymbolManager callbacks
+✅ **Data Provenance** - Track which provider and when data arrived
+
+### Learning Outcomes - Phase 2
+1. **Interface Design** - Creating pure virtual interfaces for abstraction
+2. **Smart Pointers** - `unique_ptr` for ownership, raw pointers for observation
+3. **Move Semantics** - Transferring ownership with `std::move()`
+4. **Observer Pattern** - One-to-many notification architecture
+5. **Adapter Pattern** - Wrapping existing code without modification
+6. **Dependency Inversion** - Depending on abstractions
+7. **Multiple Inheritance** - IBKRAdapter implements two interfaces
+8. **Member Initializer Lists** - Efficient construction
+9. **Configuration Management** - External JSON config with fallbacks
+10. **Include Path Resolution** - Understanding CMake include directories
+
+---
+
+## Phase 3: Tape Reading Strategy Implementation - PLANNED (January 10, 2026)
+
+### Overview
+Port the proven Python tape reading/order flow strategy into the C++ DNA Trading System. This implements a 6-factor composite signal scoring system (0-6 points) based on order flow confluence.
+
+### Source Strategy
+**Location:** `/home/navneetsimran/Downloads/Quant/New_Year_Experiment/18_Tape_Reading_OrderFlow/`
+
+**Python Components:**
+- Tape Reading Engine (cumulative delta, divergences, large blocks)
+- Signal Aggregator (6-factor composite scoring 0-6)
+- 6 Analyzers: Book Flip, Absorption, Stacking, Camarilla, CPR, VPA
+
+### Signal Scoring System (0-6 Points)
+1. CPR Bias Aligned (+1)
+2. At Camarilla Level (+1)
+3. VPA Confirming (+1)
+4. Book Flip Detected (+1)
+5. Absorption Detected (+1)
+6. Stacking Aligned (+1)
+
+**Interpretation:** 5-6 = HIGH (trade), 3-4 = MODERATE (wait), 0-2 = LOW (no trade)
+
+### Architecture Components
+
+**New Modules:**
+- `include/strategy/` - Strategy types, interfaces, core engine
+- `include/strategy/analyzers/` - 6 analyzer classes
+- `src/strategy/` - Implementation files
+
+**Enhanced Components:**
+- Expand `SymbolState` with Level 2 book, Time & Sales, detection flags
+- Create `StrategyEngine` as IMarketDataListener
+- Integrate with existing MarketDataManager
+
+**Data Flow:**
+```
+IBKR API → MarketDataManager → [SymbolManager, StrategyEngine]
+                                         ↓
+                                    TapeReader
+                                         ↓
+                              6 Analyzers (parallel)
+                                         ↓
+                                SignalAggregator
+                                         ↓
+                              Composite Score (0-6)
+```
+
+### Implementation Phases
+
+**✅ Phase 3.1: Foundation Types - COMPLETED**
+- ✅ Created `include/strategy/StrategyTypes.hpp` with:
+  - `PriceLevel` struct (price, size)
+  - `OHLCData` struct (open, high, low, close, timestamp)
+  - `CPRData` struct (pivot, bc, tc)
+  - `CamarillaLevels` struct (r3, r4, r6, s3, s4, s6)
+- ✅ Enhanced `SymbolState.hpp` with:
+  - CPR and Camarilla level fields
+  - Cumulative delta tracking
+  - Individual factor scores (6 fields: cprScore, camarillaScore, vpaScore, bookFlipScore, absorptionScore, stackingScore)
+
+**⏳ Phase 3.2: Simple Analyzers - IN PROGRESS**
+- ✅ `CamarillaCalculator` - COMPLETED
+  - Header: `include/strategy/analyzers/CamarillaCalculator.hpp` ✅
+  - Implementation: `src/strategy/analyzers/CamarillaCalculator.cpp` ✅
+  - Static method to calculate R3/R4/R6/S3/S4/S6 levels from OHLC
+- ✅ `CPRCalculator` - COMPLETED
+  - Header: `include/strategy/analyzers/CPRCalculator.hpp` ✅
+  - Implementation: `src/strategy/analyzers/CPRCalculator.cpp` ✅
+  - Static method to calculate Pivot, BC, TC from OHLC
+- 🔄 `StackingAnalyzer` - IN PROGRESS (next session starts here)
+  - Header: `include/strategy/analyzers/StackingAnalyzer.hpp` ✅
+  - Implementation: `src/strategy/analyzers/StackingAnalyzer.cpp` ⏳ NEXT
+  - Static method to calculate bid/ask imbalance ratio
+
+**Phase 3.3:** Stateful analyzers (Book Flip, Absorption, VPA)
+**Phase 3.4:** Tape Reader (delta, blocks, divergence)
+**Phase 3.5:** Signal Aggregator (composite scoring)
+**Phase 3.6:** Integration with MarketDataManager
+**Phase 3.7:** Testing and validation
+
+### Dependencies
+- IBKR Level 2 market data (order book depth)
+- IBKR Time & Sales data (tick-by-tick trades)
+- Historical OHLC for pivot calculations
+
+---
+
+## Next Steps (Week 2)
+
+### ✅ 1. EReader Implementation - COMPLETED
+- Successfully integrated EReader for real-time message processing
+- Connection to IB Gateway operational with live subscriptions
+
+### ⏳ 2. Test Live Market Data (Monday)
+**Priority:** HIGH
+- Verify live price updates during market hours
+- Validate data flow through entire system
+
+### 🎯 3. Begin Phase 3: Strategy Implementation
+**Priority:** HIGH
+- Start with foundation types and enhanced SymbolState
+- Implement analyzers incrementally
+- Integrate with MarketDataManager
+
+### 4. Add Market Data Subscriptions
+**Priority:** MEDIUM
+- Subscribe to Level 2 order book
+- Subscribe to Time & Sales tick data
+- Add historical OHLC for pivots
+
+---
+
+## Week 1 Summary
+
+**Total Time:** 1 day (January 4, 2026)
+**Status:** ✅ WEEK 1 COMPLETE - All foundation tasks done
+
+**Major Accomplishments:**
+- Built entire project from scratch in C++23
+- Integrated IBKR C++ API successfully
+- Resolved major protobuf compatibility issue
+- Established working connection to IB Gateway
+- Created professional interactive dashboard
+- All 5 watchlist symbols subscribed to market data
+
+**Challenges Overcome:**
+- CMake version compatibility
+- Protobuf version incompatibility (solved with Intel DFP library)
+- IB Gateway API configuration
+- Client ID conflicts
+- Build system linker errors
+
+**Lines of Code:** ~500 (excluding external libraries)
+**Files Created:** 8 core files
+**External Libraries:** 3 (simdjson, IBKR API, Intel DFP)

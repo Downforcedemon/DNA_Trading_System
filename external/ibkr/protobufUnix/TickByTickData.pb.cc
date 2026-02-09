@@ -14,50 +14,40 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_HistoricalTick_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HistoricalTick_HistoricalTick_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_HistoricalTickBidAsk_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_HistoricalTickLast_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HistoricalTickLast_HistoricalTickLast_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class TickByTickDataDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TickByTickData> _instance;
-  const ::protobuf::HistoricalTickLast* historicalticklast_;
-  const ::protobuf::HistoricalTickBidAsk* historicaltickbidask_;
-  const ::protobuf::HistoricalTick* historicaltickmidpoint_;
-} _TickByTickData_default_instance_;
+constexpr TickByTickData::TickByTickData(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : reqid_(0)
+  , ticktype_(0)
+  , _oneof_case_{}{}
+struct TickByTickDataDefaultTypeInternal {
+  constexpr TickByTickDataDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~TickByTickDataDefaultTypeInternal() {}
+  union {
+    TickByTickData _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TickByTickDataDefaultTypeInternal _TickByTickData_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_TickByTickData_TickByTickData_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_TickByTickData_default_instance_;
-    new (ptr) ::protobuf::TickByTickData();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::TickByTickData::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_TickByTickData_TickByTickData_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_TickByTickData_TickByTickData_2eproto}, {
-      &scc_info_HistoricalTickLast_HistoricalTickLast_2eproto.base,
-      &scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto.base,
-      &scc_info_HistoricalTick_HistoricalTick_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TickByTickData_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_TickByTickData_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TickByTickData_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TickByTickData_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_TickByTickData_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::TickByTickData, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::TickByTickData, _internal_metadata_),
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::protobuf::TickByTickData, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::TickByTickData, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::TickByTickData, ticktype_),
-  offsetof(::protobuf::TickByTickDataDefaultTypeInternal, historicalticklast_),
-  offsetof(::protobuf::TickByTickDataDefaultTypeInternal, historicaltickbidask_),
-  offsetof(::protobuf::TickByTickDataDefaultTypeInternal, historicaltickmidpoint_),
+  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
   PROTOBUF_FIELD_OFFSET(::protobuf::TickByTickData, tick_),
   0,
   1,
@@ -66,7 +56,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TickByTickData_2eproto::offset
   ~0u,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 11, sizeof(::protobuf::TickByTickData)},
+  { 0, 12, -1, sizeof(::protobuf::TickByTickData)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -92,31 +82,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_HistoricalTickBidAsk_2eproto,
   &::descriptor_table_HistoricalTickLast_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_TickByTickData_2eproto_sccs[1] = {
-  &scc_info_TickByTickData_TickByTickData_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TickByTickData_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TickByTickData_2eproto = {
-  false, false, descriptor_table_protodef_TickByTickData_2eproto, "TickByTickData.proto", 457,
-  &descriptor_table_TickByTickData_2eproto_once, descriptor_table_TickByTickData_2eproto_sccs, descriptor_table_TickByTickData_2eproto_deps, 1, 3,
+  false, false, 457, descriptor_table_protodef_TickByTickData_2eproto, "TickByTickData.proto", 
+  &descriptor_table_TickByTickData_2eproto_once, descriptor_table_TickByTickData_2eproto_deps, 3, 1,
   schemas, file_default_instances, TableStruct_TickByTickData_2eproto::offsets,
-  file_level_metadata_TickByTickData_2eproto, 1, file_level_enum_descriptors_TickByTickData_2eproto, file_level_service_descriptors_TickByTickData_2eproto,
+  file_level_metadata_TickByTickData_2eproto, file_level_enum_descriptors_TickByTickData_2eproto, file_level_service_descriptors_TickByTickData_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TickByTickData_2eproto_getter() {
+  return &descriptor_table_TickByTickData_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_TickByTickData_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_TickByTickData_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TickByTickData_2eproto(&descriptor_table_TickByTickData_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void TickByTickData::InitAsDefaultInstance() {
-  ::protobuf::_TickByTickData_default_instance_.historicalticklast_ = const_cast< ::protobuf::HistoricalTickLast*>(
-      ::protobuf::HistoricalTickLast::internal_default_instance());
-  ::protobuf::_TickByTickData_default_instance_.historicaltickbidask_ = const_cast< ::protobuf::HistoricalTickBidAsk*>(
-      ::protobuf::HistoricalTickBidAsk::internal_default_instance());
-  ::protobuf::_TickByTickData_default_instance_.historicaltickmidpoint_ = const_cast< ::protobuf::HistoricalTick*>(
-      ::protobuf::HistoricalTick::internal_default_instance());
-}
 class TickByTickData::_Internal {
  public:
   using HasBits = decltype(std::declval<TickByTickData>()._has_bits_);
@@ -144,11 +126,13 @@ TickByTickData::_Internal::historicaltickmidpoint(const TickByTickData* msg) {
   return *msg->tick_.historicaltickmidpoint_;
 }
 void TickByTickData::set_allocated_historicalticklast(::protobuf::HistoricalTickLast* historicalticklast) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_tick();
   if (historicalticklast) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(historicalticklast)->GetArena();
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<
+            ::PROTOBUF_NAMESPACE_ID::MessageLite>::GetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(historicalticklast));
     if (message_arena != submessage_arena) {
       historicalticklast = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, historicalticklast, submessage_arena);
@@ -160,18 +144,20 @@ void TickByTickData::set_allocated_historicalticklast(::protobuf::HistoricalTick
 }
 void TickByTickData::clear_historicalticklast() {
   if (_internal_has_historicalticklast()) {
-    if (GetArena() == nullptr) {
+    if (GetArenaForAllocation() == nullptr) {
       delete tick_.historicalticklast_;
     }
     clear_has_tick();
   }
 }
 void TickByTickData::set_allocated_historicaltickbidask(::protobuf::HistoricalTickBidAsk* historicaltickbidask) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_tick();
   if (historicaltickbidask) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(historicaltickbidask)->GetArena();
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<
+            ::PROTOBUF_NAMESPACE_ID::MessageLite>::GetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(historicaltickbidask));
     if (message_arena != submessage_arena) {
       historicaltickbidask = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, historicaltickbidask, submessage_arena);
@@ -183,18 +169,20 @@ void TickByTickData::set_allocated_historicaltickbidask(::protobuf::HistoricalTi
 }
 void TickByTickData::clear_historicaltickbidask() {
   if (_internal_has_historicaltickbidask()) {
-    if (GetArena() == nullptr) {
+    if (GetArenaForAllocation() == nullptr) {
       delete tick_.historicaltickbidask_;
     }
     clear_has_tick();
   }
 }
 void TickByTickData::set_allocated_historicaltickmidpoint(::protobuf::HistoricalTick* historicaltickmidpoint) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_tick();
   if (historicaltickmidpoint) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(historicaltickmidpoint)->GetArena();
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<
+            ::PROTOBUF_NAMESPACE_ID::MessageLite>::GetOwningArena(
+                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(historicaltickmidpoint));
     if (message_arena != submessage_arena) {
       historicaltickmidpoint = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, historicaltickmidpoint, submessage_arena);
@@ -206,16 +194,19 @@ void TickByTickData::set_allocated_historicaltickmidpoint(::protobuf::Historical
 }
 void TickByTickData::clear_historicaltickmidpoint() {
   if (_internal_has_historicaltickmidpoint()) {
-    if (GetArena() == nullptr) {
+    if (GetArenaForAllocation() == nullptr) {
       delete tick_.historicaltickmidpoint_;
     }
     clear_has_tick();
   }
 }
-TickByTickData::TickByTickData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+TickByTickData::TickByTickData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.TickByTickData)
 }
 TickByTickData::TickByTickData(const TickByTickData& from)
@@ -246,22 +237,23 @@ TickByTickData::TickByTickData(const TickByTickData& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.TickByTickData)
 }
 
-void TickByTickData::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TickByTickData_TickByTickData_2eproto.base);
-  ::memset(&reqid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&ticktype_) -
-      reinterpret_cast<char*>(&reqid_)) + sizeof(ticktype_));
-  clear_has_tick();
+inline void TickByTickData::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&reqid_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&ticktype_) -
+    reinterpret_cast<char*>(&reqid_)) + sizeof(ticktype_));
+clear_has_tick();
 }
 
 TickByTickData::~TickByTickData() {
   // @@protoc_insertion_point(destructor:protobuf.TickByTickData)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void TickByTickData::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void TickByTickData::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (has_tick()) {
     clear_tick();
   }
@@ -276,29 +268,24 @@ void TickByTickData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void TickByTickData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const TickByTickData& TickByTickData::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TickByTickData_TickByTickData_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void TickByTickData::clear_tick() {
 // @@protoc_insertion_point(one_of_clear_start:protobuf.TickByTickData)
   switch (tick_case()) {
     case kHistoricalTickLast: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete tick_.historicalticklast_;
       }
       break;
     }
     case kHistoricalTickBidAsk: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete tick_.historicaltickbidask_;
       }
       break;
     }
     case kHistoricalTickMidPoint: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete tick_.historicaltickmidpoint_;
       }
       break;
@@ -313,7 +300,7 @@ void TickByTickData::clear_tick() {
 
 void TickByTickData::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.TickByTickData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -331,85 +318,89 @@ void TickByTickData::Clear() {
 const char* TickByTickData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 tickType = 2;
+      // optional int32 tickType = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_ticktype(&has_bits);
-          ticktype_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ticktype_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .protobuf.HistoricalTickLast historicalTickLast = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_historicalticklast(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .protobuf.HistoricalTickBidAsk historicalTickBidAsk = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_historicaltickbidask(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .protobuf.HistoricalTick historicalTickMidPoint = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_historicaltickmidpoint(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TickByTickData::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TickByTickData::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.TickByTickData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // int32 tickType = 2;
+  // optional int32 tickType = 2;
   if (_internal_has_ticktype()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_ticktype(), target);
@@ -451,24 +442,20 @@ size_t TickByTickData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.TickByTickData)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
-    // int32 tickType = 2;
+    // optional int32 tickType = 2;
     if (cached_has_bits & 0x00000002u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_ticktype());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_ticktype());
     }
 
   }
@@ -498,35 +485,26 @@ size_t TickByTickData::ByteSizeLong() const {
       break;
     }
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void TickByTickData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.TickByTickData)
-  GOOGLE_DCHECK_NE(&from, this);
-  const TickByTickData* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TickByTickData>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.TickByTickData)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.TickByTickData)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TickByTickData::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    TickByTickData::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TickByTickData::GetClassData() const { return &_class_data_; }
+
+void TickByTickData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<TickByTickData *>(to)->MergeFrom(
+      static_cast<const TickByTickData &>(from));
 }
+
 
 void TickByTickData::MergeFrom(const TickByTickData& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.TickByTickData)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -556,13 +534,7 @@ void TickByTickData::MergeFrom(const TickByTickData& from) {
       break;
     }
   }
-}
-
-void TickByTickData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.TickByTickData)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TickByTickData::CopyFrom(const TickByTickData& from) {
@@ -578,7 +550,7 @@ bool TickByTickData::IsInitialized() const {
 
 void TickByTickData::InternalSwap(TickByTickData* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(TickByTickData, ticktype_)
@@ -591,9 +563,10 @@ void TickByTickData::InternalSwap(TickByTickData* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TickByTickData::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_TickByTickData_2eproto_getter, &descriptor_table_TickByTickData_2eproto_once,
+      file_level_metadata_TickByTickData_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

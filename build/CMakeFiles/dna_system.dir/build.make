@@ -72,10 +72,24 @@ include CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/codegen:
 .PHONY : CMakeFiles/dna_system.dir/codegen
 
+CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o: CMakeFiles/dna_system.dir/flags.make
+CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/src/adapters/IBKRAdapter.cpp
+CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o -MF CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o.d -o CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/src/adapters/IBKRAdapter.cpp
+
+CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/navneetsimran/Downloads/DNA_Trading_System/src/adapters/IBKRAdapter.cpp > CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.i
+
+CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/navneetsimran/Downloads/DNA_Trading_System/src/adapters/IBKRAdapter.cpp -o CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.s
+
 CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/src/core/IBKRConnection.cpp
 CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o -MF CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o.d -o CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/src/core/IBKRConnection.cpp
 
 CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.i: cmake_force
@@ -86,10 +100,24 @@ CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/navneetsimran/Downloads/DNA_Trading_System/src/core/IBKRConnection.cpp -o CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.s
 
+CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o: CMakeFiles/dna_system.dir/flags.make
+CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/src/core/MarketDataManager.cpp
+CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o -MF CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o.d -o CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/src/core/MarketDataManager.cpp
+
+CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/navneetsimran/Downloads/DNA_Trading_System/src/core/MarketDataManager.cpp > CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.i
+
+CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/navneetsimran/Downloads/DNA_Trading_System/src/core/MarketDataManager.cpp -o CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.s
+
 CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/src/core/SymbolManager.cpp
 CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o -MF CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o.d -o CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/src/core/SymbolManager.cpp
 
 CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.i: cmake_force
@@ -103,7 +131,7 @@ CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/src/main.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/src/main.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/src/main.cpp
 CMakeFiles/dna_system.dir/src/main.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dna_system.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dna_system.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/src/main.cpp.o -MF CMakeFiles/dna_system.dir/src/main.cpp.o.d -o CMakeFiles/dna_system.dir/src/main.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/src/main.cpp
 
 CMakeFiles/dna_system.dir/src/main.cpp.i: cmake_force
@@ -117,7 +145,7 @@ CMakeFiles/dna_system.dir/src/main.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/simdjson.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/simdjson.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/simdjson.cpp
 CMakeFiles/dna_system.dir/external/simdjson.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dna_system.dir/external/simdjson.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dna_system.dir/external/simdjson.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/simdjson.cpp.o -MF CMakeFiles/dna_system.dir/external/simdjson.cpp.o.d -o CMakeFiles/dna_system.dir/external/simdjson.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/simdjson.cpp
 
 CMakeFiles/dna_system.dir/external/simdjson.cpp.i: cmake_force
@@ -131,7 +159,7 @@ CMakeFiles/dna_system.dir/external/simdjson.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ContractCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ContractCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.i: cmake_force
@@ -145,7 +173,7 @@ CMakeFiles/dna_system.dir/external/ibkr/ContractCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/Decimal.cpp
 CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/Decimal.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.i: cmake_force
@@ -159,7 +187,7 @@ CMakeFiles/dna_system.dir/external/ibkr/Decimal.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/DefaultEWrapper.cpp
 CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/DefaultEWrapper.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.i: cmake_force
@@ -173,7 +201,7 @@ CMakeFiles/dna_system.dir/external/ibkr/DefaultEWrapper.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EClient.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EClient.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.i: cmake_force
@@ -187,7 +215,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EClient.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EClientSocket.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EClientSocket.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.i: cmake_force
@@ -201,7 +229,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EClientSocket.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EClientUtils.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EClientUtils.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.i: cmake_force
@@ -215,7 +243,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EClientUtils.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EDecoder.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EDecoder.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.i: cmake_force
@@ -229,7 +257,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EDecoder.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EDecoderUtils.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EDecoderUtils.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.i: cmake_force
@@ -243,7 +271,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EDecoderUtils.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EMessage.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EMessage.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.i: cmake_force
@@ -257,7 +285,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EMessage.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EMutex.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EMutex.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.i: cmake_force
@@ -271,7 +299,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EMutex.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EOrderDecoder.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EOrderDecoder.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.i: cmake_force
@@ -285,7 +313,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EOrderDecoder.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EReader.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EReader.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.i: cmake_force
@@ -299,7 +327,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EReader.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EReaderOSSignal.cpp
 CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/EReaderOSSignal.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.i: cmake_force
@@ -313,7 +341,7 @@ CMakeFiles/dna_system.dir/external/ibkr/EReaderOSSignal.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ESocket.cpp
 CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ESocket.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.i: cmake_force
@@ -327,7 +355,7 @@ CMakeFiles/dna_system.dir/external/ibkr/ESocket.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ExecutionCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/ExecutionCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.i: cmake_force
@@ -341,7 +369,7 @@ CMakeFiles/dna_system.dir/external/ibkr/ExecutionCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/MarginCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/MarginCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.i: cmake_force
@@ -355,7 +383,7 @@ CMakeFiles/dna_system.dir/external/ibkr/MarginCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/OperatorCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/OperatorCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.i: cmake_force
@@ -369,7 +397,7 @@ CMakeFiles/dna_system.dir/external/ibkr/OperatorCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/OrderCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/OrderCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.i: cmake_force
@@ -383,7 +411,7 @@ CMakeFiles/dna_system.dir/external/ibkr/OrderCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/PercentChangeCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/PercentChangeCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.i: cmake_force
@@ -397,7 +425,7 @@ CMakeFiles/dna_system.dir/external/ibkr/PercentChangeCondition.cpp.s: cmake_forc
 CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/PriceCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/PriceCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.i: cmake_force
@@ -411,7 +439,7 @@ CMakeFiles/dna_system.dir/external/ibkr/PriceCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/SoftDollarTier.cpp
 CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/SoftDollarTier.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.i: cmake_force
@@ -425,7 +453,7 @@ CMakeFiles/dna_system.dir/external/ibkr/SoftDollarTier.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/StdAfx.cpp
 CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/StdAfx.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.i: cmake_force
@@ -439,7 +467,7 @@ CMakeFiles/dna_system.dir/external/ibkr/StdAfx.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/TimeCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/TimeCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.i: cmake_force
@@ -453,7 +481,7 @@ CMakeFiles/dna_system.dir/external/ibkr/TimeCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/Utils.cpp
 CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/Utils.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.i: cmake_force
@@ -467,7 +495,7 @@ CMakeFiles/dna_system.dir/external/ibkr/Utils.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/VolumeCondition.cpp
 CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o -MF CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o.d -o CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/VolumeCondition.cpp
 
 CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.i: cmake_force
@@ -481,7 +509,7 @@ CMakeFiles/dna_system.dir/external/ibkr/VolumeCondition.cpp.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountDataEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountDataEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.i: cmake_force
@@ -495,7 +523,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataEnd.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.i: cmake_force
@@ -509,7 +537,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountDataRequest.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountSummary.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountSummary.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.i: cmake_force
@@ -523,7 +551,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummary.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.i: cmake_force
@@ -537,7 +565,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryEnd.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc.i: cmake_force
@@ -551,7 +579,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountSummaryRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.i: cmake_force
@@ -565,7 +593,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMulti.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc.i: cmake_force
@@ -579,7 +607,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateMultiEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.i: cmake_force
@@ -593,7 +621,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdateTime.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.pb.cc.i: cmake_force
@@ -607,7 +635,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountUpdatesMultiRequest.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountValue.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AccountValue.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.i: cmake_force
@@ -621,7 +649,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AccountValue.pb.cc.s: cmake
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.i: cmake_force
@@ -635,7 +663,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AllOpenOrdersRequest.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AttachedOrders.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AttachedOrders.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.i: cmake_force
@@ -649,7 +677,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AttachedOrders.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc.i: cmake_force
@@ -663,7 +691,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/AutoOpenOrdersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityRequest.pb.cc.i: cmake_force
@@ -677,7 +705,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateImpliedVolatilityR
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest.pb.cc.i: cmake_force
@@ -691,7 +719,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CalculateOptionPriceRequest
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.i: cmake_force
@@ -705,7 +733,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountSummary.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.pb.cc.i: cmake_force
@@ -719,7 +747,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelAccountUpdatesMulti.p
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolatility.pb.cc.i: cmake_force
@@ -733,7 +761,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateImpliedVolat
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.pb.cc.i: cmake_force
@@ -747,7 +775,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelCalculateOptionPrice.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelContractData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelContractData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.i: cmake_force
@@ -761,7 +789,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelContractData.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.cc.i: cmake_force
@@ -775,7 +803,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelFundamentalsData.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.i: cmake_force
@@ -789,7 +817,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHeadTimestamp.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHistogramData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHistogramData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.i: cmake_force
@@ -803,7 +831,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistogramData.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.i: cmake_force
@@ -817,7 +845,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalData.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc.i: cmake_force
@@ -831,7 +859,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelHistoricalTicks.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelMarketData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelMarketData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.i: cmake_force
@@ -845,7 +873,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketData.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.i: cmake_force
@@ -859,7 +887,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelMarketDepth.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.i: cmake_force
@@ -873,7 +901,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelNewsBulletins.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.i: cmake_force
@@ -887,7 +915,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelOrderRequest.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPnL.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPnL.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.i: cmake_force
@@ -901,7 +929,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnL.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.i: cmake_force
@@ -915,7 +943,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPnLSingle.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPositions.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPositions.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.i: cmake_force
@@ -929,7 +957,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositions.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.i: cmake_force
@@ -943,7 +971,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelPositionsMulti.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.i: cmake_force
@@ -957,7 +985,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelRealTimeBars.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.pb.cc.i: cmake_force
@@ -971,7 +999,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelScannerSubscription.p
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelTickByTick.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelTickByTick.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.i: cmake_force
@@ -985,7 +1013,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelTickByTick.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelWshEventData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelWshEventData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.i: cmake_force
@@ -999,7 +1027,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshEventData.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.i: cmake_force
@@ -1013,7 +1041,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CancelWshMetaData.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ComboLeg.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ComboLeg.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.i: cmake_force
@@ -1027,7 +1055,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ComboLeg.pb.cc.s: cmake_for
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.cc.i: cmake_force
@@ -1041,7 +1069,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CommissionAndFeesReport.pb.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrder.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrder.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.i: cmake_force
@@ -1055,7 +1083,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrder.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.i: cmake_force
@@ -1069,7 +1097,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersEnd.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.cc.i: cmake_force
@@ -1083,7 +1111,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CompletedOrdersRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Contract.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Contract.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.i: cmake_force
@@ -1097,7 +1125,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Contract.pb.cc.s: cmake_for
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.i: cmake_force
@@ -1111,7 +1139,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractData.pb.cc.s: cmake
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDataEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDataEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.i: cmake_force
@@ -1125,7 +1153,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataEnd.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.i: cmake_force
@@ -1139,7 +1167,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDataRequest.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDescription.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDescription.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.i: cmake_force
@@ -1153,7 +1181,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDescription.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDetails.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ContractDetails.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.i: cmake_force
@@ -1167,7 +1195,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ContractDetails.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTime.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTime.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.i: cmake_force
@@ -1181,7 +1209,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTime.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.i: cmake_force
@@ -1195,7 +1223,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillis.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.pb.cc.i: cmake_force
@@ -1209,7 +1237,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeInMillisRequest.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.i: cmake_force
@@ -1223,7 +1251,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/CurrentTimeRequest.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.i: cmake_force
@@ -1237,7 +1265,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DeltaNeutralContract.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.pb.cc.i: cmake_force
@@ -1251,7 +1279,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DepthMarketDataDescription.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DisplayGroupList.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DisplayGroupList.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.i: cmake_force
@@ -1265,7 +1293,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupList.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.i: cmake_force
@@ -1279,7 +1307,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/DisplayGroupUpdated.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ErrorMessage.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ErrorMessage.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.i: cmake_force
@@ -1293,7 +1321,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ErrorMessage.pb.cc.s: cmake
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Execution.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Execution.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.i: cmake_force
@@ -1307,7 +1335,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Execution.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionDetails.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionDetails.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.i: cmake_force
@@ -1321,7 +1349,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetails.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.i: cmake_force
@@ -1335,7 +1363,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionDetailsEnd.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionFilter.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionFilter.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.i: cmake_force
@@ -1349,7 +1377,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionFilter.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExecutionRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.i: cmake_force
@@ -1363,7 +1391,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExecutionRequest.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.cc.i: cmake_force
@@ -1377,7 +1405,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ExerciseOptionsRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FAReplace.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FAReplace.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.i: cmake_force
@@ -1391,7 +1419,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FAReplace.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FARequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FARequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.i: cmake_force
@@ -1405,7 +1433,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FARequest.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FamilyCode.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FamilyCode.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.i: cmake_force
@@ -1419,7 +1447,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCode.pb.cc.s: cmake_f
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FamilyCodes.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FamilyCodes.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.i: cmake_force
@@ -1433,7 +1461,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodes.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.i: cmake_force
@@ -1447,7 +1475,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FamilyCodesRequest.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FundamentalsData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FundamentalsData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.i: cmake_force
@@ -1461,7 +1489,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsData.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.cc.i: cmake_force
@@ -1475,7 +1503,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/FundamentalsDataRequest.pb.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.i: cmake_force
@@ -1489,7 +1517,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/GlobalCancelRequest.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HeadTimestamp.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HeadTimestamp.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.i: cmake_force
@@ -1503,7 +1531,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestamp.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.i: cmake_force
@@ -1517,7 +1545,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HeadTimestampRequest.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistogramData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistogramData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.i: cmake_force
@@ -1531,7 +1559,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramData.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.i: cmake_force
@@ -1545,7 +1573,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataEntry.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.i: cmake_force
@@ -1559,7 +1587,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistogramDataRequest.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.i: cmake_force
@@ -1573,7 +1601,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalData.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.i: cmake_force
@@ -1587,7 +1615,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataBar.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.i: cmake_force
@@ -1601,7 +1629,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataEnd.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc.i: cmake_force
@@ -1615,7 +1643,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.i: cmake_force
@@ -1629,7 +1657,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalDataUpdate.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalNews.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalNews.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.i: cmake_force
@@ -1643,7 +1671,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNews.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.i: cmake_force
@@ -1657,7 +1685,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsEnd.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc.i: cmake_force
@@ -1671,7 +1699,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalNewsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.i: cmake_force
@@ -1685,7 +1713,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSchedule.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalSession.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalSession.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.i: cmake_force
@@ -1699,7 +1727,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalSession.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTick.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTick.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.i: cmake_force
@@ -1713,7 +1741,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTick.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.i: cmake_force
@@ -1727,7 +1755,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickBidAsk.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.i: cmake_force
@@ -1741,7 +1769,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTickLast.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicks.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicks.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.i: cmake_force
@@ -1755,7 +1783,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicks.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc.i: cmake_force
@@ -1769,7 +1797,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksBidAsk.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.i: cmake_force
@@ -1783,7 +1811,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksLast.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.cc.i: cmake_force
@@ -1797,7 +1825,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/HistoricalTicksRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/IdsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/IdsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.i: cmake_force
@@ -1811,7 +1839,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IdsRequest.pb.cc.s: cmake_f
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/IneligibilityReason.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/IneligibilityReason.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.i: cmake_force
@@ -1825,7 +1853,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/IneligibilityReason.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ManagedAccounts.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ManagedAccounts.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.i: cmake_force
@@ -1839,7 +1867,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccounts.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.cc.i: cmake_force
@@ -1853,7 +1881,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ManagedAccountsRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.i: cmake_force
@@ -1867,7 +1895,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataRequest.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDataType.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDataType.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.i: cmake_force
@@ -1881,7 +1909,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataType.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc.i: cmake_force
@@ -1895,7 +1923,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDataTypeRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepth.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepth.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.i: cmake_force
@@ -1909,7 +1937,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepth.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.i: cmake_force
@@ -1923,7 +1951,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthData.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.i: cmake_force
@@ -1937,7 +1965,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchanges.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest.pb.cc.i: cmake_force
@@ -1951,7 +1979,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthExchangesRequest
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthL2.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthL2.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.i: cmake_force
@@ -1965,7 +1993,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthL2.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.i: cmake_force
@@ -1979,7 +2007,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketDepthRequest.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketRule.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketRule.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.i: cmake_force
@@ -1993,7 +2021,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRule.pb.cc.s: cmake_f
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.i: cmake_force
@@ -2007,7 +2035,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MarketRuleRequest.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.cc.i: cmake_force
@@ -2021,7 +2049,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/MatchingSymbolsRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsArticle.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsArticle.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.i: cmake_force
@@ -2035,7 +2063,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticle.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.i: cmake_force
@@ -2049,7 +2077,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsArticleRequest.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsBulletin.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsBulletin.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.i: cmake_force
@@ -2063,7 +2091,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletin.pb.cc.s: cmake
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.i: cmake_force
@@ -2077,7 +2105,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsBulletinsRequest.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsProvider.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsProvider.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.i: cmake_force
@@ -2091,7 +2119,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvider.pb.cc.s: cmake
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsProviders.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsProviders.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.i: cmake_force
@@ -2105,7 +2133,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProviders.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.i: cmake_force
@@ -2119,7 +2147,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NewsProvidersRequest.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NextValidId.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/NextValidId.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.i: cmake_force
@@ -2133,7 +2161,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/NextValidId.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OpenOrder.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OpenOrder.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.i: cmake_force
@@ -2147,7 +2175,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrder.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.i: cmake_force
@@ -2161,7 +2189,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersEnd.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.i: cmake_force
@@ -2175,7 +2203,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OpenOrdersRequest.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Order.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Order.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.i: cmake_force
@@ -2189,7 +2217,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Order.pb.cc.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderAllocation.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderAllocation.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.i: cmake_force
@@ -2203,7 +2231,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderAllocation.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderBound.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderBound.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.i: cmake_force
@@ -2217,7 +2245,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderBound.pb.cc.s: cmake_f
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderCancel.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderCancel.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.i: cmake_force
@@ -2231,7 +2259,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCancel.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderCondition.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderCondition.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.i: cmake_force
@@ -2245,7 +2273,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderCondition.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderState.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderState.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.i: cmake_force
@@ -2259,7 +2287,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderState.pb.cc.s: cmake_f
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderStatus.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/OrderStatus.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.i: cmake_force
@@ -2273,7 +2301,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/OrderStatus.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.i: cmake_force
@@ -2287,7 +2315,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PlaceOrderRequest.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnL.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnL.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.i: cmake_force
@@ -2301,7 +2329,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnL.pb.cc.s: cmake_force
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnLRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnLRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.i: cmake_force
@@ -2315,7 +2343,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLRequest.pb.cc.s: cmake_f
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnLSingle.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnLSingle.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.i: cmake_force
@@ -2329,7 +2357,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingle.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.i: cmake_force
@@ -2343,7 +2371,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PnLSingleRequest.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PortfolioValue.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PortfolioValue.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.i: cmake_force
@@ -2357,7 +2385,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PortfolioValue.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Position.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/Position.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.i: cmake_force
@@ -2371,7 +2399,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/Position.pb.cc.s: cmake_for
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.i: cmake_force
@@ -2385,7 +2413,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionEnd.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionMulti.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionMulti.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.i: cmake_force
@@ -2399,7 +2427,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMulti.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.i: cmake_force
@@ -2413,7 +2441,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionMultiEnd.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc.i: cmake_force
@@ -2427,7 +2455,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsMultiRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PositionsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.i: cmake_force
@@ -2441,7 +2469,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PositionsRequest.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PriceIncrement.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/PriceIncrement.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.i: cmake_force
@@ -2455,7 +2483,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/PriceIncrement.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.pb.cc.i: cmake_force
@@ -2469,7 +2497,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/QueryDisplayGroupsRequest.p
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.i: cmake_force
@@ -2483,7 +2511,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarTick.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.i: cmake_force
@@ -2497,7 +2525,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RealTimeBarsRequest.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ReceiveFA.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ReceiveFA.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.i: cmake_force
@@ -2511,7 +2539,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReceiveFA.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.i: cmake_force
@@ -2525,7 +2553,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ReplaceFAEnd.pb.cc.s: cmake
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb.cc.i: cmake_force
@@ -2539,7 +2567,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDataRequest.pb
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.pb.cc.i: cmake_force
@@ -2553,7 +2581,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/RerouteMarketDepthRequest.p
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.i: cmake_force
@@ -2567,7 +2595,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerData.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerDataElement.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerDataElement.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.i: cmake_force
@@ -2581,7 +2609,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerDataElement.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerParameters.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerParameters.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.i: cmake_force
@@ -2595,7 +2623,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParameters.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb.cc.i: cmake_force
@@ -2609,7 +2637,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerParametersRequest.pb
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerSubscription.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerSubscription.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.i: cmake_force
@@ -2623,7 +2651,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscription.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.pb.cc.i: cmake_force
@@ -2637,7 +2665,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/ScannerSubscriptionRequest.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.i: cmake_force
@@ -2651,7 +2679,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameter.pb.cc.s:
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc.i: cmake_force
@@ -2665,7 +2693,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParameterEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.cc.i: cmake_force
@@ -2679,7 +2707,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SecDefOptParamsRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb.cc.i: cmake_force
@@ -2693,7 +2721,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SetServerLogLevelRequest.pb
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SmartComponent.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SmartComponent.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.i: cmake_force
@@ -2707,7 +2735,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponent.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SmartComponents.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_191) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SmartComponents.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.i: cmake_force
@@ -2721,7 +2749,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponents.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_192) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.cc.i: cmake_force
@@ -2735,7 +2763,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SmartComponentsRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SoftDollarTier.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_191) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SoftDollarTier.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.i: cmake_force
@@ -2749,7 +2777,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTier.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_192) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.i: cmake_force
@@ -2763,7 +2791,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiers.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.cc.i: cmake_force
@@ -2777,7 +2805,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SoftDollarTiersRequest.pb.c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/StartApiRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/StartApiRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.i: cmake_force
@@ -2791,7 +2819,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/StartApiRequest.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsRequest.pb.cc.i: cmake_force
@@ -2805,7 +2833,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SubscribeToGroupEventsReque
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SymbolSamples.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/SymbolSamples.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.i: cmake_force
@@ -2819,7 +2847,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/SymbolSamples.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.i: cmake_force
@@ -2833,7 +2861,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribBidAsk.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickAttribLast.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickAttribLast.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.i: cmake_force
@@ -2847,7 +2875,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickAttribLast.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickByTickData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickByTickData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.i: cmake_force
@@ -2861,7 +2889,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickData.pb.cc.s: cma
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickByTickRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickByTickRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.i: cmake_force
@@ -2875,7 +2903,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickByTickRequest.pb.cc.s: 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickGeneric.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickGeneric.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.i: cmake_force
@@ -2889,7 +2917,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickGeneric.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickNews.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickNews.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.i: cmake_force
@@ -2903,7 +2931,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickNews.pb.cc.s: cmake_for
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickOptionComputation.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickOptionComputation.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc.i: cmake_force
@@ -2917,7 +2945,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickOptionComputation.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickPrice.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickPrice.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.i: cmake_force
@@ -2931,7 +2959,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickPrice.pb.cc.s: cmake_fo
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickReqParams.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickReqParams.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.i: cmake_force
@@ -2945,7 +2973,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickReqParams.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickSize.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickSize.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.i: cmake_force
@@ -2959,7 +2987,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSize.pb.cc.s: cmake_for
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.i: cmake_force
@@ -2973,7 +3001,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickSnapshotEnd.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickString.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/TickString.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.i: cmake_force
@@ -2987,7 +3015,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/TickString.pb.cc.s: cmake_f
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsRequest.pb.cc.i: cmake_force
@@ -3001,7 +3029,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UnsubscribeFromGroupEventsR
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.pb.cc.i: cmake_force
@@ -3015,7 +3043,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UpdateDisplayGroupRequest.p
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UserInfo.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UserInfo.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.i: cmake_force
@@ -3029,7 +3057,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfo.pb.cc.s: cmake_for
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UserInfoRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/UserInfoRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.i: cmake_force
@@ -3043,7 +3071,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/UserInfoRequest.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyCompleted.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyCompleted.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.i: cmake_force
@@ -3057,7 +3085,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyCompleted.pb.cc.s: cm
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.i: cmake_force
@@ -3071,7 +3099,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageApi.pb.cc.s: c
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.i: cmake_force
@@ -3085,7 +3113,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyMessageRequest.pb.cc.
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/VerifyRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.i: cmake_force
@@ -3099,7 +3127,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/VerifyRequest.pb.cc.s: cmak
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshEventData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshEventData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.i: cmake_force
@@ -3113,7 +3141,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventData.pb.cc.s: cmake
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.i: cmake_force
@@ -3127,7 +3155,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshEventDataRequest.pb.cc.s
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshMetaData.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshMetaData.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.i: cmake_force
@@ -3141,7 +3169,7 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaData.pb.cc.s: cmake_
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/flags.make
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o: /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o: CMakeFiles/dna_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building CXX object CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o -MF CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o.d -o CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.o -c /home/navneetsimran/Downloads/DNA_Trading_System/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc
 
 CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.i: cmake_force
@@ -3154,7 +3182,9 @@ CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequest.pb.cc.s:
 
 # Object files for target dna_system
 dna_system_OBJECTS = \
+"CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o" \
 "CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o" \
+"CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o" \
 "CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o" \
 "CMakeFiles/dna_system.dir/src/main.cpp.o" \
 "CMakeFiles/dna_system.dir/external/simdjson.cpp.o" \
@@ -3378,7 +3408,9 @@ dna_system_OBJECTS = \
 # External object files for target dna_system
 dna_system_EXTERNAL_OBJECTS =
 
+dna_system: CMakeFiles/dna_system.dir/src/adapters/IBKRAdapter.cpp.o
 dna_system: CMakeFiles/dna_system.dir/src/core/IBKRConnection.cpp.o
+dna_system: CMakeFiles/dna_system.dir/src/core/MarketDataManager.cpp.o
 dna_system: CMakeFiles/dna_system.dir/src/core/SymbolManager.cpp.o
 dna_system: CMakeFiles/dna_system.dir/src/main.cpp.o
 dna_system: CMakeFiles/dna_system.dir/external/simdjson.cpp.o
@@ -3601,8 +3633,9 @@ dna_system: CMakeFiles/dna_system.dir/external/ibkr/protobufUnix/WshMetaDataRequ
 dna_system: CMakeFiles/dna_system.dir/build.make
 dna_system: CMakeFiles/dna_system.dir/compiler_depend.ts
 dna_system: /usr/lib64/libprotobuf.so
+dna_system: /home/navneetsimran/Downloads/DNA_Trading_System/external/libbid.a
 dna_system: CMakeFiles/dna_system.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Linking CXX executable dna_system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Linking CXX executable dna_system"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dna_system.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

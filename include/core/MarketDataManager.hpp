@@ -1,0 +1,29 @@
+#pragma once
+#include "core/IMarketDataProvider.hpp"
+#include "core/IMarketDataListener.hpp"
+#include <memory>
+#include <vector>
+#include <string>
+
+class MarketDataManager : public IMarketDataListener { 
+    public:
+        MarketDataManager();
+        ~MarketDataManager(); 
+
+        // provider management
+        void setProvider(std::unique_ptr<IMarketDataProvider> provider);
+        IMarketDataProvider* getProvider() const;
+
+        // Listener management
+        void addListener(IMarketDataListener* listener); 
+        void removeListener(IMarketDataListener* listener);
+
+        // IMarketDataListener implementation (receive from provider, broadcast to listeners)
+        void onPriceUpdate(const std::string& symbol, double price, time_t timestamp) override;
+        void onSizeUpdate(const std::string& symbol, int size, time_t timestamp) override; 
+        void onError(const std::string& symbol, int errorCode, const std::string& errorMsg) override;
+        
+    private:
+        std::unique_ptr<IMarketDataProvider> provider_;
+        std::vector<IMarketDataListener*> listeners_; 
+}; 

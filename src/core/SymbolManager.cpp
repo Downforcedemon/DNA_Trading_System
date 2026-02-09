@@ -50,12 +50,32 @@ int SymbolManager::getSymbolCount() const {
     return symbols_.size();
 }
 
-void SymbolManager::updatePrice(const std::string& symbol, double price){
+void SymbolManager::updatePrice(const std::string& symbol, double price) {
     std::lock_guard<std::mutex> lock(mutex_);
 
     auto it = symbols_.find(symbol);
-    if (it != symbols_.end()){
+    if (it != symbols_.end()) {
         it->second.currentPrice = price;
     }
 }
 
+// IMarketDataListener implementation
+void SymbolManager::onPriceUpdate(const std::string& symbol, double price, time_t timestamp) {
+    std::lock_guard<std::mutex> lock(mutex_);
+
+    auto it = symbols_.find(symbol);
+    if (it != symbols_.end()) {
+        it->second.currentPrice = price;
+        it->second.lastUpdate = timestamp;
+        // dataSource will be set by MarketDataManager based on active provider
+    }
+}
+
+void SymbolManager::onSizeUpdate(const std::string& symbol, int size, time_t timestamp) {
+    // For now, we don't store size/volume in SymbolState
+    // Can be extended later if needed
+}
+
+void SymbolManager::onError(const std::string& symbol, int errorCode, const std::string& errorMsg) {
+    std::cout << "⚠️  Error for " << symbol << " [" << errorCode << "]: " << errorMsg << std::endl;
+}

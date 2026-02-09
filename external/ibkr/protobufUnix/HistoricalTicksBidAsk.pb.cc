@@ -14,38 +14,35 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_HistoricalTickBidAsk_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class HistoricalTicksBidAskDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HistoricalTicksBidAsk> _instance;
-} _HistoricalTicksBidAsk_default_instance_;
+constexpr HistoricalTicksBidAsk::HistoricalTicksBidAsk(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : historicalticksbidask_()
+  , reqid_(0)
+  , isdone_(false){}
+struct HistoricalTicksBidAskDefaultTypeInternal {
+  constexpr HistoricalTicksBidAskDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HistoricalTicksBidAskDefaultTypeInternal() {}
+  union {
+    HistoricalTicksBidAsk _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HistoricalTicksBidAskDefaultTypeInternal _HistoricalTicksBidAsk_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_HistoricalTicksBidAsk_HistoricalTicksBidAsk_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_HistoricalTicksBidAsk_default_instance_;
-    new (ptr) ::protobuf::HistoricalTicksBidAsk();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::HistoricalTicksBidAsk::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HistoricalTicksBidAsk_HistoricalTicksBidAsk_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_HistoricalTicksBidAsk_HistoricalTicksBidAsk_2eproto}, {
-      &scc_info_HistoricalTickBidAsk_HistoricalTickBidAsk_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_HistoricalTicksBidAsk_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_HistoricalTicksBidAsk_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_HistoricalTicksBidAsk_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalTicksBidAsk_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_HistoricalTicksBidAsk_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTicksBidAsk, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTicksBidAsk, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTicksBidAsk, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTicksBidAsk, historicalticksbidask_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalTicksBidAsk, isdone_),
@@ -54,7 +51,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalTicksBidAsk_2eproto:
   1,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::protobuf::HistoricalTicksBidAsk)},
+  { 0, 9, -1, sizeof(::protobuf::HistoricalTicksBidAsk)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -74,25 +71,23 @@ const char descriptor_table_protodef_HistoricalTicksBidAsk_2eproto[] PROTOBUF_SE
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_HistoricalTicksBidAsk_2eproto_deps[1] = {
   &::descriptor_table_HistoricalTickBidAsk_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_HistoricalTicksBidAsk_2eproto_sccs[1] = {
-  &scc_info_HistoricalTicksBidAsk_HistoricalTicksBidAsk_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_HistoricalTicksBidAsk_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_HistoricalTicksBidAsk_2eproto = {
-  false, false, descriptor_table_protodef_HistoricalTicksBidAsk_2eproto, "HistoricalTicksBidAsk.proto", 297,
-  &descriptor_table_HistoricalTicksBidAsk_2eproto_once, descriptor_table_HistoricalTicksBidAsk_2eproto_sccs, descriptor_table_HistoricalTicksBidAsk_2eproto_deps, 1, 1,
+  false, false, 297, descriptor_table_protodef_HistoricalTicksBidAsk_2eproto, "HistoricalTicksBidAsk.proto", 
+  &descriptor_table_HistoricalTicksBidAsk_2eproto_once, descriptor_table_HistoricalTicksBidAsk_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_HistoricalTicksBidAsk_2eproto::offsets,
-  file_level_metadata_HistoricalTicksBidAsk_2eproto, 1, file_level_enum_descriptors_HistoricalTicksBidAsk_2eproto, file_level_service_descriptors_HistoricalTicksBidAsk_2eproto,
+  file_level_metadata_HistoricalTicksBidAsk_2eproto, file_level_enum_descriptors_HistoricalTicksBidAsk_2eproto, file_level_service_descriptors_HistoricalTicksBidAsk_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_HistoricalTicksBidAsk_2eproto_getter() {
+  return &descriptor_table_HistoricalTicksBidAsk_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_HistoricalTicksBidAsk_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_HistoricalTicksBidAsk_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_HistoricalTicksBidAsk_2eproto(&descriptor_table_HistoricalTicksBidAsk_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void HistoricalTicksBidAsk::InitAsDefaultInstance() {
-}
 class HistoricalTicksBidAsk::_Internal {
  public:
   using HasBits = decltype(std::declval<HistoricalTicksBidAsk>()._has_bits_);
@@ -107,11 +102,14 @@ class HistoricalTicksBidAsk::_Internal {
 void HistoricalTicksBidAsk::clear_historicalticksbidask() {
   historicalticksbidask_.Clear();
 }
-HistoricalTicksBidAsk::HistoricalTicksBidAsk(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+HistoricalTicksBidAsk::HistoricalTicksBidAsk(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   historicalticksbidask_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.HistoricalTicksBidAsk)
 }
 HistoricalTicksBidAsk::HistoricalTicksBidAsk(const HistoricalTicksBidAsk& from)
@@ -125,21 +123,22 @@ HistoricalTicksBidAsk::HistoricalTicksBidAsk(const HistoricalTicksBidAsk& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.HistoricalTicksBidAsk)
 }
 
-void HistoricalTicksBidAsk::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_HistoricalTicksBidAsk_HistoricalTicksBidAsk_2eproto.base);
-  ::memset(&reqid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&isdone_) -
-      reinterpret_cast<char*>(&reqid_)) + sizeof(isdone_));
+inline void HistoricalTicksBidAsk::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&reqid_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&isdone_) -
+    reinterpret_cast<char*>(&reqid_)) + sizeof(isdone_));
 }
 
 HistoricalTicksBidAsk::~HistoricalTicksBidAsk() {
   // @@protoc_insertion_point(destructor:protobuf.HistoricalTicksBidAsk)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void HistoricalTicksBidAsk::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void HistoricalTicksBidAsk::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void HistoricalTicksBidAsk::ArenaDtor(void* object) {
@@ -151,15 +150,10 @@ void HistoricalTicksBidAsk::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void HistoricalTicksBidAsk::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const HistoricalTicksBidAsk& HistoricalTicksBidAsk::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_HistoricalTicksBidAsk_HistoricalTicksBidAsk_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void HistoricalTicksBidAsk::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.HistoricalTicksBidAsk)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -177,23 +171,22 @@ void HistoricalTicksBidAsk::Clear() {
 const char* HistoricalTicksBidAsk::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .protobuf.HistoricalTickBidAsk historicalTicksBidAsk = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -201,46 +194,49 @@ const char* HistoricalTicksBidAsk::_InternalParse(const char* ptr, ::PROTOBUF_NA
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // bool isDone = 3;
+      // optional bool isDone = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_isdone(&has_bits);
           isdone_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* HistoricalTicksBidAsk::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* HistoricalTicksBidAsk::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.HistoricalTicksBidAsk)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
@@ -254,7 +250,7 @@ failure:
       InternalWriteMessage(2, this->_internal_historicalticksbidask(i), target, stream);
   }
 
-  // bool isDone = 3;
+  // optional bool isDone = 3;
   if (_internal_has_isdone()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_isdone(), target);
@@ -272,7 +268,7 @@ size_t HistoricalTicksBidAsk::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.HistoricalTicksBidAsk)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -285,48 +281,37 @@ size_t HistoricalTicksBidAsk::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
-    // bool isDone = 3;
+    // optional bool isDone = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 1;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void HistoricalTicksBidAsk::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.HistoricalTicksBidAsk)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HistoricalTicksBidAsk* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HistoricalTicksBidAsk>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.HistoricalTicksBidAsk)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.HistoricalTicksBidAsk)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HistoricalTicksBidAsk::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    HistoricalTicksBidAsk::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HistoricalTicksBidAsk::GetClassData() const { return &_class_data_; }
+
+void HistoricalTicksBidAsk::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<HistoricalTicksBidAsk *>(to)->MergeFrom(
+      static_cast<const HistoricalTicksBidAsk &>(from));
 }
+
 
 void HistoricalTicksBidAsk::MergeFrom(const HistoricalTicksBidAsk& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.HistoricalTicksBidAsk)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   historicalticksbidask_.MergeFrom(from.historicalticksbidask_);
@@ -340,13 +325,7 @@ void HistoricalTicksBidAsk::MergeFrom(const HistoricalTicksBidAsk& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void HistoricalTicksBidAsk::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.HistoricalTicksBidAsk)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void HistoricalTicksBidAsk::CopyFrom(const HistoricalTicksBidAsk& from) {
@@ -362,7 +341,7 @@ bool HistoricalTicksBidAsk::IsInitialized() const {
 
 void HistoricalTicksBidAsk::InternalSwap(HistoricalTicksBidAsk* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   historicalticksbidask_.InternalSwap(&other->historicalticksbidask_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
@@ -374,9 +353,10 @@ void HistoricalTicksBidAsk::InternalSwap(HistoricalTicksBidAsk* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HistoricalTicksBidAsk::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_HistoricalTicksBidAsk_2eproto_getter, &descriptor_table_HistoricalTicksBidAsk_2eproto_once,
+      file_level_metadata_HistoricalTicksBidAsk_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

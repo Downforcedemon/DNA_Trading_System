@@ -1,0 +1,11 @@
+<map id="include/core/IMarketDataProvider.hpp" name="include/core/IMarketDataProvider.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="160,5,327,48"/>
+<area shape="rect" id="Node000002" href="$IBKRAdapter_8hpp.html" title=" " alt="" coords="5,96,228,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,59,138,98,135,93,196,54"/>
+<area shape="rect" id="Node000004" href="$MarketDataManager_8hpp.html" title=" " alt="" coords="252,96,490,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="290,54,353,93,350,98,288,59"/>
+<area shape="rect" id="Node000003" href="$IBKRAdapter_8cpp.html" title=" " alt="" coords="17,171,216,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,138,119,170,114,170,114,138"/>
+<area shape="rect" id="Node000005" href="$MarketDataManager_8cpp.html" title=" " alt="" coords="264,171,479,197"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="374,138,374,170,368,170,368,138"/>
+</map>

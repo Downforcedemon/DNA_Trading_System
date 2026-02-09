@@ -21,17 +21,21 @@ events:
       - "uname"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/uname"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/uname"
       - "/home/navneetsimran/bin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -67,16 +71,20 @@ events:
       - "smake"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/gmake"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gmake"
       - "/home/navneetsimran/bin/gmake"
       - "/usr/local/bin/gmake"
     found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -110,16 +118,20 @@ events:
       - "clang"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/cc"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/cc"
       - "/home/navneetsimran/bin/cc"
       - "/usr/local/bin/cc"
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -153,6 +165,8 @@ events:
     found: "/home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -203,11 +217,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -236,11 +253,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -269,11 +289,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -302,11 +325,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -335,11 +361,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -368,11 +397,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -401,11 +433,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -434,11 +469,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -467,16 +505,20 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
       - "/home/navneetsimran/.local/bin/dlltool"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/dlltool"
       - "/home/navneetsimran/bin/dlltool"
       - "/usr/local/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -505,11 +547,14 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -538,16 +583,20 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/tapi"
       - "/home/navneetsimran/.local/bin/tapi"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/tapi"
       - "/home/navneetsimran/bin/tapi"
       - "/usr/local/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -579,24 +628,30 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
       - "/home/navneetsimran/.local/bin/gcc-ar-15.2"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ar-15.2"
       - "/home/navneetsimran/bin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
       - "/usr/bin/gcc-ar-15"
       - "/home/navneetsimran/.local/bin/gcc-ar-15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ar-15"
       - "/home/navneetsimran/bin/gcc-ar-15"
       - "/usr/local/bin/gcc-ar-15"
       - "/usr/bin/gcc-ar15"
       - "/home/navneetsimran/.local/bin/gcc-ar15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ar15"
       - "/home/navneetsimran/bin/gcc-ar15"
       - "/usr/local/bin/gcc-ar15"
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -628,24 +683,30 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
       - "/home/navneetsimran/.local/bin/gcc-ranlib-15.2"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ranlib-15.2"
       - "/home/navneetsimran/bin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
       - "/usr/bin/gcc-ranlib-15"
       - "/home/navneetsimran/.local/bin/gcc-ranlib-15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ranlib-15"
       - "/home/navneetsimran/bin/gcc-ranlib-15"
       - "/usr/local/bin/gcc-ranlib-15"
       - "/usr/bin/gcc-ranlib15"
       - "/home/navneetsimran/.local/bin/gcc-ranlib15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ranlib15"
       - "/home/navneetsimran/bin/gcc-ranlib15"
       - "/usr/local/bin/gcc-ranlib15"
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -686,6 +747,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
+        - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/bin"
@@ -718,6 +781,8 @@ events:
     found: "/home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -771,24 +836,30 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
       - "/home/navneetsimran/.local/bin/gcc-ar-15.2"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ar-15.2"
       - "/home/navneetsimran/bin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
       - "/usr/bin/gcc-ar-15"
       - "/home/navneetsimran/.local/bin/gcc-ar-15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ar-15"
       - "/home/navneetsimran/bin/gcc-ar-15"
       - "/usr/local/bin/gcc-ar-15"
       - "/usr/bin/gcc-ar15"
       - "/home/navneetsimran/.local/bin/gcc-ar15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ar15"
       - "/home/navneetsimran/bin/gcc-ar15"
       - "/usr/local/bin/gcc-ar15"
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -820,24 +891,30 @@ events:
     candidate_directories:
       - "/usr/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
       - "/home/navneetsimran/.local/bin/gcc-ranlib-15.2"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ranlib-15.2"
       - "/home/navneetsimran/bin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
       - "/usr/bin/gcc-ranlib-15"
       - "/home/navneetsimran/.local/bin/gcc-ranlib-15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ranlib-15"
       - "/home/navneetsimran/bin/gcc-ranlib-15"
       - "/usr/local/bin/gcc-ranlib-15"
       - "/usr/bin/gcc-ranlib15"
       - "/home/navneetsimran/.local/bin/gcc-ranlib15"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/gcc-ranlib15"
       - "/home/navneetsimran/bin/gcc-ranlib15"
       - "/usr/local/bin/gcc-ranlib15"
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -853,8 +930,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-6irQqn"
-      binary: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-6irQqn"
+      source: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-YtdoAA"
+      binary: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-YtdoAA"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -863,13 +940,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-6irQqn'
+        Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-YtdoAA'
         
-        Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7096e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_7096e.dir/build.make CMakeFiles/cmTC_7096e.dir/build
-        gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-6irQqn'
-        Building C object CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a184/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2a184.dir/build.make CMakeFiles/cmTC_2a184.dir/build
+        gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-YtdoAA'
+        Building C object CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -879,8 +956,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7096e.dir/'
-         /usr/libexec/gcc/x86_64-redhat-linux/15/cc1 -quiet -v /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7096e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cco3MrUg.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2a184.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/cc1 -quiet -v /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2a184.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccIFM4Da.s
         GNU C23 (GCC) version 15.2.1 20251211 (Red Hat 15.2.1-5) (x86_64-redhat-linux)
         	compiled by GNU C version 15.2.1 20251211 (Red Hat 15.2.1-5), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.24-GMP
         
@@ -894,14 +971,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 42e13e9eac1d5b3297db3cf0aedf1d3e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7096e.dir/'
-         as -v --64 -o CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o /tmp/cco3MrUg.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2a184.dir/'
+         as -v --64 -o CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o /tmp/ccIFM4Da.s
         GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-1.fc43
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_7096e
-        /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7096e.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_2a184
+        /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a184.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper
@@ -914,14 +991,14 @@ events:
         gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7096e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7096e.'
-         /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cccUN0IJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7096e /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2a184' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2a184.'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3XOPFA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2a184 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
         collect2 version 15.2.1 20251211 (Red Hat 15.2.1-5)
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cccUN0IJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7096e /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3XOPFA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2a184 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
         GNU ld version 2.45.1-1.fc43
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7096e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7096e.'
-        /usr/bin/cc -v -Wl,-v CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o -o cmTC_7096e
-        gmake[1]: Leaving directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-6irQqn'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2a184' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2a184.'
+        /usr/bin/cc -v -Wl,-v CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o -o cmTC_2a184
+        gmake[1]: Leaving directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-YtdoAA'
         
       exitCode: 0
   -
@@ -954,13 +1031,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-6irQqn']
+        ignore line: [Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-YtdoAA']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7096e/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7096e.dir/build.make CMakeFiles/cmTC_7096e.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-6irQqn']
-        ignore line: [Building C object CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a184/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2a184.dir/build.make CMakeFiles/cmTC_2a184.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-YtdoAA']
+        ignore line: [Building C object CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -970,8 +1047,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7096e.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/cc1 -quiet -v /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7096e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cco3MrUg.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2a184.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/cc1 -quiet -v /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2a184.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccIFM4Da.s]
         ignore line: [GNU C23 (GCC) version 15.2.1 20251211 (Red Hat 15.2.1-5) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 15.2.1 20251211 (Red Hat 15.2.1-5)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -985,14 +1062,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 42e13e9eac1d5b3297db3cf0aedf1d3e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7096e.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o /tmp/cco3MrUg.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2a184.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o /tmp/ccIFM4Da.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-1.fc43]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_7096e]
-        ignore line: [/home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7096e.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_2a184]
+        ignore line: [/home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a184.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper]
@@ -1005,13 +1082,13 @@ events:
         ignore line: [gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7096e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7096e.']
-        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cccUN0IJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7096e /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2a184' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2a184.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3XOPFA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2a184 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-redhat-linux/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cccUN0IJ.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc3XOPFA.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1026,7 +1103,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_7096e] ==> ignore
+          arg [cmTC_2a184] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o]
@@ -1038,7 +1115,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -1053,7 +1130,7 @@ events:
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
         ignore line: [collect2 version 15.2.1 20251211 (Red Hat 15.2.1-5)]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cccUN0IJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7096e /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7096e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3XOPFA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2a184 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2a184.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
@@ -1090,8 +1167,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-ww1unZ"
-      binary: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-ww1unZ"
+      source: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-g5wf9z"
+      binary: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-g5wf9z"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1101,13 +1178,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-ww1unZ'
+        Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-g5wf9z'
         
-        Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_88c4d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_88c4d.dir/build.make CMakeFiles/cmTC_88c4d.dir/build
-        gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-ww1unZ'
-        Building CXX object CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ce35/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6ce35.dir/build.make CMakeFiles/cmTC_6ce35.dir/build
+        gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-g5wf9z'
+        Building CXX object CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1117,8 +1194,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_88c4d.dir/'
-         /usr/libexec/gcc/x86_64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_88c4d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccTXc8rp.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ce35.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6ce35.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cczpo9W5.s
         GNU C++17 (GCC) version 15.2.1 20251211 (Red Hat 15.2.1-5) (x86_64-redhat-linux)
         	compiled by GNU C version 15.2.1 20251211 (Red Hat 15.2.1-5), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.24-GMP
         
@@ -1135,14 +1212,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: ccf7d405f0d8e54b9803e494726d79a8
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_88c4d.dir/'
-         as -v --64 -o CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccTXc8rp.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ce35.dir/'
+         as -v --64 -o CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o /tmp/cczpo9W5.s
         GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-1.fc43
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_88c4d
-        /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88c4d.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_6ce35
+        /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ce35.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper
@@ -1155,14 +1232,14 @@ events:
         gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_88c4d' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_88c4d.'
-         /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoWsnZu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_88c4d /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ce35' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ce35.'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1cVBZ7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6ce35 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
         collect2 version 15.2.1 20251211 (Red Hat 15.2.1-5)
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoWsnZu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_88c4d /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1cVBZ7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6ce35 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
         GNU ld version 2.45.1-1.fc43
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_88c4d' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_88c4d.'
-        /usr/bin/c++ -v -Wl,-v CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_88c4d
-        gmake[1]: Leaving directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-ww1unZ'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ce35' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ce35.'
+        /usr/bin/c++ -v -Wl,-v CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6ce35
+        gmake[1]: Leaving directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-g5wf9z'
         
       exitCode: 0
   -
@@ -1201,13 +1278,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-ww1unZ']
+        ignore line: [Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-g5wf9z']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_88c4d/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_88c4d.dir/build.make CMakeFiles/cmTC_88c4d.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-ww1unZ']
-        ignore line: [Building CXX object CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ce35/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6ce35.dir/build.make CMakeFiles/cmTC_6ce35.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-g5wf9z']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o -c /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1217,8 +1294,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_88c4d.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_88c4d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccTXc8rp.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ce35.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6ce35.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cczpo9W5.s]
         ignore line: [GNU C++17 (GCC) version 15.2.1 20251211 (Red Hat 15.2.1-5) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 15.2.1 20251211 (Red Hat 15.2.1-5)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -1235,14 +1312,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: ccf7d405f0d8e54b9803e494726d79a8]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_88c4d.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccTXc8rp.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ce35.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o /tmp/cczpo9W5.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-1.fc43]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_88c4d]
-        ignore line: [/home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88c4d.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_6ce35]
+        ignore line: [/home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ce35.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper]
@@ -1255,13 +1332,13 @@ events:
         ignore line: [gcc version 15.2.1 20251211 (Red Hat 15.2.1-5) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_88c4d' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_88c4d.']
-        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoWsnZu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_88c4d /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ce35' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ce35.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1cVBZ7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6ce35 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-redhat-linux/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccoWsnZu.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1cVBZ7.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1276,7 +1353,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_88c4d] ==> ignore
+          arg [cmTC_6ce35] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o]
@@ -1288,7 +1365,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1299,7 +1376,7 @@ events:
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
         ignore line: [collect2 version 15.2.1 20251211 (Red Hat 15.2.1-5)]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoWsnZu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_88c4d /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_88c4d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1cVBZ7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6ce35 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6ce35.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
@@ -1337,8 +1414,8 @@ events:
       - "/home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.2/Modules/FindProtobuf.cmake:927 (find_package)"
       - "CMakeLists.txt:31 (find_package)"
     directories:
-      source: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-rEL7gz"
-      binary: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-rEL7gz"
+      source: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-QQ2sZk"
+      binary: "/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-QQ2sZk"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1347,17 +1424,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-rEL7gz'
+        Change Dir: '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-QQ2sZk'
         
-        Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_00ead/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_00ead.dir/build.make CMakeFiles/cmTC_00ead.dir/build
-        gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-rEL7gz'
-        Building C object CMakeFiles/cmTC_00ead.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_00ead.dir/src.c.o -c /home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-rEL7gz/src.c
-        Linking C executable cmTC_00ead
-        /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00ead.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_00ead.dir/src.c.o -o cmTC_00ead
-        gmake[1]: Leaving directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-rEL7gz'
+        Run Build Command(s): /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55f82/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_55f82.dir/build.make CMakeFiles/cmTC_55f82.dir/build
+        gmake[1]: Entering directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-QQ2sZk'
+        Building C object CMakeFiles/cmTC_55f82.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_55f82.dir/src.c.o -c /home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-QQ2sZk/src.c
+        Linking C executable cmTC_55f82
+        /home/navneetsimran/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55f82.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_55f82.dir/src.c.o -o cmTC_55f82
+        gmake[1]: Leaving directory '/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/CMakeScratch/TryCompile-QQ2sZk'
         
       exitCode: 0
   -
@@ -1381,6 +1458,7 @@ events:
       - "protobuf"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1396,6 +1474,7 @@ events:
       - "/usr/lib64/X11/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1404,6 +1483,8 @@ events:
     found: "/usr/lib64/libprotobuf.so"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -1444,6 +1525,7 @@ events:
       - "protobuf"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1460,6 +1542,8 @@ events:
     searched_directories:
       - "/home/navneetsimran/.local/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1474,6 +1558,8 @@ events:
     found: "/usr/lib64/libprotobuf.so"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -1513,6 +1599,7 @@ events:
       - "protobuf-lite"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1528,6 +1615,7 @@ events:
       - "/usr/lib64/X11/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1544,6 +1632,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -1584,6 +1674,7 @@ events:
       - "protobuf-lite"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1600,6 +1691,8 @@ events:
     searched_directories:
       - "/home/navneetsimran/.local/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1629,6 +1722,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -1668,6 +1763,7 @@ events:
       - "protoc"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1683,6 +1779,7 @@ events:
       - "/usr/lib64/X11/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1691,6 +1788,8 @@ events:
     found: "/usr/lib64/libprotoc.so"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -1731,6 +1830,7 @@ events:
       - "protoc"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -1747,6 +1847,8 @@ events:
     searched_directories:
       - "/home/navneetsimran/.local/bin/"
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/usr/local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1761,6 +1863,8 @@ events:
     found: "/usr/lib64/libprotoc.so"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -1799,6 +1903,7 @@ events:
       - "google/protobuf/service.h"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1819,6 +1924,7 @@ events:
       - "/src/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/google/protobuf/service.h"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/google/protobuf/service.h"
       - "/home/navneetsimran/bin/google/protobuf/service.h"
       - "/usr/local/bin/google/protobuf/service.h"
       - "/usr/bin/google/protobuf/service.h"
@@ -1827,6 +1933,8 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
@@ -1865,6 +1973,7 @@ events:
       - "protoc"
     candidate_directories:
       - "/home/navneetsimran/.local/bin/"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/"
       - "/home/navneetsimran/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1892,11 +2001,14 @@ events:
       - "/vsprojects/x64/Debug/"
     searched_directories:
       - "/home/navneetsimran/.local/bin/protoc"
+      - "/home/navneetsimran/.local/share/nvim/mason/bin/protoc"
       - "/home/navneetsimran/bin/protoc"
       - "/usr/local/bin/protoc"
     found: "/usr/bin/protoc"
     search_context:
       ENV{PATH}:
+        - "/home/navneetsimran/.local/bin"
+        - "/home/navneetsimran/.local/share/nvim/mason/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"
         - "/home/navneetsimran/.local/bin"

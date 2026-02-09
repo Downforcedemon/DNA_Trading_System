@@ -14,43 +14,38 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_OrderCancel_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OrderCancel_OrderCancel_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class GlobalCancelRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GlobalCancelRequest> _instance;
-} _GlobalCancelRequest_default_instance_;
+constexpr GlobalCancelRequest::GlobalCancelRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : ordercancel_(nullptr){}
+struct GlobalCancelRequestDefaultTypeInternal {
+  constexpr GlobalCancelRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~GlobalCancelRequestDefaultTypeInternal() {}
+  union {
+    GlobalCancelRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GlobalCancelRequestDefaultTypeInternal _GlobalCancelRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_GlobalCancelRequest_GlobalCancelRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_GlobalCancelRequest_default_instance_;
-    new (ptr) ::protobuf::GlobalCancelRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::GlobalCancelRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GlobalCancelRequest_GlobalCancelRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GlobalCancelRequest_GlobalCancelRequest_2eproto}, {
-      &scc_info_OrderCancel_OrderCancel_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_GlobalCancelRequest_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_GlobalCancelRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_GlobalCancelRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_GlobalCancelRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_GlobalCancelRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::GlobalCancelRequest, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::GlobalCancelRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::GlobalCancelRequest, ordercancel_),
   0,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 6, sizeof(::protobuf::GlobalCancelRequest)},
+  { 0, 7, -1, sizeof(::protobuf::GlobalCancelRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -68,27 +63,23 @@ const char descriptor_table_protodef_GlobalCancelRequest_2eproto[] PROTOBUF_SECT
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_GlobalCancelRequest_2eproto_deps[1] = {
   &::descriptor_table_OrderCancel_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_GlobalCancelRequest_2eproto_sccs[1] = {
-  &scc_info_GlobalCancelRequest_GlobalCancelRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_GlobalCancelRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_GlobalCancelRequest_2eproto = {
-  false, false, descriptor_table_protodef_GlobalCancelRequest_2eproto, "GlobalCancelRequest.proto", 221,
-  &descriptor_table_GlobalCancelRequest_2eproto_once, descriptor_table_GlobalCancelRequest_2eproto_sccs, descriptor_table_GlobalCancelRequest_2eproto_deps, 1, 1,
+  false, false, 221, descriptor_table_protodef_GlobalCancelRequest_2eproto, "GlobalCancelRequest.proto", 
+  &descriptor_table_GlobalCancelRequest_2eproto_once, descriptor_table_GlobalCancelRequest_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_GlobalCancelRequest_2eproto::offsets,
-  file_level_metadata_GlobalCancelRequest_2eproto, 1, file_level_enum_descriptors_GlobalCancelRequest_2eproto, file_level_service_descriptors_GlobalCancelRequest_2eproto,
+  file_level_metadata_GlobalCancelRequest_2eproto, file_level_enum_descriptors_GlobalCancelRequest_2eproto, file_level_service_descriptors_GlobalCancelRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_GlobalCancelRequest_2eproto_getter() {
+  return &descriptor_table_GlobalCancelRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_GlobalCancelRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_GlobalCancelRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_GlobalCancelRequest_2eproto(&descriptor_table_GlobalCancelRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void GlobalCancelRequest::InitAsDefaultInstance() {
-  ::protobuf::_GlobalCancelRequest_default_instance_._instance.get_mutable()->ordercancel_ = const_cast< ::protobuf::OrderCancel*>(
-      ::protobuf::OrderCancel::internal_default_instance());
-}
 class GlobalCancelRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<GlobalCancelRequest>()._has_bits_);
@@ -103,16 +94,16 @@ GlobalCancelRequest::_Internal::ordercancel(const GlobalCancelRequest* msg) {
   return *msg->ordercancel_;
 }
 void GlobalCancelRequest::clear_ordercancel() {
-  if (GetArena() == nullptr && ordercancel_ != nullptr) {
-    delete ordercancel_;
-  }
-  ordercancel_ = nullptr;
+  if (ordercancel_ != nullptr) ordercancel_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GlobalCancelRequest::GlobalCancelRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GlobalCancelRequest::GlobalCancelRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.GlobalCancelRequest)
 }
 GlobalCancelRequest::GlobalCancelRequest(const GlobalCancelRequest& from)
@@ -127,19 +118,19 @@ GlobalCancelRequest::GlobalCancelRequest(const GlobalCancelRequest& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.GlobalCancelRequest)
 }
 
-void GlobalCancelRequest::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GlobalCancelRequest_GlobalCancelRequest_2eproto.base);
-  ordercancel_ = nullptr;
+inline void GlobalCancelRequest::SharedCtor() {
+ordercancel_ = nullptr;
 }
 
 GlobalCancelRequest::~GlobalCancelRequest() {
   // @@protoc_insertion_point(destructor:protobuf.GlobalCancelRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void GlobalCancelRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void GlobalCancelRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete ordercancel_;
 }
 
@@ -152,24 +143,17 @@ void GlobalCancelRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void GlobalCancelRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const GlobalCancelRequest& GlobalCancelRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GlobalCancelRequest_GlobalCancelRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void GlobalCancelRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.GlobalCancelRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    if (GetArena() == nullptr && ordercancel_ != nullptr) {
-      delete ordercancel_;
-    }
-    ordercancel_ = nullptr;
+    GOOGLE_DCHECK(ordercancel_ != nullptr);
+    ordercancel_->Clear();
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -178,49 +162,49 @@ void GlobalCancelRequest::Clear() {
 const char* GlobalCancelRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // .protobuf.OrderCancel orderCancel = 1;
+      // optional .protobuf.OrderCancel orderCancel = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_ordercancel(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GlobalCancelRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GlobalCancelRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.GlobalCancelRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .protobuf.OrderCancel orderCancel = 1;
+  // optional .protobuf.OrderCancel orderCancel = 1;
   if (_internal_has_ordercancel()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -240,11 +224,11 @@ size_t GlobalCancelRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.GlobalCancelRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .protobuf.OrderCancel orderCancel = 1;
+  // optional .protobuf.OrderCancel orderCancel = 1;
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
@@ -252,47 +236,32 @@ size_t GlobalCancelRequest::ByteSizeLong() const {
         *ordercancel_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void GlobalCancelRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.GlobalCancelRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const GlobalCancelRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GlobalCancelRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.GlobalCancelRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.GlobalCancelRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GlobalCancelRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    GlobalCancelRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GlobalCancelRequest::GetClassData() const { return &_class_data_; }
+
+void GlobalCancelRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<GlobalCancelRequest *>(to)->MergeFrom(
+      static_cast<const GlobalCancelRequest &>(from));
 }
+
 
 void GlobalCancelRequest::MergeFrom(const GlobalCancelRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.GlobalCancelRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_ordercancel()) {
     _internal_mutable_ordercancel()->::protobuf::OrderCancel::MergeFrom(from._internal_ordercancel());
   }
-}
-
-void GlobalCancelRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.GlobalCancelRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GlobalCancelRequest::CopyFrom(const GlobalCancelRequest& from) {
@@ -308,15 +277,16 @@ bool GlobalCancelRequest::IsInitialized() const {
 
 void GlobalCancelRequest::InternalSwap(GlobalCancelRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(ordercancel_, other->ordercancel_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GlobalCancelRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_GlobalCancelRequest_2eproto_getter, &descriptor_table_GlobalCancelRequest_2eproto_once,
+      file_level_metadata_GlobalCancelRequest_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

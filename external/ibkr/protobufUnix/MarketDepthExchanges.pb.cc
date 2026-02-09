@@ -14,42 +14,37 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_DepthMarketDataDescription_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DepthMarketDataDescription_DepthMarketDataDescription_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class MarketDepthExchangesDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MarketDepthExchanges> _instance;
-} _MarketDepthExchanges_default_instance_;
+constexpr MarketDepthExchanges::MarketDepthExchanges(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : depthmarketdatadescriptions_(){}
+struct MarketDepthExchangesDefaultTypeInternal {
+  constexpr MarketDepthExchangesDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~MarketDepthExchangesDefaultTypeInternal() {}
+  union {
+    MarketDepthExchanges _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT MarketDepthExchangesDefaultTypeInternal _MarketDepthExchanges_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_MarketDepthExchanges_MarketDepthExchanges_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_MarketDepthExchanges_default_instance_;
-    new (ptr) ::protobuf::MarketDepthExchanges();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::MarketDepthExchanges::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MarketDepthExchanges_MarketDepthExchanges_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MarketDepthExchanges_MarketDepthExchanges_2eproto}, {
-      &scc_info_DepthMarketDataDescription_DepthMarketDataDescription_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_MarketDepthExchanges_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_MarketDepthExchanges_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_MarketDepthExchanges_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_MarketDepthExchanges_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_MarketDepthExchanges_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::protobuf::MarketDepthExchanges, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::MarketDepthExchanges, depthmarketdatadescriptions_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::protobuf::MarketDepthExchanges)},
+  { 0, -1, -1, sizeof(::protobuf::MarketDepthExchanges)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -68,25 +63,23 @@ const char descriptor_table_protodef_MarketDepthExchanges_2eproto[] PROTOBUF_SEC
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_MarketDepthExchanges_2eproto_deps[1] = {
   &::descriptor_table_DepthMarketDataDescription_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_MarketDepthExchanges_2eproto_sccs[1] = {
-  &scc_info_MarketDepthExchanges_MarketDepthExchanges_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_MarketDepthExchanges_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_MarketDepthExchanges_2eproto = {
-  false, false, descriptor_table_protodef_MarketDepthExchanges_2eproto, "MarketDepthExchanges.proto", 249,
-  &descriptor_table_MarketDepthExchanges_2eproto_once, descriptor_table_MarketDepthExchanges_2eproto_sccs, descriptor_table_MarketDepthExchanges_2eproto_deps, 1, 1,
+  false, false, 249, descriptor_table_protodef_MarketDepthExchanges_2eproto, "MarketDepthExchanges.proto", 
+  &descriptor_table_MarketDepthExchanges_2eproto_once, descriptor_table_MarketDepthExchanges_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_MarketDepthExchanges_2eproto::offsets,
-  file_level_metadata_MarketDepthExchanges_2eproto, 1, file_level_enum_descriptors_MarketDepthExchanges_2eproto, file_level_service_descriptors_MarketDepthExchanges_2eproto,
+  file_level_metadata_MarketDepthExchanges_2eproto, file_level_enum_descriptors_MarketDepthExchanges_2eproto, file_level_service_descriptors_MarketDepthExchanges_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_MarketDepthExchanges_2eproto_getter() {
+  return &descriptor_table_MarketDepthExchanges_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_MarketDepthExchanges_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_MarketDepthExchanges_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_MarketDepthExchanges_2eproto(&descriptor_table_MarketDepthExchanges_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void MarketDepthExchanges::InitAsDefaultInstance() {
-}
 class MarketDepthExchanges::_Internal {
  public:
 };
@@ -94,11 +87,14 @@ class MarketDepthExchanges::_Internal {
 void MarketDepthExchanges::clear_depthmarketdatadescriptions() {
   depthmarketdatadescriptions_.Clear();
 }
-MarketDepthExchanges::MarketDepthExchanges(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+MarketDepthExchanges::MarketDepthExchanges(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   depthmarketdatadescriptions_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.MarketDepthExchanges)
 }
 MarketDepthExchanges::MarketDepthExchanges(const MarketDepthExchanges& from)
@@ -108,18 +104,18 @@ MarketDepthExchanges::MarketDepthExchanges(const MarketDepthExchanges& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.MarketDepthExchanges)
 }
 
-void MarketDepthExchanges::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MarketDepthExchanges_MarketDepthExchanges_2eproto.base);
+inline void MarketDepthExchanges::SharedCtor() {
 }
 
 MarketDepthExchanges::~MarketDepthExchanges() {
   // @@protoc_insertion_point(destructor:protobuf.MarketDepthExchanges)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MarketDepthExchanges::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void MarketDepthExchanges::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void MarketDepthExchanges::ArenaDtor(void* object) {
@@ -131,15 +127,10 @@ void MarketDepthExchanges::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void MarketDepthExchanges::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MarketDepthExchanges& MarketDepthExchanges::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MarketDepthExchanges_MarketDepthExchanges_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void MarketDepthExchanges::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.MarketDepthExchanges)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -149,15 +140,13 @@ void MarketDepthExchanges::Clear() {
 
 const char* MarketDepthExchanges::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .protobuf.DepthMarketDataDescription depthMarketDataDescriptions = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -165,34 +154,36 @@ const char* MarketDepthExchanges::_InternalParse(const char* ptr, ::PROTOBUF_NAM
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MarketDepthExchanges::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* MarketDepthExchanges::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.MarketDepthExchanges)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .protobuf.DepthMarketDataDescription depthMarketDataDescriptions = 1;
@@ -215,7 +206,7 @@ size_t MarketDepthExchanges::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.MarketDepthExchanges)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -226,45 +217,30 @@ size_t MarketDepthExchanges::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void MarketDepthExchanges::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.MarketDepthExchanges)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MarketDepthExchanges* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MarketDepthExchanges>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.MarketDepthExchanges)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.MarketDepthExchanges)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData MarketDepthExchanges::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    MarketDepthExchanges::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*MarketDepthExchanges::GetClassData() const { return &_class_data_; }
+
+void MarketDepthExchanges::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<MarketDepthExchanges *>(to)->MergeFrom(
+      static_cast<const MarketDepthExchanges &>(from));
 }
+
 
 void MarketDepthExchanges::MergeFrom(const MarketDepthExchanges& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.MarketDepthExchanges)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   depthmarketdatadescriptions_.MergeFrom(from.depthmarketdatadescriptions_);
-}
-
-void MarketDepthExchanges::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.MarketDepthExchanges)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void MarketDepthExchanges::CopyFrom(const MarketDepthExchanges& from) {
@@ -280,14 +256,15 @@ bool MarketDepthExchanges::IsInitialized() const {
 
 void MarketDepthExchanges::InternalSwap(MarketDepthExchanges* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   depthmarketdatadescriptions_.InternalSwap(&other->depthmarketdatadescriptions_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MarketDepthExchanges::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_MarketDepthExchanges_2eproto_getter, &descriptor_table_MarketDepthExchanges_2eproto_once,
+      file_level_metadata_MarketDepthExchanges_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

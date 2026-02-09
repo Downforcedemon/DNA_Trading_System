@@ -14,74 +14,77 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_ScannerSubscription_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_ScannerSubscription_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_ScannerSubscription_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_ScannerSubscription_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse> _instance;
-} _ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_default_instance_;
-class ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse> _instance;
-} _ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_default_instance_;
-class ScannerSubscriptionDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ScannerSubscription> _instance;
-} _ScannerSubscription_default_instance_;
+constexpr ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUseDefaultTypeInternal {
+  constexpr ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUseDefaultTypeInternal _ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_default_instance_;
+constexpr ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse::ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUseDefaultTypeInternal {
+  constexpr ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUseDefaultTypeInternal _ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_default_instance_;
+constexpr ScannerSubscription::ScannerSubscription(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : scannersubscriptionfilteroptions_(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{})
+  , scannersubscriptionoptions_(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{})
+  , instrument_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , locationcode_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , scancode_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , moodyratingabove_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , moodyratingbelow_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , spratingabove_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , spratingbelow_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , maturitydateabove_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , maturitydatebelow_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , scannersettingpairs_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , stocktypefilter_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , aboveprice_(0)
+  , belowprice_(0)
+  , abovevolume_(int64_t{0})
+  , marketcapabove_(0)
+  , marketcapbelow_(0)
+  , numberofrows_(0)
+  , excludeconvertible_(false)
+  , couponrateabove_(0)
+  , couponratebelow_(0)
+  , averageoptionvolumeabove_(int64_t{0}){}
+struct ScannerSubscriptionDefaultTypeInternal {
+  constexpr ScannerSubscriptionDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ScannerSubscriptionDefaultTypeInternal() {}
+  union {
+    ScannerSubscription _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ScannerSubscriptionDefaultTypeInternal _ScannerSubscription_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_ScannerSubscription_ScannerSubscription_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_ScannerSubscription_default_instance_;
-    new (ptr) ::protobuf::ScannerSubscription();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::ScannerSubscription::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ScannerSubscription_ScannerSubscription_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ScannerSubscription_ScannerSubscription_2eproto}, {
-      &scc_info_ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_ScannerSubscription_2eproto.base,
-      &scc_info_ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_ScannerSubscription_2eproto.base,}};
-
-static void InitDefaultsscc_info_ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_ScannerSubscription_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_default_instance_;
-    new (ptr) ::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse();
-  }
-  ::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_ScannerSubscription_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_ScannerSubscription_2eproto}, {}};
-
-static void InitDefaultsscc_info_ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_ScannerSubscription_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_default_instance_;
-    new (ptr) ::protobuf::ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse();
-  }
-  ::protobuf::ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_ScannerSubscription_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_ScannerSubscription_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ScannerSubscription_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_ScannerSubscription_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ScannerSubscription_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ScannerSubscription_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_ScannerSubscription_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse, key_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse, value_),
   0,
@@ -91,6 +94,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ScannerSubscription_2eproto::o
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse, key_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse, value_),
   0,
@@ -100,6 +104,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ScannerSubscription_2eproto::o
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription, numberofrows_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription, instrument_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ScannerSubscription, locationcode_),
@@ -148,9 +153,9 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ScannerSubscription_2eproto::o
   ~0u,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse)},
-  { 9, 16, sizeof(::protobuf::ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse)},
-  { 18, 46, sizeof(::protobuf::ScannerSubscription)},
+  { 0, 8, -1, sizeof(::protobuf::ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse)},
+  { 10, 18, -1, sizeof(::protobuf::ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse)},
+  { 20, 49, -1, sizeof(::protobuf::ScannerSubscription)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -199,23 +204,19 @@ const char descriptor_table_protodef_ScannerSubscription_2eproto[] PROTOBUF_SECT
   "client.protobufB\030ScannerSubscriptionProt"
   "o\252\002\016IBApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ScannerSubscription_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ScannerSubscription_2eproto_sccs[3] = {
-  &scc_info_ScannerSubscription_ScannerSubscription_2eproto.base,
-  &scc_info_ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse_ScannerSubscription_2eproto.base,
-  &scc_info_ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse_ScannerSubscription_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ScannerSubscription_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ScannerSubscription_2eproto = {
-  false, false, descriptor_table_protodef_ScannerSubscription_2eproto, "ScannerSubscription.proto", 1506,
-  &descriptor_table_ScannerSubscription_2eproto_once, descriptor_table_ScannerSubscription_2eproto_sccs, descriptor_table_ScannerSubscription_2eproto_deps, 3, 0,
+  false, false, 1506, descriptor_table_protodef_ScannerSubscription_2eproto, "ScannerSubscription.proto", 
+  &descriptor_table_ScannerSubscription_2eproto_once, nullptr, 0, 3,
   schemas, file_default_instances, TableStruct_ScannerSubscription_2eproto::offsets,
-  file_level_metadata_ScannerSubscription_2eproto, 3, file_level_enum_descriptors_ScannerSubscription_2eproto, file_level_service_descriptors_ScannerSubscription_2eproto,
+  file_level_metadata_ScannerSubscription_2eproto, file_level_enum_descriptors_ScannerSubscription_2eproto, file_level_service_descriptors_ScannerSubscription_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_ScannerSubscription_2eproto_getter() {
+  return &descriptor_table_ScannerSubscription_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_ScannerSubscription_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ScannerSubscription_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ScannerSubscription_2eproto(&descriptor_table_ScannerSubscription_2eproto);
 namespace protobuf {
 
 // ===================================================================
@@ -227,13 +228,10 @@ void ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse::MergeFr
   MergeFromInternal(other);
 }
 ::PROTOBUF_NAMESPACE_ID::Metadata ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_ScannerSubscription_2eproto_getter, &descriptor_table_ScannerSubscription_2eproto_once,
+      file_level_metadata_ScannerSubscription_2eproto[0]);
 }
-void ScannerSubscription_ScannerSubscriptionFilterOptionsEntry_DoNotUse::MergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
-  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
-}
-
 
 // ===================================================================
 
@@ -244,18 +242,13 @@ void ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse::MergeFrom(con
   MergeFromInternal(other);
 }
 ::PROTOBUF_NAMESPACE_ID::Metadata ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_ScannerSubscription_2eproto_getter, &descriptor_table_ScannerSubscription_2eproto_once,
+      file_level_metadata_ScannerSubscription_2eproto[1]);
 }
-void ScannerSubscription_ScannerSubscriptionOptionsEntry_DoNotUse::MergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
-  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
-}
-
 
 // ===================================================================
 
-void ScannerSubscription::InitAsDefaultInstance() {
-}
 class ScannerSubscription::_Internal {
  public:
   using HasBits = decltype(std::declval<ScannerSubscription>()._has_bits_);
@@ -324,12 +317,15 @@ class ScannerSubscription::_Internal {
   }
 };
 
-ScannerSubscription::ScannerSubscription(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+ScannerSubscription::ScannerSubscription(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   scannersubscriptionfilteroptions_(arena),
   scannersubscriptionoptions_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.ScannerSubscription)
 }
 ScannerSubscription::ScannerSubscription(const ScannerSubscription& from)
@@ -339,59 +335,92 @@ ScannerSubscription::ScannerSubscription(const ScannerSubscription& from)
   scannersubscriptionfilteroptions_.MergeFrom(from.scannersubscriptionfilteroptions_);
   scannersubscriptionoptions_.MergeFrom(from.scannersubscriptionoptions_);
   instrument_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    instrument_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_instrument()) {
-    instrument_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_instrument(),
-      GetArena());
+    instrument_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_instrument(), 
+      GetArenaForAllocation());
   }
   locationcode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    locationcode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_locationcode()) {
-    locationcode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_locationcode(),
-      GetArena());
+    locationcode_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_locationcode(), 
+      GetArenaForAllocation());
   }
   scancode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    scancode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_scancode()) {
-    scancode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_scancode(),
-      GetArena());
+    scancode_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_scancode(), 
+      GetArenaForAllocation());
   }
   moodyratingabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    moodyratingabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_moodyratingabove()) {
-    moodyratingabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_moodyratingabove(),
-      GetArena());
+    moodyratingabove_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_moodyratingabove(), 
+      GetArenaForAllocation());
   }
   moodyratingbelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    moodyratingbelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_moodyratingbelow()) {
-    moodyratingbelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_moodyratingbelow(),
-      GetArena());
+    moodyratingbelow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_moodyratingbelow(), 
+      GetArenaForAllocation());
   }
   spratingabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    spratingabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_spratingabove()) {
-    spratingabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_spratingabove(),
-      GetArena());
+    spratingabove_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_spratingabove(), 
+      GetArenaForAllocation());
   }
   spratingbelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    spratingbelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_spratingbelow()) {
-    spratingbelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_spratingbelow(),
-      GetArena());
+    spratingbelow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_spratingbelow(), 
+      GetArenaForAllocation());
   }
   maturitydateabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    maturitydateabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_maturitydateabove()) {
-    maturitydateabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_maturitydateabove(),
-      GetArena());
+    maturitydateabove_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_maturitydateabove(), 
+      GetArenaForAllocation());
   }
   maturitydatebelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    maturitydatebelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_maturitydatebelow()) {
-    maturitydatebelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_maturitydatebelow(),
-      GetArena());
+    maturitydatebelow_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_maturitydatebelow(), 
+      GetArenaForAllocation());
   }
   scannersettingpairs_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    scannersettingpairs_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_scannersettingpairs()) {
-    scannersettingpairs_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_scannersettingpairs(),
-      GetArena());
+    scannersettingpairs_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_scannersettingpairs(), 
+      GetArenaForAllocation());
   }
   stocktypefilter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    stocktypefilter_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_stocktypefilter()) {
-    stocktypefilter_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_stocktypefilter(),
-      GetArena());
+    stocktypefilter_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_stocktypefilter(), 
+      GetArenaForAllocation());
   }
   ::memcpy(&aboveprice_, &from.aboveprice_,
     static_cast<size_t>(reinterpret_cast<char*>(&averageoptionvolumeabove_) -
@@ -399,32 +428,66 @@ ScannerSubscription::ScannerSubscription(const ScannerSubscription& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.ScannerSubscription)
 }
 
-void ScannerSubscription::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ScannerSubscription_ScannerSubscription_2eproto.base);
-  instrument_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  locationcode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  scancode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  moodyratingabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  moodyratingbelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  spratingabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  spratingbelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  maturitydateabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  maturitydatebelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  scannersettingpairs_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  stocktypefilter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&aboveprice_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&averageoptionvolumeabove_) -
-      reinterpret_cast<char*>(&aboveprice_)) + sizeof(averageoptionvolumeabove_));
+inline void ScannerSubscription::SharedCtor() {
+instrument_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  instrument_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+locationcode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  locationcode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+scancode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  scancode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+moodyratingabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  moodyratingabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+moodyratingbelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  moodyratingbelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+spratingabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  spratingabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+spratingbelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  spratingbelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+maturitydateabove_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  maturitydateabove_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+maturitydatebelow_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  maturitydatebelow_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+scannersettingpairs_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  scannersettingpairs_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+stocktypefilter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  stocktypefilter_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&aboveprice_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&averageoptionvolumeabove_) -
+    reinterpret_cast<char*>(&aboveprice_)) + sizeof(averageoptionvolumeabove_));
 }
 
 ScannerSubscription::~ScannerSubscription() {
   // @@protoc_insertion_point(destructor:protobuf.ScannerSubscription)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void ScannerSubscription::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void ScannerSubscription::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   instrument_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   locationcode_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   scancode_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -441,21 +504,21 @@ void ScannerSubscription::SharedDtor() {
 void ScannerSubscription::ArenaDtor(void* object) {
   ScannerSubscription* _this = reinterpret_cast< ScannerSubscription* >(object);
   (void)_this;
+  _this->scannersubscriptionfilteroptions_. ~MapField();
+  _this->scannersubscriptionoptions_. ~MapField();
 }
-void ScannerSubscription::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+inline void ScannerSubscription::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena) {
+  if (arena != nullptr) {
+    arena->OwnCustomDestructor(this, &ScannerSubscription::ArenaDtor);
+  }
 }
 void ScannerSubscription::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ScannerSubscription& ScannerSubscription::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ScannerSubscription_ScannerSubscription_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void ScannerSubscription::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.ScannerSubscription)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -516,194 +579,213 @@ void ScannerSubscription::Clear() {
 const char* ScannerSubscription::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 numberOfRows = 1;
+      // optional int32 numberOfRows = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_numberofrows(&has_bits);
-          numberofrows_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          numberofrows_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string instrument = 2;
+      // optional string instrument = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_instrument();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.instrument"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string locationCode = 3;
+      // optional string locationCode = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_locationcode();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.locationCode"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string scanCode = 4;
+      // optional string scanCode = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_scancode();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.scanCode"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double abovePrice = 5;
+      // optional double abovePrice = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
           _Internal::set_has_aboveprice(&has_bits);
           aboveprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double belowPrice = 6;
+      // optional double belowPrice = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
           _Internal::set_has_belowprice(&has_bits);
           belowprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int64 aboveVolume = 7;
+      // optional int64 aboveVolume = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
           _Internal::set_has_abovevolume(&has_bits);
           abovevolume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double marketCapAbove = 8;
+      // optional double marketCapAbove = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
           _Internal::set_has_marketcapabove(&has_bits);
           marketcapabove_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double marketCapBelow = 9;
+      // optional double marketCapBelow = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 73)) {
           _Internal::set_has_marketcapbelow(&has_bits);
           marketcapbelow_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string moodyRatingAbove = 10;
+      // optional string moodyRatingAbove = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           auto str = _internal_mutable_moodyratingabove();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.moodyRatingAbove"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string moodyRatingBelow = 11;
+      // optional string moodyRatingBelow = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           auto str = _internal_mutable_moodyratingbelow();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.moodyRatingBelow"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string spRatingAbove = 12;
+      // optional string spRatingAbove = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
           auto str = _internal_mutable_spratingabove();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.spRatingAbove"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string spRatingBelow = 13;
+      // optional string spRatingBelow = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           auto str = _internal_mutable_spratingbelow();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.spRatingBelow"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string maturityDateAbove = 14;
+      // optional string maturityDateAbove = 14;
       case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
           auto str = _internal_mutable_maturitydateabove();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.maturityDateAbove"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string maturityDateBelow = 15;
+      // optional string maturityDateBelow = 15;
       case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
           auto str = _internal_mutable_maturitydatebelow();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.maturityDateBelow"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double couponRateAbove = 16;
+      // optional double couponRateAbove = 16;
       case 16:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 129)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 129)) {
           _Internal::set_has_couponrateabove(&has_bits);
           couponrateabove_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double couponRateBelow = 17;
+      // optional double couponRateBelow = 17;
       case 17:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 137)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 137)) {
           _Internal::set_has_couponratebelow(&has_bits);
           couponratebelow_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // bool excludeConvertible = 18;
+      // optional bool excludeConvertible = 18;
       case 18:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
           _Internal::set_has_excludeconvertible(&has_bits);
           excludeconvertible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int64 averageOptionVolumeAbove = 19;
+      // optional int64 averageOptionVolumeAbove = 19;
       case 19:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 152)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 152)) {
           _Internal::set_has_averageoptionvolumeabove(&has_bits);
           averageoptionvolumeabove_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string scannerSettingPairs = 20;
+      // optional string scannerSettingPairs = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           auto str = _internal_mutable_scannersettingpairs();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.scannerSettingPairs"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string stockTypeFilter = 21;
+      // optional string stockTypeFilter = 21;
       case 21:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
           auto str = _internal_mutable_stocktypefilter();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.ScannerSubscription.stockTypeFilter"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // map<string, string> scannerSubscriptionFilterOptions = 22;
       case 22:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 178)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 178)) {
           ptr -= 2;
           do {
             ptr += 2;
@@ -711,11 +793,12 @@ const char* ScannerSubscription::_InternalParse(const char* ptr, ::PROTOBUF_NAME
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<178>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // map<string, string> scannerSubscriptionOptions = 23;
       case 23:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
           ptr -= 2;
           do {
             ptr += 2;
@@ -723,44 +806,46 @@ const char* ScannerSubscription::_InternalParse(const char* ptr, ::PROTOBUF_NAME
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<186>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ScannerSubscription::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ScannerSubscription::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.ScannerSubscription)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 numberOfRows = 1;
+  // optional int32 numberOfRows = 1;
   if (_internal_has_numberofrows()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_numberofrows(), target);
   }
 
-  // string instrument = 2;
+  // optional string instrument = 2;
   if (_internal_has_instrument()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_instrument().data(), static_cast<int>(this->_internal_instrument().length()),
@@ -770,7 +855,7 @@ failure:
         2, this->_internal_instrument(), target);
   }
 
-  // string locationCode = 3;
+  // optional string locationCode = 3;
   if (_internal_has_locationcode()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_locationcode().data(), static_cast<int>(this->_internal_locationcode().length()),
@@ -780,7 +865,7 @@ failure:
         3, this->_internal_locationcode(), target);
   }
 
-  // string scanCode = 4;
+  // optional string scanCode = 4;
   if (_internal_has_scancode()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_scancode().data(), static_cast<int>(this->_internal_scancode().length()),
@@ -790,37 +875,37 @@ failure:
         4, this->_internal_scancode(), target);
   }
 
-  // double abovePrice = 5;
+  // optional double abovePrice = 5;
   if (_internal_has_aboveprice()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_aboveprice(), target);
   }
 
-  // double belowPrice = 6;
+  // optional double belowPrice = 6;
   if (_internal_has_belowprice()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_belowprice(), target);
   }
 
-  // int64 aboveVolume = 7;
+  // optional int64 aboveVolume = 7;
   if (_internal_has_abovevolume()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_abovevolume(), target);
   }
 
-  // double marketCapAbove = 8;
+  // optional double marketCapAbove = 8;
   if (_internal_has_marketcapabove()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_marketcapabove(), target);
   }
 
-  // double marketCapBelow = 9;
+  // optional double marketCapBelow = 9;
   if (_internal_has_marketcapbelow()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_marketcapbelow(), target);
   }
 
-  // string moodyRatingAbove = 10;
+  // optional string moodyRatingAbove = 10;
   if (_internal_has_moodyratingabove()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_moodyratingabove().data(), static_cast<int>(this->_internal_moodyratingabove().length()),
@@ -830,7 +915,7 @@ failure:
         10, this->_internal_moodyratingabove(), target);
   }
 
-  // string moodyRatingBelow = 11;
+  // optional string moodyRatingBelow = 11;
   if (_internal_has_moodyratingbelow()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_moodyratingbelow().data(), static_cast<int>(this->_internal_moodyratingbelow().length()),
@@ -840,7 +925,7 @@ failure:
         11, this->_internal_moodyratingbelow(), target);
   }
 
-  // string spRatingAbove = 12;
+  // optional string spRatingAbove = 12;
   if (_internal_has_spratingabove()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_spratingabove().data(), static_cast<int>(this->_internal_spratingabove().length()),
@@ -850,7 +935,7 @@ failure:
         12, this->_internal_spratingabove(), target);
   }
 
-  // string spRatingBelow = 13;
+  // optional string spRatingBelow = 13;
   if (_internal_has_spratingbelow()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_spratingbelow().data(), static_cast<int>(this->_internal_spratingbelow().length()),
@@ -860,7 +945,7 @@ failure:
         13, this->_internal_spratingbelow(), target);
   }
 
-  // string maturityDateAbove = 14;
+  // optional string maturityDateAbove = 14;
   if (_internal_has_maturitydateabove()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_maturitydateabove().data(), static_cast<int>(this->_internal_maturitydateabove().length()),
@@ -870,7 +955,7 @@ failure:
         14, this->_internal_maturitydateabove(), target);
   }
 
-  // string maturityDateBelow = 15;
+  // optional string maturityDateBelow = 15;
   if (_internal_has_maturitydatebelow()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_maturitydatebelow().data(), static_cast<int>(this->_internal_maturitydatebelow().length()),
@@ -880,31 +965,31 @@ failure:
         15, this->_internal_maturitydatebelow(), target);
   }
 
-  // double couponRateAbove = 16;
+  // optional double couponRateAbove = 16;
   if (_internal_has_couponrateabove()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(16, this->_internal_couponrateabove(), target);
   }
 
-  // double couponRateBelow = 17;
+  // optional double couponRateBelow = 17;
   if (_internal_has_couponratebelow()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(17, this->_internal_couponratebelow(), target);
   }
 
-  // bool excludeConvertible = 18;
+  // optional bool excludeConvertible = 18;
   if (_internal_has_excludeconvertible()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(18, this->_internal_excludeconvertible(), target);
   }
 
-  // int64 averageOptionVolumeAbove = 19;
+  // optional int64 averageOptionVolumeAbove = 19;
   if (_internal_has_averageoptionvolumeabove()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(19, this->_internal_averageoptionvolumeabove(), target);
   }
 
-  // string scannerSettingPairs = 20;
+  // optional string scannerSettingPairs = 20;
   if (_internal_has_scannersettingpairs()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_scannersettingpairs().data(), static_cast<int>(this->_internal_scannersettingpairs().length()),
@@ -914,7 +999,7 @@ failure:
         20, this->_internal_scannersettingpairs(), target);
   }
 
-  // string stockTypeFilter = 21;
+  // optional string stockTypeFilter = 21;
   if (_internal_has_stocktypefilter()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_stocktypefilter().data(), static_cast<int>(this->_internal_stocktypefilter().length()),
@@ -932,6 +1017,7 @@ failure:
     typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
+        (void)p;
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
           ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -977,6 +1063,7 @@ failure:
     typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
+        (void)p;
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
           ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1026,7 +1113,7 @@ size_t ScannerSubscription::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.ScannerSubscription)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1050,56 +1137,56 @@ size_t ScannerSubscription::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    // string instrument = 2;
+    // optional string instrument = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_instrument());
     }
 
-    // string locationCode = 3;
+    // optional string locationCode = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_locationcode());
     }
 
-    // string scanCode = 4;
+    // optional string scanCode = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_scancode());
     }
 
-    // string moodyRatingAbove = 10;
+    // optional string moodyRatingAbove = 10;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_moodyratingabove());
     }
 
-    // string moodyRatingBelow = 11;
+    // optional string moodyRatingBelow = 11;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_moodyratingbelow());
     }
 
-    // string spRatingAbove = 12;
+    // optional string spRatingAbove = 12;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_spratingabove());
     }
 
-    // string spRatingBelow = 13;
+    // optional string spRatingBelow = 13;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_spratingbelow());
     }
 
-    // string maturityDateAbove = 14;
+    // optional string maturityDateAbove = 14;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -1108,79 +1195,75 @@ size_t ScannerSubscription::ByteSizeLong() const {
 
   }
   if (cached_has_bits & 0x0000ff00u) {
-    // string maturityDateBelow = 15;
+    // optional string maturityDateBelow = 15;
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_maturitydatebelow());
     }
 
-    // string scannerSettingPairs = 20;
+    // optional string scannerSettingPairs = 20;
     if (cached_has_bits & 0x00000200u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_scannersettingpairs());
     }
 
-    // string stockTypeFilter = 21;
+    // optional string stockTypeFilter = 21;
     if (cached_has_bits & 0x00000400u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_stocktypefilter());
     }
 
-    // double abovePrice = 5;
+    // optional double abovePrice = 5;
     if (cached_has_bits & 0x00000800u) {
       total_size += 1 + 8;
     }
 
-    // double belowPrice = 6;
+    // optional double belowPrice = 6;
     if (cached_has_bits & 0x00001000u) {
       total_size += 1 + 8;
     }
 
-    // int64 aboveVolume = 7;
+    // optional int64 aboveVolume = 7;
     if (cached_has_bits & 0x00002000u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->_internal_abovevolume());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64SizePlusOne(this->_internal_abovevolume());
     }
 
-    // double marketCapAbove = 8;
+    // optional double marketCapAbove = 8;
     if (cached_has_bits & 0x00004000u) {
       total_size += 1 + 8;
     }
 
-    // double marketCapBelow = 9;
+    // optional double marketCapBelow = 9;
     if (cached_has_bits & 0x00008000u) {
       total_size += 1 + 8;
     }
 
   }
   if (cached_has_bits & 0x001f0000u) {
-    // int32 numberOfRows = 1;
+    // optional int32 numberOfRows = 1;
     if (cached_has_bits & 0x00010000u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_numberofrows());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_numberofrows());
     }
 
-    // bool excludeConvertible = 18;
+    // optional bool excludeConvertible = 18;
     if (cached_has_bits & 0x00020000u) {
       total_size += 2 + 1;
     }
 
-    // double couponRateAbove = 16;
+    // optional double couponRateAbove = 16;
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 + 8;
     }
 
-    // double couponRateBelow = 17;
+    // optional double couponRateBelow = 17;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 + 8;
     }
 
-    // int64 averageOptionVolumeAbove = 19;
+    // optional int64 averageOptionVolumeAbove = 19;
     if (cached_has_bits & 0x00100000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
@@ -1188,35 +1271,26 @@ size_t ScannerSubscription::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void ScannerSubscription::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.ScannerSubscription)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ScannerSubscription* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ScannerSubscription>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.ScannerSubscription)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.ScannerSubscription)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ScannerSubscription::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ScannerSubscription::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ScannerSubscription::GetClassData() const { return &_class_data_; }
+
+void ScannerSubscription::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<ScannerSubscription *>(to)->MergeFrom(
+      static_cast<const ScannerSubscription &>(from));
 }
+
 
 void ScannerSubscription::MergeFrom(const ScannerSubscription& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.ScannerSubscription)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   scannersubscriptionfilteroptions_.MergeFrom(from.scannersubscriptionfilteroptions_);
@@ -1293,13 +1367,7 @@ void ScannerSubscription::MergeFrom(const ScannerSubscription& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void ScannerSubscription::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.ScannerSubscription)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ScannerSubscription::CopyFrom(const ScannerSubscription& from) {
@@ -1315,21 +1383,67 @@ bool ScannerSubscription::IsInitialized() const {
 
 void ScannerSubscription::InternalSwap(ScannerSubscription* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  scannersubscriptionfilteroptions_.Swap(&other->scannersubscriptionfilteroptions_);
-  scannersubscriptionoptions_.Swap(&other->scannersubscriptionoptions_);
-  instrument_.Swap(&other->instrument_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  locationcode_.Swap(&other->locationcode_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  scancode_.Swap(&other->scancode_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  moodyratingabove_.Swap(&other->moodyratingabove_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  moodyratingbelow_.Swap(&other->moodyratingbelow_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  spratingabove_.Swap(&other->spratingabove_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  spratingbelow_.Swap(&other->spratingbelow_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  maturitydateabove_.Swap(&other->maturitydateabove_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  maturitydatebelow_.Swap(&other->maturitydatebelow_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  scannersettingpairs_.Swap(&other->scannersettingpairs_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  stocktypefilter_.Swap(&other->stocktypefilter_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  scannersubscriptionfilteroptions_.InternalSwap(&other->scannersubscriptionfilteroptions_);
+  scannersubscriptionoptions_.InternalSwap(&other->scannersubscriptionoptions_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &instrument_, lhs_arena,
+      &other->instrument_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &locationcode_, lhs_arena,
+      &other->locationcode_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &scancode_, lhs_arena,
+      &other->scancode_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &moodyratingabove_, lhs_arena,
+      &other->moodyratingabove_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &moodyratingbelow_, lhs_arena,
+      &other->moodyratingbelow_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &spratingabove_, lhs_arena,
+      &other->spratingabove_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &spratingbelow_, lhs_arena,
+      &other->spratingbelow_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &maturitydateabove_, lhs_arena,
+      &other->maturitydateabove_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &maturitydatebelow_, lhs_arena,
+      &other->maturitydatebelow_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &scannersettingpairs_, lhs_arena,
+      &other->scannersettingpairs_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &stocktypefilter_, lhs_arena,
+      &other->stocktypefilter_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(ScannerSubscription, averageoptionvolumeabove_)
       + sizeof(ScannerSubscription::averageoptionvolumeabove_)
@@ -1339,9 +1453,10 @@ void ScannerSubscription::InternalSwap(ScannerSubscription* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ScannerSubscription::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_ScannerSubscription_2eproto_getter, &descriptor_table_ScannerSubscription_2eproto_once,
+      file_level_metadata_ScannerSubscription_2eproto[2]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

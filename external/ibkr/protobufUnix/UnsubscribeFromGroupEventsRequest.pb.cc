@@ -14,41 +14,38 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class UnsubscribeFromGroupEventsRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<UnsubscribeFromGroupEventsRequest> _instance;
-} _UnsubscribeFromGroupEventsRequest_default_instance_;
+constexpr UnsubscribeFromGroupEventsRequest::UnsubscribeFromGroupEventsRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : reqid_(0){}
+struct UnsubscribeFromGroupEventsRequestDefaultTypeInternal {
+  constexpr UnsubscribeFromGroupEventsRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~UnsubscribeFromGroupEventsRequestDefaultTypeInternal() {}
+  union {
+    UnsubscribeFromGroupEventsRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UnsubscribeFromGroupEventsRequestDefaultTypeInternal _UnsubscribeFromGroupEventsRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_UnsubscribeFromGroupEventsRequest_UnsubscribeFromGroupEventsRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_UnsubscribeFromGroupEventsRequest_default_instance_;
-    new (ptr) ::protobuf::UnsubscribeFromGroupEventsRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::UnsubscribeFromGroupEventsRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_UnsubscribeFromGroupEventsRequest_UnsubscribeFromGroupEventsRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_UnsubscribeFromGroupEventsRequest_UnsubscribeFromGroupEventsRequest_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_UnsubscribeFromGroupEventsRequest_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_UnsubscribeFromGroupEventsRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_UnsubscribeFromGroupEventsRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_UnsubscribeFromGroupEventsRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_UnsubscribeFromGroupEventsRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::UnsubscribeFromGroupEventsRequest, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::UnsubscribeFromGroupEventsRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::UnsubscribeFromGroupEventsRequest, reqid_),
   0,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 6, sizeof(::protobuf::UnsubscribeFromGroupEventsRequest)},
+  { 0, 7, -1, sizeof(::protobuf::UnsubscribeFromGroupEventsRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -63,27 +60,23 @@ const char descriptor_table_protodef_UnsubscribeFromGroupEventsRequest_2eproto[]
   "mGroupEventsRequestProto\252\002\016IBApi.protobu"
   "fb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_sccs[1] = {
-  &scc_info_UnsubscribeFromGroupEventsRequest_UnsubscribeFromGroupEventsRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto = {
-  false, false, descriptor_table_protodef_UnsubscribeFromGroupEventsRequest_2eproto, "UnsubscribeFromGroupEventsRequest.proto", 209,
-  &descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_once, descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_sccs, descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_deps, 1, 0,
+  false, false, 209, descriptor_table_protodef_UnsubscribeFromGroupEventsRequest_2eproto, "UnsubscribeFromGroupEventsRequest.proto", 
+  &descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_UnsubscribeFromGroupEventsRequest_2eproto::offsets,
-  file_level_metadata_UnsubscribeFromGroupEventsRequest_2eproto, 1, file_level_enum_descriptors_UnsubscribeFromGroupEventsRequest_2eproto, file_level_service_descriptors_UnsubscribeFromGroupEventsRequest_2eproto,
+  file_level_metadata_UnsubscribeFromGroupEventsRequest_2eproto, file_level_enum_descriptors_UnsubscribeFromGroupEventsRequest_2eproto, file_level_service_descriptors_UnsubscribeFromGroupEventsRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_getter() {
+  return &descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_UnsubscribeFromGroupEventsRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_UnsubscribeFromGroupEventsRequest_2eproto(&descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void UnsubscribeFromGroupEventsRequest::InitAsDefaultInstance() {
-}
 class UnsubscribeFromGroupEventsRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<UnsubscribeFromGroupEventsRequest>()._has_bits_);
@@ -92,10 +85,13 @@ class UnsubscribeFromGroupEventsRequest::_Internal {
   }
 };
 
-UnsubscribeFromGroupEventsRequest::UnsubscribeFromGroupEventsRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+UnsubscribeFromGroupEventsRequest::UnsubscribeFromGroupEventsRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.UnsubscribeFromGroupEventsRequest)
 }
 UnsubscribeFromGroupEventsRequest::UnsubscribeFromGroupEventsRequest(const UnsubscribeFromGroupEventsRequest& from)
@@ -106,18 +102,19 @@ UnsubscribeFromGroupEventsRequest::UnsubscribeFromGroupEventsRequest(const Unsub
   // @@protoc_insertion_point(copy_constructor:protobuf.UnsubscribeFromGroupEventsRequest)
 }
 
-void UnsubscribeFromGroupEventsRequest::SharedCtor() {
-  reqid_ = 0;
+inline void UnsubscribeFromGroupEventsRequest::SharedCtor() {
+reqid_ = 0;
 }
 
 UnsubscribeFromGroupEventsRequest::~UnsubscribeFromGroupEventsRequest() {
   // @@protoc_insertion_point(destructor:protobuf.UnsubscribeFromGroupEventsRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void UnsubscribeFromGroupEventsRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void UnsubscribeFromGroupEventsRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void UnsubscribeFromGroupEventsRequest::ArenaDtor(void* object) {
@@ -129,15 +126,10 @@ void UnsubscribeFromGroupEventsRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_I
 void UnsubscribeFromGroupEventsRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const UnsubscribeFromGroupEventsRequest& UnsubscribeFromGroupEventsRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_UnsubscribeFromGroupEventsRequest_UnsubscribeFromGroupEventsRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void UnsubscribeFromGroupEventsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.UnsubscribeFromGroupEventsRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -149,50 +141,50 @@ void UnsubscribeFromGroupEventsRequest::Clear() {
 const char* UnsubscribeFromGroupEventsRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* UnsubscribeFromGroupEventsRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* UnsubscribeFromGroupEventsRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.UnsubscribeFromGroupEventsRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
@@ -210,59 +202,42 @@ size_t UnsubscribeFromGroupEventsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.UnsubscribeFromGroupEventsRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_reqid());
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void UnsubscribeFromGroupEventsRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.UnsubscribeFromGroupEventsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const UnsubscribeFromGroupEventsRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<UnsubscribeFromGroupEventsRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.UnsubscribeFromGroupEventsRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.UnsubscribeFromGroupEventsRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UnsubscribeFromGroupEventsRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    UnsubscribeFromGroupEventsRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UnsubscribeFromGroupEventsRequest::GetClassData() const { return &_class_data_; }
+
+void UnsubscribeFromGroupEventsRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<UnsubscribeFromGroupEventsRequest *>(to)->MergeFrom(
+      static_cast<const UnsubscribeFromGroupEventsRequest &>(from));
 }
+
 
 void UnsubscribeFromGroupEventsRequest::MergeFrom(const UnsubscribeFromGroupEventsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.UnsubscribeFromGroupEventsRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_reqid()) {
     _internal_set_reqid(from._internal_reqid());
   }
-}
-
-void UnsubscribeFromGroupEventsRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.UnsubscribeFromGroupEventsRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void UnsubscribeFromGroupEventsRequest::CopyFrom(const UnsubscribeFromGroupEventsRequest& from) {
@@ -278,15 +253,16 @@ bool UnsubscribeFromGroupEventsRequest::IsInitialized() const {
 
 void UnsubscribeFromGroupEventsRequest::InternalSwap(UnsubscribeFromGroupEventsRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(reqid_, other->reqid_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata UnsubscribeFromGroupEventsRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_getter, &descriptor_table_UnsubscribeFromGroupEventsRequest_2eproto_once,
+      file_level_metadata_UnsubscribeFromGroupEventsRequest_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

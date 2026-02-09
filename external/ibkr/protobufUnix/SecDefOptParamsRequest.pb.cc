@@ -14,36 +14,37 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class SecDefOptParamsRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SecDefOptParamsRequest> _instance;
-} _SecDefOptParamsRequest_default_instance_;
+constexpr SecDefOptParamsRequest::SecDefOptParamsRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : underlyingsymbol_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , futfopexchange_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , underlyingsectype_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , reqid_(0)
+  , underlyingconid_(0){}
+struct SecDefOptParamsRequestDefaultTypeInternal {
+  constexpr SecDefOptParamsRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SecDefOptParamsRequestDefaultTypeInternal() {}
+  union {
+    SecDefOptParamsRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SecDefOptParamsRequestDefaultTypeInternal _SecDefOptParamsRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_SecDefOptParamsRequest_SecDefOptParamsRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_SecDefOptParamsRequest_default_instance_;
-    new (ptr) ::protobuf::SecDefOptParamsRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::SecDefOptParamsRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SecDefOptParamsRequest_SecDefOptParamsRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SecDefOptParamsRequest_SecDefOptParamsRequest_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_SecDefOptParamsRequest_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_SecDefOptParamsRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_SecDefOptParamsRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_SecDefOptParamsRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_SecDefOptParamsRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::SecDefOptParamsRequest, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::SecDefOptParamsRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::SecDefOptParamsRequest, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::SecDefOptParamsRequest, underlyingsymbol_),
   PROTOBUF_FIELD_OFFSET(::protobuf::SecDefOptParamsRequest, futfopexchange_),
@@ -56,7 +57,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_SecDefOptParamsRequest_2eproto
   4,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 10, sizeof(::protobuf::SecDefOptParamsRequest)},
+  { 0, 11, -1, sizeof(::protobuf::SecDefOptParamsRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -75,27 +76,23 @@ const char descriptor_table_protodef_SecDefOptParamsRequest_2eproto[] PROTOBUF_S
   "rotobufB\033SecDefOptParamsRequestProto\252\002\016I"
   "BApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_SecDefOptParamsRequest_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_SecDefOptParamsRequest_2eproto_sccs[1] = {
-  &scc_info_SecDefOptParamsRequest_SecDefOptParamsRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_SecDefOptParamsRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_SecDefOptParamsRequest_2eproto = {
-  false, false, descriptor_table_protodef_SecDefOptParamsRequest_2eproto, "SecDefOptParamsRequest.proto", 381,
-  &descriptor_table_SecDefOptParamsRequest_2eproto_once, descriptor_table_SecDefOptParamsRequest_2eproto_sccs, descriptor_table_SecDefOptParamsRequest_2eproto_deps, 1, 0,
+  false, false, 381, descriptor_table_protodef_SecDefOptParamsRequest_2eproto, "SecDefOptParamsRequest.proto", 
+  &descriptor_table_SecDefOptParamsRequest_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_SecDefOptParamsRequest_2eproto::offsets,
-  file_level_metadata_SecDefOptParamsRequest_2eproto, 1, file_level_enum_descriptors_SecDefOptParamsRequest_2eproto, file_level_service_descriptors_SecDefOptParamsRequest_2eproto,
+  file_level_metadata_SecDefOptParamsRequest_2eproto, file_level_enum_descriptors_SecDefOptParamsRequest_2eproto, file_level_service_descriptors_SecDefOptParamsRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_SecDefOptParamsRequest_2eproto_getter() {
+  return &descriptor_table_SecDefOptParamsRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_SecDefOptParamsRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_SecDefOptParamsRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_SecDefOptParamsRequest_2eproto(&descriptor_table_SecDefOptParamsRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void SecDefOptParamsRequest::InitAsDefaultInstance() {
-}
 class SecDefOptParamsRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<SecDefOptParamsRequest>()._has_bits_);
@@ -116,10 +113,13 @@ class SecDefOptParamsRequest::_Internal {
   }
 };
 
-SecDefOptParamsRequest::SecDefOptParamsRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SecDefOptParamsRequest::SecDefOptParamsRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.SecDefOptParamsRequest)
 }
 SecDefOptParamsRequest::SecDefOptParamsRequest(const SecDefOptParamsRequest& from)
@@ -127,19 +127,28 @@ SecDefOptParamsRequest::SecDefOptParamsRequest(const SecDefOptParamsRequest& fro
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   underlyingsymbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    underlyingsymbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_underlyingsymbol()) {
-    underlyingsymbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_underlyingsymbol(),
-      GetArena());
+    underlyingsymbol_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_underlyingsymbol(), 
+      GetArenaForAllocation());
   }
   futfopexchange_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    futfopexchange_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_futfopexchange()) {
-    futfopexchange_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_futfopexchange(),
-      GetArena());
+    futfopexchange_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_futfopexchange(), 
+      GetArenaForAllocation());
   }
   underlyingsectype_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    underlyingsectype_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_underlyingsectype()) {
-    underlyingsectype_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_underlyingsectype(),
-      GetArena());
+    underlyingsectype_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_underlyingsectype(), 
+      GetArenaForAllocation());
   }
   ::memcpy(&reqid_, &from.reqid_,
     static_cast<size_t>(reinterpret_cast<char*>(&underlyingconid_) -
@@ -147,24 +156,34 @@ SecDefOptParamsRequest::SecDefOptParamsRequest(const SecDefOptParamsRequest& fro
   // @@protoc_insertion_point(copy_constructor:protobuf.SecDefOptParamsRequest)
 }
 
-void SecDefOptParamsRequest::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SecDefOptParamsRequest_SecDefOptParamsRequest_2eproto.base);
-  underlyingsymbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  futfopexchange_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  underlyingsectype_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&reqid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&underlyingconid_) -
-      reinterpret_cast<char*>(&reqid_)) + sizeof(underlyingconid_));
+inline void SecDefOptParamsRequest::SharedCtor() {
+underlyingsymbol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  underlyingsymbol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+futfopexchange_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  futfopexchange_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+underlyingsectype_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  underlyingsectype_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&reqid_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&underlyingconid_) -
+    reinterpret_cast<char*>(&reqid_)) + sizeof(underlyingconid_));
 }
 
 SecDefOptParamsRequest::~SecDefOptParamsRequest() {
   // @@protoc_insertion_point(destructor:protobuf.SecDefOptParamsRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SecDefOptParamsRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SecDefOptParamsRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   underlyingsymbol_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   futfopexchange_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   underlyingsectype_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -179,15 +198,10 @@ void SecDefOptParamsRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) 
 void SecDefOptParamsRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SecDefOptParamsRequest& SecDefOptParamsRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SecDefOptParamsRequest_SecDefOptParamsRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SecDefOptParamsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.SecDefOptParamsRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -215,91 +229,95 @@ void SecDefOptParamsRequest::Clear() {
 const char* SecDefOptParamsRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string underlyingSymbol = 2;
+      // optional string underlyingSymbol = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_underlyingsymbol();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.SecDefOptParamsRequest.underlyingSymbol"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string futFopExchange = 3;
+      // optional string futFopExchange = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_futfopexchange();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.SecDefOptParamsRequest.futFopExchange"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string underlyingSecType = 4;
+      // optional string underlyingSecType = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_underlyingsectype();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.SecDefOptParamsRequest.underlyingSecType"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 underlyingConId = 5;
+      // optional int32 underlyingConId = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_underlyingconid(&has_bits);
-          underlyingconid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          underlyingconid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SecDefOptParamsRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SecDefOptParamsRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.SecDefOptParamsRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // string underlyingSymbol = 2;
+  // optional string underlyingSymbol = 2;
   if (_internal_has_underlyingsymbol()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_underlyingsymbol().data(), static_cast<int>(this->_internal_underlyingsymbol().length()),
@@ -309,7 +327,7 @@ failure:
         2, this->_internal_underlyingsymbol(), target);
   }
 
-  // string futFopExchange = 3;
+  // optional string futFopExchange = 3;
   if (_internal_has_futfopexchange()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_futfopexchange().data(), static_cast<int>(this->_internal_futfopexchange().length()),
@@ -319,7 +337,7 @@ failure:
         3, this->_internal_futfopexchange(), target);
   }
 
-  // string underlyingSecType = 4;
+  // optional string underlyingSecType = 4;
   if (_internal_has_underlyingsectype()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_underlyingsectype().data(), static_cast<int>(this->_internal_underlyingsectype().length()),
@@ -329,7 +347,7 @@ failure:
         4, this->_internal_underlyingsectype(), target);
   }
 
-  // int32 underlyingConId = 5;
+  // optional int32 underlyingConId = 5;
   if (_internal_has_underlyingconid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_underlyingconid(), target);
@@ -347,77 +365,64 @@ size_t SecDefOptParamsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.SecDefOptParamsRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
-    // string underlyingSymbol = 2;
+    // optional string underlyingSymbol = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_underlyingsymbol());
     }
 
-    // string futFopExchange = 3;
+    // optional string futFopExchange = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_futfopexchange());
     }
 
-    // string underlyingSecType = 4;
+    // optional string underlyingSecType = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_underlyingsectype());
     }
 
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000008u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
-    // int32 underlyingConId = 5;
+    // optional int32 underlyingConId = 5;
     if (cached_has_bits & 0x00000010u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_underlyingconid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_underlyingconid());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SecDefOptParamsRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.SecDefOptParamsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SecDefOptParamsRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SecDefOptParamsRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.SecDefOptParamsRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.SecDefOptParamsRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SecDefOptParamsRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SecDefOptParamsRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SecDefOptParamsRequest::GetClassData() const { return &_class_data_; }
+
+void SecDefOptParamsRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SecDefOptParamsRequest *>(to)->MergeFrom(
+      static_cast<const SecDefOptParamsRequest &>(from));
 }
+
 
 void SecDefOptParamsRequest::MergeFrom(const SecDefOptParamsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.SecDefOptParamsRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -439,13 +444,7 @@ void SecDefOptParamsRequest::MergeFrom(const SecDefOptParamsRequest& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SecDefOptParamsRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.SecDefOptParamsRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SecDefOptParamsRequest::CopyFrom(const SecDefOptParamsRequest& from) {
@@ -461,11 +460,25 @@ bool SecDefOptParamsRequest::IsInitialized() const {
 
 void SecDefOptParamsRequest::InternalSwap(SecDefOptParamsRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  underlyingsymbol_.Swap(&other->underlyingsymbol_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  futfopexchange_.Swap(&other->futfopexchange_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  underlyingsectype_.Swap(&other->underlyingsectype_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &underlyingsymbol_, lhs_arena,
+      &other->underlyingsymbol_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &futfopexchange_, lhs_arena,
+      &other->futfopexchange_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &underlyingsectype_, lhs_arena,
+      &other->underlyingsectype_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SecDefOptParamsRequest, underlyingconid_)
       + sizeof(SecDefOptParamsRequest::underlyingconid_)
@@ -475,9 +488,10 @@ void SecDefOptParamsRequest::InternalSwap(SecDefOptParamsRequest* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SecDefOptParamsRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_SecDefOptParamsRequest_2eproto_getter, &descriptor_table_SecDefOptParamsRequest_2eproto_once,
+      file_level_metadata_SecDefOptParamsRequest_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

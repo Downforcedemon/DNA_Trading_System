@@ -1,0 +1,21 @@
+<map id="src/core/MarketDataManager.cpp" name="src/core/MarketDataManager.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="222,5,437,32"/>
+<area shape="rect" id="Node000002" href="$MarketDataManager_8hpp.html" title=" " alt="" coords="154,80,347,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,35,277,71,274,67,314,31"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="371,80,445,107"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="345,31,385,67,381,71,341,35"/>
+<area shape="rect" id="Node000003" href="$IMarketDataProvider_8hpp.html" title=" " alt="" coords="48,155,214,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="231,109,166,149,163,144,228,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,229,59,256"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="170,110,90,129,58,142,38,156,31,169,28,184,28,214,23,215,22,184,26,167,34,153,55,137,88,124,169,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="202,229,259,256"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="252,108,237,214,232,213,246,107"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="288,155,453,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="273,105,338,144,335,149,270,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="476,155,545,181"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="297,105,462,150,461,156,295,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="115,184,63,222,60,218,112,180"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="150,180,202,218,199,222,147,184"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="104,229,157,256"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="133,182,133,214,128,214,128,182"/>
+</map>

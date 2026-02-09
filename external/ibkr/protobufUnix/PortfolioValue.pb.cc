@@ -14,38 +14,40 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_Contract_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Contract_Contract_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class PortfolioValueDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PortfolioValue> _instance;
-} _PortfolioValue_default_instance_;
+constexpr PortfolioValue::PortfolioValue(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : position_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , accountname_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , contract_(nullptr)
+  , marketprice_(0)
+  , marketvalue_(0)
+  , averagecost_(0)
+  , unrealizedpnl_(0)
+  , realizedpnl_(0){}
+struct PortfolioValueDefaultTypeInternal {
+  constexpr PortfolioValueDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~PortfolioValueDefaultTypeInternal() {}
+  union {
+    PortfolioValue _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PortfolioValueDefaultTypeInternal _PortfolioValue_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_PortfolioValue_PortfolioValue_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_PortfolioValue_default_instance_;
-    new (ptr) ::protobuf::PortfolioValue();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::PortfolioValue::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PortfolioValue_PortfolioValue_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_PortfolioValue_PortfolioValue_2eproto}, {
-      &scc_info_Contract_Contract_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_PortfolioValue_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_PortfolioValue_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_PortfolioValue_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_PortfolioValue_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_PortfolioValue_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::PortfolioValue, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::PortfolioValue, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::PortfolioValue, contract_),
   PROTOBUF_FIELD_OFFSET(::protobuf::PortfolioValue, position_),
   PROTOBUF_FIELD_OFFSET(::protobuf::PortfolioValue, marketprice_),
@@ -64,7 +66,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_PortfolioValue_2eproto::offset
   1,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 13, sizeof(::protobuf::PortfolioValue)},
+  { 0, 14, -1, sizeof(::protobuf::PortfolioValue)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -89,27 +91,23 @@ const char descriptor_table_protodef_PortfolioValue_2eproto[] PROTOBUF_SECTION_V
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_PortfolioValue_2eproto_deps[1] = {
   &::descriptor_table_Contract_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_PortfolioValue_2eproto_sccs[1] = {
-  &scc_info_PortfolioValue_PortfolioValue_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_PortfolioValue_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_PortfolioValue_2eproto = {
-  false, false, descriptor_table_protodef_PortfolioValue_2eproto, "PortfolioValue.proto", 487,
-  &descriptor_table_PortfolioValue_2eproto_once, descriptor_table_PortfolioValue_2eproto_sccs, descriptor_table_PortfolioValue_2eproto_deps, 1, 1,
+  false, false, 487, descriptor_table_protodef_PortfolioValue_2eproto, "PortfolioValue.proto", 
+  &descriptor_table_PortfolioValue_2eproto_once, descriptor_table_PortfolioValue_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_PortfolioValue_2eproto::offsets,
-  file_level_metadata_PortfolioValue_2eproto, 1, file_level_enum_descriptors_PortfolioValue_2eproto, file_level_service_descriptors_PortfolioValue_2eproto,
+  file_level_metadata_PortfolioValue_2eproto, file_level_enum_descriptors_PortfolioValue_2eproto, file_level_service_descriptors_PortfolioValue_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_PortfolioValue_2eproto_getter() {
+  return &descriptor_table_PortfolioValue_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_PortfolioValue_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_PortfolioValue_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_PortfolioValue_2eproto(&descriptor_table_PortfolioValue_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void PortfolioValue::InitAsDefaultInstance() {
-  ::protobuf::_PortfolioValue_default_instance_._instance.get_mutable()->contract_ = const_cast< ::protobuf::Contract*>(
-      ::protobuf::Contract::internal_default_instance());
-}
 class PortfolioValue::_Internal {
  public:
   using HasBits = decltype(std::declval<PortfolioValue>()._has_bits_);
@@ -145,16 +143,16 @@ PortfolioValue::_Internal::contract(const PortfolioValue* msg) {
   return *msg->contract_;
 }
 void PortfolioValue::clear_contract() {
-  if (GetArena() == nullptr && contract_ != nullptr) {
-    delete contract_;
-  }
-  contract_ = nullptr;
+  if (contract_ != nullptr) contract_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-PortfolioValue::PortfolioValue(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+PortfolioValue::PortfolioValue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.PortfolioValue)
 }
 PortfolioValue::PortfolioValue(const PortfolioValue& from)
@@ -162,14 +160,20 @@ PortfolioValue::PortfolioValue(const PortfolioValue& from)
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   position_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    position_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_position()) {
-    position_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_position(),
-      GetArena());
+    position_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_position(), 
+      GetArenaForAllocation());
   }
   accountname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    accountname_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_accountname()) {
-    accountname_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_accountname(),
-      GetArena());
+    accountname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_accountname(), 
+      GetArenaForAllocation());
   }
   if (from._internal_has_contract()) {
     contract_ = new ::protobuf::Contract(*from.contract_);
@@ -182,23 +186,30 @@ PortfolioValue::PortfolioValue(const PortfolioValue& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.PortfolioValue)
 }
 
-void PortfolioValue::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PortfolioValue_PortfolioValue_2eproto.base);
-  position_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  accountname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&contract_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&realizedpnl_) -
-      reinterpret_cast<char*>(&contract_)) + sizeof(realizedpnl_));
+inline void PortfolioValue::SharedCtor() {
+position_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  position_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+accountname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  accountname_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&contract_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&realizedpnl_) -
+    reinterpret_cast<char*>(&contract_)) + sizeof(realizedpnl_));
 }
 
 PortfolioValue::~PortfolioValue() {
   // @@protoc_insertion_point(destructor:protobuf.PortfolioValue)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void PortfolioValue::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void PortfolioValue::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   position_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   accountname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete contract_;
@@ -213,15 +224,10 @@ void PortfolioValue::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void PortfolioValue::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const PortfolioValue& PortfolioValue::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PortfolioValue_PortfolioValue_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void PortfolioValue::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.PortfolioValue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -234,10 +240,8 @@ void PortfolioValue::Clear() {
       accountname_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      if (GetArena() == nullptr && contract_ != nullptr) {
-        delete contract_;
-      }
-      contract_ = nullptr;
+      GOOGLE_DCHECK(contract_ != nullptr);
+      contract_->Clear();
     }
   }
   if (cached_has_bits & 0x000000f8u) {
@@ -252,107 +256,114 @@ void PortfolioValue::Clear() {
 const char* PortfolioValue::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // .protobuf.Contract contract = 1;
+      // optional .protobuf.Contract contract = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_contract(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string position = 2;
+      // optional string position = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_position();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.PortfolioValue.position"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double marketPrice = 3;
+      // optional double marketPrice = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_marketprice(&has_bits);
           marketprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double marketValue = 4;
+      // optional double marketValue = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
           _Internal::set_has_marketvalue(&has_bits);
           marketvalue_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double averageCost = 5;
+      // optional double averageCost = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
           _Internal::set_has_averagecost(&has_bits);
           averagecost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double unrealizedPNL = 6;
+      // optional double unrealizedPNL = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
           _Internal::set_has_unrealizedpnl(&has_bits);
           unrealizedpnl_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // double realizedPNL = 7;
+      // optional double realizedPNL = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
           _Internal::set_has_realizedpnl(&has_bits);
           realizedpnl_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string accountName = 8;
+      // optional string accountName = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           auto str = _internal_mutable_accountname();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.PortfolioValue.accountName"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PortfolioValue::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* PortfolioValue::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.PortfolioValue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .protobuf.Contract contract = 1;
+  // optional .protobuf.Contract contract = 1;
   if (_internal_has_contract()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -360,7 +371,7 @@ failure:
         1, _Internal::contract(this), target, stream);
   }
 
-  // string position = 2;
+  // optional string position = 2;
   if (_internal_has_position()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_position().data(), static_cast<int>(this->_internal_position().length()),
@@ -370,37 +381,37 @@ failure:
         2, this->_internal_position(), target);
   }
 
-  // double marketPrice = 3;
+  // optional double marketPrice = 3;
   if (_internal_has_marketprice()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_marketprice(), target);
   }
 
-  // double marketValue = 4;
+  // optional double marketValue = 4;
   if (_internal_has_marketvalue()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_marketvalue(), target);
   }
 
-  // double averageCost = 5;
+  // optional double averageCost = 5;
   if (_internal_has_averagecost()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_averagecost(), target);
   }
 
-  // double unrealizedPNL = 6;
+  // optional double unrealizedPNL = 6;
   if (_internal_has_unrealizedpnl()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_unrealizedpnl(), target);
   }
 
-  // double realizedPNL = 7;
+  // optional double realizedPNL = 7;
   if (_internal_has_realizedpnl()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_realizedpnl(), target);
   }
 
-  // string accountName = 8;
+  // optional string accountName = 8;
   if (_internal_has_accountname()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_accountname().data(), static_cast<int>(this->_internal_accountname().length()),
@@ -422,88 +433,79 @@ size_t PortfolioValue::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.PortfolioValue)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    // string position = 2;
+    // optional string position = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_position());
     }
 
-    // string accountName = 8;
+    // optional string accountName = 8;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_accountname());
     }
 
-    // .protobuf.Contract contract = 1;
+    // optional .protobuf.Contract contract = 1;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *contract_);
     }
 
-    // double marketPrice = 3;
+    // optional double marketPrice = 3;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 8;
     }
 
-    // double marketValue = 4;
+    // optional double marketValue = 4;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 8;
     }
 
-    // double averageCost = 5;
+    // optional double averageCost = 5;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 8;
     }
 
-    // double unrealizedPNL = 6;
+    // optional double unrealizedPNL = 6;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 + 8;
     }
 
-    // double realizedPNL = 7;
+    // optional double realizedPNL = 7;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 + 8;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void PortfolioValue::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.PortfolioValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  const PortfolioValue* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PortfolioValue>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.PortfolioValue)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.PortfolioValue)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PortfolioValue::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    PortfolioValue::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PortfolioValue::GetClassData() const { return &_class_data_; }
+
+void PortfolioValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<PortfolioValue *>(to)->MergeFrom(
+      static_cast<const PortfolioValue &>(from));
 }
+
 
 void PortfolioValue::MergeFrom(const PortfolioValue& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.PortfolioValue)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -534,13 +536,7 @@ void PortfolioValue::MergeFrom(const PortfolioValue& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void PortfolioValue::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.PortfolioValue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void PortfolioValue::CopyFrom(const PortfolioValue& from) {
@@ -556,10 +552,20 @@ bool PortfolioValue::IsInitialized() const {
 
 void PortfolioValue::InternalSwap(PortfolioValue* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  position_.Swap(&other->position_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  accountname_.Swap(&other->accountname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &position_, lhs_arena,
+      &other->position_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &accountname_, lhs_arena,
+      &other->accountname_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PortfolioValue, realizedpnl_)
       + sizeof(PortfolioValue::realizedpnl_)
@@ -569,9 +575,10 @@ void PortfolioValue::InternalSwap(PortfolioValue* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PortfolioValue::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_PortfolioValue_2eproto_getter, &descriptor_table_PortfolioValue_2eproto_once,
+      file_level_metadata_PortfolioValue_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

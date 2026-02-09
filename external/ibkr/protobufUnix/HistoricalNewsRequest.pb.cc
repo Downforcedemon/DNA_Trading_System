@@ -14,55 +14,50 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_HistoricalNewsRequest_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_HistoricalNewsRequest_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse> _instance;
-} _HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_default_instance_;
-class HistoricalNewsRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HistoricalNewsRequest> _instance;
-} _HistoricalNewsRequest_default_instance_;
+constexpr HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUseDefaultTypeInternal {
+  constexpr HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUseDefaultTypeInternal _HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_default_instance_;
+constexpr HistoricalNewsRequest::HistoricalNewsRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : historicalnewsoptions_(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{})
+  , providercodes_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , startdatetime_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , enddatetime_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , reqid_(0)
+  , conid_(0)
+  , totalresults_(0){}
+struct HistoricalNewsRequestDefaultTypeInternal {
+  constexpr HistoricalNewsRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HistoricalNewsRequestDefaultTypeInternal() {}
+  union {
+    HistoricalNewsRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HistoricalNewsRequestDefaultTypeInternal _HistoricalNewsRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_HistoricalNewsRequest_HistoricalNewsRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_HistoricalNewsRequest_default_instance_;
-    new (ptr) ::protobuf::HistoricalNewsRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::HistoricalNewsRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HistoricalNewsRequest_HistoricalNewsRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_HistoricalNewsRequest_HistoricalNewsRequest_2eproto}, {
-      &scc_info_HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_HistoricalNewsRequest_2eproto.base,}};
-
-static void InitDefaultsscc_info_HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_HistoricalNewsRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_default_instance_;
-    new (ptr) ::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse();
-  }
-  ::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_HistoricalNewsRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_HistoricalNewsRequest_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_HistoricalNewsRequest_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_HistoricalNewsRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_HistoricalNewsRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalNewsRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_HistoricalNewsRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse, key_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse, value_),
   0,
@@ -72,6 +67,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalNewsRequest_2eproto:
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalNewsRequest, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalNewsRequest, conid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::HistoricalNewsRequest, providercodes_),
@@ -88,8 +84,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_HistoricalNewsRequest_2eproto:
   ~0u,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse)},
-  { 9, 21, sizeof(::protobuf::HistoricalNewsRequest)},
+  { 0, 8, -1, sizeof(::protobuf::HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse)},
+  { 10, 23, -1, sizeof(::protobuf::HistoricalNewsRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -113,22 +109,19 @@ const char descriptor_table_protodef_HistoricalNewsRequest_2eproto[] PROTOBUF_SE
   "ufB\032HistoricalNewsRequestProto\252\002\016IBApi.p"
   "rotobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_HistoricalNewsRequest_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_HistoricalNewsRequest_2eproto_sccs[2] = {
-  &scc_info_HistoricalNewsRequest_HistoricalNewsRequest_2eproto.base,
-  &scc_info_HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse_HistoricalNewsRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_HistoricalNewsRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_HistoricalNewsRequest_2eproto = {
-  false, false, descriptor_table_protodef_HistoricalNewsRequest_2eproto, "HistoricalNewsRequest.proto", 535,
-  &descriptor_table_HistoricalNewsRequest_2eproto_once, descriptor_table_HistoricalNewsRequest_2eproto_sccs, descriptor_table_HistoricalNewsRequest_2eproto_deps, 2, 0,
+  false, false, 535, descriptor_table_protodef_HistoricalNewsRequest_2eproto, "HistoricalNewsRequest.proto", 
+  &descriptor_table_HistoricalNewsRequest_2eproto_once, nullptr, 0, 2,
   schemas, file_default_instances, TableStruct_HistoricalNewsRequest_2eproto::offsets,
-  file_level_metadata_HistoricalNewsRequest_2eproto, 2, file_level_enum_descriptors_HistoricalNewsRequest_2eproto, file_level_service_descriptors_HistoricalNewsRequest_2eproto,
+  file_level_metadata_HistoricalNewsRequest_2eproto, file_level_enum_descriptors_HistoricalNewsRequest_2eproto, file_level_service_descriptors_HistoricalNewsRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_HistoricalNewsRequest_2eproto_getter() {
+  return &descriptor_table_HistoricalNewsRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_HistoricalNewsRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_HistoricalNewsRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_HistoricalNewsRequest_2eproto(&descriptor_table_HistoricalNewsRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
@@ -140,18 +133,13 @@ void HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse::MergeFrom(const 
   MergeFromInternal(other);
 }
 ::PROTOBUF_NAMESPACE_ID::Metadata HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_HistoricalNewsRequest_2eproto_getter, &descriptor_table_HistoricalNewsRequest_2eproto_once,
+      file_level_metadata_HistoricalNewsRequest_2eproto[0]);
 }
-void HistoricalNewsRequest_HistoricalNewsOptionsEntry_DoNotUse::MergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
-  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
-}
-
 
 // ===================================================================
 
-void HistoricalNewsRequest::InitAsDefaultInstance() {
-}
 class HistoricalNewsRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<HistoricalNewsRequest>()._has_bits_);
@@ -175,11 +163,14 @@ class HistoricalNewsRequest::_Internal {
   }
 };
 
-HistoricalNewsRequest::HistoricalNewsRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+HistoricalNewsRequest::HistoricalNewsRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   historicalnewsoptions_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.HistoricalNewsRequest)
 }
 HistoricalNewsRequest::HistoricalNewsRequest(const HistoricalNewsRequest& from)
@@ -188,19 +179,28 @@ HistoricalNewsRequest::HistoricalNewsRequest(const HistoricalNewsRequest& from)
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   historicalnewsoptions_.MergeFrom(from.historicalnewsoptions_);
   providercodes_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    providercodes_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_providercodes()) {
-    providercodes_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_providercodes(),
-      GetArena());
+    providercodes_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_providercodes(), 
+      GetArenaForAllocation());
   }
   startdatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    startdatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_startdatetime()) {
-    startdatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_startdatetime(),
-      GetArena());
+    startdatetime_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_startdatetime(), 
+      GetArenaForAllocation());
   }
   enddatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    enddatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_enddatetime()) {
-    enddatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_enddatetime(),
-      GetArena());
+    enddatetime_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_enddatetime(), 
+      GetArenaForAllocation());
   }
   ::memcpy(&reqid_, &from.reqid_,
     static_cast<size_t>(reinterpret_cast<char*>(&totalresults_) -
@@ -208,24 +208,34 @@ HistoricalNewsRequest::HistoricalNewsRequest(const HistoricalNewsRequest& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.HistoricalNewsRequest)
 }
 
-void HistoricalNewsRequest::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_HistoricalNewsRequest_HistoricalNewsRequest_2eproto.base);
-  providercodes_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  startdatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  enddatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&reqid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&totalresults_) -
-      reinterpret_cast<char*>(&reqid_)) + sizeof(totalresults_));
+inline void HistoricalNewsRequest::SharedCtor() {
+providercodes_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  providercodes_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+startdatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  startdatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+enddatetime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  enddatetime_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&reqid_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&totalresults_) -
+    reinterpret_cast<char*>(&reqid_)) + sizeof(totalresults_));
 }
 
 HistoricalNewsRequest::~HistoricalNewsRequest() {
   // @@protoc_insertion_point(destructor:protobuf.HistoricalNewsRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void HistoricalNewsRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void HistoricalNewsRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   providercodes_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   startdatetime_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   enddatetime_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -234,21 +244,20 @@ void HistoricalNewsRequest::SharedDtor() {
 void HistoricalNewsRequest::ArenaDtor(void* object) {
   HistoricalNewsRequest* _this = reinterpret_cast< HistoricalNewsRequest* >(object);
   (void)_this;
+  _this->historicalnewsoptions_. ~MapField();
 }
-void HistoricalNewsRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+inline void HistoricalNewsRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena) {
+  if (arena != nullptr) {
+    arena->OwnCustomDestructor(this, &HistoricalNewsRequest::ArenaDtor);
+  }
 }
 void HistoricalNewsRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const HistoricalNewsRequest& HistoricalNewsRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_HistoricalNewsRequest_HistoricalNewsRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void HistoricalNewsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.HistoricalNewsRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -277,66 +286,70 @@ void HistoricalNewsRequest::Clear() {
 const char* HistoricalNewsRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 conId = 2;
+      // optional int32 conId = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_conid(&has_bits);
-          conid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          conid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string providerCodes = 3;
+      // optional string providerCodes = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_providercodes();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalNewsRequest.providerCodes"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string startDateTime = 4;
+      // optional string startDateTime = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_startdatetime();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalNewsRequest.startDateTime"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string endDateTime = 5;
+      // optional string endDateTime = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_enddatetime();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.HistoricalNewsRequest.endDateTime"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // int32 totalResults = 6;
+      // optional int32 totalResults = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_totalresults(&has_bits);
-          totalresults_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          totalresults_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // map<string, string> historicalNewsOptions = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -344,50 +357,52 @@ const char* HistoricalNewsRequest::_InternalParse(const char* ptr, ::PROTOBUF_NA
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* HistoricalNewsRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* HistoricalNewsRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.HistoricalNewsRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // int32 conId = 2;
+  // optional int32 conId = 2;
   if (_internal_has_conid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_conid(), target);
   }
 
-  // string providerCodes = 3;
+  // optional string providerCodes = 3;
   if (_internal_has_providercodes()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_providercodes().data(), static_cast<int>(this->_internal_providercodes().length()),
@@ -397,7 +412,7 @@ failure:
         3, this->_internal_providercodes(), target);
   }
 
-  // string startDateTime = 4;
+  // optional string startDateTime = 4;
   if (_internal_has_startdatetime()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_startdatetime().data(), static_cast<int>(this->_internal_startdatetime().length()),
@@ -407,7 +422,7 @@ failure:
         4, this->_internal_startdatetime(), target);
   }
 
-  // string endDateTime = 5;
+  // optional string endDateTime = 5;
   if (_internal_has_enddatetime()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_enddatetime().data(), static_cast<int>(this->_internal_enddatetime().length()),
@@ -417,7 +432,7 @@ failure:
         5, this->_internal_enddatetime(), target);
   }
 
-  // int32 totalResults = 6;
+  // optional int32 totalResults = 6;
   if (_internal_has_totalresults()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_totalresults(), target);
@@ -431,6 +446,7 @@ failure:
     typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
+        (void)p;
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
           ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -480,7 +496,7 @@ size_t HistoricalNewsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.HistoricalNewsRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -495,78 +511,63 @@ size_t HistoricalNewsRequest::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
-    // string providerCodes = 3;
+    // optional string providerCodes = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_providercodes());
     }
 
-    // string startDateTime = 4;
+    // optional string startDateTime = 4;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_startdatetime());
     }
 
-    // string endDateTime = 5;
+    // optional string endDateTime = 5;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_enddatetime());
     }
 
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000008u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
-    // int32 conId = 2;
+    // optional int32 conId = 2;
     if (cached_has_bits & 0x00000010u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_conid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_conid());
     }
 
-    // int32 totalResults = 6;
+    // optional int32 totalResults = 6;
     if (cached_has_bits & 0x00000020u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_totalresults());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_totalresults());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void HistoricalNewsRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.HistoricalNewsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HistoricalNewsRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HistoricalNewsRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.HistoricalNewsRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.HistoricalNewsRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HistoricalNewsRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    HistoricalNewsRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HistoricalNewsRequest::GetClassData() const { return &_class_data_; }
+
+void HistoricalNewsRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<HistoricalNewsRequest *>(to)->MergeFrom(
+      static_cast<const HistoricalNewsRequest &>(from));
 }
+
 
 void HistoricalNewsRequest::MergeFrom(const HistoricalNewsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.HistoricalNewsRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   historicalnewsoptions_.MergeFrom(from.historicalnewsoptions_);
@@ -592,13 +593,7 @@ void HistoricalNewsRequest::MergeFrom(const HistoricalNewsRequest& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void HistoricalNewsRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.HistoricalNewsRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void HistoricalNewsRequest::CopyFrom(const HistoricalNewsRequest& from) {
@@ -614,12 +609,26 @@ bool HistoricalNewsRequest::IsInitialized() const {
 
 void HistoricalNewsRequest::InternalSwap(HistoricalNewsRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  historicalnewsoptions_.Swap(&other->historicalnewsoptions_);
-  providercodes_.Swap(&other->providercodes_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  startdatetime_.Swap(&other->startdatetime_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  enddatetime_.Swap(&other->enddatetime_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  historicalnewsoptions_.InternalSwap(&other->historicalnewsoptions_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &providercodes_, lhs_arena,
+      &other->providercodes_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &startdatetime_, lhs_arena,
+      &other->startdatetime_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &enddatetime_, lhs_arena,
+      &other->enddatetime_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(HistoricalNewsRequest, totalresults_)
       + sizeof(HistoricalNewsRequest::totalresults_)
@@ -629,9 +638,10 @@ void HistoricalNewsRequest::InternalSwap(HistoricalNewsRequest* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HistoricalNewsRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_HistoricalNewsRequest_2eproto_getter, &descriptor_table_HistoricalNewsRequest_2eproto_once,
+      file_level_metadata_HistoricalNewsRequest_2eproto[1]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

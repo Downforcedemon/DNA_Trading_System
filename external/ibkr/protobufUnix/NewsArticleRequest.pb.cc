@@ -14,55 +14,47 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_NewsArticleRequest_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_NewsArticleRequest_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class NewsArticleRequest_NewsArticleOptionsEntry_DoNotUseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse> _instance;
-} _NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_default_instance_;
-class NewsArticleRequestDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NewsArticleRequest> _instance;
-} _NewsArticleRequest_default_instance_;
+constexpr NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+struct NewsArticleRequest_NewsArticleOptionsEntry_DoNotUseDefaultTypeInternal {
+  constexpr NewsArticleRequest_NewsArticleOptionsEntry_DoNotUseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~NewsArticleRequest_NewsArticleOptionsEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT NewsArticleRequest_NewsArticleOptionsEntry_DoNotUseDefaultTypeInternal _NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_default_instance_;
+constexpr NewsArticleRequest::NewsArticleRequest(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : newsarticleoptions_(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{})
+  , providercode_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , articleid_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , reqid_(0){}
+struct NewsArticleRequestDefaultTypeInternal {
+  constexpr NewsArticleRequestDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~NewsArticleRequestDefaultTypeInternal() {}
+  union {
+    NewsArticleRequest _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT NewsArticleRequestDefaultTypeInternal _NewsArticleRequest_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_NewsArticleRequest_NewsArticleRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_NewsArticleRequest_default_instance_;
-    new (ptr) ::protobuf::NewsArticleRequest();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::NewsArticleRequest::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_NewsArticleRequest_NewsArticleRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_NewsArticleRequest_NewsArticleRequest_2eproto}, {
-      &scc_info_NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_NewsArticleRequest_2eproto.base,}};
-
-static void InitDefaultsscc_info_NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_NewsArticleRequest_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_default_instance_;
-    new (ptr) ::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse();
-  }
-  ::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_NewsArticleRequest_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_NewsArticleRequest_2eproto}, {}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_NewsArticleRequest_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_NewsArticleRequest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_NewsArticleRequest_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_NewsArticleRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_NewsArticleRequest_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse, key_),
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse, value_),
   0,
@@ -72,6 +64,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_NewsArticleRequest_2eproto::of
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsArticleRequest, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsArticleRequest, providercode_),
   PROTOBUF_FIELD_OFFSET(::protobuf::NewsArticleRequest, articleid_),
@@ -82,8 +75,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_NewsArticleRequest_2eproto::of
   ~0u,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse)},
-  { 9, 18, sizeof(::protobuf::NewsArticleRequest)},
+  { 0, 8, -1, sizeof(::protobuf::NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse)},
+  { 10, 20, -1, sizeof(::protobuf::NewsArticleRequest)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -103,22 +96,19 @@ const char descriptor_table_protodef_NewsArticleRequest_2eproto[] PROTOBUF_SECTI
   "ib.client.protobufB\027NewsArticleRequestPr"
   "oto\252\002\016IBApi.protobufb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_NewsArticleRequest_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_NewsArticleRequest_2eproto_sccs[2] = {
-  &scc_info_NewsArticleRequest_NewsArticleRequest_2eproto.base,
-  &scc_info_NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse_NewsArticleRequest_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_NewsArticleRequest_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_NewsArticleRequest_2eproto = {
-  false, false, descriptor_table_protodef_NewsArticleRequest_2eproto, "NewsArticleRequest.proto", 388,
-  &descriptor_table_NewsArticleRequest_2eproto_once, descriptor_table_NewsArticleRequest_2eproto_sccs, descriptor_table_NewsArticleRequest_2eproto_deps, 2, 0,
+  false, false, 388, descriptor_table_protodef_NewsArticleRequest_2eproto, "NewsArticleRequest.proto", 
+  &descriptor_table_NewsArticleRequest_2eproto_once, nullptr, 0, 2,
   schemas, file_default_instances, TableStruct_NewsArticleRequest_2eproto::offsets,
-  file_level_metadata_NewsArticleRequest_2eproto, 2, file_level_enum_descriptors_NewsArticleRequest_2eproto, file_level_service_descriptors_NewsArticleRequest_2eproto,
+  file_level_metadata_NewsArticleRequest_2eproto, file_level_enum_descriptors_NewsArticleRequest_2eproto, file_level_service_descriptors_NewsArticleRequest_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_NewsArticleRequest_2eproto_getter() {
+  return &descriptor_table_NewsArticleRequest_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_NewsArticleRequest_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_NewsArticleRequest_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_NewsArticleRequest_2eproto(&descriptor_table_NewsArticleRequest_2eproto);
 namespace protobuf {
 
 // ===================================================================
@@ -130,18 +120,13 @@ void NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse::MergeFrom(const NewsAr
   MergeFromInternal(other);
 }
 ::PROTOBUF_NAMESPACE_ID::Metadata NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_NewsArticleRequest_2eproto_getter, &descriptor_table_NewsArticleRequest_2eproto_once,
+      file_level_metadata_NewsArticleRequest_2eproto[0]);
 }
-void NewsArticleRequest_NewsArticleOptionsEntry_DoNotUse::MergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
-  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
-}
-
 
 // ===================================================================
 
-void NewsArticleRequest::InitAsDefaultInstance() {
-}
 class NewsArticleRequest::_Internal {
  public:
   using HasBits = decltype(std::declval<NewsArticleRequest>()._has_bits_);
@@ -156,11 +141,14 @@ class NewsArticleRequest::_Internal {
   }
 };
 
-NewsArticleRequest::NewsArticleRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+NewsArticleRequest::NewsArticleRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   newsarticleoptions_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.NewsArticleRequest)
 }
 NewsArticleRequest::NewsArticleRequest(const NewsArticleRequest& from)
@@ -169,34 +157,46 @@ NewsArticleRequest::NewsArticleRequest(const NewsArticleRequest& from)
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   newsarticleoptions_.MergeFrom(from.newsarticleoptions_);
   providercode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    providercode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_providercode()) {
-    providercode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_providercode(),
-      GetArena());
+    providercode_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_providercode(), 
+      GetArenaForAllocation());
   }
   articleid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    articleid_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_articleid()) {
-    articleid_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_articleid(),
-      GetArena());
+    articleid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_articleid(), 
+      GetArenaForAllocation());
   }
   reqid_ = from.reqid_;
   // @@protoc_insertion_point(copy_constructor:protobuf.NewsArticleRequest)
 }
 
-void NewsArticleRequest::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_NewsArticleRequest_NewsArticleRequest_2eproto.base);
-  providercode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  articleid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  reqid_ = 0;
+inline void NewsArticleRequest::SharedCtor() {
+providercode_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  providercode_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+articleid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  articleid_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+reqid_ = 0;
 }
 
 NewsArticleRequest::~NewsArticleRequest() {
   // @@protoc_insertion_point(destructor:protobuf.NewsArticleRequest)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void NewsArticleRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void NewsArticleRequest::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   providercode_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   articleid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -204,21 +204,20 @@ void NewsArticleRequest::SharedDtor() {
 void NewsArticleRequest::ArenaDtor(void* object) {
   NewsArticleRequest* _this = reinterpret_cast< NewsArticleRequest* >(object);
   (void)_this;
+  _this->newsarticleoptions_. ~MapField();
 }
-void NewsArticleRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+inline void NewsArticleRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena) {
+  if (arena != nullptr) {
+    arena->OwnCustomDestructor(this, &NewsArticleRequest::ArenaDtor);
+  }
 }
 void NewsArticleRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const NewsArticleRequest& NewsArticleRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NewsArticleRequest_NewsArticleRequest_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void NewsArticleRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.NewsArticleRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -240,41 +239,42 @@ void NewsArticleRequest::Clear() {
 const char* NewsArticleRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string providerCode = 2;
+      // optional string providerCode = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_providercode();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.NewsArticleRequest.providerCode"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // string articleId = 3;
+      // optional string articleId = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_articleid();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "protobuf.NewsArticleRequest.articleId"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // map<string, string> newsArticleOptions = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -282,44 +282,46 @@ const char* NewsArticleRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* NewsArticleRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* NewsArticleRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.NewsArticleRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // string providerCode = 2;
+  // optional string providerCode = 2;
   if (_internal_has_providercode()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_providercode().data(), static_cast<int>(this->_internal_providercode().length()),
@@ -329,7 +331,7 @@ failure:
         2, this->_internal_providercode(), target);
   }
 
-  // string articleId = 3;
+  // optional string articleId = 3;
   if (_internal_has_articleid()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_articleid().data(), static_cast<int>(this->_internal_articleid().length()),
@@ -347,6 +349,7 @@ failure:
     typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
+        (void)p;
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
           ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -396,7 +399,7 @@ size_t NewsArticleRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.NewsArticleRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -411,57 +414,46 @@ size_t NewsArticleRequest::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    // string providerCode = 2;
+    // optional string providerCode = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_providercode());
     }
 
-    // string articleId = 3;
+    // optional string articleId = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_articleid());
     }
 
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void NewsArticleRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.NewsArticleRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  const NewsArticleRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NewsArticleRequest>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.NewsArticleRequest)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.NewsArticleRequest)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData NewsArticleRequest::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    NewsArticleRequest::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*NewsArticleRequest::GetClassData() const { return &_class_data_; }
+
+void NewsArticleRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<NewsArticleRequest *>(to)->MergeFrom(
+      static_cast<const NewsArticleRequest &>(from));
 }
+
 
 void NewsArticleRequest::MergeFrom(const NewsArticleRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.NewsArticleRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   newsarticleoptions_.MergeFrom(from.newsarticleoptions_);
@@ -478,13 +470,7 @@ void NewsArticleRequest::MergeFrom(const NewsArticleRequest& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void NewsArticleRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.NewsArticleRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void NewsArticleRequest::CopyFrom(const NewsArticleRequest& from) {
@@ -500,18 +486,29 @@ bool NewsArticleRequest::IsInitialized() const {
 
 void NewsArticleRequest::InternalSwap(NewsArticleRequest* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  newsarticleoptions_.Swap(&other->newsarticleoptions_);
-  providercode_.Swap(&other->providercode_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  articleid_.Swap(&other->articleid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  newsarticleoptions_.InternalSwap(&other->newsarticleoptions_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &providercode_, lhs_arena,
+      &other->providercode_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &articleid_, lhs_arena,
+      &other->articleid_, rhs_arena
+  );
   swap(reqid_, other->reqid_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata NewsArticleRequest::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_NewsArticleRequest_2eproto_getter, &descriptor_table_NewsArticleRequest_2eproto_once,
+      file_level_metadata_NewsArticleRequest_2eproto[1]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf

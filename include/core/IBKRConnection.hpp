@@ -1,14 +1,17 @@
 #pragma once
 #include "DefaultEWrapper.h"
 #include "EClientSocket.h"
-#include "SymbolManager.hpp"
+#include "core/IMarketDataListener.hpp"
 #include <memory>
 #include <string>
 #include <unordered_map>
 
+class EReader;
+class EReaderOSSignal; 
+
 class IBKRConnection : public DefaultEWrapper {
 public:
-    IBKRConnection(SymbolManager& manager);
+    IBKRConnection(IMarketDataListener* listener);
     ~IBKRConnection();
     
     // Connection methods
@@ -30,10 +33,12 @@ public:
     void connectionClosed() override;
     
 private:
-    SymbolManager& symbolManager_;
+    IMarketDataListener* listener_; 
     std::unique_ptr<EClientSocket> client_;
     int nextOrderId_;
     int nextTickerId_;
     std::unordered_map<int, std::string> tickerIdToSymbol_;     // Map tickerId -> symbol name
+    std::unique_ptr<EReader> reader_;
+    std::unique_ptr<EReaderOSSignal> signal_;
 };
 

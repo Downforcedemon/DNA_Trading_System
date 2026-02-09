@@ -14,40 +14,35 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_Contract_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Contract_Contract_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_ContractDetails_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ContractDetails_ContractDetails_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
 namespace protobuf {
-class ContractDataDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ContractData> _instance;
-} _ContractData_default_instance_;
+constexpr ContractData::ContractData(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : contract_(nullptr)
+  , contractdetails_(nullptr)
+  , reqid_(0){}
+struct ContractDataDefaultTypeInternal {
+  constexpr ContractDataDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ContractDataDefaultTypeInternal() {}
+  union {
+    ContractData _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ContractDataDefaultTypeInternal _ContractData_default_instance_;
 }  // namespace protobuf
-static void InitDefaultsscc_info_ContractData_ContractData_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::protobuf::_ContractData_default_instance_;
-    new (ptr) ::protobuf::ContractData();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::protobuf::ContractData::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ContractData_ContractData_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ContractData_ContractData_2eproto}, {
-      &scc_info_Contract_Contract_2eproto.base,
-      &scc_info_ContractDetails_ContractDetails_2eproto.base,}};
-
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ContractData_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_ContractData_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ContractData_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ContractData_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_ContractData_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   PROTOBUF_FIELD_OFFSET(::protobuf::ContractData, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ContractData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::protobuf::ContractData, reqid_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ContractData, contract_),
   PROTOBUF_FIELD_OFFSET(::protobuf::ContractData, contractdetails_),
@@ -56,7 +51,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ContractData_2eproto::offsets[
   1,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::protobuf::ContractData)},
+  { 0, 9, -1, sizeof(::protobuf::ContractData)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -77,29 +72,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_Contract_2eproto,
   &::descriptor_table_ContractDetails_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ContractData_2eproto_sccs[1] = {
-  &scc_info_ContractData_ContractData_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ContractData_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ContractData_2eproto = {
-  false, false, descriptor_table_protodef_ContractData_2eproto, "ContractData.proto", 319,
-  &descriptor_table_ContractData_2eproto_once, descriptor_table_ContractData_2eproto_sccs, descriptor_table_ContractData_2eproto_deps, 1, 2,
+  false, false, 319, descriptor_table_protodef_ContractData_2eproto, "ContractData.proto", 
+  &descriptor_table_ContractData_2eproto_once, descriptor_table_ContractData_2eproto_deps, 2, 1,
   schemas, file_default_instances, TableStruct_ContractData_2eproto::offsets,
-  file_level_metadata_ContractData_2eproto, 1, file_level_enum_descriptors_ContractData_2eproto, file_level_service_descriptors_ContractData_2eproto,
+  file_level_metadata_ContractData_2eproto, file_level_enum_descriptors_ContractData_2eproto, file_level_service_descriptors_ContractData_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_ContractData_2eproto_getter() {
+  return &descriptor_table_ContractData_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_ContractData_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ContractData_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ContractData_2eproto(&descriptor_table_ContractData_2eproto);
 namespace protobuf {
 
 // ===================================================================
 
-void ContractData::InitAsDefaultInstance() {
-  ::protobuf::_ContractData_default_instance_._instance.get_mutable()->contract_ = const_cast< ::protobuf::Contract*>(
-      ::protobuf::Contract::internal_default_instance());
-  ::protobuf::_ContractData_default_instance_._instance.get_mutable()->contractdetails_ = const_cast< ::protobuf::ContractDetails*>(
-      ::protobuf::ContractDetails::internal_default_instance());
-}
 class ContractData::_Internal {
  public:
   using HasBits = decltype(std::declval<ContractData>()._has_bits_);
@@ -125,23 +114,20 @@ ContractData::_Internal::contractdetails(const ContractData* msg) {
   return *msg->contractdetails_;
 }
 void ContractData::clear_contract() {
-  if (GetArena() == nullptr && contract_ != nullptr) {
-    delete contract_;
-  }
-  contract_ = nullptr;
+  if (contract_ != nullptr) contract_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
 void ContractData::clear_contractdetails() {
-  if (GetArena() == nullptr && contractdetails_ != nullptr) {
-    delete contractdetails_;
-  }
-  contractdetails_ = nullptr;
+  if (contractdetails_ != nullptr) contractdetails_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-ContractData::ContractData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ContractData::ContractData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:protobuf.ContractData)
 }
 ContractData::ContractData(const ContractData& from)
@@ -162,21 +148,22 @@ ContractData::ContractData(const ContractData& from)
   // @@protoc_insertion_point(copy_constructor:protobuf.ContractData)
 }
 
-void ContractData::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ContractData_ContractData_2eproto.base);
-  ::memset(&contract_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&reqid_) -
-      reinterpret_cast<char*>(&contract_)) + sizeof(reqid_));
+inline void ContractData::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&contract_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&reqid_) -
+    reinterpret_cast<char*>(&contract_)) + sizeof(reqid_));
 }
 
 ContractData::~ContractData() {
   // @@protoc_insertion_point(destructor:protobuf.ContractData)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void ContractData::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void ContractData::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete contract_;
   if (this != internal_default_instance()) delete contractdetails_;
 }
@@ -190,31 +177,22 @@ void ContractData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void ContractData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ContractData& ContractData::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ContractData_ContractData_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void ContractData::Clear() {
 // @@protoc_insertion_point(message_clear_start:protobuf.ContractData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      if (GetArena() == nullptr && contract_ != nullptr) {
-        delete contract_;
-      }
-      contract_ = nullptr;
+      GOOGLE_DCHECK(contract_ != nullptr);
+      contract_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      if (GetArena() == nullptr && contractdetails_ != nullptr) {
-        delete contractdetails_;
-      }
-      contractdetails_ = nullptr;
+      GOOGLE_DCHECK(contractdetails_ != nullptr);
+      contractdetails_->Clear();
     }
   }
   reqid_ = 0;
@@ -225,70 +203,72 @@ void ContractData::Clear() {
 const char* ContractData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
-      // int32 reqId = 1;
+      // optional int32 reqId = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_reqid(&has_bits);
-          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          reqid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.Contract contract = 2;
+      // optional .protobuf.Contract contract = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_contract(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // .protobuf.ContractDetails contractDetails = 3;
+      // optional .protobuf.ContractDetails contractDetails = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_contractdetails(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   _has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ContractData::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ContractData::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:protobuf.ContractData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 reqId = 1;
+  // optional int32 reqId = 1;
   if (_internal_has_reqid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_reqid(), target);
   }
 
-  // .protobuf.Contract contract = 2;
+  // optional .protobuf.Contract contract = 2;
   if (_internal_has_contract()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -296,7 +276,7 @@ failure:
         2, _Internal::contract(this), target, stream);
   }
 
-  // .protobuf.ContractDetails contractDetails = 3;
+  // optional .protobuf.ContractDetails contractDetails = 3;
   if (_internal_has_contractdetails()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -316,63 +296,52 @@ size_t ContractData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:protobuf.ContractData)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    // .protobuf.Contract contract = 2;
+    // optional .protobuf.Contract contract = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *contract_);
     }
 
-    // .protobuf.ContractDetails contractDetails = 3;
+    // optional .protobuf.ContractDetails contractDetails = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *contractdetails_);
     }
 
-    // int32 reqId = 1;
+    // optional int32 reqId = 1;
     if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_reqid());
+      total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_reqid());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void ContractData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:protobuf.ContractData)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ContractData* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ContractData>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:protobuf.ContractData)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:protobuf.ContractData)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ContractData::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ContractData::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ContractData::GetClassData() const { return &_class_data_; }
+
+void ContractData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<ContractData *>(to)->MergeFrom(
+      static_cast<const ContractData &>(from));
 }
+
 
 void ContractData::MergeFrom(const ContractData& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:protobuf.ContractData)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
@@ -388,13 +357,7 @@ void ContractData::MergeFrom(const ContractData& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void ContractData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:protobuf.ContractData)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ContractData::CopyFrom(const ContractData& from) {
@@ -410,7 +373,7 @@ bool ContractData::IsInitialized() const {
 
 void ContractData::InternalSwap(ContractData* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(ContractData, reqid_)
@@ -421,9 +384,10 @@ void ContractData::InternalSwap(ContractData* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ContractData::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_ContractData_2eproto_getter, &descriptor_table_ContractData_2eproto_once,
+      file_level_metadata_ContractData_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace protobuf
