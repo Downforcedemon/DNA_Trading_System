@@ -1,37 +1,35 @@
-#pragma once
-
+#pragma once 
 #include "strategy/StrategyTypes.hpp"
 #include <vector>
-#include <ctime>
-
-enum class BookFlipSignal {
-    BULLISH,            // Large bid appears or large ask disappears
-    BEARISH,            // Large ask appears or large bid disappears
-    NONE                // No flip detected
-}; 
+#include <deque>
+#include <queue>
+#include <mutex>
+#include <functional>
 
 class BookFlipDetector {
     public:
-        // Constructor
-        BookFlipDetector(); 
-
-        // Update with new order book and detect flips
-        // Returns BULLISH, BEARISH or NONE
-        BookFlipSignal update(const std::vector<PriceLevel>& bids, const std::vector<PriceLevel>& asks); 
+        BookFlipDetector(int windowSize = 1000, double percentile = 0.95, int minObservations = 30);
+        BookFlipResult detect(const std::vector<PriceLevel>& bids, const std::vector<PriceLevel>& asks);
 
     private:
-        // Previous order book state
+        // What the book lookek like last tick
         std::vector<PriceLevel> previousBids_;
         std::vector<PriceLevel> previousAsks_;
 
-        // Cooldown tracking (5-second cooldown)
-        time_t lastFlipTime_; 
+        // Rolling Window + heaps - the percentile machinary
+        std::deque<int> sizeWindow_;
+        std::priority_queue<int> lowerHeap_;
+        std::priority_queue<int, std::vector<int>, std::greater<int>> upperHeap_;
 
-        // Helper: check if a level is "large" (3x average of top 5)
-        bool isLargeOrder(int size, const std::vector<PriceLevel>& levels) const; 
+        // config
+        int windowSize_;
+        double percentile_;
+        int minObservations_;
 
-        // Helper: Find order at specific price in book
-        bool findOrder(double price, const std::vector<PriceLevel>& levels, int& outSize) const; 
-}; 
+        // Warm-up + thead_safety
+        bool isInitialized_;
+        int observationCount_;
+        mutable std::mutex mutex_; 
 
+};
 

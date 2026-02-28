@@ -59,6 +59,47 @@ void SymbolManager::updatePrice(const std::string& symbol, double price) {
     }
 }
 
+// --- Strategy score methods (called by StrategyEngine) ---
+
+double SymbolManager::getPrice(const std::string& symbol) const {
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto it = symbols_.find(symbol);
+    if (it != symbols_.end()) {
+        return it->second.currentPrice;
+    }
+    return 0.0;
+}
+
+void SymbolManager::updateSignalScore(const std::string& symbol, int score) {
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto it = symbols_.find(symbol);
+    if (it != symbols_.end()) {
+        it->second.signalScore = score;
+        // Update signal type based on score
+        if (score >= 5) {
+            it->second.signalType = SignalType::BUY;
+        } else if (score <= 2) {
+            it->second.signalType = SignalType::SELL;
+        } else {
+            it->second.signalType = SignalType::WAIT;
+        }
+    }
+}
+
+void SymbolManager::updateFactorScores(const std::string& symbol,
+    int cpr, int camarilla, int vpa, int bookFlip, int absorption, int stacking) {
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto it = symbols_.find(symbol);
+    if (it != symbols_.end()) {
+        it->second.cprScore = cpr;
+        it->second.camarillaScore = camarilla;
+        it->second.vpaScore = vpa;
+        it->second.bookFlipScore = bookFlip;
+        it->second.absorptionScore = absorption;
+        it->second.stackingScore = stacking;
+    }
+}
+
 // IMarketDataListener implementation
 void SymbolManager::onPriceUpdate(const std::string& symbol, double price, time_t timestamp) {
     std::lock_guard<std::mutex> lock(mutex_);

@@ -369,15 +369,90 @@ IBKR API → MarketDataManager → [SymbolManager, StrategyEngine]
   - Header: `include/strategy/analyzers/CPRCalculator.hpp` ✅
   - Implementation: `src/strategy/analyzers/CPRCalculator.cpp` ✅
   - Static method to calculate Pivot, BC, TC from OHLC
-- 🔄 `StackingAnalyzer` - IN PROGRESS (next session starts here)
+- ✅ `StackingAnalyzer` - COMPLETED
   - Header: `include/strategy/analyzers/StackingAnalyzer.hpp` ✅
-  - Implementation: `src/strategy/analyzers/StackingAnalyzer.cpp` ⏳ NEXT
-  - Static method to calculate bid/ask imbalance ratio
+  - Implementation: `src/strategy/analyzers/StackingAnalyzer.cpp` ✅
+  - Static method to calculate bid/ask imbalance ratio (totalBidSize / totalAskSize)
 
-**Phase 3.3:** Stateful analyzers (Book Flip, Absorption, VPA)
-**Phase 3.4:** Tape Reader (delta, blocks, divergence)
-**Phase 3.5:** Signal Aggregator (composite scoring)
-**Phase 3.6:** Integration with MarketDataManager
+**✅ Phase 3.3: BookFlipDetector - COMPLETED (February 22, 2026)**
+- ✅ `BookFlipDetector` - COMPLETED
+  - Header: `include/strategy/analyzers/BookFlipDetector.hpp` ✅
+  - Implementation: `src/strategy/analyzers/BookFlipDetector.cpp` ✅
+  - Stateful class: owns previous order book snapshots
+  - Compares current vs previous book to find largest size delta
+  - Rolling 95th percentile threshold via two-heap approach (O(log n))
+  - Warm-up period: requires minObservations before signaling
+  - Returns `BookFlipResult` struct (detected, FlipType, BookSide, price, sizeDelta)
+  - Added `FlipType`, `BookSide` enums and `BookFlipResult` struct to `StrategyTypes.hpp`
+
+**✅ Phase 3.3: AbsorptionDetector - COMPLETED (February 22, 2026)**
+- ✅ `AbsorptionDetector` - COMPLETED
+  - Header: `include/strategy/analyzers/AbsorptionDetector.hpp` ✅
+  - Implementation: `src/strategy/analyzers/AbsorptionDetector.cpp` ✅
+  - Stateful class: tracks wall sizes and absorbed volume per price level over time
+  - Uses `unordered_map` (hashmap) for per-price-level tracking
+  - Stability check: wall must stay above 50% of original size to count as "held"
+  - Rolling 95th percentile threshold for significance (same two-heap approach as BookFlip)
+  - Returns `AbsorptionResult` struct (detected, side, price, wallSize, volumeAbsorbed)
+  - Added `AbsorptionResult` and `TradeData` structs to `StrategyTypes.hpp`
+  - NOTE: Threshold approach needs more research — ratio-based may be more appropriate
+
+**✅ Phase 3.3: VPAAnalyzer - COMPLETED (February 22, 2026)**
+- ✅ `VPAAnalyzer` - COMPLETED
+  - Header: `include/strategy/analyzers/VPAAnalyser.hpp` ✅
+  - Implementation: `src/strategy/analyzers/VPAAnalyzer.cpp` ✅
+  - Stateful class: tracks rolling volume average and previous price
+  - Simplest stateful analyzer — no heaps, no hashmaps, just deque + running sum
+  - Sliding window sum for O(1) average volume calculation
+  - Determines if volume confirms or diverges from price movement
+  - Configurable high/low volume multipliers (default 1.5x / 0.5x of average)
+  - Returns `VPAResult` struct (confirmed, isDivergence, priceChange, volumeRatio)
+  - Added `VPAResult` struct to `StrategyTypes.hpp`
+
+**Phase 3.3 COMPLETE** — All 3 stateful analyzers done (BookFlip, Absorption, VPA)
+
+**✅ Phase 3.4: TapeReader - COMPLETED (February 28, 2026)**
+- ✅ `TapeReader` - COMPLETED
+  - Header: `include/strategy/analyzers/TapeReader.hpp` ✅
+  - Implementation: `src/strategy/analyzers/TapeReader.cpp` ✅
+  - Stateful class: central tape processing engine for Time & Sales data
+  - Three signals: cumulative delta, large block detection, swing divergence
+  - Cumulative delta: tracks net buying vs selling pressure (resets daily at RTH open)
+  - Large block detection: adaptive threshold using mean + 2×SD (BookMap approach)
+  - Swing divergence: detects price/delta disagreement (Layer 1 — swing highs/lows)
+  - Rolling standard deviation via sliding window sum of squares — O(1) calculation
+  - Aggressor classification: uses exchange-provided flag (Databento) with Lee-Ready fallback
+  - Returns `TapeReaderResult` struct (cumulativeDelta, largeBlockDetected, blockSize, blockSide, divergenceDetected, isBearishDivergence)
+  - Added `TapeReaderResult` struct to `StrategyTypes.hpp`
+  - Design decisions documented with academic + practitioner sources (Lee-Ready 1991, BookMap, Sierra Chart)
+**✅ Phase 3.5: SignalAggregator - COMPLETED (February 28, 2026)**
+- ✅ `SignalAggregator` - COMPLETED
+  - Header: `include/strategy/SignalAggregator.hpp` ✅
+  - Implementation: `src/strategy/SignalAggregator.cpp` ✅
+  - Stateless orchestrator: collects output from all 6 analyzers + TapeReader
+  - Composite 0-6 scoring: CPR (+1), Camarilla (+1), VPA (+1), BookFlip (+1), Absorption (+1), Stacking (+1)
+  - Signal strength tiers: HIGH (5-6), MODERATE (3-4), LOW (0-2)
+  - Direction voting system: bullish vs bearish votes from directional signals
+  - TapeReader as confidence modifier: divergence penalizes leading side's vote count
+  - Configurable proximity thresholds for level-based scoring (Camarilla 0.2%, CPR 0.2%)
+  - Stacking scored bidirectionally: ratio > 1.5 (bullish) or < 0.67 (bearish)
+  - Added `SignalStrength`, `SignalDirection` enums and `AggregatedSignal` struct to `StrategyTypes.hpp`
+
+**✅ Phase 3.6: StrategyEngine Integration - COMPLETED (February 28, 2026)**
+- ✅ `StrategyEngine` - COMPLETED
+  - Header: `include/strategy/StrategyEngine.hpp` ✅
+  - Implementation: `src/strategy/StrategyEngine.cpp` ✅
+  - Implements `IMarketDataListener` — plugs into MarketDataManager as a listener
+  - Per-symbol analyzer instances via `unordered_map<string, SymbolAnalyzers>`
+  - Lazy initialization: analyzers created on first data for each symbol
+  - Three data entry points: `onBookUpdate()`, `onTradeUpdate()`, `onPriceUpdate()`
+  - `runPipeline()`: calls all analyzers → feeds into SignalAggregator → writes score to SymbolManager
+  - `setDailyOHLC()`: sets previous day's candle for CPR/Camarilla (called once at session start)
+  - `resetSession()`: resets TapeReader delta for all symbols at RTH open
+  - Thread-safe with mutex on all public methods
+  - TODO: Add result caching per analyzer (BookFlip/Absorption results from onBookUpdate need to persist into runPipeline)
+  - TODO: Add `getPrice()`, `updateSignalScore()`, `updateFactorScores()` methods to SymbolManager
+
 **Phase 3.7:** Testing and validation
 
 ### Dependencies

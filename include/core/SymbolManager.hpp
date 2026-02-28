@@ -15,6 +15,12 @@ class SymbolManager : public IMarketDataListener {
         bool hasSymbol(const std::string& symbol) const;
         int getSymbolCount() const;
 
+        // Strategy score updates (called by StrategyEngine)
+        double getPrice(const std::string& symbol) const;
+        void updateSignalScore(const std::string& symbol, int score);
+        void updateFactorScores(const std::string& symbol,
+            int cpr, int camarilla, int vpa, int bookFlip, int absorption, int stacking);
+
         // IMarketDataListener implementation
         void onPriceUpdate(const std::string& symbol, double price, time_t timestamp) override;
         void onSizeUpdate(const std::string& symbol, int size, time_t timestamp) override;
