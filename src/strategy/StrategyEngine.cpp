@@ -10,12 +10,9 @@ StrategyEngine::StrategyEngine(SymbolManager& symbolManager)
 SymbolAnalyzers& StrategyEngine::getAnalyzers(const std::string& symbol) {
     auto it = analyzers_.find(symbol);
     if (it == analyzers_.end()) {
-        analyzers_.emplace(symbol, SymbolAnalyzers{
-            BookFlipDetector(),       // windowSize=100, percentile=0.95, minObs=20
-            AbsorptionDetector(),     // windowSize=1000, percentile=0.95, etc.
-            VPAAnalyzer(),            // windowSize=100, highMult=1.5, lowMult=0.5
-            TapeReader()              // windowSize=500, blockMult=2.0, minObs=50
-        });
+        // operator[] default-constructs SymbolAnalyzers in-place
+        // (emplace fails because TapeReader's mutex is non-copyable)
+        analyzers_[symbol];
         it = analyzers_.find(symbol);
     }
     return it->second;
@@ -57,7 +54,7 @@ void StrategyEngine::onBookUpdate(const std::string& symbol,
     sa.lastFlipResult = sa.bookFlip.detect(bids, asks);
 
     // Stacking: calculate bid/ask imbalance ratio (stateless) → cache result
-    sa.lastStackingRatio = StackingAnalyzer::analyze(bids, asks);
+    sa.lastStackingRatio = StackingAnalyzer::calculateRatio(bids, asks);
 
     // Store latest bid/ask for aggressor classification in onTradeUpdate
     if (!bids.empty()) lastBid_[symbol] = bids[0].price;
