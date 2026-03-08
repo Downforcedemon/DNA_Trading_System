@@ -89,19 +89,19 @@ enum class SignalDirection { BULLISH, BEARISH, NEUTRAL };
 
 // Signal Aggregator — composite score from all 6 analyzers
 struct AggregatedSignal {
-    int score;                           // 0-6 composite score
-    SignalStrength strength;             // HIGH (5-6), MODERATE (3-4), LOW (0-2)
-    SignalDirection direction;           // overall bias from the signals
+    int score = 0;                       // 0-6 composite score
+    SignalStrength strength = SignalStrength::LOW;  // HIGH (5-6), MODERATE (3-4), LOW (0-2)
+    SignalDirection direction = SignalDirection::NEUTRAL;  // overall bias from the signals
     // Individual factor scores (1 = contributing, 0 = not)
-    int cprScore;                        // +1 if CPR bias aligned
-    int camarillaScore;                  // +1 if at Camarilla level
-    int vpaScore;                        // +1 if VPA confirming
-    int bookFlipScore;                   // +1 if book flip detected
-    int absorptionScore;                 // +1 if absorption detected
-    int stackingScore;                   // +1 if stacking aligned
+    int cprScore = 0;                    // +1 if CPR bias aligned
+    int camarillaScore = 0;              // +1 if at Camarilla level
+    int vpaScore = 0;                    // +1 if VPA confirming
+    int bookFlipScore = 0;              // +1 if book flip detected
+    int absorptionScore = 0;             // +1 if absorption detected
+    int stackingScore = 0;               // +1 if stacking aligned
     // TapeReader confidence modifiers (not scored, but inform conviction)
-    int cumulativeDelta;                 // net flow context
-    bool largeBlockPresent;              // institutional activity
-    bool divergenceWarning;              // price/delta disagree — reduce conviction
+    int cumulativeDelta = 0;             // net flow context
+    bool largeBlockPresent = false;      // institutional activity
+    bool divergenceWarning = false;      // price/delta disagree — reduce conviction
 };
 
