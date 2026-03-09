@@ -32,3 +32,9 @@ find_package(Protobuf REQUIRED)
 
 # Link pthread, protobuf, and Intel DFP library (required by IBKR API)
 target_link_libraries(dna_system pthread ${Protobuf_LIBRARIES} ${PROJECT_SOURCE_DIR}/external/libbid.a)
+
+# Test executable — strategy pipeline smoke test
+# Uses same sources as dna_system except main.cpp (replaced by test_strategy.cpp)
+list(FILTER SOURCES EXCLUDE REGEX ".*main\\.cpp$")
+add_executable(test_strategy tests/test_strategy.cpp ${SOURCES})
+target_link_libraries(test_strategy pthread ${Protobuf_LIBRARIES} ${PROJECT_SOURCE_DIR}/external/libbid.a)
