@@ -6,6 +6,7 @@
 #include "simdjson.h"
 #include "core/MarketDataManager.hpp"
 #include "adapters/IBKRAdapter.hpp"
+#include "strategy/StrategyEngine.hpp"
 
 // make all symbols uppercase
 std::string toUpper(std::string str){
@@ -17,16 +18,16 @@ std::string toUpper(std::string str){
 
 void printWatchlist(const SymbolManager& manager) {
     auto symbols = manager.getAllSymbols();
-    
+
     if (symbols.empty()) {
         std::cout << "\n📊 No symbols in watchlist" << std::endl;
         return;
     }
-    
+
     std::cout << "\n========================================" << std::endl;
     std::cout << "SYMBOL   | PRICE    | SIGNAL  | SCORE" << std::endl;
     std::cout << "----------------------------------------" << std::endl;
-    
+
     for (const auto& sym : symbols) {
         std::string signalStr;
         if (sym.signalType == SignalType::BUY) {
@@ -36,11 +37,11 @@ void printWatchlist(const SymbolManager& manager) {
         } else {
             signalStr = "— WAIT ";
         }
-        
-        printf("%-8s | $%-7.2f | %-7s | %d/6\n", 
-               sym.symbol.c_str(), 
-               sym.currentPrice, 
-               signalStr.c_str(), 
+
+        printf("%-8s | $%-7.2f | %-7s | %d/6\n",
+               sym.symbol.c_str(),
+               sym.currentPrice,
+               signalStr.c_str(),
                sym.signalScore);
     }
     std::cout << "========================================\n" << std::endl;
@@ -86,27 +87,27 @@ IBKRConfig loadIBKRConfig() {
 // Import symbols
 void loadDefaultSymbols(SymbolManager& manager) {
     simdjson::ondemand::parser parser;
-    
+
     std::ifstream file("config/symbols.json");
     if (!file.is_open()) {
         std::cout << "⚠️  No config file found, starting with empty watchlist" << std::endl;
         return;
     }
-    
+
     std::string json_str((std::istreambuf_iterator<char>(file)),
                          std::istreambuf_iterator<char>());
     file.close();
-    
+
     simdjson::padded_string json(json_str);
     simdjson::ondemand::document doc = parser.iterate(json);
-    
+
     auto watchlist = doc["watchlist"];
-    
+
     for (auto symbol : watchlist) {
         std::string sym = std::string(symbol.get_string().value());
         manager.addSymbol(sym, 100.0, 3);  // Default price and score
     }
-    
+
     std::cout << "✅ Loaded " << manager.getSymbolCount() << " symbols from config" << std::endl;
 }
 
@@ -117,9 +118,12 @@ int main() {
     SymbolManager manager;
     loadDefaultSymbols(manager);
 
-    // Create market data manager and register symbol manager as listener
+    // Create market data manager and strategy engine
     MarketDataManager marketDataManager;
     marketDataManager.addListener(&manager);
+
+    StrategyEngine strategyEngine(manager);
+    marketDataManager.addListener(&strategyEngine);
 
     // Load IBKR configuration
     IBKRConfig ibkrConfig = loadIBKRConfig();
@@ -128,7 +132,7 @@ int main() {
 
     // Create IBKR adapter and set as provider
     auto ibkrAdapter = std::make_unique<IBKRAdapter>(&marketDataManager, ibkrConfig);
-    auto* provider = ibkrAdapter.get();  // Keep raw pointer for later use
+    auto* provider = ibkrAdapter.get();
     marketDataManager.setProvider(std::move(ibkrAdapter));
 
     // Connect to IB Gateway
@@ -154,27 +158,27 @@ int main() {
 
         std::cout << "> ";
         std::getline(std::cin, input);
-        
+
         if (input.empty()) continue;
-        
+
         // Quit
         if (input == "q" || input == "quit") {
             std::cout << "Shutting down..." << std::endl;
             break;
         }
-        
+
         // Help
         if (input == "help") {
             printHelp();
             continue;
         }
-        
+
         // List
         if (input == "list") {
             printWatchlist(manager);
             continue;
         }
-        
+
         // Clear
         if (input == "clear") {
             auto symbols = manager.getAllSymbols();
@@ -184,19 +188,18 @@ int main() {
             std::cout << "✅ Cleared all symbols" << std::endl;
             continue;
         }
-        
+
         // Remove symbol
         if (input[0] == '-'){
             std::string symbol = toUpper(input.substr(1));
             manager.removeSymbol(symbol);
             continue;
         }
-        
+
         // Add symbol (for now with dummy data)
         std::string upperSymbol = toUpper(input);
         manager.addSymbol(upperSymbol, 100.0, 3);
     }
-    
+
     return 0;
 }
-

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.2.1)
+cmake_minimum_required(VERSION 3.20)
 project(DNA_Trading_System VERSION 1.0)
 set(CMAKE_CXX_STANDARD 23)
 
@@ -33,8 +33,11 @@ find_package(Protobuf REQUIRED)
 # Link pthread, protobuf, and Intel DFP library (required by IBKR API)
 target_link_libraries(dna_system pthread ${Protobuf_LIBRARIES} ${PROJECT_SOURCE_DIR}/external/libbid.a)
 
-# Test executable — strategy pipeline smoke test
-# Uses same sources as dna_system except main.cpp (replaced by test_strategy.cpp)
-list(FILTER SOURCES EXCLUDE REGEX ".*main\\.cpp$")
-add_executable(test_strategy tests/test_strategy.cpp ${SOURCES})
+# --- Test executables ---
+# Common sources for tests (everything except main.cpp)
+set(TEST_SOURCES ${SOURCES})
+list(FILTER TEST_SOURCES EXCLUDE REGEX ".*main\\.cpp$")
+
+# Test 1: Strategy pipeline smoke test
+add_executable(test_strategy tests/test_strategy.cpp ${TEST_SOURCES})
 target_link_libraries(test_strategy pthread ${Protobuf_LIBRARIES} ${PROJECT_SOURCE_DIR}/external/libbid.a)
