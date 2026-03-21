@@ -27,8 +27,7 @@ void IBKRAdapter::subscribe(const std::string& symbol){
 }
 
 void IBKRAdapter::unsubscribe(const std::string& symbol){
-    // IBKR doesn't have an unsubscribe method in current implemenation
-    // implement later if needed
+    ibkrConnection_->unsubscribeMarketData(symbol);
 }
 
 std::string IBKRAdapter::getProviderName() const {

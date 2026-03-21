@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <atomic>
+#include <thread>
+#include <chrono>
 #include "core/SymbolManager.hpp"
 #include <fstream>
 #include "simdjson.h"
@@ -137,7 +140,7 @@ int main() {
 
     // Connect to IB Gateway
     if (provider->connect()) {
-        std::cout << "✅ Connected to " << provider->getProviderName() << std::endl;
+        std::cout << "Connected to " << provider->getProviderName() << std::endl;
 
         // Subscribe to market data for all symbols
         auto symbols = manager.getAllSymbols();
@@ -145,17 +148,26 @@ int main() {
             provider->subscribe(sym.symbol);
         }
     } else {
-        std::cout << "⚠️  Failed to connect to IB Gateway - running in offline mode" << std::endl;
+        std::cout << "Failed to connect to IB Gateway - running in offline mode" << std::endl;
     }
 
     printHelp();
 
+    // Background thread: continuously process IBKR messages
+    std::atomic<bool> running{true};
+    std::thread marketThread([&]() {
+        while (running) {
+            if (provider->isConnected()) {
+                provider->processMessages();  // blocks up to signal timeout (2s)
+            } else {
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+            }
+        }
+    });
+
+    // Main thread: handle user input
     std::string input;
     while (true) {
-        if (provider->isConnected()) {
-            provider->processMessages();
-        }
-
         std::cout << "> ";
         std::getline(std::cin, input);
 
@@ -183,22 +195,33 @@ int main() {
         if (input == "clear") {
             auto symbols = manager.getAllSymbols();
             for (const auto& sym : symbols) {
+                provider->unsubscribe(sym.symbol);
                 manager.removeSymbol(sym.symbol);
             }
-            std::cout << "✅ Cleared all symbols" << std::endl;
+            std::cout << "Cleared all symbols" << std::endl;
             continue;
         }
 
         // Remove symbol
         if (input[0] == '-'){
             std::string symbol = toUpper(input.substr(1));
+            provider->unsubscribe(symbol);
             manager.removeSymbol(symbol);
             continue;
         }
 
-        // Add symbol (for now with dummy data)
+        // Add symbol and subscribe to market data
         std::string upperSymbol = toUpper(input);
-        manager.addSymbol(upperSymbol, 100.0, 3);
+        manager.addSymbol(upperSymbol, 0.0, 0);
+        if (provider->isConnected()) {
+            provider->subscribe(upperSymbol);
+        }
+    }
+
+    // Clean shutdown: stop market thread, then disconnect
+    running = false;
+    if (marketThread.joinable()) {
+        marketThread.join();
     }
 
     return 0;
