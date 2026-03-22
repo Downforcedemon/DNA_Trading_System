@@ -50,3 +50,14 @@ void IBKRAdapter::onSizeUpdate(const std::string& symbol, int size, time_t times
 void IBKRAdapter::onError(const std::string& symbol, int errorCode, const std::string& errorMsg) {
     listener_->onError(symbol, errorCode, errorMsg);
 }
+
+void IBKRAdapter::onBookUpdate(const std::string& symbol,
+                                const std::vector<PriceLevel>& bids,
+                                const std::vector<PriceLevel>& asks) {
+    listener_->onBookUpdate(symbol, bids, asks);
+}
+
+void IBKRAdapter::onTradeUpdate(const std::string& symbol, double price, int size,
+                                 BookSide aggressor, double bid, double ask) {
+    listener_->onTradeUpdate(symbol, price, size, aggressor, bid, ask);
+}

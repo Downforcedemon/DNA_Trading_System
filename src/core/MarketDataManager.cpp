@@ -46,3 +46,18 @@ void MarketDataManager::onError(const std::string& symbol, int errorCode, const 
     }
 }
 
+void MarketDataManager::onBookUpdate(const std::string& symbol,
+                                      const std::vector<PriceLevel>& bids,
+                                      const std::vector<PriceLevel>& asks) {
+    for (auto* listener : listeners_) {
+        listener->onBookUpdate(symbol, bids, asks);
+    }
+}
+
+void MarketDataManager::onTradeUpdate(const std::string& symbol, double price, int size,
+                                       BookSide aggressor, double bid, double ask) {
+    for (auto* listener : listeners_) {
+        listener->onTradeUpdate(symbol, price, size, aggressor, bid, ask);
+    }
+}
+
