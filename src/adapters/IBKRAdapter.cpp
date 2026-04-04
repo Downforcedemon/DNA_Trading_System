@@ -30,6 +30,10 @@ void IBKRAdapter::unsubscribe(const std::string& symbol){
     ibkrConnection_->unsubscribeMarketData(symbol);
 }
 
+void IBKRAdapter::requestOHLC(const std::string& symbol) {
+    ibkrConnection_->requestHistoricalData(symbol);
+}
+
 std::string IBKRAdapter::getProviderName() const {
     return "IBKR";
 } 
@@ -60,4 +64,8 @@ void IBKRAdapter::onBookUpdate(const std::string& symbol,
 void IBKRAdapter::onTradeUpdate(const std::string& symbol, double price, int size,
                                  BookSide aggressor, double bid, double ask) {
     listener_->onTradeUpdate(symbol, price, size, aggressor, bid, ask);
+}
+
+void IBKRAdapter::onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) {
+    listener_->onOHLCUpdate(symbol, ohlc);
 }

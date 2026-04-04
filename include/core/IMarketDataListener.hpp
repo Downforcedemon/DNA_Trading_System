@@ -19,5 +19,8 @@ class IMarketDataListener {
                                   const std::vector<PriceLevel>& asks) {}
         virtual void onTradeUpdate(const std::string& symbol, double price, int size,
                                    BookSide aggressor, double bid, double ask) {}
-}; 
+
+        // OHLC callback — fired once per symbol after reqHistoricalData completes
+        virtual void onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) {}
+};
 

@@ -61,3 +61,13 @@ void MarketDataManager::onTradeUpdate(const std::string& symbol, double price, i
     }
 }
 
+void MarketDataManager::onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) {
+    for (auto* listener : listeners_) {
+        listener->onOHLCUpdate(symbol, ohlc);
+    }
+}
+
+void MarketDataManager::requestOHLC(const std::string& symbol) {
+    if (provider_) provider_->requestOHLC(symbol);
+}
+

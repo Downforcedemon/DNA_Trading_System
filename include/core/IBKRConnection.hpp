@@ -1,6 +1,7 @@
 #pragma once
 #include "DefaultEWrapper.h"
 #include "EClientSocket.h"
+#include "bar.h"
 #include "core/IMarketDataListener.hpp"
 #include "strategy/StrategyTypes.hpp"
 #include <memory>
@@ -49,12 +50,21 @@ public:
                           int operation, int side, double price, Decimal size,
                           bool isSmartDepth) override;
 
+    // Request previous day's OHLC via reqHistoricalData
+    void requestHistoricalData(const std::string& symbol);
+
+    // EWrapper callbacks — historical data
+    void historicalData(TickerId reqId, const Bar& bar) override;
+    void historicalDataEnd(int reqId, const std::string& startDateStr,
+                           const std::string& endDateStr) override;
+
 private:
     IMarketDataListener* listener_;
     std::unique_ptr<EClientSocket> client_;
     int nextOrderId_;
     int nextTickerId_;
     int nextDepthId_;                                            // separate ID space for L2
+    int nextHistReqId_;                                          // separate ID space for historical data
 
     // L1 ticker ID mappings
     std::unordered_map<int, std::string> tickerIdToSymbol_;
@@ -77,6 +87,10 @@ private:
     mutable std::mutex mutex_;
     std::unique_ptr<EReader> reader_;
     std::unique_ptr<EReaderOSSignal> signal_;
+
+    // Historical data request tracking
+    std::unordered_map<int, std::string> histReqIdToSymbol_;
+    std::unordered_map<int, OHLCData>   pendingOHLC_;           // accumulates bars; last one wins
 
     // Apply incremental depth update to local book and forward snapshot
     void applyDepthUpdate(int tickerId, int position, int operation, int side,

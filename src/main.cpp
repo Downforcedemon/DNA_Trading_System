@@ -115,7 +115,7 @@ void loadDefaultSymbols(SymbolManager& manager) {
 }
 
 int main() {
-    std::cout << "DNA Trading System v1.0" << std::endl;
+    std::cout << "DNA Trading System v1.1" << std::endl;
     std::cout << "========================================\n" << std::endl;
 
     SymbolManager manager;
@@ -142,10 +142,11 @@ int main() {
     if (provider->connect()) {
         std::cout << "Connected to " << provider->getProviderName() << std::endl;
 
-        // Subscribe to market data for all symbols
+        // Subscribe to market data for all symbols, then fetch previous day's OHLC
         auto symbols = manager.getAllSymbols();
         for (const auto& sym : symbols) {
             provider->subscribe(sym.symbol);
+            provider->requestOHLC(sym.symbol);   // fires onOHLCUpdate → setDailyOHLC → pivots live
         }
     } else {
         std::cout << "Failed to connect to IB Gateway - running in offline mode" << std::endl;

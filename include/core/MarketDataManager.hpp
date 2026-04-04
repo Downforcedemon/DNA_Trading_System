@@ -28,6 +28,10 @@ class MarketDataManager : public IMarketDataListener {
                           const std::vector<PriceLevel>& asks) override;
         void onTradeUpdate(const std::string& symbol, double price, int size,
                            BookSide aggressor, double bid, double ask) override;
+        void onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) override;
+
+        // Request previous day's OHLC for all listeners (delegates to provider)
+        void requestOHLC(const std::string& symbol);
         
     private:
         std::unique_ptr<IMarketDataProvider> provider_;

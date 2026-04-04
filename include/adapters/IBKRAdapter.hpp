@@ -21,9 +21,10 @@ class IBKRAdapter : public IMarketDataProvider, public IMarketDataListener {
         // IMarketDataProvider implementation
         bool connect() override;
         void disconnect() override;
-        bool isConnected() const override; 
-        void subscribe(const std::string& symbol) override; 
-        void unsubscribe(const std::string& symbol) override; 
+        bool isConnected() const override;
+        void subscribe(const std::string& symbol) override;
+        void unsubscribe(const std::string& symbol) override;
+        void requestOHLC(const std::string& symbol) override;
         std::string getProviderName() const override;
         void processMessages() override;
 
@@ -36,6 +37,7 @@ class IBKRAdapter : public IMarketDataProvider, public IMarketDataListener {
                           const std::vector<PriceLevel>& asks) override;
         void onTradeUpdate(const std::string& symbol, double price, int size,
                            BookSide aggressor, double bid, double ask) override;
+        void onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) override;
 
     private:
         std::unique_ptr<IBKRConnection> ibkrConnection_;

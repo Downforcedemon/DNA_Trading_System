@@ -53,6 +53,9 @@ class StrategyEngine : public IMarketDataListener {
         // Set daily OHLC for pivot calculations (called once at session start)
         void setDailyOHLC(const std::string& symbol, const OHLCData& ohlc);
 
+        // IMarketDataListener — receives OHLC from MarketDataManager, feeds setDailyOHLC
+        void onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) override;
+
         // Reset all analyzers for new trading day
         void resetSession();
 

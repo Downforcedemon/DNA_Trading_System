@@ -89,6 +89,11 @@ void StrategyEngine::setDailyOHLC(const std::string& symbol, const OHLCData& ohl
     dailyOHLC_[symbol] = ohlc;
 }
 
+// Wired into the listener chain — fires when IBKRConnection::historicalDataEnd completes
+void StrategyEngine::onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) {
+    setDailyOHLC(symbol, ohlc);
+}
+
 // Reset all analyzers for new trading session (call at RTH open 9:30 ET)
 void StrategyEngine::resetSession() {
     std::lock_guard<std::mutex> lock(mutex_);
