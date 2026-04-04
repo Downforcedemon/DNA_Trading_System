@@ -14,7 +14,8 @@ IBKRConnection::IBKRConnection(IMarketDataListener* listener)
     , client_(nullptr)
     , nextOrderId_(0)
     , nextTickerId_(1)
-    , nextDepthId_(10000) {   // L2 IDs start at 10000 to avoid collision with L1
+    , nextDepthId_(10000)     // L2 IDs start at 10000 to avoid collision with L1
+    , nextHistReqId_(20000) { // Historical IDs start at 20000
 }
 
 IBKRConnection::~IBKRConnection() {
@@ -34,6 +35,8 @@ bool IBKRConnection::connect(const std::string& host, int port, int clientId) {
         reader_ = std::make_unique<EReader>(client_.get(), signal_.get());
         reader_->start();
         std::cout << "Connected to IB Gateway at " << host << ":" << port << std::endl;
+        // ask for delayed data for now
+        client_=>reqMarketDataType(3);
     } else {
         std::cout << "Failed to connect to IB Gateway" << std::endl;
         return false;
@@ -253,6 +256,66 @@ void IBKRConnection::applyDepthUpdate(int tickerId, int position, int operation,
     // Forward full book snapshot to listener
     const std::string& symbol = symIt->second;
     listener_->onBookUpdate(symbol, bookIt->second.bids, bookIt->second.asks);
+}
+
+// ========== Historical Data (OHLC) ==========
+
+void IBKRConnection::requestHistoricalData(const std::string& symbol) {
+    if (!isConnected()) return;
+
+    Contract contract;
+    contract.symbol = symbol;
+    contract.secType = "STK";
+    contract.exchange = "SMART";
+    contract.currency = "USD";
+
+    int reqId;
+    {
+        std::lock_guard<std::mutex> lock(mutex_);
+        reqId = nextHistReqId_++;
+        histReqIdToSymbol_[reqId] = symbol;
+        pendingOHLC_[reqId] = OHLCData{};
+    }
+
+    // 2 days of daily bars, RTH only — last bar received is the most recent complete day
+    client_->reqHistoricalData(reqId, contract, "", "2 D", "1 day", "TRADES",
+                               1, 1, false, TagValueListSPtr());
+    std::cout << "Requested OHLC for " << symbol << " (reqId:" << reqId << ")" << std::endl;
+}
+
+void IBKRConnection::historicalData(TickerId reqId, const Bar& bar) {
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto it = histReqIdToSymbol_.find(reqId);
+    if (it == histReqIdToSymbol_.end()) return;
+
+    // Overwrite each time — after historicalDataEnd fires, pendingOHLC_ holds the last (most recent) bar
+    OHLCData& ohlc = pendingOHLC_[reqId];
+    ohlc.open  = bar.open;
+    ohlc.high  = bar.high;
+    ohlc.low   = bar.low;
+    ohlc.close = bar.close;
+    ohlc.timestamp = std::time(nullptr);
+}
+
+void IBKRConnection::historicalDataEnd(int reqId, const std::string& startDateStr,
+                                        const std::string& endDateStr) {
+    std::string symbol;
+    OHLCData ohlc;
+    {
+        std::lock_guard<std::mutex> lock(mutex_);
+        auto it = histReqIdToSymbol_.find(reqId);
+        if (it == histReqIdToSymbol_.end()) return;
+        symbol = it->second;
+        ohlc = pendingOHLC_[reqId];
+        histReqIdToSymbol_.erase(reqId);
+        pendingOHLC_.erase(reqId);
+    }
+
+    if (ohlc.close > 0.0) {
+        std::cout << "OHLC " << symbol << ": O=" << ohlc.open << " H=" << ohlc.high
+                  << " L=" << ohlc.low << " C=" << ohlc.close << std::endl;
+        listener_->onOHLCUpdate(symbol, ohlc);
+    }
 }
 
 // ========== Connection Callbacks ==========
