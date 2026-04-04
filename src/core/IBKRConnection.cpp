@@ -36,7 +36,7 @@ bool IBKRConnection::connect(const std::string& host, int port, int clientId) {
         reader_->start();
         std::cout << "Connected to IB Gateway at " << host << ":" << port << std::endl;
         // ask for delayed data for now
-        client_=>reqMarketDataType(3);
+        client_->reqMarketDataType(3);
     } else {
         std::cout << "Failed to connect to IB Gateway" << std::endl;
         return false;
