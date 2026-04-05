@@ -144,4 +144,17 @@ void StrategyEngine::runPipeline(const std::string& symbol) {
     symbolManager_.updateFactorScores(symbol,
         signal.cprScore, signal.camarillaScore, signal.vpaScore,
         signal.bookFlipScore, signal.absorptionScore, signal.stackingScore);
+
+    // Determine data confidence status for each factor based on how recently we've received updates
+    bool hasOHLC = (ohlcIt != dailyOHLC_.end());
+    bool hasL2 = (sa.lastFlipResult.detected || sa.lastStackingRatio != 1.0);
+    bool hasTape = (sa.lastTapeResult.cumulativeDelta != 0 || sa.lastVpaResult.volumeConfirms);
+
+    symbolManager_.updateDataStatus(symbol,
+        hasOHLC ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // CPR confidence depends on having OHLC for pivot calculation
+        hasOHLC ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // Camarilla confidence also depends on OHLC
+        hasTape ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // VPA confidence depends on having recent trade data
+        hasL2 ? DataStatus::ACTIVE : DataStatus::NO_DATA,                // BookFlip confidence depends on having recent L2 data
+        hasTape ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // Absorption confidence depends on having recent trade data
+        hasL2 ? DataStatus::ACTIVE : DataStatus::NO_DATA);               // Stacking confidence depends on having recent L2 data
 }

@@ -27,9 +27,19 @@ void printWatchlist(const SymbolManager& manager) {
         return;
     }
 
-    std::cout << "\n========================================" << std::endl;
-    std::cout << "SYMBOL   | PRICE    | SIGNAL  | SCORE" << std::endl;
-    std::cout << "----------------------------------------" << std::endl;
+    auto statusChar = [](DataStatus s, int score) -> std::string {
+        if (s == DataStatus::NO_DATA) return "⛔";
+        if (s == DataStatus::STALE) return "⚠️ ";
+        if (s == DataStatus::ACTIVE) {
+            if (score > 0) return "✅";
+            else return "❌";
+        }
+        return " ";
+    };
+
+    std::cout << "\n============================================================" << std::endl;
+    std::cout << "SYMBOL   | PRICE    | SIGNAL  | SCORE | CPR CAM VPA BF  ABS STK" << std::endl;
+    std::cout << "------------------------------------------------------------" << std::endl;
 
     for (const auto& sym : symbols) {
         std::string signalStr;
@@ -41,13 +51,22 @@ void printWatchlist(const SymbolManager& manager) {
             signalStr = "— WAIT ";
         }
 
-        printf("%-8s | $%-7.2f | %-7s | %d/6\n",
+        printf("%-8s | $%-7.2f | %-7s | %d/6   | %s  %s  %s  %s  %s  %s\n",
                sym.symbol.c_str(),
                sym.currentPrice,
                signalStr.c_str(),
-               sym.signalScore);
+               sym.signalScore,
+               statusChar(sym.cprStatus, sym.cprScore).c_str(),
+               statusChar(sym.camarillaStatus, sym.camarillaScore).c_str(),
+               statusChar(sym.vpaStatus, sym.vpaScore).c_str(),
+               statusChar(sym.bookFlipStatus, sym.bookFlipScore).c_str(),
+               statusChar(sym.absorptionStatus, sym.absorptionScore).c_str(),
+               statusChar(sym.stackingStatus, sym.stackingScore).c_str());
     }
-    std::cout << "========================================\n" << std::endl;
+
+    std::cout << "------------------------------------------------------------" << std::endl;
+    std::cout << "  ✅ = active signal  ❌ = no signal  ⛔ = no data  ⚠️  = stale" << std::endl;
+    std::cout << "============================================================\n" << std::endl;
 }
 
 

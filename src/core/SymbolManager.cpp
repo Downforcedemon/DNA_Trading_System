@@ -100,6 +100,22 @@ void SymbolManager::updateFactorScores(const std::string& symbol,
     }
 }
 
+// Update data confidence status for a specific factor
+void SymbolManager::updateDataStatus(const std::string& symbol, 
+    DataStatus cpr, DataStatus camarilla, DataStatus vpa, DataStatus bookFlip, DataStatus absorption, DataStatus stacking) {
+        std::lock_guard<std::mutex> lock(mutex_);
+        auto it = symbols_.find(symbol);
+        if (it != symbols_.end()){
+            it ->second.cprStatus = cpr;
+            it ->second.camarillaStatus = camarilla;
+            it ->second.vpaStatus = vpa;
+            it ->second.bookFlipStatus = bookFlip;
+            it ->second.absorptionStatus = absorption;
+            it ->second.stackingStatus = stacking;
+        }
+    }
+
+
 // IMarketDataListener implementation
 void SymbolManager::onPriceUpdate(const std::string& symbol, double price, time_t timestamp) {
     std::lock_guard<std::mutex> lock(mutex_);

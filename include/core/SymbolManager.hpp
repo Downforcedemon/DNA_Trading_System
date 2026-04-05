@@ -21,6 +21,10 @@ class SymbolManager : public IMarketDataListener {
         void updateFactorScores(const std::string& symbol,
             int cpr, int camarilla, int vpa, int bookFlip, int absorption, int stacking);
 
+        void updateDataStatus(const std::string& symbol, 
+            DataStatus cprStatus, DataStatus camarillaStatus, DataStatus vpaStatus,
+            DataStatus bookFlipStatus, DataStatus absorptionStatus, DataStatus stackingStatus);
+
         // IMarketDataListener implementation
         void onPriceUpdate(const std::string& symbol, double price, time_t timestamp) override;
         void onSizeUpdate(const std::string& symbol, int size, time_t timestamp) override;

@@ -10,6 +10,13 @@ enum class SignalType {
     WAIT
 };
 
+// Data confidence: does the analyzer have enough data to be meaningful?
+enum class DataStatus {
+    NO_DATA,
+    STALE,            // had data but hasn't updated recently
+    ACTIVE            // receiving data, score is trustworthy
+};
+
 struct SymbolState {
     std::string symbol = "";
     double currentPrice = 0.0;
@@ -32,5 +39,13 @@ struct SymbolState {
     int bookFlipScore = 0;
     int absorptionScore = 0;
     int stackingScore = 0 ; 
+
+    // Data confidence status
+    DataStatus cprStatus = DataStatus::NO_DATA;
+    DataStatus camarillaStatus = DataStatus::NO_DATA;
+    DataStatus vpaStatus = DataStatus::NO_DATA;
+    DataStatus bookFlipStatus = DataStatus::NO_DATA;
+    DataStatus absorptionStatus = DataStatus::NO_DATA;
+    DataStatus stackingStatus = DataStatus::NO_DATA;
 };
 
