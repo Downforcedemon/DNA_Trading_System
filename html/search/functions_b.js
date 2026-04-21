@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['printhelp_0',['printHelp',['../main_8cpp.html#a0d20b69b0ad703df78459e1033d5c1d4',1,'main.cpp']]],
-  ['printwatchlist_1',['printWatchlist',['../main_8cpp.html#a7b3303c19aab7114d2de0e9f331d93ff',1,'main.cpp']]],
-  ['processmessages_2',['processMessages',['../classIBKRAdapter.html#a5884a7a8bcc2b07706eb87e0a4f678eb',1,'IBKRAdapter::processMessages()'],['../classIBKRConnection.html#a7e00d904a7fbf0b401cf5660fa5d547f',1,'IBKRConnection::processMessages()'],['../classIMarketDataProvider.html#a9130039b83737762551ab77926f57bf3',1,'IMarketDataProvider::processMessages()']]]
+  ['onerror_0',['onError',['../class_i_b_k_r_adapter.html#a57cdb3a415ee4a139f64c80a7374f2c7',1,'IBKRAdapter::onError()'],['../class_i_market_data_listener.html#a0ec61644ee4482da59b7d52ef6d95c20',1,'IMarketDataListener::onError()'],['../class_market_data_manager.html#acf350bbf3f83443ddacf6981fb1e1aef',1,'MarketDataManager::onError()'],['../class_symbol_manager.html#a2c1fbf25faea27f4498f3691a82c54b6',1,'SymbolManager::onError()']]],
+  ['onpriceupdate_1',['onPriceUpdate',['../class_i_b_k_r_adapter.html#a150d4ee43cd34cb0c9908341294370d2',1,'IBKRAdapter::onPriceUpdate()'],['../class_i_market_data_listener.html#a39f82975fc20ac8423b20da2a30ee97e',1,'IMarketDataListener::onPriceUpdate()'],['../class_market_data_manager.html#a6d28ad0d5863f622b5e34bdd1fe443de',1,'MarketDataManager::onPriceUpdate()'],['../class_symbol_manager.html#a9b6f836de372c438e302c72e74688cf1',1,'SymbolManager::onPriceUpdate()']]],
+  ['onsizeupdate_2',['onSizeUpdate',['../class_i_b_k_r_adapter.html#a28d1b31ad0e583b056cffa231e103b81',1,'IBKRAdapter::onSizeUpdate()'],['../class_i_market_data_listener.html#af8cc01c462e500778b7a396cd4f2bc01',1,'IMarketDataListener::onSizeUpdate()'],['../class_market_data_manager.html#a429eeebc669b331b0d9361b62ef00671',1,'MarketDataManager::onSizeUpdate()'],['../class_symbol_manager.html#ac9a8979c489436fe62b7307d03ab4049',1,'SymbolManager::onSizeUpdate()']]]
 ];

@@ -1,0 +1,16 @@
+\doxysection{Stacking\+Analyzer.\+hpp}
+\hypertarget{_stacking_analyzer_8hpp_source}{}\label{_stacking_analyzer_8hpp_source}\index{include/strategy/analyzers/StackingAnalyzer.hpp@{include/strategy/analyzers/StackingAnalyzer.hpp}}
+\doxymbox{\hyperlink{_stacking_analyzer_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_strategy_types_8hpp}{strategy/StrategyTypes.hpp}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_stacking_analyzer}{StackingAnalyzer}}\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Calculate\ bid/ask\ imbalance\ ratio\ from\ order\ book}}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ ratio:\ bidSize\ /\ askSize\ (>1\ =\ bullish,\ <1\ =\ bearish)}}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_stacking_analyzer_a11bf48ef96abde81ab8d066002f99522}{calculateRatio}}(\textcolor{keyword}{const}\ std::vector<PriceLevel>\&\ bids,\ \textcolor{keyword}{const}\ std::vector<PriceLevel>\&\ asks);}
+\DoxyCodeLine{00010\ \};}
+
+\end{DoxyCode}

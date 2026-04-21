@@ -1,0 +1,173 @@
+\doxysection{IBKRConnection Class Reference}
+\hypertarget{class_i_b_k_r_connection}{}\label{class_i_b_k_r_connection}\index{IBKRConnection@{IBKRConnection}}
+
+
+{\ttfamily \+\#include $<$IBKRConnection.\+hpp$>$}
+
+
+
+Inheritance diagram for IBKRConnection:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_i_b_k_r_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IBKRConnection:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_i_b_k_r_connection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_i_b_k_r_connection_a830fe6f742bd90456c0e9164b94e5a70}{IBKRConnection}} (\doxymbox{\hyperlink{class_i_market_data_listener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}listener)
+\item 
+\doxymbox{\hyperlink{class_i_b_k_r_connection_a5ae926204fe8404272524395c853bb1f}{\texorpdfstring{$\sim$}{\string~}\+IBKRConnection}} ()
+\item 
+bool \doxymbox{\hyperlink{class_i_b_k_r_connection_a6747cf5522fc11ce929beac164026432}{connect}} (const std::\+string \&host, int port, int client\+Id)
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_a9431de7de10b8f246c3e45b0afe785e0}{disconnect}} ()
+\item 
+bool \doxymbox{\hyperlink{class_i_b_k_r_connection_a66026b5b5f0af46bb75c341a3c7af988}{is\+Connected}} ()
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_a7636d3ab991ed4d1f7da0993616191b6}{subscribe\+Market\+Data}} (const std::\+string \&symbol)
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_a7e00d904a7fbf0b401cf5660fa5d547f}{process\+Messages}} ()
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_a982440a3232e022c1aa7379a7506ea9f}{tick\+Price}} (Ticker\+Id ticker\+Id, Tick\+Type field, double price, const Tick\+Attrib \&attrib) override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_ab8b7e2e2e39df94dfb446c13dadd7b0f}{tick\+Size}} (Ticker\+Id ticker\+Id, Tick\+Type field, Decimal size) override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_a0c6eecfc4bfe16159093e333f2cc8486}{error}} (int id, time\+\_\+t error\+Time, int error\+Code, const std::\+string \&error\+String, const std::\+string \&advanced\+Order\+Reject\+Json) override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_ac2dd5dfda8e0973b89e4de3aa79763eb}{next\+Valid\+Id}} (Order\+Id order\+Id) override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_connection_a683f763aaf1391b8965c9ebd28e20522}{connection\+Closed}} () override
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_i_b_k_r_connection_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_b_k_r_connection_a830fe6f742bd90456c0e9164b94e5a70}\index{IBKRConnection@{IBKRConnection}!IBKRConnection@{IBKRConnection}}
+\index{IBKRConnection@{IBKRConnection}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{IBKRConnection()}{IBKRConnection()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a830fe6f742bd90456c0e9164b94e5a70} 
+IBKRConnection::\+\+IBKRConnection (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_market_data_listener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}}]{listener}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_i_b_k_r_connection_a5ae926204fe8404272524395c853bb1f}\index{IBKRConnection@{IBKRConnection}!````~IBKRConnection@{\texorpdfstring{$\sim$}{\string~}IBKRConnection}}
+\index{````~IBKRConnection@{\texorpdfstring{$\sim$}{\string~}IBKRConnection}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IBKRConnection()}{\string~IBKRConnection()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a5ae926204fe8404272524395c853bb1f} 
+IBKRConnection::\+\texorpdfstring{$\sim$}{\string~}\+IBKRConnection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_b_k_r_connection_a5ae926204fe8404272524395c853bb1f_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_i_b_k_r_connection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_b_k_r_connection_a6747cf5522fc11ce929beac164026432}\index{IBKRConnection@{IBKRConnection}!connect@{connect}}
+\index{connect@{connect}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a6747cf5522fc11ce929beac164026432} 
+bool IBKRConnection::\+connect (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{host}{, }\item[{int}]{port}{, }\item[{int}]{client\+Id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_i_b_k_r_connection_a683f763aaf1391b8965c9ebd28e20522}\index{IBKRConnection@{IBKRConnection}!connectionClosed@{connectionClosed}}
+\index{connectionClosed@{connectionClosed}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{connectionClosed()}{connectionClosed()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a683f763aaf1391b8965c9ebd28e20522} 
+void IBKRConnection::\+connection\+Closed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_i_b_k_r_connection_a9431de7de10b8f246c3e45b0afe785e0}\index{IBKRConnection@{IBKRConnection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a9431de7de10b8f246c3e45b0afe785e0} 
+void IBKRConnection::\+disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_b_k_r_connection_a9431de7de10b8f246c3e45b0afe785e0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_b_k_r_connection_a0c6eecfc4bfe16159093e333f2cc8486}\index{IBKRConnection@{IBKRConnection}!error@{error}}
+\index{error@{error}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a0c6eecfc4bfe16159093e333f2cc8486} 
+void IBKRConnection::\+error (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{time\+\_\+t}]{error\+Time}{, }\item[{int}]{error\+Code}{, }\item[{const std::\+string \&}]{error\+String}{, }\item[{const std::\+string \&}]{advanced\+Order\+Reject\+Json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_i_b_k_r_connection_a66026b5b5f0af46bb75c341a3c7af988}\index{IBKRConnection@{IBKRConnection}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a66026b5b5f0af46bb75c341a3c7af988} 
+bool IBKRConnection::\+is\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_b_k_r_connection_a66026b5b5f0af46bb75c341a3c7af988_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_b_k_r_connection_ac2dd5dfda8e0973b89e4de3aa79763eb}\index{IBKRConnection@{IBKRConnection}!nextValidId@{nextValidId}}
+\index{nextValidId@{nextValidId}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{nextValidId()}{nextValidId()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_ac2dd5dfda8e0973b89e4de3aa79763eb} 
+void IBKRConnection::\+next\+Valid\+Id (\begin{DoxyParamCaption}\item[{Order\+Id}]{order\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_i_b_k_r_connection_a7e00d904a7fbf0b401cf5660fa5d547f}\index{IBKRConnection@{IBKRConnection}!processMessages@{processMessages}}
+\index{processMessages@{processMessages}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{processMessages()}{processMessages()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a7e00d904a7fbf0b401cf5660fa5d547f} 
+void IBKRConnection::\+process\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_i_b_k_r_connection_a7636d3ab991ed4d1f7da0993616191b6}\index{IBKRConnection@{IBKRConnection}!subscribeMarketData@{subscribeMarketData}}
+\index{subscribeMarketData@{subscribeMarketData}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{subscribeMarketData()}{subscribeMarketData()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a7636d3ab991ed4d1f7da0993616191b6} 
+void IBKRConnection::\+subscribe\+Market\+Data (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_b_k_r_connection_a7636d3ab991ed4d1f7da0993616191b6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_i_b_k_r_connection_a982440a3232e022c1aa7379a7506ea9f}\index{IBKRConnection@{IBKRConnection}!tickPrice@{tickPrice}}
+\index{tickPrice@{tickPrice}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{tickPrice()}{tickPrice()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_a982440a3232e022c1aa7379a7506ea9f} 
+void IBKRConnection::\+tick\+Price (\begin{DoxyParamCaption}\item[{Ticker\+Id}]{ticker\+Id}{, }\item[{Tick\+Type}]{field}{, }\item[{double}]{price}{, }\item[{const Tick\+Attrib \&}]{attrib}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_i_b_k_r_connection_ab8b7e2e2e39df94dfb446c13dadd7b0f}\index{IBKRConnection@{IBKRConnection}!tickSize@{tickSize}}
+\index{tickSize@{tickSize}!IBKRConnection@{IBKRConnection}}
+\doxysubsubsection{\texorpdfstring{tickSize()}{tickSize()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_connection_ab8b7e2e2e39df94dfb446c13dadd7b0f} 
+void IBKRConnection::\+tick\+Size (\begin{DoxyParamCaption}\item[{Ticker\+Id}]{ticker\+Id}{, }\item[{Tick\+Type}]{field}{, }\item[{Decimal}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+core/\+\doxymbox{\hyperlink{_i_b_k_r_connection_8hpp}{IBKRConnection.\+hpp}}\item 
+src/\+core/\+\doxymbox{\hyperlink{_i_b_k_r_connection_8cpp}{IBKRConnection.\+cpp}}\end{DoxyCompactItemize}

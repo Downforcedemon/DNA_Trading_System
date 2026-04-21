@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['currentprice_0',['currentPrice',['../structSymbolState.html#aa292ae10e679d59d59d407aff944a800',1,'SymbolState']]]
+  ['absorptionscore_0',['absorptionScore',['../struct_symbol_state.html#a419444cfb0c287f4df714c53692c62d4',1,'SymbolState']]]
 ];

@@ -1,0 +1,20 @@
+\doxysection{IMarket\+Data\+Listener.\+hpp}
+\hypertarget{_i_market_data_listener_8hpp_source}{}\label{_i_market_data_listener_8hpp_source}\index{include/core/IMarketDataListener.hpp@{include/core/IMarketDataListener.hpp}}
+\doxymbox{\hyperlink{_i_market_data_listener_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_market_data_listener}{IMarketDataListener}}\ \{\ }
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_market_data_listener_ac1d50d1890ada40e44af7b57104cea41}{\string~IMarketDataListener}}()\ =\ \textcolor{keywordflow}{default};\ }
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Price\ update\ callback}}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_market_data_listener_a39f82975fc20ac8423b20da2a30ee97e}{onPriceUpdate}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{double}\ price,\ time\_t\ timestamp)\ =\ 0;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_market_data_listener_af8cc01c462e500778b7a396cd4f2bc01}{onSizeUpdate}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{int}\ size,\ time\_t\ timestamp)\ =\ 0;\ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_market_data_listener_a0ec61644ee4482da59b7d52ef6d95c20}{onError}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{int}\ errorCode,\ \textcolor{keyword}{const}\ std::string\&\ errorMsg)\ =\ 0;}
+\DoxyCodeLine{00013\ \};\ }
+\DoxyCodeLine{00014\ }
+
+\end{DoxyCode}

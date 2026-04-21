@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['unsubscribe_0',['unsubscribe',['../classIBKRAdapter.html#a1725efca6f0e918a19046b03c9650ba9',1,'IBKRAdapter::unsubscribe()'],['../classIMarketDataProvider.html#ae89349b4cea84f6a04cf64ad0b8ffe2e',1,'IMarketDataProvider::unsubscribe()']]],
-  ['updateprice_1',['updatePrice',['../classSymbolManager.html#a4a5713fff502f7d5e55f6aceb884aea6',1,'SymbolManager']]]
+  ['tickprice_0',['tickPrice',['../class_i_b_k_r_connection.html#a982440a3232e022c1aa7379a7506ea9f',1,'IBKRConnection']]],
+  ['ticksize_1',['tickSize',['../class_i_b_k_r_connection.html#ab8b7e2e2e39df94dfb446c13dadd7b0f',1,'IBKRConnection']]],
+  ['toupper_2',['toUpper',['../main_8cpp.html#a62f7544e0b5c9b666d87eb9686459a8d',1,'main.cpp']]]
 ];

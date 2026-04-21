@@ -12,7 +12,7 @@ enum class SignalType {
 
 // Data confidence: does the analyzer have enough data to be meaningful?
 enum class DataStatus {
-    NO_DATA,
+    NONE,
     STALE,            // had data but hasn't updated recently
     ACTIVE            // receiving data, score is trustworthy
 };
@@ -41,11 +41,11 @@ struct SymbolState {
     int stackingScore = 0 ; 
 
     // Data confidence status
-    DataStatus cprStatus = DataStatus::NO_DATA;
-    DataStatus camarillaStatus = DataStatus::NO_DATA;
-    DataStatus vpaStatus = DataStatus::NO_DATA;
-    DataStatus bookFlipStatus = DataStatus::NO_DATA;
-    DataStatus absorptionStatus = DataStatus::NO_DATA;
-    DataStatus stackingStatus = DataStatus::NO_DATA;
+    DataStatus cprStatus = DataStatus::NONE;
+    DataStatus camarillaStatus = DataStatus::NONE;
+    DataStatus vpaStatus = DataStatus::NONE;
+    DataStatus bookFlipStatus = DataStatus::NONE;
+    DataStatus absorptionStatus = DataStatus::NONE;
+    DataStatus stackingStatus = DataStatus::NONE;
 };
 

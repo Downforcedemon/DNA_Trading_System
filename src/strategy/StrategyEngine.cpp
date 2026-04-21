@@ -1,4 +1,5 @@
 #include "strategy/StrategyEngine.hpp"
+#include <ranges>
 
 StrategyEngine::StrategyEngine(SymbolManager& symbolManager)
     : symbolManager_(symbolManager)
@@ -97,7 +98,7 @@ void StrategyEngine::onOHLCUpdate(const std::string& symbol, const OHLCData& ohl
 // Reset all analyzers for new trading session (call at RTH open 9:30 ET)
 void StrategyEngine::resetSession() {
     std::lock_guard<std::mutex> lock(mutex_);
-    for (auto& [symbol, sa] : analyzers_) {
+    for (auto& sa : analyzers_ | std::ranges::views::values) {
         sa.tapeReader.resetDelta();
         // Reset cached results to defaults
         sa.lastFlipResult = {false, FlipType::NONE, BookSide::NONE, 0.0, 0};
@@ -148,13 +149,13 @@ void StrategyEngine::runPipeline(const std::string& symbol) {
     // Determine data confidence status for each factor based on how recently we've received updates
     bool hasOHLC = (ohlcIt != dailyOHLC_.end());
     bool hasL2 = (sa.lastFlipResult.detected || sa.lastStackingRatio != 1.0);
-    bool hasTape = (sa.lastTapeResult.cumulativeDelta != 0 || sa.lastVpaResult.volumeConfirms);
+    bool hasTape = (sa.lastTapeResult.cumulativeDelta != 0 || sa.lastVpaResult.confirmed);
 
     symbolManager_.updateDataStatus(symbol,
-        hasOHLC ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // CPR confidence depends on having OHLC for pivot calculation
-        hasOHLC ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // Camarilla confidence also depends on OHLC
-        hasTape ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // VPA confidence depends on having recent trade data
-        hasL2 ? DataStatus::ACTIVE : DataStatus::NO_DATA,                // BookFlip confidence depends on having recent L2 data
-        hasTape ? DataStatus::ACTIVE : DataStatus::NO_DATA,              // Absorption confidence depends on having recent trade data
-        hasL2 ? DataStatus::ACTIVE : DataStatus::NO_DATA);               // Stacking confidence depends on having recent L2 data
+        hasOHLC ? DataStatus::ACTIVE : DataStatus::NONE,              // CPR confidence depends on having OHLC for pivot calculation
+        hasOHLC ? DataStatus::ACTIVE : DataStatus::NONE,              // Camarilla confidence also depends on OHLC
+        hasTape ? DataStatus::ACTIVE : DataStatus::NONE,              // VPA confidence depends on having recent trade data
+        hasL2 ? DataStatus::ACTIVE : DataStatus::NONE,                // BookFlip confidence depends on having recent L2 data
+        hasTape ? DataStatus::ACTIVE : DataStatus::NONE,              // Absorption confidence depends on having recent trade data
+        hasL2 ? DataStatus::ACTIVE : DataStatus::NONE);               // Stacking confidence depends on having recent L2 data
 }

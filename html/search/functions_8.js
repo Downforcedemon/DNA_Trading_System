@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['marketdatamanager_1',['MarketDataManager',['../classMarketDataManager.html#acfaef52ac58690f0ca6223c491af621b',1,'MarketDataManager']]]
+  ['loaddefaultsymbols_0',['loadDefaultSymbols',['../main_8cpp.html#a49d27814d7eb41675236732a4a53cbb1',1,'main.cpp']]],
+  ['loadibkrconfig_1',['loadIBKRConfig',['../main_8cpp.html#a9c7b907b60a064443cae47cd23f8cbd1',1,'main.cpp']]]
 ];

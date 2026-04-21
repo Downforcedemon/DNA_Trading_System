@@ -1,0 +1,42 @@
+\doxysection{Symbol\+State.\+hpp}
+\hypertarget{_symbol_state_8hpp_source}{}\label{_symbol_state_8hpp_source}\index{include/core/SymbolState.hpp@{include/core/SymbolState.hpp}}
+\doxymbox{\hyperlink{_symbol_state_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_strategy_types_8hpp}{strategy/StrategyTypes.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{_symbol_state_8hpp_aad6ca876084fe82fadbaf26d6e919ade}{SignalType}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \doxymbox{\hyperlink{_symbol_state_8hpp_aad6ca876084fe82fadbaf26d6e919adeac45b496ec0828772c8088e4118f09b33}{BUY}},}
+\DoxyCodeLine{00009\ \ \ \ \ \doxymbox{\hyperlink{_symbol_state_8hpp_aad6ca876084fe82fadbaf26d6e919adea860926e6fc3f191e18ee7a98259164b8}{SELL}},}
+\DoxyCodeLine{00010\ \ \ \ \ \doxymbox{\hyperlink{_symbol_state_8hpp_aad6ca876084fe82fadbaf26d6e919adead5cc6a0064b5c25ba37826aa3fda910c}{WAIT}}}
+\DoxyCodeLine{00011\ \};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_symbol_state}{SymbolState}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ std::string\ \doxymbox{\hyperlink{struct_symbol_state_aef1d18ca9324465925a6028032897f7b}{symbol}};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_symbol_state_aa292ae10e679d59d59d407aff944a800}{currentPrice}};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_symbol_state_a5d6df01d8cf5228530b383f7a813d7ba}{signalScore}};}
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{_symbol_state_8hpp_aad6ca876084fe82fadbaf26d6e919ade}{SignalType}}\ \doxymbox{\hyperlink{struct_symbol_state_acae8a3a15543d3140f2bca9a600f37b3}{signalType}};}
+\DoxyCodeLine{00018\ \ \ \ \ std::string\ \doxymbox{\hyperlink{struct_symbol_state_a911e4f980f853e51d0ceebc819737aa7}{dataSource}};}
+\DoxyCodeLine{00019\ \ \ \ \ time\_t\ \doxymbox{\hyperlink{struct_symbol_state_a5eac5ac26e9adbb104a8a9175b9fe1f2}{lastUpdate}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Strategy\ fields\ -\/\ CPR\ and\ Camarilla\ levels}}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{struct_c_p_r_data}{CPRData}}\ \doxymbox{\hyperlink{struct_symbol_state_a29de917f7927c5c8b0f2c17a1d2e8f6b}{cprLevels}};}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{struct_camarilla_levels}{CamarillaLevels}}\ \doxymbox{\hyperlink{struct_symbol_state_a860afe83ec7711b392230ec451a0c648}{camarillaLevels}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Type\ reading\ state}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_symbol_state_abcf5ed8d79e28ddfb9eec7f1e7d5bb5d}{cumulativeDelta}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Individual\ factor\ scores\ (\ 0\ or\ 1\ each)}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_symbol_state_abdd7387676c1e2e6fc4e60a22d4eca04}{cprScore}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_symbol_state_af6c6f6efa2adadd58acc497ec6d7a49a}{camarillaScore}};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_symbol_state_a91b856dc6a4b6c5fe78aebf695e7522d}{vpaScore}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_symbol_state_a2870e4ead6b154e1b002f57813223c0a}{bookFlipScore}};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_symbol_state_a419444cfb0c287f4df714c53692c62d4}{absorptionScore}};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_symbol_state_af68a42db0bd8ea67189a28dfdb987a75}{stackingScore}};\ }
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+
+\end{DoxyCode}

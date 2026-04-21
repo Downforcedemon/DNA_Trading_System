@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\tests\test_strategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\adapters\IBKRAdapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\core\IBKRConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\core\MarketDataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\core\SymbolManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\SignalAggregator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\StrategyEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\analyzers\AbsorptionDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\analyzers\BookFlipDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\analyzers\CPRCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\analyzers\CamarillaCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\analyzers\StackingAnalyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\analyzers\TapeReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\src\strategy\analyzers\VPAAnalyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\simdjson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\ContractCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\Decimal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\DefaultEWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EClientSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EClientUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EDecoderUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EMutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EOrderDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\EReaderOSSignal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\ESocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\ExecutionCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\MarginCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\OperatorCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\OrderCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\PercentChangeCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\PriceCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\SoftDollarTier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\TimeCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\VolumeCondition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountDataEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountSummary.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountSummaryEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountSummaryRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountUpdateMulti.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountUpdateMultiEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountUpdateTime.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountUpdatesMultiRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AccountValue.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AllOpenOrdersRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AttachedOrders.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\AutoOpenOrdersRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CalculateImpliedVolatilityRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CalculateOptionPriceRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelAccountSummary.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelAccountUpdatesMulti.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelCalculateImpliedVolatility.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelCalculateOptionPrice.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelContractData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelFundamentalsData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelHeadTimestamp.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelHistogramData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelHistoricalData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelHistoricalTicks.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelMarketData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelMarketDepth.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelNewsBulletins.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelOrderRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelPnL.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelPnLSingle.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelPositions.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelPositionsMulti.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelRealTimeBars.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelScannerSubscription.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelTickByTick.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelWshEventData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CancelWshMetaData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ComboLeg.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CommissionAndFeesReport.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CompletedOrder.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CompletedOrdersEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CompletedOrdersRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\Contract.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ContractData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ContractDataEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ContractDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ContractDescription.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ContractDetails.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CurrentTime.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CurrentTimeInMillis.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CurrentTimeInMillisRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\CurrentTimeRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\DeltaNeutralContract.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\DepthMarketDataDescription.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\DisplayGroupList.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\DisplayGroupUpdated.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ErrorMessage.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\Execution.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ExecutionDetails.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ExecutionDetailsEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ExecutionFilter.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ExecutionRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ExerciseOptionsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\FAReplace.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\FARequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\FamilyCode.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\FamilyCodes.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\FamilyCodesRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\FundamentalsData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\FundamentalsDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\GlobalCancelRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HeadTimestamp.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HeadTimestampRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistogramData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistogramDataEntry.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistogramDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalDataBar.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalDataEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalDataUpdate.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalNews.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalNewsEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalNewsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalSchedule.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalSession.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalTick.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalTickBidAsk.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalTickLast.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalTicks.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalTicksBidAsk.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalTicksLast.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\HistoricalTicksRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\IdsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\IneligibilityReason.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ManagedAccounts.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ManagedAccountsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDataType.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDataTypeRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDepth.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDepthData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDepthExchanges.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDepthExchangesRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDepthL2.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketDepthRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketRule.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MarketRuleRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\MatchingSymbolsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NewsArticle.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NewsArticleRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NewsBulletin.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NewsBulletinsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NewsProvider.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NewsProviders.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NewsProvidersRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\NextValidId.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OpenOrder.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OpenOrdersEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OpenOrdersRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\Order.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OrderAllocation.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OrderBound.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OrderCancel.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OrderCondition.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OrderState.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\OrderStatus.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PlaceOrderRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PnL.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PnLRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PnLSingle.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PnLSingleRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PortfolioValue.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\Position.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PositionEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PositionMulti.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PositionMultiEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PositionsMultiRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PositionsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\PriceIncrement.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\QueryDisplayGroupsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\RealTimeBarTick.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\RealTimeBarsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ReceiveFA.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ReplaceFAEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\RerouteMarketDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\RerouteMarketDepthRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ScannerData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ScannerDataElement.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ScannerParameters.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ScannerParametersRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ScannerSubscription.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\ScannerSubscriptionRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SecDefOptParameter.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SecDefOptParameterEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SecDefOptParamsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SetServerLogLevelRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SmartComponent.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SmartComponents.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SmartComponentsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SoftDollarTier.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SoftDollarTiers.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SoftDollarTiersRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\StartApiRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SubscribeToGroupEventsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\SymbolSamples.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickAttribBidAsk.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickAttribLast.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickByTickData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickByTickRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickGeneric.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickNews.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickOptionComputation.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickPrice.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickReqParams.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickSize.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickSnapshotEnd.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\TickString.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\UnsubscribeFromGroupEventsRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\UpdateDisplayGroupRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\UserInfo.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\UserInfoRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\VerifyCompleted.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\VerifyMessageApi.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\VerifyMessageRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\VerifyRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\WshEventData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\WshEventDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\WshMetaData.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\521787\Downloads\DNA_Trading_System\external\ibkr\protobufUnix\WshMetaDataRequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\521787\Downloads\DNA_Trading_System\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{40403A21-76C6-3EB6-8119-7862CAB090D2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+<map id="include/core/IBKRConnection.hpp" name="include/core/IBKRConnection.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="272,5,491,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,137,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,35,141,78,140,73,328,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="161,80,277,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="356,31,262,76,260,71,351,34"/>
+<area shape="rect" id="Node000004" href="$_i_market_data_listener_8hpp.html" title=" " alt="" coords="353,80,546,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="394,30,430,69,425,68,393,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="318,155,371,181"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="372,31,357,55,344,81,340,111,341,141,337,138,335,111,339,79,352,52,368,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="570,80,638,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="421,30,558,76,553,77,420,35"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="662,80,773,107"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="441,30,650,76,645,78,440,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="434,106,376,148,374,143,429,108"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="423,155,476,181"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="452,105,452,141,448,137,448,109"/>
+</map>

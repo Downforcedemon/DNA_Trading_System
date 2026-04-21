@@ -1,0 +1,191 @@
+\doxysection{IBKRAdapter Class Reference}
+\hypertarget{class_i_b_k_r_adapter}{}\label{class_i_b_k_r_adapter}\index{IBKRAdapter@{IBKRAdapter}}
+
+
+{\ttfamily \+\#include $<$IBKRAdapter.\+hpp$>$}
+
+
+
+Inheritance diagram for IBKRAdapter:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_i_b_k_r_adapter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IBKRAdapter:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_i_b_k_r_adapter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_i_b_k_r_adapter_a603e96bebf94d6d7b6697d840622be20}{IBKRAdapter}} (\doxymbox{\hyperlink{class_i_market_data_listener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}listener, const \doxymbox{\hyperlink{struct_i_b_k_r_config}{IBKRConfig}} \&config)
+\item 
+\doxymbox{\hyperlink{class_i_b_k_r_adapter_a84c24c14fefe587768f36570d2757cd9}{\texorpdfstring{$\sim$}{\string~}\+IBKRAdapter}} () override
+\item 
+bool \doxymbox{\hyperlink{class_i_b_k_r_adapter_a5839c1b07e5169a4b7c89b583de93519}{connect}} () override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_adapter_a50f00642de895e3661b493c170f4b880}{disconnect}} () override
+\item 
+bool \doxymbox{\hyperlink{class_i_b_k_r_adapter_a1cbe8f070cb5c02fc41d58f1cc363492}{is\+Connected}} () const override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_adapter_ac45066aed458251154694b2667098e19}{subscribe}} (const std::\+string \&symbol) override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_adapter_a1725efca6f0e918a19046b03c9650ba9}{unsubscribe}} (const std::\+string \&symbol) override
+\item 
+std::\+string \doxymbox{\hyperlink{class_i_b_k_r_adapter_a71258a3f7c1e702cfde009f17a626b70}{get\+Provider\+Name}} () const override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_adapter_a5884a7a8bcc2b07706eb87e0a4f678eb}{process\+Messages}} () override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_adapter_a150d4ee43cd34cb0c9908341294370d2}{on\+Price\+Update}} (const std::\+string \&symbol, double price, time\+\_\+t timestamp) override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_adapter_a28d1b31ad0e583b056cffa231e103b81}{on\+Size\+Update}} (const std::\+string \&symbol, int size, time\+\_\+t timestamp) override
+\item 
+void \doxymbox{\hyperlink{class_i_b_k_r_adapter_a57cdb3a415ee4a139f64c80a7374f2c7}{on\+Error}} (const std::\+string \&symbol, int error\+Code, const std::\+string \&error\+Msg) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_market_data_provider}{IMarket\+Data\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_i_market_data_provider_a13f951f52a53fd953862ad01717a95ad}{\texorpdfstring{$\sim$}{\string~}\+IMarket\+Data\+Provider}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_market_data_listener}{IMarket\+Data\+Listener}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_i_market_data_listener_ac1d50d1890ada40e44af7b57104cea41}{\texorpdfstring{$\sim$}{\string~}\+IMarket\+Data\+Listener}} ()=default
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_i_b_k_r_adapter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_b_k_r_adapter_a603e96bebf94d6d7b6697d840622be20}\index{IBKRAdapter@{IBKRAdapter}!IBKRAdapter@{IBKRAdapter}}
+\index{IBKRAdapter@{IBKRAdapter}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{IBKRAdapter()}{IBKRAdapter()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a603e96bebf94d6d7b6697d840622be20} 
+IBKRAdapter::\+\+IBKRAdapter (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_market_data_listener}{IMarket\+Data\+Listener}} \texorpdfstring{$\ast$}{*}}]{listener}{, }\item[{const \doxymbox{\hyperlink{struct_i_b_k_r_config}{IBKRConfig}} \&}]{config}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_i_b_k_r_adapter_a84c24c14fefe587768f36570d2757cd9}\index{IBKRAdapter@{IBKRAdapter}!````~IBKRAdapter@{\texorpdfstring{$\sim$}{\string~}IBKRAdapter}}
+\index{````~IBKRAdapter@{\texorpdfstring{$\sim$}{\string~}IBKRAdapter}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IBKRAdapter()}{\string~IBKRAdapter()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a84c24c14fefe587768f36570d2757cd9} 
+IBKRAdapter::\+\texorpdfstring{$\sim$}{\string~}\+IBKRAdapter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_i_b_k_r_adapter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_b_k_r_adapter_a5839c1b07e5169a4b7c89b583de93519}\index{IBKRAdapter@{IBKRAdapter}!connect@{connect}}
+\index{connect@{connect}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a5839c1b07e5169a4b7c89b583de93519} 
+bool IBKRAdapter::\+connect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_provider_af413660c20e7080672ecfcc27520111e}{IMarket\+Data\+Provider}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a50f00642de895e3661b493c170f4b880}\index{IBKRAdapter@{IBKRAdapter}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a50f00642de895e3661b493c170f4b880} 
+void IBKRAdapter::\+disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_provider_a5882f204d61efa719acefdb6d2946725}{IMarket\+Data\+Provider}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a71258a3f7c1e702cfde009f17a626b70}\index{IBKRAdapter@{IBKRAdapter}!getProviderName@{getProviderName}}
+\index{getProviderName@{getProviderName}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{getProviderName()}{getProviderName()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a71258a3f7c1e702cfde009f17a626b70} 
+std::\+string IBKRAdapter::\+get\+Provider\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_provider_a1b0748d22bbd5b4bbf2ee119bac6eba3}{IMarket\+Data\+Provider}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a1cbe8f070cb5c02fc41d58f1cc363492}\index{IBKRAdapter@{IBKRAdapter}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a1cbe8f070cb5c02fc41d58f1cc363492} 
+bool IBKRAdapter::\+is\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_provider_a97d5670310706ae4034670927ad6a8f7}{IMarket\+Data\+Provider}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a57cdb3a415ee4a139f64c80a7374f2c7}\index{IBKRAdapter@{IBKRAdapter}!onError@{onError}}
+\index{onError@{onError}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a57cdb3a415ee4a139f64c80a7374f2c7} 
+void IBKRAdapter::\+on\+Error (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{, }\item[{int}]{error\+Code}{, }\item[{const std::\+string \&}]{error\+Msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_listener_a0ec61644ee4482da59b7d52ef6d95c20}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a150d4ee43cd34cb0c9908341294370d2}\index{IBKRAdapter@{IBKRAdapter}!onPriceUpdate@{onPriceUpdate}}
+\index{onPriceUpdate@{onPriceUpdate}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{onPriceUpdate()}{onPriceUpdate()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a150d4ee43cd34cb0c9908341294370d2} 
+void IBKRAdapter::\+on\+Price\+Update (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{, }\item[{double}]{price}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_listener_a39f82975fc20ac8423b20da2a30ee97e}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a28d1b31ad0e583b056cffa231e103b81}\index{IBKRAdapter@{IBKRAdapter}!onSizeUpdate@{onSizeUpdate}}
+\index{onSizeUpdate@{onSizeUpdate}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{onSizeUpdate()}{onSizeUpdate()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a28d1b31ad0e583b056cffa231e103b81} 
+void IBKRAdapter::\+on\+Size\+Update (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{, }\item[{int}]{size}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_listener_af8cc01c462e500778b7a396cd4f2bc01}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a5884a7a8bcc2b07706eb87e0a4f678eb}\index{IBKRAdapter@{IBKRAdapter}!processMessages@{processMessages}}
+\index{processMessages@{processMessages}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{processMessages()}{processMessages()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a5884a7a8bcc2b07706eb87e0a4f678eb} 
+void IBKRAdapter::\+process\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_provider_a9130039b83737762551ab77926f57bf3}{IMarket\+Data\+Provider}}.
+
+\Hypertarget{class_i_b_k_r_adapter_ac45066aed458251154694b2667098e19}\index{IBKRAdapter@{IBKRAdapter}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_ac45066aed458251154694b2667098e19} 
+void IBKRAdapter::\+subscribe (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_provider_ab1404b59f1a7d4b9f0b7bbcd496bbfd9}{IMarket\+Data\+Provider}}.
+
+\Hypertarget{class_i_b_k_r_adapter_a1725efca6f0e918a19046b03c9650ba9}\index{IBKRAdapter@{IBKRAdapter}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!IBKRAdapter@{IBKRAdapter}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily \label{class_i_b_k_r_adapter_a1725efca6f0e918a19046b03c9650ba9} 
+void IBKRAdapter::\+unsubscribe (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_provider_ae89349b4cea84f6a04cf64ad0b8ffe2e}{IMarket\+Data\+Provider}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+adapters/\+\doxymbox{\hyperlink{_i_b_k_r_adapter_8hpp}{IBKRAdapter.\+hpp}}\item 
+src/\+adapters/\+\doxymbox{\hyperlink{_i_b_k_r_adapter_8cpp}{IBKRAdapter.\+cpp}}\end{DoxyCompactItemize}

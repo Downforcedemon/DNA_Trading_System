@@ -1,0 +1,50 @@
+\doxysection{IBKRConnection.\+hpp}
+\hypertarget{_i_b_k_r_connection_8hpp_source}{}\label{_i_b_k_r_connection_8hpp_source}\index{include/core/IBKRConnection.hpp@{include/core/IBKRConnection.hpp}}
+\doxymbox{\hyperlink{_i_b_k_r_connection_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}DefaultEWrapper.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}EClientSocket.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_market_data_listener_8hpp}{core/IMarketDataListener.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }EReader;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }EReaderOSSignal;\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_b_k_r_connection_a830fe6f742bd90456c0e9164b94e5a70}{IBKRConnection}}\ :\ \textcolor{keyword}{public}\ DefaultEWrapper\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \doxymbox{\hyperlink{class_i_b_k_r_connection_a830fe6f742bd90456c0e9164b94e5a70}{IBKRConnection}}(\doxymbox{\hyperlink{class_i_market_data_listener}{IMarketDataListener}}*\ listener);}
+\DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{class_i_b_k_r_connection_a5ae926204fe8404272524395c853bb1f}{\string~IBKRConnection}}();}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Connection\ methods}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a6747cf5522fc11ce929beac164026432}{connect}}(\textcolor{keyword}{const}\ std::string\&\ host,\ \textcolor{keywordtype}{int}\ port,\ \textcolor{keywordtype}{int}\ clientId);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a9431de7de10b8f246c3e45b0afe785e0}{disconnect}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a66026b5b5f0af46bb75c341a3c7af988}{isConnected}}();}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Subscribe\ to\ market\ data\ for\ a\ symbol}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a7636d3ab991ed4d1f7da0993616191b6}{subscribeMarketData}}(\textcolor{keyword}{const}\ std::string\&\ symbol);}
+\DoxyCodeLine{00024\ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Process\ incoming\ messages}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a7e00d904a7fbf0b401cf5660fa5d547f}{processMessages}}();}
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ EWrapper\ callbacks\ (IBKR\ API\ requires\ these)}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a982440a3232e022c1aa7379a7506ea9f}{tickPrice}}(TickerId\ tickerId,\ TickType\ field,\ \textcolor{keywordtype}{double}\ price,\ \textcolor{keyword}{const}\ TickAttrib\&\ attrib)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_ab8b7e2e2e39df94dfb446c13dadd7b0f}{tickSize}}(TickerId\ tickerId,\ TickType\ field,\ Decimal\ size)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a0c6eecfc4bfe16159093e333f2cc8486}{error}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ time\_t\ errorTime,\ \textcolor{keywordtype}{int}\ errorCode,\ \textcolor{keyword}{const}\ std::string\&\ errorString,\ \textcolor{keyword}{const}\ std::string\&\ advancedOrderRejectJson)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_ac2dd5dfda8e0973b89e4de3aa79763eb}{nextValidId}}(OrderId\ orderId)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_b_k_r_connection_a683f763aaf1391b8965c9ebd28e20522}{connectionClosed}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{class_i_market_data_listener}{IMarketDataListener}}*\ listener\_;\ }
+\DoxyCodeLine{00037\ \ \ \ \ std::unique\_ptr<EClientSocket>\ client\_;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ nextOrderId\_;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ nextTickerId\_;}
+\DoxyCodeLine{00040\ \ \ \ \ std::unordered\_map<int,\ std::string>\ tickerIdToSymbol\_;\ \ \ \ \ \textcolor{comment}{//\ Map\ tickerId\ -\/>\ symbol\ name}}
+\DoxyCodeLine{00041\ \ \ \ \ std::unique\_ptr<EReader>\ reader\_;}
+\DoxyCodeLine{00042\ \ \ \ \ std::unique\_ptr<EReaderOSSignal>\ signal\_;}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+
+\end{DoxyCode}

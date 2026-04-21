@@ -1,0 +1,7 @@
+<map id="IBKRAdapter" name="IBKRAdapter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,272,245,576"/>
+<area shape="rect" id="Node000002" href="$class_i_market_data_provider.html" title=" " alt="" coords="5,5,165,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,236,134,272,129,272,121,241"/>
+<area shape="rect" id="Node000003" href="$class_i_market_data_listener.html" title=" " alt="" coords="189,48,347,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,193,223,274,219,271,243,198"/>
+</map>

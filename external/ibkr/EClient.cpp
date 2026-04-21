@@ -189,6 +189,9 @@ EClient::~EClient()
 }
 
 bool EClient::useProtoBuf(int msgId) {
+    // DNA patch: IB Gateway rejects protobuf from 3rd party clients ("API is not accepted").
+    // Force legacy text wire protocol. Re-apply if external/ibkr is ever refreshed.
+    return false;
     auto it = PROTOBUF_MSG_IDS.find(msgId);
     return it != PROTOBUF_MSG_IDS.end() && it->second <= serverVersion();
 }

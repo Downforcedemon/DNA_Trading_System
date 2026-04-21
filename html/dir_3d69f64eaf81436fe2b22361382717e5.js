@@ -1,9 +1,9 @@
 var dir_3d69f64eaf81436fe2b22361382717e5 =
 [
-    [ "IBKRConnection.hpp", "IBKRConnection_8hpp.html", "IBKRConnection_8hpp" ],
-    [ "IMarketDataListner.hpp", "IMarketDataListner_8hpp.html", "IMarketDataListner_8hpp" ],
-    [ "IMarketDataProvider.hpp", "IMarketDataProvider_8hpp.html", "IMarketDataProvider_8hpp" ],
-    [ "MarketDataManager.hpp", "MarketDataManager_8hpp.html", "MarketDataManager_8hpp" ],
-    [ "SymbolManager.hpp", "SymbolManager_8hpp.html", "SymbolManager_8hpp" ],
-    [ "SymbolState.hpp", "SymbolState_8hpp.html", "SymbolState_8hpp" ]
+    [ "IBKRConnection.hpp", "_i_b_k_r_connection_8hpp.html", "_i_b_k_r_connection_8hpp" ],
+    [ "IMarketDataListener.hpp", "_i_market_data_listener_8hpp.html", "_i_market_data_listener_8hpp" ],
+    [ "IMarketDataProvider.hpp", "_i_market_data_provider_8hpp.html", "_i_market_data_provider_8hpp" ],
+    [ "MarketDataManager.hpp", "_market_data_manager_8hpp.html", "_market_data_manager_8hpp" ],
+    [ "SymbolManager.hpp", "_symbol_manager_8hpp.html", "_symbol_manager_8hpp" ],
+    [ "SymbolState.hpp", "_symbol_state_8hpp.html", "_symbol_state_8hpp" ]
 ];

@@ -1,0 +1,5 @@
+<map id="MarketDataManager" name="MarketDataManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,187,163,427"/>
+<area shape="rect" id="Node000002" href="$class_i_market_data_listener.html" title=" " alt="" coords="5,5,163,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,151,87,187,82,187,84,157"/>
+</map>

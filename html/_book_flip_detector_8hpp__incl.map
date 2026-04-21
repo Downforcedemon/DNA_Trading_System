@@ -1,0 +1,12 @@
+<map id="include/strategy/analyzers/BookFlipDetector.hpp" name="include/strategy/analyzers/BookFlipDetector.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="137,5,311,48"/>
+<area shape="rect" id="Node000002" href="$_strategy_types_8hpp.html" title=" " alt="" coords="5,96,187,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,50,130,90,127,85,193,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="172,171,225,197"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="223,47,206,156,201,154,218,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="262,96,319,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="242,46,273,84,268,84,240,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="69,171,123,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,121,99,156,93,154,94,125"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="115,121,171,161,165,162,113,126"/>
+</map>

@@ -1,7 +1,23 @@
 var searchData=
 [
-  ['connect_0',['connect',['../classIBKRConnection.html#a6747cf5522fc11ce929beac164026432',1,'IBKRConnection::connect()'],['../classIMarketDataProvider.html#af413660c20e7080672ecfcc27520111e',1,'IMarketDataProvider::connect()']]],
-  ['connected_1',['connected',['../classIBKRAdapter.html#affe328016c68f4c93b6dc360ae169de7',1,'IBKRAdapter']]],
-  ['connectionclosed_2',['connectionClosed',['../classIBKRConnection.html#a683f763aaf1391b8965c9ebd28e20522',1,'IBKRConnection']]],
-  ['currentprice_3',['currentPrice',['../structSymbolState.html#aa292ae10e679d59d59d407aff944a800',1,'SymbolState']]]
+  ['calculate_0',['calculate',['../class_camarilla_calculator.html#a6c682dcfb095805b030d372c83305939',1,'CamarillaCalculator::calculate()'],['../class_c_p_r_calculator.html#a038b8a43d2091c2bd5d4656e7195e544',1,'CPRCalculator::calculate()']]],
+  ['calculateratio_1',['calculateRatio',['../class_stacking_analyzer.html#a11bf48ef96abde81ab8d066002f99522',1,'StackingAnalyzer']]],
+  ['camarillacalculator_2',['CamarillaCalculator',['../class_camarilla_calculator.html',1,'']]],
+  ['camarillacalculator_2ecpp_3',['CamarillaCalculator.cpp',['../_camarilla_calculator_8cpp.html',1,'']]],
+  ['camarillacalculator_2ehpp_4',['CamarillaCalculator.hpp',['../_camarilla_calculator_8hpp.html',1,'']]],
+  ['camarillalevels_5',['CamarillaLevels',['../struct_camarilla_levels.html',1,'']]],
+  ['camarillalevels_6',['camarillaLevels',['../struct_symbol_state.html#a860afe83ec7711b392230ec451a0c648',1,'SymbolState']]],
+  ['camarillascore_7',['camarillaScore',['../struct_symbol_state.html#af6c6f6efa2adadd58acc497ec6d7a49a',1,'SymbolState']]],
+  ['clientid_8',['clientId',['../struct_i_b_k_r_config.html#ad8db44f5fe3b4566d548686632d30ff9',1,'IBKRConfig']]],
+  ['close_9',['close',['../struct_o_h_l_c_data.html#a8bfb5d42980f025f815acfc637d72e83',1,'OHLCData']]],
+  ['connect_10',['connect',['../class_i_b_k_r_adapter.html#a5839c1b07e5169a4b7c89b583de93519',1,'IBKRAdapter::connect()'],['../class_i_b_k_r_connection.html#a6747cf5522fc11ce929beac164026432',1,'IBKRConnection::connect()'],['../class_i_market_data_provider.html#af413660c20e7080672ecfcc27520111e',1,'IMarketDataProvider::connect()']]],
+  ['connectionclosed_11',['connectionClosed',['../class_i_b_k_r_connection.html#a683f763aaf1391b8965c9ebd28e20522',1,'IBKRConnection']]],
+  ['cprcalaculator_2ehpp_12',['CPRCalaculator.hpp',['../_c_p_r_calaculator_8hpp.html',1,'']]],
+  ['cprcalculator_13',['CPRCalculator',['../class_c_p_r_calculator.html',1,'']]],
+  ['cprcalculator_2ecpp_14',['CPRCalculator.cpp',['../_c_p_r_calculator_8cpp.html',1,'']]],
+  ['cprdata_15',['CPRData',['../struct_c_p_r_data.html',1,'']]],
+  ['cprlevels_16',['cprLevels',['../struct_symbol_state.html#a29de917f7927c5c8b0f2c17a1d2e8f6b',1,'SymbolState']]],
+  ['cprscore_17',['cprScore',['../struct_symbol_state.html#abdd7387676c1e2e6fc4e60a22d4eca04',1,'SymbolState']]],
+  ['cumulativedelta_18',['cumulativeDelta',['../struct_symbol_state.html#abcf5ed8d79e28ddfb9eec7f1e7d5bb5d',1,'SymbolState']]],
+  ['currentprice_19',['currentPrice',['../struct_symbol_state.html#aa292ae10e679d59d59d407aff944a800',1,'SymbolState']]]
 ];

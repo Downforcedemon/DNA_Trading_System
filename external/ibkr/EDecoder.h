@@ -182,7 +182,10 @@ const int MIN_SERVER_VER_ATTACHED_ORDERS                 = 218;
 // 100 = enhanced handshake, msg length prefixes
 
 const int MIN_CLIENT_VER = 100;
-const int MAX_CLIENT_VER = MIN_SERVER_VER_ATTACHED_ORDERS;
+// DNA patch: cap at 157 (matches Python ibapi 9.81.1 MAX_CLIENT_VER).
+// Gateway rejects 3rd-party clients at version >= 158. Version 157 accepts
+// all bars in a single HISTORICAL_DATA message so historicalDataEnd still fires.
+const int MAX_CLIENT_VER = MIN_SERVER_VER_REPLACE_FA_END;
 
 
 // incoming msg id's

@@ -1,0 +1,10 @@
+^C:\USERS\521787\DOWNLOADS\DNA_TRADING_SYSTEM\BUILD\CMAKEFILES\B01D176B2D1D42D16C3DE35397C4B689\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/521787/Downloads/DNA_Trading_System -BC:/Users/521787/Downloads/DNA_Trading_System/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/521787/Downloads/DNA_Trading_System/build/DNA_Trading_System.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

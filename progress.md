@@ -508,30 +508,121 @@ IB Gateway
 
 ---
 
+## ✅ Phase 3.8: Architecture Review & Windows Port — IN PROGRESS (April 12, 2026)
+
+### Architecture V2 Review (April 12, 2026)
+Reviewed `Architecture_V2.md` and added 10 architectural suggestions documented at the end of the file under "Architecture Review — Claude Sonnet 4.6":
+
+| # | Suggestion | Priority |
+|---|---|---|
+| 1 | Heikin-Ashi is a bar transform, not a tick-driven builder — clarify in architecture | Low |
+| 2 | Lock-free queues (moodycamel/SPSC) + double-buffer for DOM data | Low |
+| 3 | Add `removeListener()` to MarketDataManager + filtered broadcast | High |
+| 4 | Defer HDF5, start with mmap binary files for historical storage | Medium |
+| 5 | Define `IClock` interface now (WallClock/SimClock) — blocks backtesting | High |
+| 6 | L2 subscription budget manager — design around IBKR's 3-slot paper limit | Low |
+| 7 | Document AbsorptionDetector bug — recentTrades never populated | Low |
+| 8 | Defer pybind11 until Phase 3 — no Phase 1-2 need | Low |
+| 9 | Add event bus for inter-panel communication | High |
+| 10 | Add resilience/reconnect section to architecture | Medium |
+
+### L2 Data Provider Research (April 12, 2026)
+Researched alternatives to IBKR for L2 stock data:
+
+| Provider | L2 Type | Cost | Verdict |
+|---|---|---|---|
+| IBKR | 5-10 levels, 3-10 slots | Free (with account) | Current provider, slot-limited |
+| Databento | MBP-10, unlimited symbols | $199/mo | Best value for full L2 |
+| Polygon/Massive | NBBO only (best bid/ask) | $29-199/mo | NOT real L2 — skip |
+| Intrinio (Nasdaq Basic) | NBBO only | ~$2,080/mo | Way too expensive |
+| DXFeed | Full depth | ~$7,500/mo | Enterprise overkill |
+| CQG | Full depth | ~$595/mo + API add-on | Enterprise overkill |
+
+**Decision:** Stick with IBKR for now. Add Databento later when unlimited L2 + historical backfill is needed. Use `isSmartDepth=True` to stretch 3 slots on paper account.
+
+### Windows Port — Protobuf Integration (April 12, 2026)
+
+#### Problem
+Project was built on Linux. Moving to Windows (MinGW → MSVC) required Windows-compatible protobuf libraries.
+
+#### Steps Completed
+1. ✅ **Built protobuf from source on Windows** using Visual Studio 2026 (MSVC 19.50)
+   - Built at `C:\Users\521787\Downloads\protobuf-fresh\build\`
+   - Produced `libprotobuf.lib` (71MB), `libprotobuf-lite.lib` (9MB), `protoc.exe`
+
+2. ✅ **Copied protobuf into project** (Option B — self-contained)
+   ```
+   external/protobuf/
+   ├── include/
+   │   └── google/protobuf/    ← 281 headers
+   │   └── absl/               ← 357 Abseil headers
+   ├── lib/
+   │   ├── libprotobuf.lib     ← 71MB (full protobuf)
+   │   ├── libprotobuf-lite.lib ← 9MB (lite version)
+   │   └── absl/               ← 88 Abseil .lib files
+   └── bin/
+       └── protoc.exe          ← 4.9MB
+   ```
+
+3. ✅ **Updated CMakeLists.txt** for platform-conditional protobuf:
+   - **Windows**: Links `external/protobuf/lib/libprotobuf.lib` + 88 Abseil .lib files directly
+   - **Linux**: Uses `find_package(Protobuf)` as before (unchanged)
+
+4. ✅ **CMake configured successfully** with Visual Studio 2026 generator
+   - Compiler: MSVC 19.50.35728.0
+   - Windows SDK: 10.0.26100.0
+
+5. ⏳ **Build attempted** — discovered two issues:
+   - **Issue 1 (FIXED):** Abseil headers missing → copied 357 headers + 88 .lib files
+   - **Issue 2 (IN PROGRESS):** Code bug in `StrategyEngine.cpp:151` — `sa.lastVpaResult.volumeConfirms` should be `sa.lastVpaResult.confirmed` (field name mismatch with `VPAResult` struct)
+
+#### Key Learning: Why Abseil?
+Protobuf depends on Google's Abseil library ( absl:: ). When we copied just the protobuf headers, the compiler couldn't find `absl/base/attributes.h`. Abseil provides fundamental C++ utilities that protobuf uses internally. On Linux, `find_package(Protobuf)` pulls in Abseil automatically via CMake dependencies. On Windows with manual linking, we must include it ourselves.
+
+#### Key Learning: Static Library Linking on Windows vs Linux
+- **Linux .a files** (ELF format) — work with GCC/Clang linker
+- **Windows .lib files** (PE/COFF format) — work with MSVC linker
+- **Windows .a files** (PE/COFF format via MinGW) — work with MinGW linker
+- Our `libbid_win.a` was compiled for MinGW, but we're now using MSVC — this may need rebuilding as `.lib`
+
+---
+
 ## Next Steps
 
-### 1. Subscribe to IBKR Market Data Packages
+### 1. Fix Build Errors
+**Priority:** HIGH
+- Fix `StrategyEngine.cpp:151` — change `volumeConfirms` → `confirmed`
+- Verify `libbid_win.a` compatibility with MSVC (may need to rebuild as `.lib`)
+- Complete Windows build and test
+
+### 2. Subscribe to IBKR Market Data Packages
 **Priority:** HIGH
 - Subscribe to US Securities Snapshot and Futures Value Bundle ($10/mo) for L1
 - Subscribe to NASDAQ TotalView ($16.50/mo) for L2 depth
 - Subscribe to NYSE OpenBook ($25/mo) for NYSE-listed L2
 
-### 2. Test with Live Market Data
+### 3. Test with Live Market Data
 **Priority:** HIGH
 - Verify L1 price ticks flow through to SymbolManager
 - Verify L2 book updates flow to BookFlip + Stacking analyzers
 - Verify trade aggressor detection feeds TapeReader + VPA
 - Run `list` command to see live scores updating
 
-### 3. Auto-Fetch OHLC at Startup
+### 4. Auto-Fetch OHLC at Startup
 **Priority:** MEDIUM
 - Use `reqHistoricalData()` to fetch previous day's OHLC for each symbol
 - Call `strategyEngine.setDailyOHLC()` at startup so CPR/Camarilla work immediately
 
-### 4. Add Mean Reversion Filter
+### 5. Add Mean Reversion Filter
 **Priority:** MEDIUM
 - Prevent "11 months profit, month 12 wipeout" scenario
 - Volatility regime filter or RSI/distance-from-mean threshold
+
+### 6. Begin V2 GUI Development
+**Priority:** MEDIUM (after Windows build works)
+- Set up vcpkg + CMake for GLFW, ImGui (docking branch), ImPlot, glad
+- Create App class with render loop
+- Wire MarketDataManager → ChartStateManager → TimeBarBuilder → chart
 
 ---
 
@@ -561,6 +652,14 @@ IB Gateway
 - Trade aggressor detection from L1 ticks
 - **First live connection to IB Gateway paper trading**
 
+### Phase 3.8 (April 12, 2026)
+- Architecture V2 review — 10 suggestions added to Architecture_V2.md
+- L2 data provider research — compared IBKR, Databento, Polygon, Intrinio, DXFeed, CQG
+- **Windows port started** — protobuf + abseil built from source, copied into project
+- CMake configured with Visual Studio 2026 (MSVC 19.50)
+- CMakeLists.txt updated for platform-conditional protobuf linking
+- Build in progress — fixing code bugs and library compatibility
+
 **Lines of Code:** ~2,500 (excluding external libraries)
 **Core Files:** 25+
-**External Libraries:** 3 (simdjson, IBKR API 10.42, Intel DFP)
+**External Libraries:** 3 core + protobuf + abseil (simdjson, IBKR API 10.42, Intel DFP, protobuf, abseil)

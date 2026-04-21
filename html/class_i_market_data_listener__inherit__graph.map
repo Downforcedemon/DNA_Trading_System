@@ -1,0 +1,9 @@
+<map id="IMarketDataListener" name="IMarketDataListener">
+<area shape="rect" id="Node000001" title=" " alt="" coords="167,5,325,139"/>
+<area shape="rect" id="Node000002" href="$class_i_b_k_r_adapter.html" title=" " alt="" coords="5,187,143,491"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,152,158,188,146,208,141,205,153,185,183,148"/>
+<area shape="rect" id="Node000003" href="$class_market_data_manager.html" title=" " alt="" coords="167,219,325,459"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,151,249,220,244,218,245,156"/>
+<area shape="rect" id="Node000004" href="$class_symbol_manager.html" title=" " alt="" coords="350,229,479,448"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="311,147,339,185,365,230,360,229,335,188,311,153"/>
+</map>

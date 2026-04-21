@@ -1,0 +1,43 @@
+\doxysection{Book\+Flip\+Detector.\+hpp}
+\hypertarget{_book_flip_detector_8hpp_source}{}\label{_book_flip_detector_8hpp_source}\index{include/strategy/analyzers/BookFlipDetector.hpp@{include/strategy/analyzers/BookFlipDetector.hpp}}
+\doxymbox{\hyperlink{_book_flip_detector_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_strategy_types_8hpp}{strategy/StrategyTypes.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{_book_flip_detector_8hpp_a2e01be41366535303d4b93db16c2ddd9}{BookFlipSignal}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \doxymbox{\hyperlink{_book_flip_detector_8hpp_a2e01be41366535303d4b93db16c2ddd9a997859e41283b20cb8b081ce651d0902}{BULLISH}},\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Large\ bid\ appears\ or\ large\ ask\ disappears}}
+\DoxyCodeLine{00009\ \ \ \ \ \doxymbox{\hyperlink{_book_flip_detector_8hpp_a2e01be41366535303d4b93db16c2ddd9a30b6959a4d56180d4e90e54d077e0950}{BEARISH}},\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Large\ ask\ appears\ or\ large\ bid\ disappears}}
+\DoxyCodeLine{00010\ \ \ \ \ \doxymbox{\hyperlink{_book_flip_detector_8hpp_a2e01be41366535303d4b93db16c2ddd9ab50339a10e1de285ac99d4c3990b8693}{NONE}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ No\ flip\ detected}}
+\DoxyCodeLine{00011\ \};\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_book_flip_detector_a3c341eafdb5da5a8f4932fcaa9dd6e9c}{BookFlipDetector}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_book_flip_detector_a3c341eafdb5da5a8f4932fcaa9dd6e9c}{BookFlipDetector}}();\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Update\ with\ new\ order\ book\ and\ detect\ flips}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ BULLISH,\ BEARISH\ or\ NONE}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_book_flip_detector_8hpp_a2e01be41366535303d4b93db16c2ddd9}{BookFlipSignal}}\ \doxymbox{\hyperlink{class_book_flip_detector_a55175f2417ff2de4a4203f7b857024a8}{update}}(\textcolor{keyword}{const}\ std::vector<PriceLevel>\&\ bids,\ \textcolor{keyword}{const}\ std::vector<PriceLevel>\&\ asks);\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Previous\ order\ book\ state}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::vector<PriceLevel>\ previousBids\_;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::vector<PriceLevel>\ previousAsks\_;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cooldown\ tracking\ (5-\/second\ cooldown)}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ time\_t\ lastFlipTime\_;\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Helper:\ check\ if\ a\ level\ is\ "{}large"{}\ (3x\ average\ of\ top\ 5)}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isLargeOrder(\textcolor{keywordtype}{int}\ size,\ \textcolor{keyword}{const}\ std::vector<PriceLevel>\&\ levels)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Helper:\ Find\ order\ at\ specific\ price\ in\ book}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ findOrder(\textcolor{keywordtype}{double}\ price,\ \textcolor{keyword}{const}\ std::vector<PriceLevel>\&\ levels,\ \textcolor{keywordtype}{int}\&\ outSize)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00035\ \};\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+
+\end{DoxyCode}

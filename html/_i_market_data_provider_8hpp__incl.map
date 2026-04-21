@@ -1,0 +1,9 @@
+<map id="include/core/IMarketDataProvider.hpp" name="include/core/IMarketDataProvider.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="28,5,196,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,59,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,57,87,53,83,89,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="83,96,141,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,47,114,81,110,79,110,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="165,96,219,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,46,172,85,166,85,132,51"/>
+</map>

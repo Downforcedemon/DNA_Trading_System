@@ -1,0 +1,30 @@
+\doxysection{IMarket\+Data\+Provider.\+hpp}
+\hypertarget{_i_market_data_provider_8hpp_source}{}\label{_i_market_data_provider_8hpp_source}\index{include/core/IMarketDataProvider.hpp@{include/core/IMarketDataProvider.hpp}}
+\doxymbox{\hyperlink{_i_market_data_provider_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_market_data_provider}{IMarketDataProvider}}\ \{\ }
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_market_data_provider_a13f951f52a53fd953862ad01717a95ad}{\string~IMarketDataProvider}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ connection\ management}}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_market_data_provider_af413660c20e7080672ecfcc27520111e}{connect}}()\ =\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_market_data_provider_a5882f204d61efa719acefdb6d2946725}{disconnect}}()\ =\ 0;\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_market_data_provider_a97d5670310706ae4034670927ad6a8f7}{isConnected}}()\ \textcolor{keyword}{const}\ =\ 0;\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Market\ data\ subscriptions}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_market_data_provider_ab1404b59f1a7d4b9f0b7bbcd496bbfd9}{subscribe}}(\textcolor{keyword}{const}\ std::string\&\ symbol)\ =\ 0;\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_market_data_provider_ae89349b4cea84f6a04cf64ad0b8ffe2e}{unsubscribe}}(\textcolor{keyword}{const}\ std::string\&\ symbol)\ =\ 0;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Provider\ identification}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \doxymbox{\hyperlink{class_i_market_data_provider_a1b0748d22bbd5b4bbf2ee119bac6eba3}{getProviderName}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_i_market_data_provider_a9130039b83737762551ab77926f57bf3}{processMessages}}()\ =\ 0;\ }
+\DoxyCodeLine{00023\ \};\ }
+\DoxyCodeLine{00024\ }
+
+\end{DoxyCode}

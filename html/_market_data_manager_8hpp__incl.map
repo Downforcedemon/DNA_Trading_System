@@ -1,0 +1,19 @@
+<map id="include/core/MarketDataManager.hpp" name="include/core/MarketDataManager.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,5,460,32"/>
+<area shape="rect" id="Node000002" href="$_i_market_data_provider_8hpp.html" title=" " alt="" coords="243,80,438,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="342,30,343,66,338,63,339,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="95,155,148,181"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="218,28,157,36,96,46,45,62,27,71,14,82,9,92,9,101,23,120,50,137,83,152,78,154,48,142,20,124,4,103,4,91,10,78,24,67,43,57,95,41,157,30,223,25"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="366,155,424,181"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="386,30,423,49,439,62,452,79,457,97,452,115,440,132,426,147,423,142,436,128,447,113,451,97,447,81,435,66,420,53,385,35"/>
+<area shape="rect" id="Node000006" href="$_i_market_data_listener_8hpp.html" title=" " alt="" coords="25,80,218,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="300,34,175,77,173,72,304,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="513,80,581,107"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="377,30,501,75,496,75,376,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,108,164,156,162,150,300,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="351,105,379,143,374,141,349,110"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="258,155,311,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="333,106,305,145,302,140,328,108"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="123,105,124,140,119,138,120,109"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="151,105,246,148,241,150,149,110"/>
+</map>

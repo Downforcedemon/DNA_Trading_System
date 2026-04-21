@@ -1,3 +1,4 @@
-/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/dna_system.dir
-/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/edit_cache.dir
-/home/navneetsimran/Downloads/DNA_Trading_System/build/CMakeFiles/rebuild_cache.dir
+C:/Users/521787/Downloads/DNA_Trading_System/build/CMakeFiles/dna_console.dir
+C:/Users/521787/Downloads/DNA_Trading_System/build/CMakeFiles/test_strategy.dir
+C:/Users/521787/Downloads/DNA_Trading_System/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/521787/Downloads/DNA_Trading_System/build/CMakeFiles/ZERO_CHECK.dir

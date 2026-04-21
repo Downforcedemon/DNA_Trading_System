@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:nautilustrader.io)",
+      "WebFetch(domain:databento.com)",
+      "Bash(mkdir -p /c/Users/521787/Downloads/DNA_Trading_System/external/protobuf/lib/absl)",
+      "Read(//c/Users/521787/Downloads/protobuf-fresh/build/_deps/absl-build/**)"
+    ]
+  }
+}

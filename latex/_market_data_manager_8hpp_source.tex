@@ -1,0 +1,35 @@
+\doxysection{Market\+Data\+Manager.\+hpp}
+\hypertarget{_market_data_manager_8hpp_source}{}\label{_market_data_manager_8hpp_source}\index{include/core/MarketDataManager.hpp@{include/core/MarketDataManager.hpp}}
+\doxymbox{\hyperlink{_market_data_manager_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_market_data_provider_8hpp}{core/IMarketDataProvider.hpp}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_market_data_listener_8hpp}{core/IMarketDataListener.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_market_data_manager_acfaef52ac58690f0ca6223c491af621b}{MarketDataManager}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_i_market_data_listener}{IMarketDataListener}}\ \{\ }
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_market_data_manager_acfaef52ac58690f0ca6223c491af621b}{MarketDataManager}}();}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_market_data_manager_af37b3e7a468d912a6528098b770651db}{\string~MarketDataManager}}();\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ provider\ management}}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_market_data_manager_ae9761321931cbe842781bb322af3f9b6}{setProvider}}(std::unique\_ptr<IMarketDataProvider>\ provider);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_i_market_data_provider}{IMarketDataProvider}}*\ \doxymbox{\hyperlink{class_market_data_manager_affb395b813b3834b544cabf75f8e473b}{getProvider}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Listener\ management}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_market_data_manager_a4f86a4a1a912f95b61520741899e2afa}{addListener}}(\doxymbox{\hyperlink{class_i_market_data_listener}{IMarketDataListener}}*\ listener);\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_market_data_manager_ac1c00060f8e0bfb049b42d4e046011f0}{removeListener}}(\doxymbox{\hyperlink{class_i_market_data_listener}{IMarketDataListener}}*\ listener);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ IMarketDataListener\ implementation\ (receive\ from\ provider,\ broadcast\ to\ listeners)}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_market_data_manager_a6d28ad0d5863f622b5e34bdd1fe443de}{onPriceUpdate}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{double}\ price,\ time\_t\ timestamp)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_market_data_manager_a429eeebc669b331b0d9361b62ef00671}{onSizeUpdate}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{int}\ size,\ time\_t\ timestamp)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_market_data_manager_acf350bbf3f83443ddacf6981fb1e1aef}{onError}}(\textcolor{keyword}{const}\ std::string\&\ symbol,\ \textcolor{keywordtype}{int}\ errorCode,\ \textcolor{keyword}{const}\ std::string\&\ errorMsg)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::unique\_ptr<IMarketDataProvider>\ provider\_;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::vector<IMarketDataListener*>\ listeners\_;\ }
+\DoxyCodeLine{00029\ \};\ }
+
+\end{DoxyCode}

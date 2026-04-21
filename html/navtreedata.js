@@ -48,7 +48,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"IBKRAdapter_8cpp.html"
+"_book_flip_detector_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

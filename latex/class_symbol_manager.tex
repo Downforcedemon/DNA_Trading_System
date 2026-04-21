@@ -1,0 +1,153 @@
+\doxysection{Symbol\+Manager Class Reference}
+\hypertarget{class_symbol_manager}{}\label{class_symbol_manager}\index{SymbolManager@{SymbolManager}}
+
+
+{\ttfamily \+\#include $<$Symbol\+Manager.\+hpp$>$}
+
+
+
+Inheritance diagram for Symbol\+Manager:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_symbol_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Symbol\+Manager:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_symbol_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_symbol_manager_aad18e9a0592251d319c8eb575cb7e6fa}{add\+Symbol}} (const std::\+string \&symbol, double price=0.\+0, int score=0)
+\item 
+void \doxymbox{\hyperlink{class_symbol_manager_ac8b8e79a6ce0364244930e8cac2567bd}{remove\+Symbol}} (const std::\+string \&symbol)
+\item 
+std::\+vector$<$ \doxymbox{\hyperlink{struct_symbol_state}{Symbol\+State}} $>$ \doxymbox{\hyperlink{class_symbol_manager_a637ee323d013273cac0d41f5b30196b7}{get\+All\+Symbols}} () const
+\item 
+bool \doxymbox{\hyperlink{class_symbol_manager_a2bd5c0b9e49732003851dd79dd168ef5}{has\+Symbol}} (const std::\+string \&symbol) const
+\item 
+int \doxymbox{\hyperlink{class_symbol_manager_a8d694a4c9d23738af26d077c8c55981f}{get\+Symbol\+Count}} () const
+\item 
+void \doxymbox{\hyperlink{class_symbol_manager_a9b6f836de372c438e302c72e74688cf1}{on\+Price\+Update}} (const std::\+string \&symbol, double price, time\+\_\+t timestamp) override
+\item 
+void \doxymbox{\hyperlink{class_symbol_manager_ac9a8979c489436fe62b7307d03ab4049}{on\+Size\+Update}} (const std::\+string \&symbol, int size, time\+\_\+t timestamp) override
+\item 
+void \doxymbox{\hyperlink{class_symbol_manager_a2c1fbf25faea27f4498f3691a82c54b6}{on\+Error}} (const std::\+string \&symbol, int error\+Code, const std::\+string \&error\+Msg) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_market_data_listener}{IMarket\+Data\+Listener}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_i_market_data_listener_ac1d50d1890ada40e44af7b57104cea41}{\texorpdfstring{$\sim$}{\string~}\+IMarket\+Data\+Listener}} ()=default
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symbol_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symbol_manager_aad18e9a0592251d319c8eb575cb7e6fa}\index{SymbolManager@{SymbolManager}!addSymbol@{addSymbol}}
+\index{addSymbol@{addSymbol}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{addSymbol()}{addSymbol()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_aad18e9a0592251d319c8eb575cb7e6fa} 
+void Symbol\+Manager::\+add\+Symbol (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{, }\item[{double}]{price}{ = {\ttfamily 0.0}, }\item[{int}]{score}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_symbol_manager_aad18e9a0592251d319c8eb575cb7e6fa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_symbol_manager_a637ee323d013273cac0d41f5b30196b7}\index{SymbolManager@{SymbolManager}!getAllSymbols@{getAllSymbols}}
+\index{getAllSymbols@{getAllSymbols}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{getAllSymbols()}{getAllSymbols()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_a637ee323d013273cac0d41f5b30196b7} 
+std::\+vector$<$ \doxymbox{\hyperlink{struct_symbol_state}{Symbol\+State}} $>$ Symbol\+Manager::\+get\+All\+Symbols (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_symbol_manager_a637ee323d013273cac0d41f5b30196b7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_symbol_manager_a8d694a4c9d23738af26d077c8c55981f}\index{SymbolManager@{SymbolManager}!getSymbolCount@{getSymbolCount}}
+\index{getSymbolCount@{getSymbolCount}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{getSymbolCount()}{getSymbolCount()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_a8d694a4c9d23738af26d077c8c55981f} 
+int Symbol\+Manager::\+get\+Symbol\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_symbol_manager_a8d694a4c9d23738af26d077c8c55981f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_symbol_manager_a2bd5c0b9e49732003851dd79dd168ef5}\index{SymbolManager@{SymbolManager}!hasSymbol@{hasSymbol}}
+\index{hasSymbol@{hasSymbol}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{hasSymbol()}{hasSymbol()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_a2bd5c0b9e49732003851dd79dd168ef5} 
+bool Symbol\+Manager::\+has\+Symbol (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_symbol_manager_a2c1fbf25faea27f4498f3691a82c54b6}\index{SymbolManager@{SymbolManager}!onError@{onError}}
+\index{onError@{onError}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_a2c1fbf25faea27f4498f3691a82c54b6} 
+void Symbol\+Manager::\+on\+Error (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{, }\item[{int}]{error\+Code}{, }\item[{const std::\+string \&}]{error\+Msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_listener_a0ec61644ee4482da59b7d52ef6d95c20}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{class_symbol_manager_a9b6f836de372c438e302c72e74688cf1}\index{SymbolManager@{SymbolManager}!onPriceUpdate@{onPriceUpdate}}
+\index{onPriceUpdate@{onPriceUpdate}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{onPriceUpdate()}{onPriceUpdate()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_a9b6f836de372c438e302c72e74688cf1} 
+void Symbol\+Manager::\+on\+Price\+Update (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{, }\item[{double}]{price}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_listener_a39f82975fc20ac8423b20da2a30ee97e}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{class_symbol_manager_ac9a8979c489436fe62b7307d03ab4049}\index{SymbolManager@{SymbolManager}!onSizeUpdate@{onSizeUpdate}}
+\index{onSizeUpdate@{onSizeUpdate}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{onSizeUpdate()}{onSizeUpdate()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_ac9a8979c489436fe62b7307d03ab4049} 
+void Symbol\+Manager::\+on\+Size\+Update (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{, }\item[{int}]{size}{, }\item[{time\+\_\+t}]{timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_i_market_data_listener_af8cc01c462e500778b7a396cd4f2bc01}{IMarket\+Data\+Listener}}.
+
+\Hypertarget{class_symbol_manager_ac8b8e79a6ce0364244930e8cac2567bd}\index{SymbolManager@{SymbolManager}!removeSymbol@{removeSymbol}}
+\index{removeSymbol@{removeSymbol}!SymbolManager@{SymbolManager}}
+\doxysubsubsection{\texorpdfstring{removeSymbol()}{removeSymbol()}}
+{\footnotesize\ttfamily \label{class_symbol_manager_ac8b8e79a6ce0364244930e8cac2567bd} 
+void Symbol\+Manager::\+remove\+Symbol (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{symbol}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_symbol_manager_ac8b8e79a6ce0364244930e8cac2567bd_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+core/\+\doxymbox{\hyperlink{_symbol_manager_8hpp}{Symbol\+Manager.\+hpp}}\item 
+src/\+core/\+\doxymbox{\hyperlink{_symbol_manager_8cpp}{Symbol\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sell_0',['SELL',['../SymbolState_8hpp.html#aad6ca876084fe82fadbaf26d6e919adea860926e6fc3f191e18ee7a98259164b8',1,'SymbolState.hpp']]]
+  ['none_0',['NONE',['../_book_flip_detector_8hpp.html#a2e01be41366535303d4b93db16c2ddd9ab50339a10e1de285ac99d4c3990b8693',1,'BookFlipDetector.hpp']]]
 ];

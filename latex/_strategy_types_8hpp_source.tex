@@ -1,0 +1,43 @@
+\doxysection{Strategy\+Types.\+hpp}
+\hypertarget{_strategy_types_8hpp_source}{}\label{_strategy_types_8hpp_source}\index{include/strategy/StrategyTypes.hpp@{include/strategy/StrategyTypes.hpp}}
+\doxymbox{\hyperlink{_strategy_types_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Represents\ a\ single\ price\ level\ in\ order\ book}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_price_level}{PriceLevel}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_price_level_a449e9eba40d73aea78ff8781f786e319}{price}};\ }
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{struct_price_level_a872139c8bcda319f934c5bd003ed9a4c}{size}};\ }
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ OHLC\ Data\ for\ pivot\ calculations}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_o_h_l_c_data}{OHLCData}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_o_h_l_c_data_a6bb334e8c3255e850140b4afc6e92f16}{open}};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_o_h_l_c_data_a305858419a3609d7ba05d329b49d5b8b}{high}};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_o_h_l_c_data_a58120d441a73492e97963b0fe5610c4d}{low}};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_o_h_l_c_data_a8bfb5d42980f025f815acfc637d72e83}{close}};}
+\DoxyCodeLine{00017\ \ \ \ \ time\_t\ \doxymbox{\hyperlink{struct_o_h_l_c_data_a637a9ccccacbf2382676eb8f3bf93947}{timestamp}};}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ CPR\ (Central\ Pivot\ Range)\ calculation\ results}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_c_p_r_data}{CPRData}}\ \{\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_c_p_r_data_a98357428aeec1290254518393c8dfc8c}{pivot}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Main\ Pivot}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_c_p_r_data_a8d8c0b301dedcbc1a3da04e1e6f6324a}{bc}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Bottom\ Central}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_c_p_r_data_aa5439381617b16c418e4d8a242fa3ac6}{tc}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Top\ Central}}
+\DoxyCodeLine{00025\ \};\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ Camarilla\ pivot\ levels}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_camarilla_levels}{CamarillaLevels}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_camarilla_levels_adccb13fbc5f42d589343510b91cafa96}{r6}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Overdrive\ resistance\ (extreme\ high)}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_camarilla_levels_ac9692766a2dc4b114ba5bcab7e3491bd}{r4}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Breakout\ resistance}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_camarilla_levels_aa22fbe2dcf746c4230879b44deb9ec45}{r3}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ key\ resistance\ (reversal\ level)}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_camarilla_levels_a0073bf809de31590979cef8311cd50ed}{s3}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Key\ support\ (reversal\ level)\ }}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_camarilla_levels_a7df9ffe8e9645bf2f5cd7efbf6a7122a}{s4}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Breakout\ Support}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{struct_camarilla_levels_a044181ceb6aba403627afd9c189baa8c}{s6}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Overdrive\ support\ (extreme\ low)\ }}
+\DoxyCodeLine{00035\ \};\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+
+\end{DoxyCode}
