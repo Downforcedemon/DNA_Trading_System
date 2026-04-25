@@ -22,5 +22,8 @@ class IMarketDataListener {
 
         // OHLC callback — fired once per symbol after reqHistoricalData completes
         virtual void onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) {}
+
+        // Fired when the provider resolves the listing exchange for a symbol added without one
+        virtual void onExchangeDiscovered(const std::string& symbol, const std::string& exchange) {}
 };
 

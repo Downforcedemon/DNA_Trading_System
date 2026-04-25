@@ -22,8 +22,8 @@ bool IBKRAdapter::isConnected() const {
     return ibkrConnection_->isConnected();
 }
 
-void IBKRAdapter::subscribe(const std::string& symbol){
-    ibkrConnection_->subscribeMarketData(symbol); 
+void IBKRAdapter::subscribe(const std::string& symbol, const std::string& exchange){
+    ibkrConnection_->subscribeMarketData(symbol, exchange);
 }
 
 void IBKRAdapter::unsubscribe(const std::string& symbol){
@@ -68,4 +68,8 @@ void IBKRAdapter::onTradeUpdate(const std::string& symbol, double price, int siz
 
 void IBKRAdapter::onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) {
     listener_->onOHLCUpdate(symbol, ohlc);
+}
+
+void IBKRAdapter::onExchangeDiscovered(const std::string& symbol, const std::string& exchange) {
+    listener_->onExchangeDiscovered(symbol, exchange);
 }

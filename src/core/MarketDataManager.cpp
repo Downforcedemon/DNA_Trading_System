@@ -67,6 +67,12 @@ void MarketDataManager::onOHLCUpdate(const std::string& symbol, const OHLCData& 
     }
 }
 
+void MarketDataManager::onExchangeDiscovered(const std::string& symbol, const std::string& exchange) {
+    for (auto* listener : listeners_) {
+        listener->onExchangeDiscovered(symbol, exchange);
+    }
+}
+
 void MarketDataManager::requestOHLC(const std::string& symbol) {
     if (provider_) provider_->requestOHLC(symbol);
 }

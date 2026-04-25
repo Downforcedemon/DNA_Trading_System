@@ -2,14 +2,15 @@
 #include <iostream>
 #include <algorithm>
 
-void SymbolManager::addSymbol(const std::string& symbol, double price, int score) {
+void SymbolManager::addSymbol(const std::string& symbol, const std::string& exchange, double price, int score) {
     if (symbols_.count(symbol) > 0) {
         std::cout << "⚠️  " << symbol << " already in watchlist" << std::endl;
         return;
     }
-    
+
     SymbolState state;
     state.symbol = symbol;
+    state.primaryExchange = exchange;
     state.currentPrice = price;
     state.signalScore = score;
 
@@ -48,6 +49,14 @@ bool SymbolManager::hasSymbol(const std::string& symbol) const {
 
 int SymbolManager::getSymbolCount() const {
     return symbols_.size();
+}
+
+std::string SymbolManager::getExchange(const std::string& symbol) const {
+    auto it = symbols_.find(symbol);
+    if (it != symbols_.end()) {
+        return it->second.primaryExchange;
+    }
+    return "NASDAQ";
 }
 
 void SymbolManager::updatePrice(const std::string& symbol, double price) {
@@ -135,4 +144,12 @@ void SymbolManager::onSizeUpdate(const std::string& symbol, int size, time_t tim
 
 void SymbolManager::onError(const std::string& symbol, int errorCode, const std::string& errorMsg) {
     std::cout << "⚠️  Error for " << symbol << " [" << errorCode << "]: " << errorMsg << std::endl;
+}
+
+void SymbolManager::onExchangeDiscovered(const std::string& symbol, const std::string& exchange) {
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto it = symbols_.find(symbol);
+    if (it != symbols_.end()) {
+        it->second.primaryExchange = exchange;
+    }
 }

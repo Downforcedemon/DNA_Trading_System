@@ -19,6 +19,7 @@ enum class DataStatus {
 
 struct SymbolState {
     std::string symbol = "";
+    std::string primaryExchange = "NASDAQ";  // L2 routing: NASDAQ | NYSE | ARCA | BATS | AMEX
     double currentPrice = 0.0;
     int signalScore = 0;
     SignalType signalType = SignalType::WAIT;

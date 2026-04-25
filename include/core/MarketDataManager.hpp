@@ -29,6 +29,7 @@ class MarketDataManager : public IMarketDataListener {
         void onTradeUpdate(const std::string& symbol, double price, int size,
                            BookSide aggressor, double bid, double ask) override;
         void onOHLCUpdate(const std::string& symbol, const OHLCData& ohlc) override;
+        void onExchangeDiscovered(const std::string& symbol, const std::string& exchange) override;
 
         // Request previous day's OHLC for all listeners (delegates to provider)
         void requestOHLC(const std::string& symbol);

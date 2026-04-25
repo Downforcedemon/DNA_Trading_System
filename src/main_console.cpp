@@ -127,7 +127,7 @@ void loadDefaultSymbols(SymbolManager& manager) {
 
     for (auto symbol : watchlist) {
         std::string sym = std::string(symbol.get_string().value());
-        manager.addSymbol(sym, 100.0, 3);  // Default price and score
+        manager.addSymbol(sym);  // Exchange resolved later via reqContractDetails
     }
 
     std::cout << "✅ Loaded " << manager.getSymbolCount() << " symbols from config" << std::endl;
@@ -230,11 +230,11 @@ int main() {
             continue;
         }
 
-        // Add symbol and subscribe to market data
+        // Add symbol and subscribe to market data — exchange auto-discovered
         std::string upperSymbol = toUpper(input);
-        manager.addSymbol(upperSymbol, 0.0, 0);
+        manager.addSymbol(upperSymbol);
         if (provider->isConnected()) {
-            provider->subscribe(upperSymbol);
+            provider->subscribe(upperSymbol);  // empty exchange triggers reqContractDetails
         }
     }
 

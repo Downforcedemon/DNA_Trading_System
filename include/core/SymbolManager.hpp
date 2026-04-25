@@ -9,11 +9,12 @@
 
 class SymbolManager : public IMarketDataListener {
     public:
-        void addSymbol(const std::string& symbol, double price = 0.0, int score = 0);
+        void addSymbol(const std::string& symbol, const std::string& exchange = "NASDAQ", double price = 0.0, int score = 0);
         void removeSymbol(const std::string& symbol);
         std::vector<SymbolState> getAllSymbols() const;
         bool hasSymbol(const std::string& symbol) const;
         int getSymbolCount() const;
+        std::string getExchange(const std::string& symbol) const;
 
         // Strategy score updates (called by StrategyEngine)
         double getPrice(const std::string& symbol) const;
@@ -29,6 +30,7 @@ class SymbolManager : public IMarketDataListener {
         void onPriceUpdate(const std::string& symbol, double price, time_t timestamp) override;
         void onSizeUpdate(const std::string& symbol, int size, time_t timestamp) override;
         void onError(const std::string& symbol, int errorCode, const std::string& errorMsg) override;
+        void onExchangeDiscovered(const std::string& symbol, const std::string& exchange) override;
 
     private:
         void updatePrice(const std::string& symbol, double price);  // Internal helper

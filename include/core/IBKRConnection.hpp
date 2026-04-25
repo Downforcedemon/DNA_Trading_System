@@ -30,7 +30,9 @@ public:
     bool isConnected();
 
     // Subscribe/unsubscribe market data (L1 + L2)
-    void subscribeMarketData(const std::string& symbol);
+    // exchange: listing venue for L2 routing (NASDAQ | NYSE | ARCA | BATS | AMEX).
+    // Pass empty string to auto-discover via reqContractDetails.
+    void subscribeMarketData(const std::string& symbol, const std::string& exchange = "");
     void unsubscribeMarketData(const std::string& symbol);
 
     // Process incoming messages
@@ -58,6 +60,10 @@ public:
     void historicalDataEnd(int reqId, const std::string& startDateStr,
                            const std::string& endDateStr) override;
 
+    // EWrapper callbacks — contract details (used to auto-discover listing exchange)
+    void contractDetails(int reqId, const ContractDetails& contractDetails) override;
+    void contractDetailsEnd(int reqId) override;
+
 private:
     IMarketDataListener* listener_;
     std::unique_ptr<EClientSocket> client_;
@@ -65,6 +71,10 @@ private:
     int nextTickerId_;
     int nextDepthId_;                                            // separate ID space for L2
     int nextHistReqId_;                                          // separate ID space for historical data
+    int nextContractDetailsReqId_;                               // separate ID space for contract-detail lookups
+
+    // Pending exchange-discovery lookups: reqId -> symbol awaiting subscribe
+    std::unordered_map<int, std::string> pendingExchangeLookups_;
 
     // L1 ticker ID mappings
     std::unordered_map<int, std::string> tickerIdToSymbol_;
@@ -95,5 +105,8 @@ private:
     // Apply incremental depth update to local book and forward snapshot
     void applyDepthUpdate(int tickerId, int position, int operation, int side,
                           double price, int size);
+
+    // Issue the actual L1 + L2 requests once the listing exchange is known
+    void doSubscribeImpl(const std::string& symbol, const std::string& exchange);
 };
 

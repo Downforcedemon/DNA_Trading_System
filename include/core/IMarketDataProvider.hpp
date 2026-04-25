@@ -13,7 +13,9 @@ class IMarketDataProvider {
         virtual bool isConnected() const = 0; 
 
         // Market data subscriptions
-        virtual void subscribe(const std::string& symbol) = 0;
+        // exchange: listing venue for L2 routing (NASDAQ | NYSE | ARCA | BATS | AMEX).
+        // Pass empty string to auto-discover via reqContractDetails.
+        virtual void subscribe(const std::string& symbol, const std::string& exchange = "") = 0;
         virtual void unsubscribe(const std::string& symbol) = 0;
 
         // Request previous day's OHLC for pivot calculations (fires onOHLCUpdate when done)

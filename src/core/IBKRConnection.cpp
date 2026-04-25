@@ -14,8 +14,10 @@ IBKRConnection::IBKRConnection(IMarketDataListener* listener)
     , client_(nullptr)
     , nextOrderId_(0)
     , nextTickerId_(1)
-    , nextDepthId_(10000)     // L2 IDs start at 10000 to avoid collision with L1
-    , nextHistReqId_(20000) { // Historical IDs start at 20000
+    , nextDepthId_(10000)               // L2 IDs start at 10000 to avoid collision with L1
+    , nextHistReqId_(20000)             // Historical IDs start at 20000
+    , nextContractDetailsReqId_(30000)  // Contract-detail lookups start at 30000
+{
 }
 
 IBKRConnection::~IBKRConnection() {
@@ -56,18 +58,57 @@ bool IBKRConnection::isConnected() {
     return client_ && client_->isConnected();
 }
 
-void IBKRConnection::subscribeMarketData(const std::string& symbol) {
+// Map config-friendly exchange name to IBKR's depth-book exchange code.
+// SMART has no order book — depth must target a specific venue we have
+// permissions for (NASDAQ TotalView / NYSE OpenBook / ArcaBook / etc).
+static std::string toDepthExchange(const std::string& exchange) {
+    if (exchange == "NASDAQ") return "ISLAND";  // NASDAQ INET book (TotalView)
+    return exchange;                            // NYSE, ARCA, BATS, AMEX pass through
+}
+
+void IBKRConnection::subscribeMarketData(const std::string& symbol, const std::string& exchange) {
     if (!isConnected()) {
         std::cout << "Not connected to IB Gateway" << std::endl;
         return;
     }
 
-    // Create contract for the symbol
-    Contract contract;
-    contract.symbol = symbol;
-    contract.secType = "STK";
-    contract.exchange = "SMART";
-    contract.currency = "USD";
+    // Exchange known up-front (e.g. from symbols.json or "NVDA NASDAQ" runtime input)
+    if (!exchange.empty()) {
+        doSubscribeImpl(symbol, exchange);
+        return;
+    }
+
+    // Auto-discover: ask Gateway which exchange this symbol lists on.
+    // Use a SMART/STK/USD probe — IBKR fills in primaryExchange in the response.
+    Contract probe;
+    probe.symbol = symbol;
+    probe.secType = "STK";
+    probe.exchange = "SMART";
+    probe.currency = "USD";
+
+    int reqId;
+    {
+        std::lock_guard<std::mutex> lock(mutex_);
+        reqId = nextContractDetailsReqId_++;
+        pendingExchangeLookups_[reqId] = symbol;
+    }
+
+    std::cout << "Resolving listing exchange for " << symbol << "..." << std::endl;
+    client_->reqContractDetails(reqId, probe);
+}
+
+void IBKRConnection::doSubscribeImpl(const std::string& symbol, const std::string& exchange) {
+    // L1 contract: SMART consolidates NBBO across venues
+    Contract l1Contract;
+    l1Contract.symbol = symbol;
+    l1Contract.secType = "STK";
+    l1Contract.exchange = "SMART";
+    l1Contract.currency = "USD";
+    l1Contract.primaryExchange = exchange;  // disambiguates dual-listed names
+
+    // L2 contract: must target a specific exchange book
+    Contract l2Contract = l1Contract;
+    l2Contract.exchange = toDepthExchange(exchange);
 
     int tickerId;
     int depthId;
@@ -88,12 +129,13 @@ void IBKRConnection::subscribeMarketData(const std::string& symbol) {
     }
 
     // L1: top-of-book price ticks
-    client_->reqMktData(tickerId, contract, "", false, false, TagValueListSPtr());
+    client_->reqMktData(tickerId, l1Contract, "", false, false, TagValueListSPtr());
 
-    // L2: order book depth (10 levels, SMART aggregated)
-    client_->reqMktDepth(depthId, contract, L2_NUM_ROWS, true, TagValueListSPtr());
+    // L2: native exchange depth book — isSmartDepth=false (SMART Depth is a separate paid product)
+    client_->reqMktDepth(depthId, l2Contract, L2_NUM_ROWS, false, TagValueListSPtr());
 
-    std::cout << "Subscribed to " << symbol << " L1(ID:" << tickerId << ") L2(ID:" << depthId << ")" << std::endl;
+    std::cout << "Subscribed to " << symbol << " (" << exchange
+              << ") L1(ID:" << tickerId << ") L2(ID:" << depthId << ")" << std::endl;
 }
 
 void IBKRConnection::unsubscribeMarketData(const std::string& symbol) {
@@ -128,7 +170,7 @@ void IBKRConnection::unsubscribeMarketData(const std::string& symbol) {
     }
 
     if (tickerId >= 0) client_->cancelMktData(tickerId);
-    if (depthId >= 0)  client_->cancelMktDepth(depthId, true);
+    if (depthId >= 0)  client_->cancelMktDepth(depthId, false);  // must match isSmartDepth used at subscribe
 
     std::cout << "Unsubscribed from " << symbol << std::endl;
 }
@@ -343,4 +385,35 @@ void IBKRConnection::nextValidId(OrderId orderId) {
 
 void IBKRConnection::connectionClosed() {
     std::cout << "Connection closed by IB Gateway" << std::endl;
+}
+
+// Auto-discovery: IBKR returns the listing exchange in primaryExchange.
+// First match wins — STK/SMART/USD probes typically resolve unambiguously for US equities.
+void IBKRConnection::contractDetails(int reqId, const ContractDetails& details) {
+    std::string symbol;
+    {
+        std::lock_guard<std::mutex> lock(mutex_);
+        auto it = pendingExchangeLookups_.find(reqId);
+        if (it == pendingExchangeLookups_.end()) return;  // already resolved or stale
+        symbol = it->second;
+        pendingExchangeLookups_.erase(it);
+    }
+
+    std::string exchange = details.contract.primaryExchange;
+    if (exchange.empty()) exchange = "NASDAQ";  // safe default if Gateway omits it
+
+    std::cout << "Resolved " << symbol << " -> " << exchange << std::endl;
+    listener_->onExchangeDiscovered(symbol, exchange);
+    doSubscribeImpl(symbol, exchange);
+}
+
+void IBKRConnection::contractDetailsEnd(int reqId) {
+    // If we get here without contractDetails firing, the symbol didn't match any contract.
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto it = pendingExchangeLookups_.find(reqId);
+    if (it != pendingExchangeLookups_.end()) {
+        std::cout << "⚠️  Could not resolve listing exchange for " << it->second
+                  << " — symbol may be invalid" << std::endl;
+        pendingExchangeLookups_.erase(it);
+    }
 }
