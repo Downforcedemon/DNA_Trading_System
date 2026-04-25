@@ -106,9 +106,13 @@ void IBKRConnection::doSubscribeImpl(const std::string& symbol, const std::strin
     l1Contract.currency = "USD";
     l1Contract.primaryExchange = exchange;  // disambiguates dual-listed names
 
-    // L2 contract: must target a specific exchange book
-    Contract l2Contract = l1Contract;
+    // L2 contract: built fresh — no primaryExchange so Gateway doesn't normalize
+    // {exchange=ISLAND, primaryExchange=NASDAQ} into NASDAQ.NMS (which TotalView doesn't cover).
+    Contract l2Contract;
+    l2Contract.symbol = symbol;
+    l2Contract.secType = "STK";
     l2Contract.exchange = toDepthExchange(exchange);
+    l2Contract.currency = "USD";
 
     int tickerId;
     int depthId;
